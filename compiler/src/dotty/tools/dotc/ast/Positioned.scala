@@ -2,6 +2,8 @@ package dotty.tools
 package dotc
 package ast
 
+import scala.compiletime.uninitialized
+
 import util.Spans.*
 import util.{SourceFile, SourcePosition, SrcPos}
 import core.Contexts.*
@@ -12,8 +14,6 @@ import core.StdNames.nme
 import ast.Trees.mods
 import annotation.constructorOnly
 import annotation.internal.sharable
-
-import scala.compiletime.uninitialized
 
 /** A base class for things that have positions (currently: modifiers and trees)
  */

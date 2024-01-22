@@ -3,7 +3,6 @@ package backend
 package jvm
 
 import scala.language.unsafeNulls
-
 import scala.tools.asm
 
 /**

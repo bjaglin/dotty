@@ -1,6 +1,7 @@
 package scala.quoted.runtime
 
-import scala.quoted.{Expr, Type}
+import scala.quoted.Expr
+import scala.quoted.Type
 
 /** Part of the Quotes interface that needs to be implemented by the compiler but is not visible to users */
 trait QuoteMatching:

@@ -9,7 +9,6 @@ import Types.*
 import Symbols.*
 import MegaPhase.*
 import Flags.*
-
 import NameOps.*
 
 

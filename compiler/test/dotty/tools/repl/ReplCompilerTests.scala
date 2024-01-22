@@ -1,12 +1,12 @@
 package dotty.tools.repl
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.core.Contexts.Context
+import org.junit.Assert.{assertTrue => assert, _}
+import org.junit.Ignore
+import org.junit.Test
 
 import java.util.regex.Pattern
-
-import org.junit.Assert.{assertTrue => assert, _}
-import org.junit.{Ignore, Test}
-import dotty.tools.dotc.core.Contexts.Context
+import scala.language.unsafeNulls
 
 class ReplCompilerTests extends ReplTest:
   import ReplCompilerTests._

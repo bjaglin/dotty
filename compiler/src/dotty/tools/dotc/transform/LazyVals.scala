@@ -1,7 +1,12 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.dotc.config.Feature
+
 import java.util.IdentityHashMap
+import scala.collection.mutable
+import scala.compiletime.uninitialized
+
 import ast.tpd
 import core.Annotations.Annotation
 import core.Constants.Constant
@@ -14,11 +19,7 @@ import core.StdNames.nme
 import core.Symbols.*
 import core.Types.*
 import core.{Names, StdNames}
-import dotty.tools.dotc.config.Feature
 import transform.MegaPhase.MiniPhase
-
-import scala.collection.mutable
-import scala.compiletime.uninitialized
 
 class LazyVals extends MiniPhase with IdentityDenotTransformer {
   import LazyVals.*

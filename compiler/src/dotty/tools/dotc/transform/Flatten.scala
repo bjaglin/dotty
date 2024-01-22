@@ -1,6 +1,8 @@
 package dotty.tools.dotc
 package transform
 
+import scala.compiletime.uninitialized
+
 import core.*
 import DenotTransformers.SymTransformer
 import Contexts.*
@@ -9,8 +11,6 @@ import SymDenotations.SymDenotation
 import collection.mutable
 import MegaPhase.MiniPhase
 import util.Store
-
-import scala.compiletime.uninitialized
 
 /** Lift nested classes to toplevel */
 class Flatten extends MiniPhase with SymTransformer {

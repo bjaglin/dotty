@@ -2,21 +2,25 @@ package dotty.tools
 package dotc
 package transform
 
+import dotty.tools.dotc.util.SrcPos
+
 import scala.language.unsafeNulls as _
 
 import core.*
-import Contexts.*, Symbols.*, Types.*, Constants.*, StdNames.*, Decorators.*
+import Contexts.*
+import Symbols.*
+import Types.*
+import Constants.*
+import StdNames.*
+import Decorators.*
 import ast.untpd
 import Erasure.Boxing.*
 import TypeErasure.*
-
 import core.Flags.*
 import util.Spans.*
 import reporting.*
 import config.Printers.{ transforms => debug }
-
 import patmat.Typ
-import dotty.tools.dotc.util.SrcPos
 
 /** This transform normalizes type tests and type casts,
  *  also replacing type tests with singleton argument type with reference equality check

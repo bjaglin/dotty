@@ -2,15 +2,14 @@ package dotty.tools
 package backend
 package jvm
 
-import scala.language.unsafeNulls
-
-import scala.collection.immutable
-import scala.tools.asm
-
 import dotty.tools.dotc.CompilationUnit
+import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.StdNames.nme
 import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.ast.tpd
+
+import scala.collection.immutable
+import scala.language.unsafeNulls
+import scala.tools.asm
 
 /*
  *

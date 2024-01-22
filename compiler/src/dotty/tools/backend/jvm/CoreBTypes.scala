@@ -3,10 +3,13 @@ package backend
 package jvm
 
 
+import dotty.tools.dotc.core.StdNames
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.transform.Erasure
-import scala.tools.asm.{Handle, Opcodes}
-import dotty.tools.dotc.core.StdNames
+
+import scala.tools.asm.Handle
+import scala.tools.asm.Opcodes
+
 import BTypes.InternalName
 import PostProcessorFrontendAccess.Lazy
 

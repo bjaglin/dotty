@@ -1,13 +1,5 @@
 package dotty.tools.pc
 
-import java.nio.file.Paths
-
-import scala.collection.mutable
-import scala.jdk.CollectionConverters.*
-import scala.meta.internal.metals.ReportContext
-import scala.meta.internal.pc.AutoImportsResultImpl
-import scala.meta.pc.*
-
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.interactive.Interactive
@@ -16,8 +8,14 @@ import dotty.tools.dotc.util.SourceFile
 import dotty.tools.pc.AutoImports.*
 import dotty.tools.pc.completions.CompletionPos
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j as l
+
+import java.nio.file.Paths
+import scala.collection.mutable
+import scala.jdk.CollectionConverters.*
+import scala.meta.internal.metals.ReportContext
+import scala.meta.internal.pc.AutoImportsResultImpl
+import scala.meta.pc.*
 
 final class AutoImportsProvider(
     search: SymbolSearch,

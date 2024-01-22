@@ -1,9 +1,10 @@
 package dotty.tools.dotc
 package core
 
+import scala.compiletime.uninitialized
+
 import Contexts.*
 import config.Printers.{default, typr}
-import scala.compiletime.uninitialized
 
 trait ConstraintRunInfo { self: Run =>
   private var maxSize = 0

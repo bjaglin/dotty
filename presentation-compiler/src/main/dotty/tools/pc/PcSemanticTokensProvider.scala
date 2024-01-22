@@ -1,10 +1,5 @@
 package dotty.tools.pc
 
-import scala.meta.internal.pc.SemanticTokens.*
-import scala.meta.internal.pc.TokenNode
-import scala.meta.pc.Node
-import scala.meta.pc.VirtualFileParams
-
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
@@ -13,9 +8,13 @@ import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j.SemanticTokenModifiers
 import org.eclipse.lsp4j.SemanticTokenTypes
+
+import scala.meta.internal.pc.SemanticTokens.*
+import scala.meta.internal.pc.TokenNode
+import scala.meta.pc.Node
+import scala.meta.pc.VirtualFileParams
 
 /**
  *  Provides semantic tokens of file(@param params)

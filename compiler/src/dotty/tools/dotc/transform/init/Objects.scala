@@ -2,6 +2,11 @@ package dotty.tools.dotc
 package transform
 package init
 
+import scala.annotation.constructorOnly
+import scala.annotation.tailrec
+import scala.collection.immutable.ListSet
+import scala.collection.mutable
+
 import core.*
 import Contexts.*
 import Symbols.*
@@ -11,22 +16,15 @@ import StdNames.*
 import Names.TermName
 import NameKinds.OuterSelectName
 import NameKinds.SuperAccessorName
-
 import ast.tpd.*
 import util.{ SourcePosition, NoSourcePosition }
 import config.Printers.init as printer
 import reporting.StoreReporter
 import reporting.trace as log
 import typer.Applications.*
-
 import Errors.*
 import Trace.*
 import Util.*
-
-import scala.collection.immutable.ListSet
-import scala.collection.mutable
-import scala.annotation.tailrec
-import scala.annotation.constructorOnly
 
 /** Check initialization safety of static objects
  *

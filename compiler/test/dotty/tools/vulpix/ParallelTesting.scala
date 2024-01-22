@@ -2,25 +2,42 @@ package dotty
 package tools
 package vulpix
 
-import scala.language.unsafeNulls
+import dotty.tools.vulpix.TestConfiguration.defaultOptions
 
-import java.io.{File => JFile, IOException, PrintStream, ByteArrayOutputStream}
+import java.io.ByteArrayOutputStream
+import java.io.IOException
+import java.io.PrintStream
+import java.io.{File => JFile}
 import java.lang.System.{lineSeparator => EOL}
 import java.net.URL
+import java.nio.charset.Charset
+import java.nio.charset.StandardCharsets
+import java.nio.file.Files
+import java.nio.file.NoSuchFileException
+import java.nio.file.Path
+import java.nio.file.Paths
 import java.nio.file.StandardCopyOption.REPLACE_EXISTING
-import java.nio.file.{Files, NoSuchFileException, Path, Paths}
-import java.nio.charset.{Charset, StandardCharsets}
 import java.text.SimpleDateFormat
-import java.util.{HashMap, Timer, TimerTask}
-import java.util.concurrent.{ExecutionException, TimeUnit, TimeoutException, Executors => JExecutors}
-
+import java.util.HashMap
+import java.util.Timer
+import java.util.TimerTask
+import java.util.concurrent.ExecutionException
+import java.util.concurrent.TimeUnit
+import java.util.concurrent.TimeoutException
+import java.util.concurrent.{Executors => JExecutors}
 import scala.collection.mutable
-import scala.io.{Codec, Source}
+import scala.collection.mutable.ListBuffer
+import scala.io.Codec
+import scala.io.Source
 import scala.jdk.CollectionConverters.*
-import scala.util.{Random, Try, Failure => TryFailure, Success => TrySuccess, Using}
+import scala.language.unsafeNulls
+import scala.util.Random
+import scala.util.Try
+import scala.util.Using
 import scala.util.control.NonFatal
 import scala.util.matching.Regex
-import scala.collection.mutable.ListBuffer
+import scala.util.{Failure => TryFailure}
+import scala.util.{Success => TrySuccess}
 
 import dotc.{Compiler, Driver}
 import dotc.core.Contexts.*
@@ -32,7 +49,6 @@ import dotc.reporting.Diagnostic
 import dotc.config.Config
 import dotc.util.{DiffUtil, SourceFile, SourcePosition, Spans, NoSourcePosition}
 import io.AbstractFile
-import dotty.tools.vulpix.TestConfiguration.defaultOptions
 
 /** A parallel testing suite whose goal is to integrate nicely with JUnit
  *

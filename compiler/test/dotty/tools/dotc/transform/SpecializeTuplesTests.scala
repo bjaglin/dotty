@@ -2,9 +2,8 @@ package dotty.tools
 package dotc
 package transform
 
-import org.junit.Test
-
 import dotty.tools.backend.jvm.DottyBytecodeTest
+import org.junit.Test
 
 import scala.jdk.CollectionConverters.*
 

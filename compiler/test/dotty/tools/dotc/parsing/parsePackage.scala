@@ -3,7 +3,9 @@ package dotc
 package parsing
 
 import dotty.tools.dotc._
-import core._, ast._
+
+import core._
+import ast._
 import Trees._
 import Contexts.Context
 

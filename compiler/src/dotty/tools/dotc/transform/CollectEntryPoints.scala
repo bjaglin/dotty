@@ -1,14 +1,15 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.backend.jvm.GenBCode
+import dotty.tools.io.JarArchive
+
 import core.*
 import ast.tpd
 import MegaPhase.*
 import Contexts.*
 import Symbols.*
 import Phases.*
-import dotty.tools.io.JarArchive
-import dotty.tools.backend.jvm.GenBCode
 
 /**
  * Small phase to be run to collect main classes and store them in the context.

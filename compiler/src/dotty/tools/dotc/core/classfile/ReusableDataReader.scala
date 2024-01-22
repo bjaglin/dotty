@@ -3,10 +3,11 @@ package dotc
 package core
 package classfile
 
+import java.io.DataInputStream
+import java.io.InputStream
+import java.nio.BufferUnderflowException
+import java.nio.ByteBuffer
 import scala.language.unsafeNulls
-
-import java.io.{DataInputStream, InputStream}
-import java.nio.{BufferUnderflowException, ByteBuffer}
 
 final class ReusableDataReader() extends DataReader {
   private var data = new Array[Byte](32768)

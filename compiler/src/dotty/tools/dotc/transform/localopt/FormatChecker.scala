@@ -1,20 +1,19 @@
 package dotty.tools.dotc
 package transform.localopt
 
+import dotty.tools.dotc.ast.tpd.{Match => _, *}
+import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Phases.typerPhase
+import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.util.Spans.Span
+
 import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
 import scala.util.chaining.*
 import scala.util.matching.Regex.Match
 
-
 import PartialFunction.cond
-
-import dotty.tools.dotc.ast.tpd.{Match => _, *}
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
-import dotty.tools.dotc.core.Phases.typerPhase
-import dotty.tools.dotc.util.Spans.Span
 
 /** Formatter string checker. */
 class TypedFormatChecker(partsElems: List[Tree], parts: List[String], args: List[Tree])(using Context):

@@ -1,18 +1,19 @@
 package dotty.tools.dotc
 package plugins
 
+import dotty.tools.io.*
+
+import java.io.InputStream
+import java.util.Properties
 import scala.language.unsafeNulls
+import scala.util.Failure
+import scala.util.Success
+import scala.util.Try
 
 import core.*
 import Contexts.*
 import Phases.*
-import dotty.tools.io.*
 import transform.MegaPhase.MiniPhase
-
-import java.io.InputStream
-import java.util.Properties
-
-import scala.util.{ Try, Success, Failure }
 
 trait PluginPhase extends MiniPhase {
   def runsBefore: Set[String] = Set.empty

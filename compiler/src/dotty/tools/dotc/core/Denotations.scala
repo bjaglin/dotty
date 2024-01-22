@@ -2,6 +2,8 @@ package dotty.tools
 package dotc
 package core
 
+import scala.compiletime.uninitialized
+
 import SymDenotations.{ SymDenotation, ClassDenotation, NoDenotation, LazyType, stillValid, acceptStale, traceInvalid }
 import Contexts.*
 import Names.*
@@ -23,8 +25,6 @@ import config.Printers.overload
 import util.common.*
 import typer.ProtoTypes.NoViewsAllowed
 import collection.mutable.ListBuffer
-
-import scala.compiletime.uninitialized
 
 /** Denotations represent the meaning of symbols and named types.
  *  The following diagram shows how the principal types of denotations

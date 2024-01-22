@@ -2,15 +2,18 @@ package dotty.tools
 package dotc
 package core
 
-import Contexts.*, Decorators.*, Symbols.*, Types.*
+import scala.annotation.internal.sharable
+import scala.annotation.tailrec
+import scala.collection.mutable
+
+import Contexts.*
+import Decorators.*
+import Symbols.*
+import Types.*
 import NameKinds.UniqueName
 import config.Printers.{gadts, gadtsConstr}
 import util.{SimpleIdentitySet, SimpleIdentityMap}
 import printing.*
-
-import scala.annotation.tailrec
-import scala.annotation.internal.sharable
-import scala.collection.mutable
 
 object GadtConstraint:
   @sharable val empty: GadtConstraint =

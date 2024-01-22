@@ -2,10 +2,15 @@ package dotty.tools
 package dotc
 package ast
 
-import core._
-import Names._, Types._ , Symbols._, StdNames._, Flags._, Contexts._
-
 import org.junit.Test
+
+import core._
+import Names._
+import Types._
+import Symbols._
+import StdNames._
+import Flags._
+import Contexts._
 
 class DesugarTests extends DottyTest {
   import tpd._

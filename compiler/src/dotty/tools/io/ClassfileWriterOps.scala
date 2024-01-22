@@ -1,11 +1,12 @@
 package dotty.tools.io
 
-import dotty.tools.io.*
-import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.report
-import scala.language.unsafeNulls
+import dotty.tools.io.*
+
 import scala.annotation.constructorOnly
+import scala.language.unsafeNulls
 
 
 /** Experimental usage - writes bytes to JarArchives */

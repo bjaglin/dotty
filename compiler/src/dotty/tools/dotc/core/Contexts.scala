@@ -2,6 +2,15 @@ package dotty.tools
 package dotc
 package core
 
+import dotty.tools.dotc.profile.Profiler
+import dotty.tools.dotc.sbt.interfaces.IncrementalCallback
+import dotty.tools.dotc.sbt.interfaces.ProgressCallback
+
+import java.nio.file.InvalidPathException
+import java.util.concurrent.atomic.AtomicInteger
+import scala.annotation.internal.sharable
+import scala.io.Codec
+
 import interfaces.CompilerCallback
 import Decorators.*
 import Periods.*
@@ -22,24 +31,16 @@ import config.Settings.*
 import config.Config
 import reporting.*
 import io.{AbstractFile, NoAbstractFile, PlainFile, Path}
-import scala.io.Codec
 import collection.mutable
 import printing.*
 import config.{JavaPlatform, SJSPlatform, Platform, ScalaSettings}
 import classfile.ReusableDataReader
 import StdNames.nme
 import compiletime.uninitialized
-
-import scala.annotation.internal.sharable
-
 import DenotTransformers.DenotTransformer
-import dotty.tools.dotc.profile.Profiler
-import dotty.tools.dotc.sbt.interfaces.{IncrementalCallback, ProgressCallback}
 import util.Property.Key
 import util.Store
 import plugins.*
-import java.util.concurrent.atomic.AtomicInteger
-import java.nio.file.InvalidPathException
 
 object Contexts {
 

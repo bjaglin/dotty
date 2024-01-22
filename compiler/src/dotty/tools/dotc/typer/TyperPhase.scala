@@ -2,6 +2,9 @@ package dotty.tools
 package dotc
 package typer
 
+import dotty.tools.dotc.config.Feature
+import dotty.tools.dotc.config.SourceVersion
+
 import core.*
 import Run.SubPhase
 import Phases.*
@@ -12,8 +15,6 @@ import parsing.{Parser => ParserPhase}
 import config.Printers.typr
 import inlines.PrepareInlineable
 import util.Stats.*
-import dotty.tools.dotc.config.Feature
-import dotty.tools.dotc.config.SourceVersion
 
 /**
  *

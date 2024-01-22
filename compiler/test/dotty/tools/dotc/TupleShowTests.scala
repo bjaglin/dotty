@@ -1,11 +1,14 @@
 package dotty.tools
 package dotc
 
-import core.*, Decorators.*, Symbols.*
-import printing.Texts.*
+import org.junit.Test
 
 import java.lang.System.{ lineSeparator => EOL }
-import org.junit.Test
+
+import core.*
+import Decorators.*
+import Symbols.*
+import printing.Texts.*
 
 class TupleShowTests extends DottyTest:
   def IntType = defn.IntType

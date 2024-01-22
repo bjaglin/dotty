@@ -4,10 +4,15 @@ package transform
 
 import core.*
 import Scopes.newScope
-import Contexts.*, Symbols.*, Types.*, Flags.*, Decorators.*, StdNames.*, Constants.*
+import Contexts.*
+import Symbols.*
+import Types.*
+import Flags.*
+import Decorators.*
+import StdNames.*
+import Constants.*
 import MegaPhase.*
 import Names.TypeName
-
 import NullOpsDecorator.*
 import ast.untpd
 

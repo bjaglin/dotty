@@ -3,6 +3,7 @@ package dotc
 package util
 
 import scala.collection.mutable
+
 import core.Names.TermName
 import core.NameKinds.UniqueNameKind
 import core.StdNames.str

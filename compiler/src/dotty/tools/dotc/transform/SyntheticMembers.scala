@@ -2,7 +2,12 @@ package dotty.tools.dotc
 package transform
 
 import core.*
-import Symbols.*, Types.*, Contexts.*, Names.*, StdNames.*, Constants.*
+import Symbols.*
+import Types.*
+import Contexts.*
+import Names.*
+import StdNames.*
+import Constants.*
 import Flags.*
 import DenotTransformers.*
 import Decorators.*
@@ -10,7 +15,6 @@ import NameOps.*
 import Annotations.Annotation
 import typer.ProtoTypes.constrained
 import ast.untpd
-
 import util.Property
 import util.Spans.Span
 import config.Printers.derive

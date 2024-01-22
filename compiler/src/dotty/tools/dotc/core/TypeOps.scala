@@ -2,7 +2,15 @@ package dotty.tools
 package dotc
 package core
 
-import Contexts.*, Types.*, Symbols.*, Names.*, NameKinds.*, Flags.*
+import scala.annotation.internal.sharable
+import scala.annotation.threadUnsafe
+
+import Contexts.*
+import Types.*
+import Symbols.*
+import Names.*
+import NameKinds.*
+import Flags.*
 import SymDenotations.*
 import util.Spans.*
 import util.Stats
@@ -20,9 +28,6 @@ import typer.IfBottom
 import reporting.TestingReporter
 import cc.{CapturingType, derivedCapturingType, CaptureSet, isBoxed, isBoxedCapturing}
 import CaptureSet.{CompareResult, IdempotentCaptRefMap, IdentityCaptRefMap}
-
-import scala.annotation.internal.sharable
-import scala.annotation.threadUnsafe
 
 object TypeOps:
 

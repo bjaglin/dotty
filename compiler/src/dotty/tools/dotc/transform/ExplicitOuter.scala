@@ -2,6 +2,10 @@ package dotty.tools
 package dotc
 package transform
 
+import dotty.tools.dotc.ast.tpd
+
+import scala.annotation.tailrec
+
 import MegaPhase.*
 import core.DenotTransformers.*
 import core.Symbols.*
@@ -14,11 +18,7 @@ import core.StdNames.nme
 import core.Names.*
 import core.NameOps.*
 import core.NameKinds.SuperArgName
-
-import dotty.tools.dotc.ast.tpd
-
 import collection.mutable
-import scala.annotation.tailrec
 
 /** This phase adds outer accessors to classes and traits that need them.
  *  Compared to Scala 2.x, it tries to minimize the set of classes

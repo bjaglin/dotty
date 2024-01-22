@@ -1,17 +1,15 @@
 package dotty.tools.dotc
 package decompiler
 
-import scala.language.unsafeNulls
-
-import java.io.{OutputStream, PrintStream}
-import java.nio.charset.StandardCharsets
-
-import scala.io.Codec
-
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.io.File
 
+import java.io.OutputStream
+import java.io.PrintStream
+import java.nio.charset.StandardCharsets
+import scala.io.Codec
+import scala.language.unsafeNulls
 import scala.quoted.runtime.impl.QuotesImpl
 
 /** Phase that prints the trees in all loaded compilation units.

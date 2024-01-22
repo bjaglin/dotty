@@ -1,16 +1,16 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.dotc.ast.tpd
+
+import scala.collection.immutable.::
+
 import core.*
 import MegaPhase.*
 import Contexts.*
 import Symbols.*
 import Types.*
 import StdNames.*
-import dotty.tools.dotc.ast.tpd
-
-
-import scala.collection.immutable.::
 
 
 /** This phase rewrites calls to array constructors to newArray method in Dotty.runtime.Arrays module.

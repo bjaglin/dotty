@@ -1,8 +1,9 @@
 package dotty.tools.dotc
 package core
 
-import Types.*
 import scala.util.hashing.{ MurmurHash3 => hashing }
+
+import Types.*
 import annotation.tailrec
 
 object Hashable {

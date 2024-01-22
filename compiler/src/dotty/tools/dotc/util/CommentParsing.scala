@@ -5,9 +5,8 @@
  */
 package dotty.tools.dotc.util
 
-import scala.language.unsafeNulls
-
 import scala.collection.mutable
+import scala.language.unsafeNulls
 
 /** The comment parsing in `dotc` is used by both the comment cooking and the
   * scaladoc tool.

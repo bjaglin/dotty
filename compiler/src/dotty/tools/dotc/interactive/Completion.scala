@@ -1,33 +1,44 @@
 package dotty.tools.dotc.interactive
 
-import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.ast.NavigateAST
+import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.config.Printers.interactiv
+import dotty.tools.dotc.core.ContextOps.localContext
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Denotations.SingleDenotation
 import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Names.{Name, TermName}
 import dotty.tools.dotc.core.NameKinds.SimpleNameKind
 import dotty.tools.dotc.core.NameOps.*
+import dotty.tools.dotc.core.Names
+import dotty.tools.dotc.core.Names.Name
+import dotty.tools.dotc.core.Names.TermName
 import dotty.tools.dotc.core.Phases
 import dotty.tools.dotc.core.Scopes.*
-import dotty.tools.dotc.core.Symbols.{NoSymbol, Symbol, defn, newSymbol}
 import dotty.tools.dotc.core.StdNames.nme
 import dotty.tools.dotc.core.SymDenotations.SymDenotation
+import dotty.tools.dotc.core.Symbols
+import dotty.tools.dotc.core.Symbols.NoSymbol
+import dotty.tools.dotc.core.Symbols.Symbol
+import dotty.tools.dotc.core.Symbols.defn
+import dotty.tools.dotc.core.Symbols.newSymbol
 import dotty.tools.dotc.core.TypeError
-import dotty.tools.dotc.core.Phases
-import dotty.tools.dotc.core.Types.{AppliedType, ExprType, MethodOrPoly, NameFilter, NoType, RefinedType, TermRef, Type, TypeProxy}
+import dotty.tools.dotc.core.Types
+import dotty.tools.dotc.core.Types.AppliedType
+import dotty.tools.dotc.core.Types.ExprType
+import dotty.tools.dotc.core.Types.MethodOrPoly
+import dotty.tools.dotc.core.Types.NameFilter
+import dotty.tools.dotc.core.Types.NoType
+import dotty.tools.dotc.core.Types.RefinedType
+import dotty.tools.dotc.core.Types.TermRef
+import dotty.tools.dotc.core.Types.Type
+import dotty.tools.dotc.core.Types.TypeProxy
 import dotty.tools.dotc.parsing.Tokens
 import dotty.tools.dotc.util.Chars
 import dotty.tools.dotc.util.SourcePosition
 
 import scala.collection.mutable
 import scala.util.control.NonFatal
-import dotty.tools.dotc.core.ContextOps.localContext
-import dotty.tools.dotc.core.Names
-import dotty.tools.dotc.core.Types
-import dotty.tools.dotc.core.Symbols
 
 /**
  * One of the results of a completion query.

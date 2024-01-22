@@ -1,31 +1,40 @@
 package dotty.tools.dotc.transform
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.ast.tpd.{Inlined, TreeTraverser}
+import dotty.tools.dotc.ast.tpd.Inlined
+import dotty.tools.dotc.ast.tpd.TreeTraverser
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.ast.untpd.ImportSelector
 import dotty.tools.dotc.config.ScalaSettings
+import dotty.tools.dotc.core.Annotations
 import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.{em, i}
+import dotty.tools.dotc.core.Decorators.em
+import dotty.tools.dotc.core.Decorators.i
+import dotty.tools.dotc.core.Definitions
+import dotty.tools.dotc.core.Flags
 import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags.flagsString
+import dotty.tools.dotc.core.Mode
+import dotty.tools.dotc.core.NameKinds.WildcardParamName
+import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.dotc.core.StdNames
+import dotty.tools.dotc.core.StdNames.nme
+import dotty.tools.dotc.core.Symbols.Symbol
+import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Types.AnnotatedType
+import dotty.tools.dotc.core.Types.ConstantType
+import dotty.tools.dotc.core.Types.NoType
+import dotty.tools.dotc.core.Types.TermRef
+import dotty.tools.dotc.core.Types.Type
+import dotty.tools.dotc.core.Types.TypeTraverser
 import dotty.tools.dotc.report
 import dotty.tools.dotc.reporting.Message
-import dotty.tools.dotc.typer.ImportInfo
-import dotty.tools.dotc.util.{Property, SrcPos}
-import dotty.tools.dotc.core.Mode
-import dotty.tools.dotc.core.Types.{AnnotatedType, ConstantType, NoType, TermRef, Type, TypeTraverser}
-import dotty.tools.dotc.core.Flags.flagsString
-import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.transform.MegaPhase.MiniPhase
-import dotty.tools.dotc.core.Annotations
-import dotty.tools.dotc.core.Definitions
-import dotty.tools.dotc.core.NameKinds.WildcardParamName
-import dotty.tools.dotc.core.Symbols.Symbol
-import dotty.tools.dotc.core.StdNames.nme
+import dotty.tools.dotc.typer.ImportInfo
+import dotty.tools.dotc.util.Property
+import dotty.tools.dotc.util.SrcPos
+
 import scala.math.Ordering
 
 

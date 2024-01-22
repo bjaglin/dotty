@@ -1,7 +1,6 @@
 package scala.runtime
 
 import java.util.concurrent.CountDownLatch
-
 import scala.annotation.*
 
 /**

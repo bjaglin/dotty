@@ -2,21 +2,34 @@ package dotty.tools
 package dotc
 package ast
 
-import dotty.tools.dotc.transform.{ExplicitOuter, Erasure}
-import typer.ProtoTypes
-import core.*
-import Scopes.newScope
-import util.Spans.*, Types.*, Contexts.*, Constants.*, Names.*, Flags.*, NameOps.*
-import Symbols.*, StdNames.*, Annotations.*, Trees.*, Symbols.*
-import Decorators.*, DenotTransformers.*
-import collection.{immutable, mutable}
-import util.{Property, SourceFile}
-import NameKinds.{TempResultName, OuterSelectName}
-import typer.ConstFold
+import dotty.tools.dotc.transform.Erasure
+import dotty.tools.dotc.transform.ExplicitOuter
 
 import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
 import scala.compiletime.uninitialized
+
+import typer.ProtoTypes
+import core.*
+import Scopes.newScope
+import util.Spans.*
+import Types.*
+import Contexts.*
+import Constants.*
+import Names.*
+import Flags.*
+import NameOps.*
+import Symbols.*
+import StdNames.*
+import Annotations.*
+import Trees.*
+import Symbols.*
+import Decorators.*
+import DenotTransformers.*
+import collection.{immutable, mutable}
+import util.{Property, SourceFile}
+import NameKinds.{TempResultName, OuterSelectName}
+import typer.ConstFold
 
 /** Some creators for typed trees */
 object tpd extends Trees.Instance[Type] with TypedTreeInfo {

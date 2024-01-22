@@ -1,9 +1,17 @@
 package dotty.tools.dotc
 package typer
 
-import dotty.tools.dotc.ast.{ Trees, tpd }
+import dotty.tools.dotc.ast.Trees
+import dotty.tools.dotc.ast.tpd
+
+import scala.compiletime.uninitialized
+
 import core.*
-import Types.*, Contexts.*, Flags.*, Symbols.*, Trees.*
+import Types.*
+import Contexts.*
+import Flags.*
+import Symbols.*
+import Trees.*
 import Decorators.*
 import Variances.*
 import NameKinds.*
@@ -12,8 +20,6 @@ import config.Printers.variances
 import config.Feature.migrateTo3
 import reporting.trace
 import printing.Formatting.hl
-
-import scala.compiletime.uninitialized
 
 /** Provides `check` method to check that all top-level definitions
  *  in tree are variance correct. Does not recurse inside methods.

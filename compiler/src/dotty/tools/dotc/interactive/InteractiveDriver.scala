@@ -2,23 +2,28 @@ package dotty.tools
 package dotc
 package interactive
 
-import scala.language.unsafeNulls
-
-import java.net.URI
-import java.io.*
-import java.nio.file.*
-import java.nio.file.attribute.BasicFileAttributes
-import java.nio.charset.StandardCharsets
-import java.util.zip.*
-
-import scala.collection.*
-import scala.io.Codec
-
 import dotty.tools.io.AbstractFile
 
+import java.io.*
+import java.net.URI
+import java.nio.charset.StandardCharsets
+import java.nio.file.*
+import java.nio.file.attribute.BasicFileAttributes
+import java.util.zip.*
+import scala.collection.*
+import scala.io.Codec
+import scala.language.unsafeNulls
+
 import ast.{Trees, tpd}
-import core.*, core.Decorators.*
-import Contexts.*, Names.*, NameOps.*, Symbols.*, SymDenotations.*, Trees.*, Types.*
+import core.*
+import core.Decorators.*
+import Contexts.*
+import Names.*
+import NameOps.*
+import Symbols.*
+import SymDenotations.*
+import Trees.*
+import Types.*
 import Denotations.staticRef
 import classpath.*
 import reporting.*

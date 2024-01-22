@@ -1,14 +1,15 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Flags
+import dotty.tools.dotc.transform.MegaPhase.MiniPhase
+import dotty.tools.dotc.util.Spans.Span
+
 import core.Symbols.*
 import core.StdNames.*
 import core.Types.*
 import core.NameKinds.ExceptionBinderName
-import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.transform.MegaPhase.MiniPhase
-import dotty.tools.dotc.util.Spans.Span
 
 /** Compiles the cases that can not be handled by primitive catch cases as a common pattern match.
  *

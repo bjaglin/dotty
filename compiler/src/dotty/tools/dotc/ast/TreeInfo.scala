@@ -2,17 +2,22 @@ package dotty.tools
 package dotc
 package ast
 
-import core.*
-import Flags.*, Trees.*, Types.*, Contexts.*
-import Names.*, StdNames.*, NameOps.*, Symbols.*
-import typer.ConstFold
-import reporting.trace
-
-import Decorators.*
-import Constants.Constant
+import scala.annotation.tailrec
 import scala.collection.mutable
 
-import scala.annotation.tailrec
+import core.*
+import Flags.*
+import Trees.*
+import Types.*
+import Contexts.*
+import Names.*
+import StdNames.*
+import NameOps.*
+import Symbols.*
+import typer.ConstFold
+import reporting.trace
+import Decorators.*
+import Constants.Constant
 
 trait TreeInfo[T <: Untyped] { self: Trees.Instance[T] =>
 

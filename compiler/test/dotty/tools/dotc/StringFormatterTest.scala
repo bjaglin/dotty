@@ -1,12 +1,21 @@
 package dotty.tools
 package dotc
 
-import core.*, Contexts.*, Decorators.*, Denotations.*, Flags.*, Names.*, StdNames.*, SymDenotations.*, Symbols.*, Types.*
+import org.junit.Assert.*
+import org.junit.Test
+
+import core.*
+import Contexts.*
+import Decorators.*
+import Denotations.*
+import Flags.*
+import Names.*
+import StdNames.*
+import SymDenotations.*
+import Symbols.*
+import Types.*
 import config.Printers.*
 import printing.Formatting.Show
-
-import org.junit.Test
-import org.junit.Assert.*
 
 class StringFormatterTest extends AbstractStringFormatterTest:
   @Test def string     = check("foo", i"${"foo"}")

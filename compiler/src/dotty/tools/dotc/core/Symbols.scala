@@ -2,6 +2,12 @@ package dotty.tools
 package dotc
 package core
 
+import dotty.tools.dotc.classpath.FileUtils.isScalaBinary
+import dotty.tools.tasty.TastyVersion
+
+import scala.annotation.internal.sharable
+import scala.compiletime.uninitialized
+
 import Periods.*
 import Names.*
 import Scopes.*
@@ -28,12 +34,7 @@ import reporting.Message
 import collection.mutable
 import io.AbstractFile
 import util.{SourceFile, NoSource, Property, SourcePosition, SrcPos, EqHashMap}
-import scala.annotation.internal.sharable
 import config.Printers.typr
-import dotty.tools.dotc.classpath.FileUtils.isScalaBinary
-
-import scala.compiletime.uninitialized
-import dotty.tools.tasty.TastyVersion
 
 object Symbols extends SymUtils {
 

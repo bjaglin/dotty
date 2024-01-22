@@ -3,6 +3,18 @@ package dotc
 package core
 package tasty
 
+import dotty.tools.dotc.quoted.QuotePatterns
+import dotty.tools.tasty.TastyBuffer
+import dotty.tools.tasty.TastyFormat.*
+import dotty.tools.tasty.TastyReader
+
+import scala.annotation.constructorOnly
+import scala.annotation.internal.sharable
+import scala.annotation.switch
+import scala.annotation.tailrec
+import scala.collection.mutable
+import scala.collection.mutable.ListBuffer
+import scala.compiletime.uninitialized
 import scala.language.unsafeNulls
 
 import Comments.docCtx
@@ -31,21 +43,8 @@ import util.{SourceFile, Property}
 import ast.{Trees, tpd, untpd}
 import Trees.*
 import Decorators.*
-import dotty.tools.dotc.quoted.QuotePatterns
-
-import dotty.tools.tasty.{TastyBuffer, TastyReader}
 import TastyBuffer.*
-
-import scala.annotation.{switch, tailrec}
-import scala.collection.mutable.ListBuffer
-import scala.collection.mutable
 import config.Printers.pickling
-
-import dotty.tools.tasty.TastyFormat.*
-
-import scala.annotation.constructorOnly
-import scala.annotation.internal.sharable
-import scala.compiletime.uninitialized
 
 /** Unpickler for typed trees
  *  @param reader              the reader from which to unpickle

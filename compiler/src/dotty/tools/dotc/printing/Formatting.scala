@@ -2,12 +2,15 @@ package dotty.tools
 package dotc
 package printing
 
+import scala.collection.mutable
 import scala.language.unsafeNulls
 
-import scala.collection.mutable
-
 import core.*
-import Texts.*, Types.*, Flags.*, Symbols.*, Contexts.*
+import Texts.*
+import Types.*
+import Flags.*
+import Symbols.*
+import Contexts.*
 import Decorators.*
 import reporting.Message
 import util.DiffUtil

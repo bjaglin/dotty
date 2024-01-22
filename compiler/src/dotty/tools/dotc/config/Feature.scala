@@ -3,7 +3,9 @@ package dotc
 package config
 
 import core.*
-import Contexts.*, Symbols.*, Names.*
+import Contexts.*
+import Symbols.*
+import Names.*
 import StdNames.nme
 import Decorators.*
 import util.{SrcPos, NoSourcePosition}

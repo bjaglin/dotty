@@ -5,13 +5,18 @@
 
 package dotty.tools.io
 
+import java.io.BufferedInputStream
+import java.io.BufferedReader
+import java.io.InputStream
+import java.io.InputStreamReader
+import java.io.{Closeable => JCloseable}
+import java.net.URL
+import scala.collection.mutable.ArrayBuffer
+import scala.io.BufferedSource
+import scala.io.Codec
+import scala.io.Source
 import scala.language.unsafeNulls
 
-import java.net.URL
-import java.io.{ BufferedInputStream, InputStream }
-import java.io.{ BufferedReader, InputStreamReader, Closeable => JCloseable }
-import scala.io.{ Codec, BufferedSource, Source }
-import scala.collection.mutable.ArrayBuffer
 import Path.fail
 
 /** Traits for objects which can be represented as Streams.

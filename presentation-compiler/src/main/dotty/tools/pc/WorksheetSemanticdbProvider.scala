@@ -1,8 +1,8 @@
 package dotty.tools.pc
 
-import java.nio.file.Path
-
 import dotty.tools.pc.utils.MtagsEnrichments.*
+
+import java.nio.file.Path
 
 trait WorksheetSemanticdbProvider:
 

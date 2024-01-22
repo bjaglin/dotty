@@ -1,14 +1,15 @@
 package dotty.tools.backend.jvm
 
-import scala.language.unsafeNulls
-
-import scala.tools.asm.{ClassReader, Type, Handle }
-import scala.tools.asm.tree.*
-
-import scala.collection.mutable
-import scala.util.control.{NoStackTrace, NonFatal}
 import scala.annotation.*
+import scala.collection.mutable
 import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
+import scala.tools.asm.ClassReader
+import scala.tools.asm.Handle
+import scala.tools.asm.Type
+import scala.tools.asm.tree.*
+import scala.util.control.NoStackTrace
+import scala.util.control.NonFatal
 
 // Backported from scala/scala, commit sha: 724be0e9425b9ad07c244d25efdad695d75abbcf
 // https://github.com/scala/scala/blob/724be0e9425b9ad07c244d25efdad695d75abbcf/src/compiler/scala/tools/nsc/backend/jvm/analysis/BackendUtils.scala#L928

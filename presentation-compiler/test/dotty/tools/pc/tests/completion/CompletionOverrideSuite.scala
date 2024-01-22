@@ -1,11 +1,10 @@
 package dotty.tools.pc.tests.completion
 
-import scala.meta.pc.SymbolDocumentation
-
 import dotty.tools.pc.base.BaseCompletionSuite
 import dotty.tools.pc.utils.MockEntries
-
 import org.junit.Test
+
+import scala.meta.pc.SymbolDocumentation
 
 class CompletionOverrideSuite extends BaseCompletionSuite:
 

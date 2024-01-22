@@ -1,12 +1,13 @@
 package dotty.tools.pc.utils
 
-import scala.jdk.CollectionConverters.*
-import scala.meta.internal.mtags.CommonMtagsEnrichments.*
-import scala.language.unsafeNulls
-
 import dotty.tools.pc.utils.TestExtensions.*
+import org.eclipse.lsp4j.CompletionItem
+import org.eclipse.lsp4j.Range
+import org.eclipse.lsp4j.TextEdit
 
-import org.eclipse.lsp4j.{CompletionItem, Range, TextEdit}
+import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
+import scala.meta.internal.mtags.CommonMtagsEnrichments.*
 
 object TextEdits:
   def applyEdits(text: String, edits: List[TextEdit]): String =

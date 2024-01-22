@@ -1,7 +1,10 @@
 package scala
 
+import scala.collection.Map
+import scala.collection.Seq
+import scala.collection.Set
+
 import annotation.implicitNotFound
-import scala.collection.{Seq, Set, Map}
 
 /** A marker trait indicating that values of type `L` can be compared to values of type `R`. */
 @implicitNotFound("Values of types ${L} and ${R} cannot be compared with == or !=")

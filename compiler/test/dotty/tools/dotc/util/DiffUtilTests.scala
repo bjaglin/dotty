@@ -1,9 +1,9 @@
 package dotty.tools.dotc.util
 
-import scala.language.unsafeNulls
-
 import org.junit.Assert._
 import org.junit.Test
+
+import scala.language.unsafeNulls
 
 class DiffUtilTests {
 

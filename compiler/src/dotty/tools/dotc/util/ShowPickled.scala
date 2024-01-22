@@ -2,10 +2,10 @@ package dotty.tools.dotc
 package util
 
 import java.io.PrintStream
-import java.nio.charset.StandardCharsets
-import java.lang.Long.toHexString
-import java.lang.Float.intBitsToFloat
 import java.lang.Double.longBitsToDouble
+import java.lang.Float.intBitsToFloat
+import java.lang.Long.toHexString
+import java.nio.charset.StandardCharsets
 
 import core.unpickleScala2.PickleBuffer
 import core.Names.*

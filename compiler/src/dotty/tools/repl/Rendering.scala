@@ -1,16 +1,21 @@
 package dotty.tools
 package repl
 
+import scala.compiletime.uninitialized
 import scala.language.unsafeNulls
+import scala.util.control.NonFatal
 
-import dotc.*, core.*
-import Contexts.*, Denotations.*, Flags.*, NameOps.*, StdNames.*, Symbols.*
+import dotc.*
+import core.*
+import Contexts.*
+import Denotations.*
+import Flags.*
+import NameOps.*
+import StdNames.*
+import Symbols.*
 import printing.ReplPrinter
 import reporting.Diagnostic
 import util.StackTraceOps.*
-
-import scala.compiletime.uninitialized
-import scala.util.control.NonFatal
 
 /** This rendering object uses `ClassLoader`s to accomplish crossing the 4th
  *  wall (i.e. fetching back values from the compiled class files put into a

@@ -1,10 +1,10 @@
 package dotty.tools.pc.tests
 
-import java.nio.file.Path
-
-import dotty.tools.pc.base.{BaseCompletionSuite, BaseExtractMethodSuite}
-
+import dotty.tools.pc.base.BaseCompletionSuite
+import dotty.tools.pc.base.BaseExtractMethodSuite
 import org.junit.Test
+
+import java.nio.file.Path
 
 class ExtractMethodNoIndentSuite extends BaseExtractMethodSuite:
   override protected def scalacOptions(classpath: Seq[Path]): Seq[String] =

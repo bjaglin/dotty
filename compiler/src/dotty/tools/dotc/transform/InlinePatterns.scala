@@ -2,13 +2,16 @@ package dotty.tools
 package dotc
 package transform
 
+import scala.collection.mutable.ListBuffer
+
 import core.*
 import MegaPhase.*
-import Symbols.*, Contexts.*, Types.*, Decorators.*
+import Symbols.*
+import Contexts.*
+import Types.*
+import Decorators.*
 import NameOps.*
 import Names.*
-
-import scala.collection.mutable.ListBuffer
 
 /** Rewrite an application
  *

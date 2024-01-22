@@ -2,18 +2,20 @@ package dotty.tools
 package dotc
 package reporting
 
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Mode
-import dotty.tools.dotc.core.Symbols.{NoSymbol, Symbol}
+import dotty.tools.dotc.core.Symbols.NoSymbol
+import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.reporting.Diagnostic.*
 import dotty.tools.dotc.reporting.Message.*
 import dotty.tools.dotc.util.NoSourcePosition
 
-import java.io.{BufferedReader, PrintWriter}
+import java.io.BufferedReader
+import java.io.PrintWriter
 import scala.annotation.internal.sharable
 import scala.collection.mutable
+import scala.language.unsafeNulls
+
 import core.Decorators.em
 
 object Reporter {

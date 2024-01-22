@@ -1,9 +1,9 @@
 package dotty.tools.tasty
 
-import collection.mutable
-
-import TastyBuffer._
 import java.nio.charset.StandardCharsets
+
+import collection.mutable
+import TastyBuffer._
 
 /** A byte array buffer that can be filled with bytes or natural numbers in TASTY format,
  *  and that supports reading and patching addresses represented as natural numbers.

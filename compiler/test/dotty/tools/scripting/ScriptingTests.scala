@@ -2,17 +2,15 @@ package dotty
 package tools
 package scripting
 
-import scala.language.unsafeNulls
+import org.junit.Assume.assumeFalse
+import org.junit.Test
 
 import java.io.File
 import java.nio.file.Path
-
-import org.junit.Test
+import scala.language.unsafeNulls
 
 import vulpix.TestConfiguration
 import ScriptTestEnv.*
-
-import org.junit.Assume.assumeFalse
 
 /** Runs all tests contained in `compiler/test-resources/scripting/` */
 class ScriptingTests:

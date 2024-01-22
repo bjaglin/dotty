@@ -2,11 +2,16 @@ package dotty.tools
 package dotc
 package core
 
-import Contexts.*, Decorators.*, Denotations.*, SymDenotations.*, Symbols.*, Types.*
-import printing.Formatting.Show
-
-import org.junit.Test
 import org.junit.Assert.*
+import org.junit.Test
+
+import Contexts.*
+import Decorators.*
+import Denotations.*
+import SymDenotations.*
+import Symbols.*
+import Types.*
+import printing.Formatting.Show
 
 class TypeComparerTest extends DottyTest:
   val LongType = defn.LongType

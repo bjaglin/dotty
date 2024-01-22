@@ -4,8 +4,15 @@ package typer
 
 import ast.*
 import core.*
-import Types.*, ProtoTypes.*, Contexts.*, Decorators.*, Denotations.*, Symbols.*
-import Implicits.*, Flags.*, Constants.Constant
+import Types.*
+import ProtoTypes.*
+import Contexts.*
+import Decorators.*
+import Denotations.*
+import Symbols.*
+import Implicits.*
+import Flags.*
+import Constants.Constant
 import Trees.*
 import NameOps.*
 import util.Spans.NoSpan

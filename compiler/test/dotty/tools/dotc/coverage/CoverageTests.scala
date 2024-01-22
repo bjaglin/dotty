@@ -1,24 +1,28 @@
 package dotty.tools.dotc.coverage
 
-import org.junit.Test
+import dotty.BootstrappedOnlyTests
+import dotty.Properties
+import dotty.tools.dotc.Main
+import dotty.tools.dotc.reporting.TestReporter
+import dotty.tools.dotc.util.DiffUtil
+import dotty.tools.vulpix.TestConfiguration.*
+import dotty.tools.vulpix.*
 import org.junit.AfterClass
 import org.junit.Assert.*
 import org.junit.Assume.*
+import org.junit.Test
 import org.junit.experimental.categories.Category
-import dotty.{BootstrappedOnlyTests, Properties}
-import dotty.tools.vulpix.*
-import dotty.tools.vulpix.TestConfiguration.*
-import dotty.tools.dotc.Main
-import dotty.tools.dotc.reporting.TestReporter
 
-import java.nio.file.{FileSystems, Files, Path, Paths, StandardCopyOption}
-import scala.jdk.CollectionConverters.*
-import scala.util.Properties.userDir
-import scala.language.unsafeNulls
-import scala.collection.mutable.Buffer
-import dotty.tools.dotc.util.DiffUtil
-
+import java.nio.file.FileSystems
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
+import java.nio.file.StandardCopyOption
 import java.util.stream.Collectors
+import scala.collection.mutable.Buffer
+import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
+import scala.util.Properties.userDir
 
 @Category(Array(classOf[BootstrappedOnlyTests]))
 class CoverageTests:

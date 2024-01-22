@@ -4,14 +4,17 @@
 package dotty.tools
 package dotc.classpath
 
-import scala.language.unsafeNulls
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.ClassPath
+import dotty.tools.io.ClassRepresentation
+import dotty.tools.io.EfficientClassPath
 
 import java.net.URL
-import scala.collection.mutable.ArrayBuffer
 import scala.collection.immutable.ArraySeq
-import dotc.util
+import scala.collection.mutable.ArrayBuffer
+import scala.language.unsafeNulls
 
-import dotty.tools.io.{ AbstractFile, ClassPath, ClassRepresentation, EfficientClassPath }
+import dotc.util
 
 /**
  * A classpath unifying multiple class- and sourcepath entries.

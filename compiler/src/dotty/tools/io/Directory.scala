@@ -8,9 +8,9 @@
 
 package dotty.tools.io
 
+import java.nio.file.Files
+import java.nio.file.Paths
 import scala.language.unsafeNulls
-
-import java.nio.file.{Files, Paths}
 
 
 /**

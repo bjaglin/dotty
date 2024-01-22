@@ -2,8 +2,14 @@ package dotty.tools
 package dotc
 package cc
 
+import scala.collection.mutable
+
 import core.*
-import Types.*, Symbols.*, Flags.*, Contexts.*, Decorators.*
+import Types.*
+import Symbols.*
+import Flags.*
+import Contexts.*
+import Decorators.*
 import config.Printers.{capt, captDebug}
 import Annotations.Annotation
 import annotation.threadUnsafe
@@ -15,7 +21,6 @@ import printing.Texts.*
 import util.{SimpleIdentitySet, Property}
 import typer.ErrorReporting.Addenda
 import util.common.alwaysTrue
-import scala.collection.mutable
 
 /** A class for capture sets. Capture sets can be constants or variables.
  *  Capture sets support inclusion constraints <:< where <:< is subcapturing.

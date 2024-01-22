@@ -2,13 +2,15 @@ package dotty
 package tools
 package scripting
 
-import scala.language.unsafeNulls
-
-import java.nio.file.Files, java.nio.charset.StandardCharsets.UTF_8
-import org.junit.{ After, Test }
+import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assume.assumeFalse
+import org.junit.Test
 import org.junit.experimental.categories.Category
+
+import java.nio.charset.StandardCharsets.UTF_8
+import java.nio.file.Files
+import scala.language.unsafeNulls
 
 import ScriptTestEnv.*
 

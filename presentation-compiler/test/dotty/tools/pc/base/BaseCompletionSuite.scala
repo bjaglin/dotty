@@ -1,18 +1,19 @@
 package dotty.tools.pc.base
 
-import java.nio.file.Paths
-import java.util.Collections
-
-import scala.jdk.CollectionConverters.*
-import scala.meta.internal.metals.{CompilerOffsetParams, EmptyCancelToken}
-import scala.meta.pc.CancelToken
-import scala.language.unsafeNulls
-
 import dotty.tools.pc.completions.CompletionSource
 import dotty.tools.pc.utils.MtagsEnrichments.*
-import dotty.tools.pc.utils.{TestCompletions, TextEdits}
+import dotty.tools.pc.utils.TestCompletions
+import dotty.tools.pc.utils.TextEdits
+import org.eclipse.lsp4j.CompletionItem
+import org.eclipse.lsp4j.CompletionList
 
-import org.eclipse.lsp4j.{CompletionItem, CompletionList}
+import java.nio.file.Paths
+import java.util.Collections
+import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
+import scala.meta.internal.metals.CompilerOffsetParams
+import scala.meta.internal.metals.EmptyCancelToken
+import scala.meta.pc.CancelToken
 
 abstract class BaseCompletionSuite extends BasePCSuite:
 

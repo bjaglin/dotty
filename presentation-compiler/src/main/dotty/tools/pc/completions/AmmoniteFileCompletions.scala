@@ -1,20 +1,18 @@
 package dotty.tools.pc
 package completions
 
-import java.nio.file.Files
-import java.nio.file.Path
-
-import scala.jdk.CollectionConverters._
-import scala.meta.internal.pc.CompletionFuzzy
-
-import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.ast.tpd.Tree
+import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.ast.untpd.ImportSelector
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.StdNames.*
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j as l
+
+import java.nio.file.Files
+import java.nio.file.Path
+import scala.jdk.CollectionConverters._
+import scala.meta.internal.pc.CompletionFuzzy
 
 object AmmoniteFileCompletions:
 

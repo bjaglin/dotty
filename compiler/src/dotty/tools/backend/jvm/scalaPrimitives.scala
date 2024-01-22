@@ -1,18 +1,19 @@
 package dotty.tools
 package backend.jvm
 
+import scala.annotation.threadUnsafe
+
 import dotc.ast.Trees.Select
 import dotc.ast.tpd.*
 import dotc.core.*
 import Contexts.*
-import Names.TermName, StdNames.*
+import Names.TermName
+import StdNames.*
 import Types.{JavaArrayType, UnspecifiedErrorType, Type}
 import Symbols.{Symbol, NoSymbol}
 import Decorators.em
 import dotc.report
 import dotc.util.ReadOnlyMap
-
-import scala.annotation.threadUnsafe
 
 /** Scala primitive operations are represented as methods in `Any` and
  *  `AnyVal` subclasses. Here we demultiplex them by providing a mapping

@@ -2,20 +2,27 @@ package dotty.tools.dotc
 package core
 package tasty
 
-import dotty.tools.tasty.{TastyBuffer, TastyReader}
-import TastyBuffer.NameRef
+import dotty.tools.io.JarArchive
+import dotty.tools.io.Path
+import dotty.tools.tasty.TastyBuffer
+import dotty.tools.tasty.TastyBuffer.Addr
+import dotty.tools.tasty.TastyFormat.ASTsSection
+import dotty.tools.tasty.TastyFormat.AttributesSection
+import dotty.tools.tasty.TastyFormat.CommentsSection
+import dotty.tools.tasty.TastyFormat.PositionsSection
+import dotty.tools.tasty.TastyFormat.header
+import dotty.tools.tasty.TastyReader
 
-import Contexts.*, Decorators.*
+import java.nio.file.Files
+import java.nio.file.Paths
+import scala.compiletime.uninitialized
+
+import TastyBuffer.NameRef
+import Contexts.*
+import Decorators.*
 import Names.Name
 import TastyUnpickler.*
 import util.Spans.offsetToInt
-import dotty.tools.tasty.TastyFormat.{ASTsSection, PositionsSection, CommentsSection, AttributesSection}
-import java.nio.file.{Files, Paths}
-import dotty.tools.io.{JarArchive, Path}
-import dotty.tools.tasty.TastyFormat.header
-
-import scala.compiletime.uninitialized
-import dotty.tools.tasty.TastyBuffer.Addr
 
 object TastyPrinter:
 

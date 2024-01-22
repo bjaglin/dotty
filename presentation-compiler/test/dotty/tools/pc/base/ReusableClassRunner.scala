@@ -1,11 +1,11 @@
 package dotty.tools.pc.base
 
-import scala.jdk.CollectionConverters._
-import scala.language.unsafeNulls
-
 import org.junit.runners.BlockJUnit4ClassRunner
 import org.junit.runners.model.FrameworkMethod
 import org.junit.runners.model.Statement
+
+import scala.jdk.CollectionConverters._
+import scala.language.unsafeNulls
 
 class ReusableClassRunner(testClass: Class[BasePCSuite])
     extends BlockJUnit4ClassRunner(testClass):

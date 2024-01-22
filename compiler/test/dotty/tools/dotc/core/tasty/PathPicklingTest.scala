@@ -1,28 +1,36 @@
 package dotty.tools.dotc.core.tasty
 
-import scala.language.unsafeNulls
-
-import java.io.{File => JFile, ByteArrayOutputStream, IOException}
-import java.nio.file.{Files, NoSuchFileException, Paths}
-
-import scala.sys.process._
-
-import org.junit.Test
-import org.junit.Assert.{assertEquals, assertTrue, assertFalse, fail}
-
+import dotty.tools.dotc.Driver
+import dotty.tools.dotc.Main
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.tpd.TreeOps
-import dotty.tools.dotc.{Driver, Main}
-import dotty.tools.dotc.decompiler
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Decorators.{toTermName, toTypeName}
+import dotty.tools.dotc.core.Decorators.toTermName
+import dotty.tools.dotc.core.Decorators.toTypeName
 import dotty.tools.dotc.core.Mode
 import dotty.tools.dotc.core.Names.Name
+import dotty.tools.dotc.decompiler
 import dotty.tools.dotc.interfaces.Diagnostic.ERROR
 import dotty.tools.dotc.reporting.TestReporter
-import dotty.tools.io.{Directory, File, Path, JarArchive}
-
+import dotty.tools.io.Directory
+import dotty.tools.io.File
+import dotty.tools.io.JarArchive
+import dotty.tools.io.Path
 import dotty.tools.vulpix.TestConfiguration
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.assertTrue
+import org.junit.Assert.fail
+import org.junit.Test
+
+import java.io.ByteArrayOutputStream
+import java.io.IOException
+import java.io.{File => JFile}
+import java.nio.file.Files
+import java.nio.file.NoSuchFileException
+import java.nio.file.Paths
+import scala.language.unsafeNulls
+import scala.sys.process._
 
 class PathPicklingTest {
 

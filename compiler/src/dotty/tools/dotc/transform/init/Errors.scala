@@ -7,8 +7,9 @@ import ast.tpd.*
 import core.*
 import util.Property
 import util.SourcePosition
-import Types.*, Symbols.*, Contexts.*
-
+import Types.*
+import Symbols.*
+import Contexts.*
 import Trace.Trace
 
 object Errors:

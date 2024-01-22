@@ -1,38 +1,35 @@
 package dotty.tools.backend.jvm
 
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc.CompilationUnit
-import dotty.tools.dotc.ast.Trees.{PackageDef, ValDef}
+import dotty.tools.dotc.ast.Trees.PackageDef
+import dotty.tools.dotc.ast.Trees.ValDef
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.Phases.Phase
-
-import scala.collection.mutable
-import scala.jdk.CollectionConverters.*
-
+import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core.tasty.TastyUnpickler
 import dotty.tools.dotc.interfaces
 import dotty.tools.dotc.report
-
-import java.util.Optional
 import dotty.tools.dotc.sbt.ExtractDependencies
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.util
+import dotty.tools.dotc.util.NoSourcePosition
+import dotty.tools.io.AbstractFile
+import dotty.tools.tasty.TastyBuffer
+import dotty.tools.tasty.TastyHeaderUnpickler
+
+import java.io.DataOutputStream
+import java.nio.channels.ClosedByInterruptException
+import java.util.Optional
+import scala.collection.mutable
+import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
+import scala.tools.asm
+import scala.tools.asm.tree.*
+
 import Contexts.*
 import Phases.*
 import Symbols.*
 import StdNames.nme
-
-import java.io.DataOutputStream
-import java.nio.channels.ClosedByInterruptException
-
-import dotty.tools.tasty.{ TastyBuffer, TastyHeaderUnpickler }
-import dotty.tools.dotc.core.tasty.TastyUnpickler
-
-import scala.tools.asm
-import scala.tools.asm.tree.*
 import tpd.*
-import dotty.tools.io.AbstractFile
-import dotty.tools.dotc.util
-import dotty.tools.dotc.util.NoSourcePosition
 
 
 class CodeGen(val int: DottyBackendInterface, val primitives: DottyPrimitives)( val bTypes: BTypesFromSymbols[int.type]) { self =>

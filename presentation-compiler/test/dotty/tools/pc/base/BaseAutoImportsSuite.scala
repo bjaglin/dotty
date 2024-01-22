@@ -1,13 +1,12 @@
 package dotty.tools.pc.base
 
-import java.nio.file.Paths
+import dotty.tools.pc.utils.TextEdits
 
+import java.nio.file.Paths
+import scala.language.unsafeNulls
 import scala.meta.internal.jdk.CollectionConverters.*
 import scala.meta.internal.metals.CompilerOffsetParams
 import scala.meta.pc.AutoImportsResult
-import scala.language.unsafeNulls
-
-import dotty.tools.pc.utils.TextEdits
 
 trait BaseAutoImportsSuite extends BaseCodeActionSuite:
 

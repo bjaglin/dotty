@@ -1,13 +1,14 @@
 package dotty.tools
 
+import dotty.tools.dotc._
+
+import java.io._
+import java.net.URI
+import java.nio.file._
+import javax.tools._
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 
-import javax.tools._
-import java.io._
-import java.nio.file._
-import java.net.URI
-import scala.jdk.CollectionConverters._
-import dotty.tools.dotc._
 import core._
 import core.Contexts._
 import dotc.core.Comments.{ContextDoc, ContextDocstrings}

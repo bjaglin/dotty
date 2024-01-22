@@ -1,8 +1,5 @@
 package dotty.tools.pc.completions
 
-import scala.collection.mutable.ListBuffer
-import scala.meta.internal.pc.Keyword
-
 import dotty.tools.dotc.ast.NavigateAST
 import dotty.tools.dotc.ast.Positioned
 import dotty.tools.dotc.ast.tpd.*
@@ -12,6 +9,9 @@ import dotty.tools.dotc.core.Comments
 import dotty.tools.dotc.core.Comments.Comment
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.util.SourcePosition
+
+import scala.collection.mutable.ListBuffer
+import scala.meta.internal.pc.Keyword
 
 object KeywordsCompletions:
 

@@ -2,9 +2,8 @@ package dotty
 package tools
 package vulpix
 
-import scala.language.unsafeNulls
-
 import java.io.File
+import scala.language.unsafeNulls
 
 object TestConfiguration {
 

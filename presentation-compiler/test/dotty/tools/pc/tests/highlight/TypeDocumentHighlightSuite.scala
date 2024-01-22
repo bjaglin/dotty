@@ -1,7 +1,6 @@
 package dotty.tools.pc.tests.highlight
 
 import dotty.tools.pc.base.BaseDocumentHighlightSuite
-
 import org.junit.Test
 
 class TypeDocumentHighlightSuite extends BaseDocumentHighlightSuite:

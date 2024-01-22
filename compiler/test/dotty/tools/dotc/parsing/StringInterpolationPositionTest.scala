@@ -2,8 +2,9 @@ package dotty.tools
 package dotc
 package parsing
 
-import ast.untpd._
 import org.junit.Test
+
+import ast.untpd._
 
 class StringInterpolationPositionTest extends ParserTest {
 

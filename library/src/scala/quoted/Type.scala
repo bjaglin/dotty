@@ -1,6 +1,7 @@
 package scala.quoted
 
-import scala.annotation.{compileTimeOnly, experimental}
+import scala.annotation.compileTimeOnly
+import scala.annotation.experimental
 
 /** Type (or type constructor) `T` needed contextually when using `T` in a quoted expression `'{... T ...}` */
 abstract class Type[T <: AnyKind] private[scala]:

@@ -1,16 +1,15 @@
 package dotty.tools.backend.jvm
 
-import scala.language.unsafeNulls
-
 import org.junit.Assert._
 import org.junit.Test
 
+import scala.jdk.CollectionConverters._
+import scala.language.unsafeNulls
 import scala.tools.asm
+import scala.tools.asm.Opcodes
+
 import asm._
 import asm.tree._
-
-import scala.tools.asm.Opcodes
-import scala.jdk.CollectionConverters._
 import Opcodes._
 
 class PublicInBinaryTests extends DottyBytecodeTest {

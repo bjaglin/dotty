@@ -2,13 +2,18 @@ package dotty.tools
 package dotc
 package core
 
-import Symbols.*, Types.*, Contexts.*, Constants.*, Phases.*
-import ast.tpd, tpd.*
+import scala.annotation.internal.sharable
+
+import Symbols.*
+import Types.*
+import Contexts.*
+import Constants.*
+import Phases.*
+import ast.tpd
+import tpd.*
 import util.Spans.Span
 import printing.{Showable, Printer}
 import printing.Texts.Text
-
-import scala.annotation.internal.sharable
 
 object Annotations {
 

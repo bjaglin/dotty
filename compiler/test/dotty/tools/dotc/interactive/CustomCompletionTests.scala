@@ -1,6 +1,8 @@
 package dotty.tools
 package dotc.interactive
 
+import org.junit.Test
+
 import dotc.ast.tpd
 import dotc.{CompilationUnit, Compiler, Run}
 import dotc.core.Contexts.Context
@@ -8,8 +10,6 @@ import dotc.core.Mode
 import dotc.reporting.StoreReporter
 import dotc.util.{SourceFile, SourcePosition}
 import dotc.util.Spans.Span
-
-import org.junit.Test
 
 class CustomCompletionTests extends DottyTest:
 

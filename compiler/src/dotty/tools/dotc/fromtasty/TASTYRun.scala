@@ -2,12 +2,12 @@ package dotty.tools
 package dotc
 package fromtasty
 
+import java.io.File
 import scala.language.unsafeNulls
 
 import io.{JarArchive, AbstractFile, Path}
 import core.Contexts.*
 import core.Decorators.em
-import java.io.File
 
 class TASTYRun(comp: Compiler, ictx: Context) extends Run(comp, ictx) {
   override def compile(files: List[AbstractFile]): Unit = {

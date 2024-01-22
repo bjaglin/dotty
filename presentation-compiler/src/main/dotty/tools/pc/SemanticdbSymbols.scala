@@ -1,13 +1,13 @@
 package dotty.tools.pc
 
-import scala.util.control.NonFatal
-
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.Names.*
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.semanticdb.*
 import dotty.tools.pc.utils.MtagsEnrichments.*
+
+import scala.util.control.NonFatal
 
 object SemanticdbSymbols:
 

@@ -1,10 +1,10 @@
 package dotty.tools.pc.completions
 
-import scala.meta.internal.mtags.CoursierComplete
-
 import dotty.tools.dotc.ast.untpd.ImportSelector
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.pc.utils.MtagsEnrichments.*
+
+import scala.meta.internal.mtags.CoursierComplete
 
 object AmmoniteIvyCompletions:
   def contribute(

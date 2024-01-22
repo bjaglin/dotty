@@ -1,15 +1,6 @@
 package dotty.tools.pc
 package completions
 
-import java.net.URI
-
-import scala.collection.mutable
-import scala.collection.mutable.ListBuffer
-import scala.jdk.CollectionConverters._
-import scala.meta.internal.pc.CompletionFuzzy
-import scala.meta.pc.PresentationCompilerConfig
-import scala.meta.pc.SymbolSearch
-
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Constants.Constant
 import dotty.tools.dotc.core.Contexts.Context
@@ -30,8 +21,15 @@ import dotty.tools.pc.AutoImports.AutoImportsGenerator
 import dotty.tools.pc.AutoImports.SymbolImport
 import dotty.tools.pc.MetalsInteractive.*
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j as l
+
+import java.net.URI
+import scala.collection.mutable
+import scala.collection.mutable.ListBuffer
+import scala.jdk.CollectionConverters._
+import scala.meta.internal.pc.CompletionFuzzy
+import scala.meta.pc.PresentationCompilerConfig
+import scala.meta.pc.SymbolSearch
 
 object CaseKeywordCompletion:
 

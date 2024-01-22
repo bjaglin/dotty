@@ -1,19 +1,18 @@
 package dotty.tools.backend.sjs
 
+import dotty.tools.dotc.core.*
+import dotty.tools.dotc.report
+import dotty.tools.dotc.util.SourceFile
+import dotty.tools.dotc.util.SourcePosition
+import dotty.tools.dotc.util.Spans.Span
+import org.scalajs.ir
+
+import java.net.URI
+import java.net.URISyntaxException
 import scala.language.unsafeNulls
 
-import java.net.{URI, URISyntaxException}
-
-import dotty.tools.dotc.core.*
 import Contexts.*
 import Decorators.em
-
-import dotty.tools.dotc.report
-
-import dotty.tools.dotc.util.{SourceFile, SourcePosition}
-import dotty.tools.dotc.util.Spans.Span
-
-import org.scalajs.ir
 
 /** Conversion utilities from dotty Positions to IR Positions. */
 class JSPositions()(using Context) {

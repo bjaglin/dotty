@@ -2,16 +2,18 @@ package dotty
 package tools
 package dotc
 
-import scala.language.unsafeNulls
-
-import java.io.{File => JFile}
-import java.nio.file.{Files, Path, Paths}
-
+import org.junit.AfterClass
 import org.junit.Assume.assumeTrue
-import org.junit.{AfterClass, Test}
+import org.junit.Test
 import org.junit.experimental.categories.Category
 
+import java.io.{File => JFile}
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
 import scala.concurrent.duration._
+import scala.language.unsafeNulls
+
 import reporting.TestReporter
 import vulpix._
 

@@ -2,6 +2,8 @@ package dotty.tools
 package dotc
 package typer
 
+import scala.annotation.constructorOnly
+
 import backend.sjs.JSDefinitions
 import core.*
 import ast.*
@@ -34,7 +36,6 @@ import util.Spans.*
 import util.common.*
 import util.{Property, SimpleIdentityMap, SrcPos}
 import Applications.{tupleComponentTypes, wrapDefs, defaultArgument}
-
 import collection.mutable
 import annotation.tailrec
 import Implicits.*
@@ -43,7 +44,8 @@ import config.Printers.{gadts, typr}
 import config.Feature
 import config.Feature.{sourceVersion, migrateTo3}
 import config.SourceVersion.*
-import rewrites.Rewrites, Rewrites.patch
+import rewrites.Rewrites
+import Rewrites.patch
 import staging.StagingLevel
 import reporting.*
 import Nullables.*
@@ -51,8 +53,6 @@ import NullOpsDecorator.*
 import cc.CheckCaptures
 import config.Config
 import config.MigrationVersion
-
-import scala.annotation.constructorOnly
 
 object Typer {
 

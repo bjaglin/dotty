@@ -1,14 +1,15 @@
 package dotty.tools.backend.jvm
 
+import dotty.tools.dotc.report
+
+import scala.collection.mutable
+import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
 import scala.tools.asm
 import scala.tools.asm.Handle
 import scala.tools.asm.tree.InvokeDynamicInsnNode
-import asm.tree.ClassNode
-import scala.collection.mutable
-import scala.jdk.CollectionConverters.*
-import dotty.tools.dotc.report
 
-import scala.language.unsafeNulls
+import asm.tree.ClassNode
 
 /**
  * This component hosts tools and utilities used in the backend that require access to a `BTypes`

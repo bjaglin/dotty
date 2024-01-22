@@ -2,9 +2,10 @@ package dotty.tools
 package dotc
 package reporting
 
-import scala.language.unsafeNulls
-
 import java.lang.System.{lineSeparator => EOL}
+import scala.annotation.switch
+import scala.collection.mutable
+import scala.language.unsafeNulls
 
 import core.Contexts.*
 import core.Decorators.*
@@ -13,9 +14,6 @@ import printing.SyntaxHighlighting
 import Diagnostic.*
 import util.{ SourcePosition, NoSourcePosition }
 import util.Chars.{ LF, CR, FF, SU }
-import scala.annotation.switch
-
-import scala.collection.mutable
 
 trait MessageRendering {
   import Highlight.*

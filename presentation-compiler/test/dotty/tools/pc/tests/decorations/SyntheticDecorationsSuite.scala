@@ -1,10 +1,9 @@
 package dotty.tools.pc.tests.decorations
 
-import scala.meta.internal.pc.DecorationKind
-
 import dotty.tools.pc.base.BaseSyntheticDecorationsSuite
-
 import org.junit.Test
+
+import scala.meta.internal.pc.DecorationKind
 
 class SyntheticDecorationsSuite extends BaseSyntheticDecorationsSuite:
 

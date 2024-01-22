@@ -1,37 +1,34 @@
 package dotty.tools.dotc
 package transform
 
-import scala.language.unsafeNulls
-
-import java.io.{PrintWriter, StringWriter}
-import java.lang.reflect.{InvocationTargetException, Method => JLRMethod}
-
 import dotty.tools.dotc.ast.tpd
+import dotty.tools.dotc.core.Constants.Constant
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*
+import dotty.tools.dotc.core.Denotations.staticRef
 import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.NameKinds
 import dotty.tools.dotc.core.NameKinds.FlatName
 import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.core.StdNames.*
-import dotty.tools.dotc.core.Types.*
 import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Denotations.staticRef
 import dotty.tools.dotc.core.TypeErasure
-import dotty.tools.dotc.core.Constants.Constant
-
+import dotty.tools.dotc.core.Types.*
 import dotty.tools.dotc.quoted.Interpreter
-
-import scala.util.control.NonFatal
+import dotty.tools.dotc.quoted.PickledQuotes
+import dotty.tools.dotc.quoted.QuoteUtils
 import dotty.tools.dotc.util.SrcPos
 import dotty.tools.repl.AbstractFileClassLoader
 
-import scala.reflect.ClassTag
-
-import dotty.tools.dotc.quoted.{PickledQuotes, QuoteUtils}
-
+import java.io.PrintWriter
+import java.io.StringWriter
+import java.lang.reflect.InvocationTargetException
+import java.lang.reflect.{Method => JLRMethod}
+import scala.language.unsafeNulls
 import scala.quoted.Quotes
 import scala.quoted.runtime.impl.*
-import dotty.tools.dotc.core.NameKinds
+import scala.reflect.ClassTag
+import scala.util.control.NonFatal
 
 /** Utility class to splice quoted expressions */
 object Splicer {

@@ -2,11 +2,12 @@ package dotty.tools
 package dotc
 package transform
 
+import dotty.tools.dotc.transform.MegaPhase.*
+
 import core.*
 import Names.*
 import StdNames.nme
 import Types.*
-import dotty.tools.dotc.transform.MegaPhase.*
 import Flags.*
 import Contexts.*
 import Symbols.*

@@ -1,11 +1,10 @@
 package dotty.tools.pc.tests.completion
 
+import dotty.tools.pc.base.BaseCompletionSuite
+import org.junit.Test
+
 import scala.meta.internal.pc.PresentationCompilerConfigImpl
 import scala.meta.pc.PresentationCompilerConfig
-
-import dotty.tools.pc.base.BaseCompletionSuite
-
-import org.junit.Test
 
 class CompletionCaseSuite extends BaseCompletionSuite:
 

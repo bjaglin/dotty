@@ -1,12 +1,13 @@
 package dotty.tools.pc.base
 
-import java.nio.file.Paths
-
-import scala.meta.internal.metals.{CompilerOffsetParams, CompilerRangeParams}
-import scala.language.unsafeNulls
-
 import dotty.tools.pc.utils.MtagsEnrichments.*
-import dotty.tools.pc.utils.{RangeReplace, TestHovers}
+import dotty.tools.pc.utils.RangeReplace
+import dotty.tools.pc.utils.TestHovers
+
+import java.nio.file.Paths
+import scala.language.unsafeNulls
+import scala.meta.internal.metals.CompilerOffsetParams
+import scala.meta.internal.metals.CompilerRangeParams
 
 abstract class BaseHoverSuite
     extends BasePCSuite

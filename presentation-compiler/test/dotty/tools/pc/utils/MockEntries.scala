@@ -1,9 +1,11 @@
 package dotty.tools.pc.utils
 
+import org.eclipse.lsp4j.Location
+import org.eclipse.lsp4j.Position
+import org.eclipse.lsp4j.Range
+
 import scala.jdk.CollectionConverters.*
 import scala.meta.pc.SymbolDocumentation
-
-import org.eclipse.lsp4j.{Location, Position, Range}
 
 /* This is a mock class which is used to test presentation compiler
  * implementations. It contains mocked definitions and documentations.

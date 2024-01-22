@@ -3,9 +3,19 @@ package dotc
 package ast
 
 import core.*
-import Types.*, Names.*, NameOps.*, Flags.*, util.Spans.*, Contexts.*, Constants.*
+import Types.*
+import Names.*
+import NameOps.*
+import Flags.*
+import util.Spans.*
+import Contexts.*
+import Constants.*
 import typer.{ ConstFold, ProtoTypes }
-import SymDenotations.*, Symbols.*, Denotations.*, StdNames.*, Comments.*
+import SymDenotations.*
+import Symbols.*
+import Denotations.*
+import StdNames.*
+import Comments.*
 import collection.mutable.ListBuffer
 import printing.Printer
 import printing.Texts.Text

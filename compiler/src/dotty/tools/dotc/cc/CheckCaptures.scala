@@ -2,10 +2,20 @@ package dotty.tools
 package dotc
 package cc
 
+import scala.collection.mutable
+
 import core.*
-import Phases.*, DenotTransformers.*, SymDenotations.*
-import Contexts.*, Names.*, Flags.*, Symbols.*, Decorators.*
-import Types.*, StdNames.*, Denotations.*
+import Phases.*
+import DenotTransformers.*
+import SymDenotations.*
+import Contexts.*
+import Names.*
+import Flags.*
+import Symbols.*
+import Decorators.*
+import Types.*
+import StdNames.*
+import Denotations.*
 import config.Printers.{capt, recheckr, noPrinter}
 import config.{Config, Feature}
 import ast.{tpd, untpd, Trees}
@@ -17,7 +27,6 @@ import typer.ProtoTypes.{AnySelectionProto, LhsProto}
 import util.{SimpleIdentitySet, EqHashMap, EqHashSet, SrcPos, Property}
 import transform.{Recheck, PreRecheck, CapturedVars}
 import Recheck.*
-import scala.collection.mutable
 import CaptureSet.{withCaptureSetsExplained, IdempotentCaptRefMap, CompareResult}
 import StdNames.nme
 import NameKinds.{DefaultGetterName, WildcardParamName}

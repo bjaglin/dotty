@@ -2,11 +2,12 @@
  */
 package dotty.tools.dotc.util
 
-import java.lang.ref.{ReferenceQueue, WeakReference}
-
-import scala.annotation.{ constructorOnly, tailrec }
-
 import dotty.tools.*
+
+import java.lang.ref.ReferenceQueue
+import java.lang.ref.WeakReference
+import scala.annotation.constructorOnly
+import scala.annotation.tailrec
 
 /**
  * A HashSet where the elements are stored weakly. Elements in this set are eligible for GC if no other

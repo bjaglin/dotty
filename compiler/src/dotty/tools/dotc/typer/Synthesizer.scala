@@ -2,10 +2,17 @@ package dotty.tools
 package dotc
 package typer
 
+import xsbti.api.DependencyContext.*
+
 import core.*
 import util.Spans.Span
 import Contexts.*
-import Types.*, Flags.*, Symbols.*, Names.*, StdNames.*, Constants.*
+import Types.*
+import Flags.*
+import Symbols.*
+import Names.*
+import StdNames.*
+import Constants.*
 import TypeErasure.{erasure, hasStableErasure}
 import Decorators.*
 import ProtoTypes.*
@@ -18,7 +25,6 @@ import annotation.{tailrec, constructorOnly}
 import ast.tpd.*
 import Synthesizer.*
 import sbt.ExtractDependencies.*
-import xsbti.api.DependencyContext.*
 
 /** Synthesize terms for special classes */
 class Synthesizer(typer: Typer)(using @constructorOnly c: Context):

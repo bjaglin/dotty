@@ -3,7 +3,9 @@ package dotc
 package cc
 
 import core.*
-import Types.*, Symbols.*, Contexts.*
+import Types.*
+import Symbols.*
+import Contexts.*
 import Decorators.i
 
 /** A (possibly boxed) capturing type. This is internally represented as an annotated type with a @retains

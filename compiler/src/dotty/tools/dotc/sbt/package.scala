@@ -1,9 +1,9 @@
 package dotty.tools.dotc.sbt
 
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.core.NameOps.stripModuleClassSuffix
 import dotty.tools.dotc.core.Names.Name
+import dotty.tools.dotc.core.Symbols.Symbol
 
 inline val TermNameHash = 1987 // 300th prime
 inline val TypeNameHash = 1993 // 301st prime

@@ -1,18 +1,6 @@
 package dotty.tools.pc
 
 
-import java.nio.file.Paths
-
-import scala.meta.internal.metals.ReportContext
-import dotty.tools.pc.utils.MtagsEnrichments.*
-import dotty.tools.pc.printer.ShortenedTypePrinter
-import scala.meta.pc.SymbolSearch
-import scala.meta.pc.SyntheticDecoration
-import scala.meta.pc.SyntheticDecorationsParams
-import scala.meta.internal.pc.DecorationKind
-import scala.meta.internal.pc.Decoration
-
-
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Contexts.Context
@@ -25,6 +13,16 @@ import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.IndexedContext
+import dotty.tools.pc.printer.ShortenedTypePrinter
+import dotty.tools.pc.utils.MtagsEnrichments.*
+
+import java.nio.file.Paths
+import scala.meta.internal.metals.ReportContext
+import scala.meta.internal.pc.Decoration
+import scala.meta.internal.pc.DecorationKind
+import scala.meta.pc.SymbolSearch
+import scala.meta.pc.SyntheticDecoration
+import scala.meta.pc.SyntheticDecorationsParams
 
 final class PcSyntheticDecorationsProvider(
     driver: InteractiveDriver,

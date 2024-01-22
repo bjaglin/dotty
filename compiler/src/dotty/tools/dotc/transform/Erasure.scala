@@ -2,6 +2,11 @@ package dotty.tools
 package dotc
 package transform
 
+import dotty.tools.dotc.ast.tpd
+import dotty.tools.dotc.ast.untpd
+import dotty.tools.dotc.core.Constants
+import dotty.tools.dotc.core.Flags
+
 import core.Phases.*
 import core.DenotTransformers.*
 import core.Denotations.*
@@ -25,9 +30,7 @@ import typer.ErrorReporting.errorTree
 import typer.Checking.checkValue
 import core.TypeErasure.*
 import core.Decorators.*
-import dotty.tools.dotc.ast.{tpd, untpd}
 import ast.TreeTypeMap
-import dotty.tools.dotc.core.{Constants, Flags}
 import ValueClasses.*
 import ContextFunctionResults.*
 import ExplicitOuter.*

@@ -2,14 +2,32 @@ package dotty.tools
 package dotc
 package core
 
-import Periods.*, Contexts.*, Symbols.*, Denotations.*, Names.*, NameOps.*, Annotations.*
-import Types.*, Flags.*, Decorators.*, DenotTransformers.*, StdNames.*, Scopes.*
-import NameOps.*, NameKinds.*
+import dotty.tools.io.AbstractFile
+
+import java.util.WeakHashMap
+import scala.annotation.internal.sharable
+import scala.compiletime.uninitialized
+import scala.util.control.NonFatal
+
+import Periods.*
+import Contexts.*
+import Symbols.*
+import Denotations.*
+import Names.*
+import NameOps.*
+import Annotations.*
+import Types.*
+import Flags.*
+import Decorators.*
+import DenotTransformers.*
+import StdNames.*
+import Scopes.*
+import NameOps.*
+import NameKinds.*
 import Phases.{Phase, typerPhase, unfusedPhases}
 import Constants.Constant
 import TypeApplications.TypeParamInfo
 import Scopes.Scope
-import dotty.tools.io.AbstractFile
 import Decorators.*
 import ast.*
 import ast.Trees.{LambdaTypeTree, TypeBoundsTree}
@@ -18,15 +36,10 @@ import Variances.Variance
 import annotation.tailrec
 import util.SimpleIdentityMap
 import util.Stats
-import java.util.WeakHashMap
-import scala.util.control.NonFatal
 import config.Config
 import reporting.*
 import collection.mutable
 import cc.{CapturingType, derivedCapturingType}
-
-import scala.annotation.internal.sharable
-import scala.compiletime.uninitialized
 
 object SymDenotations {
 

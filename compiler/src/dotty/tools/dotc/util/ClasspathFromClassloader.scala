@@ -1,11 +1,10 @@
 package dotty.tools.dotc.util
 
-import scala.language.unsafeNulls
+import dotty.tools.repl.AbstractFileClassLoader
 
 import java.net.URLClassLoader
 import java.nio.file.Paths
-
-import dotty.tools.repl.AbstractFileClassLoader
+import scala.language.unsafeNulls
 
 object ClasspathFromClassloader {
 

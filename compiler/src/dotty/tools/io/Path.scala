@@ -5,14 +5,15 @@
 
 package dotty.tools.io
 
-import scala.language.unsafeNulls
-
-import java.io.RandomAccessFile
-import java.nio.file.*
-import java.net.{URI, URL}
-import java.nio.file.attribute.{BasicFileAttributes, FileTime}
 import java.io.IOException
+import java.io.RandomAccessFile
+import java.net.URI
+import java.net.URL
+import java.nio.file.*
+import java.nio.file.attribute.BasicFileAttributes
+import java.nio.file.attribute.FileTime
 import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
 import scala.util.Random.alphanumeric
 
 /** An abstraction for filesystem paths.  The differences between

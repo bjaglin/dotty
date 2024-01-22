@@ -4,7 +4,6 @@ package init
 
 import core.*
 import Contexts.*
-
 import ast.tpd
 import tpd.Tree
 

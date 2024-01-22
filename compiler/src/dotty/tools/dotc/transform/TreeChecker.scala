@@ -2,6 +2,10 @@ package dotty.tools
 package dotc
 package transform
 
+import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
+
+import scala.util.control.NonFatal
+
 import core.Names.Name
 import core.DenotTransformers.*
 import core.SymDenotations.*
@@ -23,10 +27,6 @@ import collection.mutable
 import ProtoTypes.*
 import staging.StagingLevel
 import inlines.Inlines.inInlineMethod
-
-import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
-
-import scala.util.control.NonFatal
 
 /** Run by -Ycheck option after a given phase, this class retypes all syntax trees
  *  and verifies that the type of each tree node so obtained conforms to the type found in the tree node.

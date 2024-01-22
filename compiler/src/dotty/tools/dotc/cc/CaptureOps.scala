@@ -3,10 +3,15 @@ package dotc
 package cc
 
 import core.*
-import Types.*, Symbols.*, Contexts.*, Annotations.*, Flags.*
+import Types.*
+import Symbols.*
+import Contexts.*
+import Annotations.*
+import Flags.*
 import Names.TermName
 import ast.{tpd, untpd}
-import Decorators.*, NameOps.*
+import Decorators.*
+import NameOps.*
 import config.SourceVersion
 import config.Printers.capt
 import util.Property.Key

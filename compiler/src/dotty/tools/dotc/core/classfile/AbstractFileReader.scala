@@ -3,11 +3,11 @@ package dotc
 package core
 package classfile
 
-import scala.language.unsafeNulls
-
-import java.lang.Float.intBitsToFloat
+import java.io.ByteArrayInputStream
+import java.io.DataInputStream
 import java.lang.Double.longBitsToDouble
-import java.io.{ByteArrayInputStream, DataInputStream}
+import java.lang.Float.intBitsToFloat
+import scala.language.unsafeNulls
 
 import io.AbstractFile
 

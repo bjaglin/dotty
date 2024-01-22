@@ -2,6 +2,9 @@ package dotty.tools
 package dotc
 package transform
 
+import java.lang.StringBuilder
+import scala.collection.mutable.ListBuffer
+
 import core.Annotations.*
 import core.Contexts.*
 import core.Phases.*
@@ -14,12 +17,8 @@ import core.TypeApplications.{EtaExpansion, TypeParamInfo}
 import core.TypeErasure.{erasedGlb, erasure, fullErasure, isGenericArrayElement, tupleArity}
 import core.Types.*
 import core.classfile.ClassfileConstants
-
 import config.Printers.transforms
 import reporting.trace
-import java.lang.StringBuilder
-
-import scala.collection.mutable.ListBuffer
 
 /** Helper object to generate generic java signatures, as defined in
  *  the Java Virtual Machine Specification, §4.3.4

@@ -2,39 +2,37 @@ package dotty.tools
 package backend
 package jvm
 
-import scala.language.unsafeNulls
-
-import scala.annotation.threadUnsafe
-import scala.tools.asm
-import scala.tools.asm.AnnotationVisitor
-import scala.tools.asm.ClassWriter
-import scala.collection.mutable
-import scala.compiletime.uninitialized
-
+import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
 import dotty.tools.dotc.CompilationUnit
-import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.Trees
+import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.Annotations.*
 import dotty.tools.dotc.core.Constants.*
 import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Phases.*
 import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Names.Name
+import dotty.tools.dotc.core.NameKinds
 import dotty.tools.dotc.core.NameKinds.ExpandedName
+import dotty.tools.dotc.core.Names.Name
+import dotty.tools.dotc.core.Phases.*
 import dotty.tools.dotc.core.Signature
 import dotty.tools.dotc.core.StdNames.*
-import dotty.tools.dotc.core.NameKinds
 import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.TypeErasure
 import dotty.tools.dotc.core.Types
 import dotty.tools.dotc.core.Types.*
-import dotty.tools.dotc.core.TypeErasure
-import dotty.tools.dotc.transform.GenericSignatures
-import dotty.tools.dotc.transform.ElimErasedValueType
-import dotty.tools.io.AbstractFile
 import dotty.tools.dotc.report
+import dotty.tools.dotc.transform.ElimErasedValueType
+import dotty.tools.dotc.transform.GenericSignatures
+import dotty.tools.io.AbstractFile
 
-import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
+import scala.annotation.threadUnsafe
+import scala.collection.mutable
+import scala.compiletime.uninitialized
+import scala.language.unsafeNulls
+import scala.tools.asm
+import scala.tools.asm.AnnotationVisitor
+import scala.tools.asm.ClassWriter
 
 /*
  *  Traits encapsulating functionality to convert Scala AST Trees into ASM ClassNodes.

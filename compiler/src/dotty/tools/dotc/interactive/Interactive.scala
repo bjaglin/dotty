@@ -2,15 +2,23 @@ package dotty.tools
 package dotc
 package interactive
 
-import scala.language.unsafeNulls
-
 import scala.collection.*
+import scala.language.unsafeNulls
 
 import ast.{NavigateAST, Trees, tpd, untpd}
 import core.*
-import Decorators.*, ContextOps.*
-import Contexts.*, Flags.*, Names.*, NameOps.*, Symbols.*, Trees.*, Types.*
-import util.Spans.*, util.SourceFile, util.SourcePosition
+import Decorators.*
+import ContextOps.*
+import Contexts.*
+import Flags.*
+import Names.*
+import NameOps.*
+import Symbols.*
+import Trees.*
+import Types.*
+import util.Spans.*
+import util.SourceFile
+import util.SourcePosition
 
 /** High-level API to get information out of typed trees, designed to be used by IDEs.
  *

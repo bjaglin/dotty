@@ -1,13 +1,15 @@
 package dotty.tools.repl
 
-import scala.language.unsafeNulls
+import org.junit.AfterClass
+import org.junit.Assert.assertEquals
+import org.junit.BeforeClass
+import org.junit.Test
 
-import java.nio.file.{Path, Files}
+import java.nio.file.Files
+import java.nio.file.Path
 import java.util.Comparator
 import java.util.regex.Pattern
-
-import org.junit.{Test, BeforeClass, AfterClass}
-import org.junit.Assert.assertEquals
+import scala.language.unsafeNulls
 
 class LoadTests extends ReplTest {
   import LoadTests._, ReplCompilerTests._

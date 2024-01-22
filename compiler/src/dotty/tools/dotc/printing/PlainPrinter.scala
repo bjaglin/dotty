@@ -1,19 +1,29 @@
 package dotty.tools.dotc
 package printing
 
+import scala.annotation.switch
+import scala.util.control.NonFatal
+
 import core.*
-import Texts.*, Types.*, Flags.*, Names.*, Symbols.*, NameOps.*, Constants.*, Denotations.*
+import Texts.*
+import Types.*
+import Flags.*
+import Names.*
+import Symbols.*
+import NameOps.*
+import Constants.*
+import Denotations.*
 import StdNames.*
 import Contexts.*
-import Scopes.Scope, Denotations.Denotation, Annotations.Annotation
+import Scopes.Scope
+import Denotations.Denotation
+import Annotations.Annotation
 import StdNames.nme
 import ast.Trees.*
 import typer.Implicits.*
 import typer.ImportInfo
 import Variances.varianceSign
 import util.SourcePosition
-import scala.util.control.NonFatal
-import scala.annotation.switch
 import config.{Config, Feature}
 import cc.{CapturingType, RetainingType, CaptureSet, ReachCapability, isBoxed, levelOwner, retainedElems}
 

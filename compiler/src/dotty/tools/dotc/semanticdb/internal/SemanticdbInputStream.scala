@@ -1,15 +1,13 @@
 package dotty.tools.dotc.semanticdb.internal
 
-import scala.language.unsafeNulls
-
 import java.io.IOException
 import java.io.InputStream
-import java.util.Arrays
 import java.nio.charset.StandardCharsets
+import java.util.Arrays
+import scala.collection.mutable
+import scala.language.unsafeNulls
 
 import SemanticdbInputStream.*
-
-import scala.collection.mutable
 
 object SemanticdbInputStream {
 

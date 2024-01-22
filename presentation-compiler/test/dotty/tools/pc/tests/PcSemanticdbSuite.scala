@@ -1,12 +1,12 @@
 package dotty.tools.pc.tests
 
-import java.net.URI
-
-import dotty.tools.dotc.semanticdb.{SymbolOccurrence, TextDocument}
+import dotty.tools.dotc.semanticdb.SymbolOccurrence
+import dotty.tools.dotc.semanticdb.TextDocument
 import dotty.tools.pc.base.BasePCSuite
-import scala.language.unsafeNulls
-
 import org.junit.Test
+
+import java.net.URI
+import scala.language.unsafeNulls
 
 class PcSemanticdbSuite extends BasePCSuite:
 

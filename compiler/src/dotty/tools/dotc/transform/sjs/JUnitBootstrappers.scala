@@ -2,9 +2,12 @@ package dotty.tools.dotc
 package transform
 package sjs
 
+import dotty.tools.backend.sjs.JSDefinitions.jsdefn
+import dotty.tools.dotc.core.*
+import dotty.tools.dotc.transform.MegaPhase.*
+
 import scala.annotation.tailrec
 
-import dotty.tools.dotc.core.*
 import Constants.*
 import Contexts.*
 import Flags.*
@@ -14,10 +17,6 @@ import Symbols.*
 import StdNames.*
 import Types.*
 import Decorators.em
-
-import dotty.tools.dotc.transform.MegaPhase.*
-
-import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 
 /** Generates JUnit bootstrapper objects for Scala.js.
  *

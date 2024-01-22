@@ -1,10 +1,12 @@
 package dotty.tools.dotc
 package coverage
 
-import java.nio.file.{Path, Paths, Files}
 import java.io.Writer
-import scala.language.unsafeNulls
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
 import scala.collection.mutable.StringBuilder
+import scala.language.unsafeNulls
 
 /**
  * Serializes scoverage data.

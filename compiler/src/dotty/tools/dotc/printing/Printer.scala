@@ -2,17 +2,23 @@ package dotty.tools
 package dotc
 package printing
 
+import scala.annotation.internal.sharable
+
 import core.*
-import Texts.*, ast.Trees.*
-import Types.{Type, SingletonType, LambdaParam, NamedType},
-       Symbols.Symbol, Scopes.Scope, Constants.Constant,
-       Names.Name, Denotations._, Annotations.Annotation, Contexts.Context
+import Texts.*
+import ast.Trees.*
+import Types.{Type, SingletonType, LambdaParam, NamedType}
+import Symbols.Symbol
+import Scopes.Scope
+import Constants.Constant
+import Names.Name
+import Denotations._
+import Annotations.Annotation
+import Contexts.Context
 import typer.Implicits.*
 import util.SourcePosition
 import typer.ImportInfo
 import cc.CaptureSet
-
-import scala.annotation.internal.sharable
 
 /** The base class of all printers
  */

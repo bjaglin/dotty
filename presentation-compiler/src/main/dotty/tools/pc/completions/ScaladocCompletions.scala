@@ -1,7 +1,5 @@
 package dotty.tools.pc.completions
 
-import scala.meta.pc.PresentationCompilerConfig
-
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Contexts.Context
@@ -11,6 +9,8 @@ import dotty.tools.dotc.core.Symbols.NoSymbol
 import dotty.tools.dotc.core.Types.ExprType
 import dotty.tools.dotc.core.Types.MethodOrPoly
 import dotty.tools.dotc.util.SourcePosition
+
+import scala.meta.pc.PresentationCompilerConfig
 
 object ScaladocCompletions:
   // The indent for gutter asterisks aligned in column three.

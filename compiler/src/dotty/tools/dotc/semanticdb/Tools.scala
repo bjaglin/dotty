@@ -1,10 +1,11 @@
 package dotty.tools.dotc.semanticdb
 
-import java.nio.file.*
-import java.nio.charset.StandardCharsets
-import scala.jdk.CollectionConverters.*
-import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.semanticdb.Scala3.given
+import dotty.tools.dotc.util.SourceFile
+
+import java.nio.charset.StandardCharsets
+import java.nio.file.*
+import scala.jdk.CollectionConverters.*
 
 object Tools:
 

@@ -2,14 +2,13 @@ package dotty.tools
 package dotc
 package fromtasty
 
-import scala.language.unsafeNulls
-
-import scala.util.control.NonFatal
-
 import dotty.tools.io.Directory
 
 import java.io.{File => JFile}
-import java.nio.file.{Files, Paths}
+import java.nio.file.Files
+import java.nio.file.Paths
+import scala.language.unsafeNulls
+import scala.util.control.NonFatal
 
 object Debug {
   def main(args: Array[String]): Unit = {

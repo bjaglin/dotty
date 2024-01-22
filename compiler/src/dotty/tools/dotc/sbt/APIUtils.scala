@@ -1,6 +1,9 @@
 package dotty.tools.dotc
 package sbt
 
+import xsbti.api
+import xsbti.api.SafeLazy.strict
+
 import scala.language.unsafeNulls
 
 import core.*
@@ -8,9 +11,6 @@ import Contexts.*
 import Flags.*
 import Symbols.*
 import NameOps.*
-
-import xsbti.api
-import xsbti.api.SafeLazy.strict
 
 /** Utilities to deal with xsbti.api.
  *

@@ -2,6 +2,10 @@ package dotty.tools
 package dotc
 package core
 
+import java.lang.ref.WeakReference
+import scala.annotation.internal.sharable
+import scala.compiletime.uninitialized
+
 import Types.*
 import Contexts.*
 import util.SimpleIdentitySet
@@ -9,12 +13,8 @@ import reporting.*
 import config.Config
 import config.Printers.constr
 import collection.mutable
-import java.lang.ref.WeakReference
 import util.{Stats, SimpleIdentityMap}
 import Decorators.*
-
-import scala.annotation.internal.sharable
-import scala.compiletime.uninitialized
 
 object TyperState {
   @sharable private var nextId: Int = 0

@@ -1,11 +1,15 @@
 package dotty.tools.dotc.parsing
 
+import dotty.tools.dotc.CompilationUnit
+import dotty.tools.dotc.ast
 import dotty.tools.dotc.config.Config
-import dotty.tools.dotc.core.Contexts.{ Context, ctx }
+import dotty.tools.dotc.core.Contexts.Context
+import dotty.tools.dotc.core.Contexts.ctx
 import dotty.tools.dotc.core.Phases.Phase
+import dotty.tools.dotc.report
 import dotty.tools.dotc.typer.ImportInfo.withRootImports
-import dotty.tools.dotc.{ CompilationUnit, ast, report }
-import dotty.tools.dotc.util.{ NoSourcePosition, SourcePosition }
+import dotty.tools.dotc.util.NoSourcePosition
+import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Stats.record
 import dotty.tools.unsupported
 

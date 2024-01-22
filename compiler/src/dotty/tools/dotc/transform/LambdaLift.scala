@@ -1,6 +1,8 @@
 package dotty.tools.dotc
 package transform
 
+import scala.compiletime.uninitialized
+
 import MegaPhase.*
 import core.Denotations.NonSymSingleDenotation
 import core.DenotTransformers.*
@@ -13,12 +15,9 @@ import core.StdNames.nme
 import core.Names.*
 import core.NameOps.*
 import core.NameKinds.ExpandPrefixName
-
 import ExplicitOuter.outer
 import util.Store
 import collection.mutable.{HashMap, LinkedHashMap, ListBuffer}
-
-import scala.compiletime.uninitialized
 
 object LambdaLift:
   import ast.tpd.*

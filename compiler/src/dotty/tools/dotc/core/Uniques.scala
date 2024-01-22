@@ -1,12 +1,17 @@
 package dotty.tools.dotc
 package core
 
-import Types.*, Contexts.*, util.Stats.*, Hashable.*, Names.*
+import scala.annotation.tailrec
+
+import Types.*
+import Contexts.*
+import util.Stats.*
+import Hashable.*
+import Names.*
 import config.Config
 import Decorators.*
 import util.{WeakHashSet, Stats}
 import WeakHashSet.Entry
-import scala.annotation.tailrec
 
 class Uniques extends WeakHashSet[Type](Config.initialUniquesCapacity):
   override def hash(x: Type): Int = x.hash

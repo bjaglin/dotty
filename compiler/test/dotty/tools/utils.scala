@@ -1,19 +1,19 @@
 package dotty
 package tools
 
-import scala.language.unsafeNulls
-
 import java.io.File
 import java.nio.charset.Charset
 import java.nio.charset.StandardCharsets.UTF_8
-import java.nio.file.{Files, Path => JPath}
-
+import java.nio.file.Files
+import java.nio.file.{Path => JPath}
 import scala.io.Source
 import scala.jdk.StreamConverters._
+import scala.language.unsafeNulls
 import scala.reflect.ClassTag
 import scala.util.Using.resource
 import scala.util.chaining.given
-import scala.util.control.{ControlThrowable, NonFatal}
+import scala.util.control.ControlThrowable
+import scala.util.control.NonFatal
 
 import dotc.config.CommandLineParser
 

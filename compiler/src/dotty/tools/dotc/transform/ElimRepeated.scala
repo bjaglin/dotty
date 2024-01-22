@@ -10,7 +10,8 @@ import Flags.*
 import Contexts.*
 import Symbols.*
 import Decorators.*
-import Denotations.*, SymDenotations.*
+import Denotations.*
+import SymDenotations.*
 import DenotTransformers.*
 import NullOpsDecorator.*
 

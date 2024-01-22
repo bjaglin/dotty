@@ -3,6 +3,8 @@ package dotc
 package transform
 package sjs
 
+import dotty.tools.backend.sjs.JSDefinitions.jsdefn
+
 import scala.compiletime.uninitialized
 
 import MegaPhase.*
@@ -19,12 +21,7 @@ import core.StdNames.nme
 import core.SymDenotations.SymDenotation
 import core.Names.*
 import core.NameKinds.*
-
-
 import util.Store
-
-import dotty.tools.backend.sjs.JSDefinitions.jsdefn
-
 import JSSymUtils.*
 
 /** This phase makes all JS classes explicit (their definitions and references to them).

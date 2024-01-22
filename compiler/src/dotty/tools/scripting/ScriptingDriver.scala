@@ -1,13 +1,18 @@
 package dotty.tools.scripting
 
+import dotty.tools.dotc.Driver
+import dotty.tools.dotc.core.Contexts
+import dotty.tools.io.ClassPath
+import dotty.tools.io.Directory
+import dotty.tools.io.PlainDirectory
+
+import java.io.File
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
 import scala.language.unsafeNulls
 
-import java.nio.file.{ Files, Paths, Path }
-import java.io.File
-
-import dotty.tools.dotc.Driver
-import dotty.tools.dotc.core.Contexts, Contexts.{ Context, ctx }
-import dotty.tools.io.{ PlainDirectory, Directory, ClassPath }
+import Contexts.{ Context, ctx }
 import Util.*
 
 class ScriptingDriver(compilerArgs: Array[String], scriptFile: File, scriptArgs: Array[String]) extends Driver:

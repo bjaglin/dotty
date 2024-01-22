@@ -3,14 +3,14 @@ package dotc
 package transform
 package sjs
 
+import dotty.tools.backend.sjs.JSDefinitions.jsdefn
+
 import MegaPhase.*
 import core.Constants
 import core.Contexts.*
 import core.Decorators.*
 import core.StdNames.nme
 import core.Symbols.*
-
-import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 
 /** Adds fake calls to the constructors of local JS classes in calls to
  *  `createLocalJSClass`.

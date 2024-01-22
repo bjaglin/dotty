@@ -2,27 +2,28 @@ package dotty.tools
 package dotc
 package util
 
-import scala.language.unsafeNulls
-
 import dotty.tools.io.*
-import Spans.*
-import core.Contexts.*
-
-import scala.io.Codec
-import Chars.*
-import scala.annotation.internal.sharable
-import scala.collection.mutable
-import scala.collection.mutable.ArrayBuffer
-import scala.compiletime.uninitialized
-import scala.util.chaining.given
 
 import java.io.File.separator
 import java.net.URI
 import java.nio.charset.StandardCharsets
-import java.nio.file.{FileSystemException, NoSuchFileException, Paths}
+import java.nio.file.FileSystemException
+import java.nio.file.NoSuchFileException
+import java.nio.file.Paths
 import java.util.Optional
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.regex.Pattern
+import scala.annotation.internal.sharable
+import scala.collection.mutable
+import scala.collection.mutable.ArrayBuffer
+import scala.compiletime.uninitialized
+import scala.io.Codec
+import scala.language.unsafeNulls
+import scala.util.chaining.given
+
+import Spans.*
+import core.Contexts.*
+import Chars.*
 
 object ScriptSourceFile {
   @sharable private val headerPattern = Pattern.compile("""^(::)?!#.*(\r|\n|\r\n)""", Pattern.MULTILINE)

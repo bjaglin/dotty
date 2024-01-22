@@ -1,7 +1,13 @@
 package dotty.tools.dotc
 package sbt
 
+import dotty.tools.io.File
+
+import java.io.PrintWriter
+import scala.collection.mutable
 import scala.language.unsafeNulls
+import scala.util.chaining.*
+import scala.util.hashing.MurmurHash3
 
 import ExtractDependencies.internalError
 import ast.{Positioned, Trees, tpd}
@@ -18,13 +24,6 @@ import Names.*
 import NameOps.*
 import inlines.Inlines
 import transform.ValueClasses
-import dotty.tools.io.File
-import java.io.PrintWriter
-
-
-import scala.collection.mutable
-import scala.util.hashing.MurmurHash3
-import scala.util.chaining.*
 
 /** This phase sends a representation of the API of classes to sbt via callbacks.
  *

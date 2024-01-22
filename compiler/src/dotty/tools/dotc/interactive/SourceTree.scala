@@ -5,8 +5,12 @@ package interactive
 
 import ast.tpd
 import core.*
-import Contexts.*, NameOps.*, Symbols.*, StdNames.*
-import util.*, util.Spans.*
+import Contexts.*
+import NameOps.*
+import Symbols.*
+import StdNames.*
+import util.*
+import util.Spans.*
 
 /**
  * A `tree` coming from `source`

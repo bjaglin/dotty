@@ -1,9 +1,6 @@
 package dotty.tools.dotc
 package core.classfile
 
-import scala.language.unsafeNulls
-import scala.compiletime.uninitialized
-
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Names.*
@@ -14,11 +11,13 @@ import dotty.tools.dotc.util.*
 import dotty.tools.io.AbstractFile
 import dotty.tools.tasty.TastyReader
 
-import ClassfileParser.Header
-
 import java.io.IOException
 import java.lang.Integer.toHexString
 import java.util.UUID
+import scala.compiletime.uninitialized
+import scala.language.unsafeNulls
+
+import ClassfileParser.Header
 
 class ClassfileTastyUUIDParser(classfile: AbstractFile)(ictx: Context) {
 

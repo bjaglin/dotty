@@ -1,7 +1,5 @@
 package dotty.tools.repl
 
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.parsing.Scanners.Scanner
 import dotty.tools.dotc.parsing.Tokens.*
@@ -15,6 +13,8 @@ import org.jline.reader.impl.LineReaderImpl
 import org.jline.reader.impl.history.DefaultHistory
 import org.jline.terminal.TerminalBuilder
 import org.jline.utils.AttributedString
+
+import scala.language.unsafeNulls
 
 class JLineTerminal extends java.io.Closeable {
   // import java.util.logging.{Logger, Level}

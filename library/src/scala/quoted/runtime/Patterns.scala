@@ -1,6 +1,7 @@
 package scala.quoted.runtime
 
-import scala.annotation.{Annotation, compileTimeOnly}
+import scala.annotation.Annotation
+import scala.annotation.compileTimeOnly
 
 @compileTimeOnly("Illegal reference to `scala.quoted.runtime.Patterns`")
 object Patterns {

@@ -6,11 +6,14 @@ import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Denotations.SingleDenotation
 import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.NameOps._
-import dotty.tools.dotc.core.Names.{Name, termName}
+import dotty.tools.dotc.core.Names.Name
+import dotty.tools.dotc.core.Names.termName
 import dotty.tools.dotc.core.StdNames.nme
-import dotty.tools.dotc.core.Symbols.{Symbol, defn}
+import dotty.tools.dotc.core.Symbols.Symbol
+import dotty.tools.dotc.core.Symbols.defn
 import dotty.tools.dotc.core.TypeError
-import dotty.tools.dotc.util.Chars.{isOperatorPart, isScalaLetter}
+import dotty.tools.dotc.util.Chars.isOperatorPart
+import dotty.tools.dotc.util.Chars.isScalaLetter
 import dotty.tools.dotc.util.SourcePosition
 
 object CustomCompletion {

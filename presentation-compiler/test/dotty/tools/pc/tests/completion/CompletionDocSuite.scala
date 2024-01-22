@@ -1,9 +1,9 @@
 package dotty.tools.pc.tests.completion
 
 import dotty.tools.pc.base.BaseCompletionSuite
-
-import org.junit.Test
 import dotty.tools.pc.utils.MockEntries
+import org.junit.Test
+
 import scala.meta.pc.SymbolDocumentation
 
 class CompletionDocSuite extends BaseCompletionSuite:

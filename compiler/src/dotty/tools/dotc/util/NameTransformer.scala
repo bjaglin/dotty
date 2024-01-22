@@ -2,11 +2,10 @@ package dotty.tools
 package dotc
 package util
 
+import scala.annotation.internal.sharable
 import scala.language.unsafeNulls
 
 import core.Names.*
-
-import scala.annotation.internal.sharable
 
 /** Provides functions to encode and decode Scala symbolic names.
  */

@@ -1,6 +1,7 @@
 package dotty.tools.backend.sjs
 
 import dotty.tools.dotc.core.*
+
 import Contexts.*
 import Phases.*
 

@@ -3,14 +3,16 @@
  */
 package dotty.tools.dotc.classpath
 
-import scala.language.unsafeNulls
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.ClassRepresentation
+import dotty.tools.io.EfficientClassPath
+import dotty.tools.io.FileZipArchive
 
 import java.io.File
 import java.net.URL
+import scala.language.unsafeNulls
 
-import dotty.tools.io.{ AbstractFile, FileZipArchive }
 import FileUtils.*
-import dotty.tools.io.{EfficientClassPath, ClassRepresentation}
 
 /**
  * A trait allowing to look for classpath entries of given type in zip and jar files.

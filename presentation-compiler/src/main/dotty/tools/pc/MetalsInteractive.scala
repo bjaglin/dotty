@@ -1,7 +1,5 @@
 package dotty.tools.pc
 
-import scala.annotation.tailrec
-
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.ast.untpd
@@ -14,6 +12,8 @@ import dotty.tools.dotc.core.Types.Type
 import dotty.tools.dotc.interactive.SourceTree
 import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
+
+import scala.annotation.tailrec
 
 object MetalsInteractive:
 

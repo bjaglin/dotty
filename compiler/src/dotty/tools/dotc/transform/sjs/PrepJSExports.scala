@@ -2,8 +2,12 @@ package dotty.tools.dotc
 package transform
 package sjs
 
+import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.*
+import org.scalajs.ir.Names.DefaultModuleID
+import org.scalajs.ir.Trees.TopLevelExportDef.isValidTopLevelExportName
+
 import Contexts.*
 import Decorators.*
 import Denotations.*
@@ -11,18 +15,11 @@ import Flags.*
 import NameKinds.DefaultGetterName
 import StdNames.*
 import Symbols.*
-
 import Types.*
-
 import util.Spans.Span
 import util.SrcPos
-
-import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 import JSExportUtils.*
 import JSSymUtils.*
-
-import org.scalajs.ir.Names.DefaultModuleID
-import org.scalajs.ir.Trees.TopLevelExportDef.isValidTopLevelExportName
 
 object PrepJSExports {
   import tpd.*

@@ -2,12 +2,20 @@ package dotty.tools
 package dotc
 package transform
 
-import dotty.tools.dotc.ast.{Trees, tpd}
+import dotty.tools.dotc.ast.Trees
+import dotty.tools.dotc.ast.tpd
+
 import scala.collection.mutable
+
 import ValueClasses.isMethodWithExtension
 import core.*
-import Contexts.*, Flags.*, Symbols.*, Names.*, StdNames.*, NameOps.*, Trees.*
-
+import Contexts.*
+import Flags.*
+import Symbols.*
+import Names.*
+import StdNames.*
+import NameOps.*
+import Trees.*
 import DenotTransformers.DenotTransformer
 import Symbols.*
 import util.Spans.*

@@ -3,29 +3,40 @@ package dotc
 package core
 package classfile
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.classpath.FileUtils.classToTasty
+import dotty.tools.tasty.TastyHeaderUnpickler
+import dotty.tools.tasty.TastyReader
 
-import dotty.tools.tasty.{ TastyReader, TastyHeaderUnpickler }
-
-import Contexts.*, Symbols.*, Types.*, Names.*, StdNames.*, NameOps.*, Scopes.*, Decorators.*
-import SymDenotations.*, unpickleScala2.Scala2Unpickler.*, Constants.*, Annotations.*, util.Spans.*
-import Phases.*
-import ast.{ tpd, untpd }
-import ast.tpd.*, util.*
 import java.io.IOException
-
 import java.lang.Integer.toHexString
 import java.util.UUID
-
-import scala.collection.immutable
-import scala.collection.mutable.{ ListBuffer, ArrayBuffer }
 import scala.annotation.switch
+import scala.collection.immutable
+import scala.collection.mutable.ArrayBuffer
+import scala.collection.mutable.ListBuffer
+import scala.compiletime.uninitialized
+import scala.language.unsafeNulls
+import scala.util.control.NonFatal
+
+import Contexts.*
+import Symbols.*
+import Types.*
+import Names.*
+import StdNames.*
+import NameOps.*
+import Scopes.*
+import Decorators.*
+import SymDenotations.*
+import unpickleScala2.Scala2Unpickler.*
+import Constants.*
+import Annotations.*
+import util.Spans.*
+import Phases.*
+import ast.{ tpd, untpd }
+import ast.tpd.*
+import util.*
 import typer.Checking.checkNonCyclic
 import io.{AbstractFile, ZipArchive}
-import scala.util.control.NonFatal
-import dotty.tools.dotc.classpath.FileUtils.classToTasty
-
-import scala.compiletime.uninitialized
 
 object ClassfileParser {
 

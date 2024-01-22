@@ -3,7 +3,11 @@ package dotc
 package typer
 
 import core.*
-import Types.*, Contexts.*, Symbols.*, Decorators.*, Constants.*
+import Types.*
+import Contexts.*
+import Symbols.*
+import Decorators.*
+import Constants.*
 import annotation.tailrec
 import StdNames.nme
 import util.Property

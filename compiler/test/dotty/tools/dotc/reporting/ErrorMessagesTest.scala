@@ -2,10 +2,11 @@ package dotty.tools
 package dotc
 package reporting
 
+import org.junit.Assert._
+
 import scala.language.unsafeNulls
 
 import core.Contexts.Context
-import org.junit.Assert._
 
 trait ErrorMessagesTest extends DottyTest {
 

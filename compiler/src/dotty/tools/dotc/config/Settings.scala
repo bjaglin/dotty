@@ -1,17 +1,20 @@
 package dotty.tools.dotc
 package config
 
+import dotty.tools.dotc.config.Settings.Setting.ChoiceWithHelp
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.Directory
+import dotty.tools.io.JarArchive
+import dotty.tools.io.PlainDirectory
+
 import scala.language.unsafeNulls
+import scala.util.Failure
+import scala.util.Success
 
 import core.Contexts.*
-
-import dotty.tools.io.{AbstractFile, Directory, JarArchive, PlainDirectory}
-
 import annotation.tailrec
 import collection.mutable.ArrayBuffer
 import reflect.ClassTag
-import scala.util.{Success, Failure}
-import dotty.tools.dotc.config.Settings.Setting.ChoiceWithHelp
 
 object Settings:
 

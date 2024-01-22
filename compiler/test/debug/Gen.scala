@@ -1,7 +1,6 @@
-import scala.language.unsafeNulls
-
-import scala.io.Source
 import scala.collection.mutable.ListBuffer
+import scala.io.Source
+import scala.language.unsafeNulls
 import scala.util.Using
 
 /** Automate testing debuggability of generated code using JDB and expect

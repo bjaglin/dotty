@@ -2,6 +2,8 @@ package dotty.tools
 package dotc
 package transform
 
+import dotty.tools.dotc.core.Names.Name
+
 import core.*
 import Contexts.*
 import Symbols.*
@@ -15,7 +17,6 @@ import MegaPhase.*
 import Decorators.*
 import typer.RefChecks
 import reporting.trace
-import dotty.tools.dotc.core.Names.Name
 
 /** This phase implements the following transformations:
  *

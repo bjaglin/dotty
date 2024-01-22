@@ -1,14 +1,5 @@
 package dotty.tools.pc
 
-import java.nio.file.Paths
-import java.util.ArrayList
-
-import scala.jdk.CollectionConverters.*
-import scala.meta.internal.pc.DefinitionResultImpl
-import scala.meta.pc.DefinitionResult
-import scala.meta.pc.OffsetParams
-import scala.meta.pc.SymbolSearch
-
 import dotty.tools.dotc.ast.NavigateAST
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.ast.untpd
@@ -20,8 +11,15 @@ import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j.Location
+
+import java.nio.file.Paths
+import java.util.ArrayList
+import scala.jdk.CollectionConverters.*
+import scala.meta.internal.pc.DefinitionResultImpl
+import scala.meta.pc.DefinitionResult
+import scala.meta.pc.OffsetParams
+import scala.meta.pc.SymbolSearch
 
 class PcDefinitionProvider(
     driver: InteractiveDriver,

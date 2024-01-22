@@ -2,9 +2,9 @@ package dotty.tools.backend.jvm
 
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Flags.Trait
 import dotty.tools.dotc.core.Phases.*
 import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Flags.Trait
 import dotty.tools.dotc.transform.MegaPhase.MiniPhase
 
 /** Collect all super calls to trait members.

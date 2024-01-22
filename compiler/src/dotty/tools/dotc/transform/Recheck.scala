@@ -3,8 +3,15 @@ package dotc
 package transform
 
 import core.*
-import Symbols.*, Contexts.*, Types.*, ContextOps.*, Decorators.*, SymDenotations.*
-import Flags.*, NameKinds.*, Denotations.{Denotation, SingleDenotation}
+import Symbols.*
+import Contexts.*
+import Types.*
+import ContextOps.*
+import Decorators.*
+import SymDenotations.*
+import Flags.*
+import NameKinds.*
+import Denotations.{Denotation, SingleDenotation}
 import ast.*
 import Names.Name
 import Phases.Phase

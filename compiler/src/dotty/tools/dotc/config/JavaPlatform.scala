@@ -5,7 +5,10 @@ package config
 import io.*
 import classpath.AggregateClassPath
 import core.*
-import Symbols.*, Types.*, Contexts.*, StdNames.*
+import Symbols.*
+import Types.*
+import Contexts.*
+import StdNames.*
 import Flags.*
 import transform.ExplicitOuter
 

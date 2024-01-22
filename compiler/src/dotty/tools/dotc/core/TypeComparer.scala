@@ -2,7 +2,15 @@ package dotty.tools
 package dotc
 package core
 
-import Types.*, Contexts.*, Symbols.*, Flags.*, Names.*, NameOps.*, Denotations.*
+import scala.util.control.NonFatal
+
+import Types.*
+import Contexts.*
+import Symbols.*
+import Flags.*
+import Names.*
+import NameOps.*
+import Denotations.*
 import Decorators.*
 import Phases.{gettersPhase, elimByNamePhase}
 import StdNames.nme
@@ -17,7 +25,6 @@ import TypeErasure.{erasedLub, erasedGlb}
 import TypeApplications.*
 import Variances.{Variance, variancesConform}
 import Constants.Constant
-import scala.util.control.NonFatal
 import typer.ProtoTypes.constrained
 import typer.Applications.productSelectorTypes
 import reporting.trace

@@ -6,8 +6,16 @@ import core.*
 import ast.*
 import ast.Trees.*
 import StdNames.*
-import Contexts.*, Symbols.*, Types.*, SymDenotations.*, Names.*, NameOps.*, Flags.*, Decorators.*
-import ProtoTypes.*, ContextOps.*
+import Contexts.*
+import Symbols.*
+import Types.*
+import SymDenotations.*
+import Names.*
+import NameOps.*
+import Flags.*
+import Decorators.*
+import ProtoTypes.*
+import ContextOps.*
 import util.Spans.*
 import util.SrcPos
 import collection.mutable

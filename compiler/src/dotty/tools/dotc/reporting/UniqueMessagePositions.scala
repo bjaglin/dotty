@@ -3,6 +3,7 @@ package dotc
 package reporting
 
 import scala.collection.mutable
+
 import util.SourceFile
 import core.Contexts.*
 

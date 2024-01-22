@@ -2,9 +2,14 @@ package dotty.tools
 package dotc
 package typer
 
+import scala.annotation.internal.sharable
+
 import core.*
 import ast.*
-import Contexts.*, Types.*, Flags.*, Symbols.*
+import Contexts.*
+import Types.*
+import Flags.*
+import Symbols.*
 import ProtoTypes.*
 import NameKinds.UniqueName
 import util.Spans.*
@@ -14,7 +19,6 @@ import config.Printers.{gadts, typr}
 import annotation.tailrec
 import reporting.*
 import collection.mutable
-import scala.annotation.internal.sharable
 
 object Inferencing {
 

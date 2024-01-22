@@ -1,17 +1,16 @@
 package dotty.tools.pc
 
-import scala.meta.internal.pc.ItemResolver
-import scala.meta.pc.PresentationCompilerConfig
-import scala.meta.pc.SymbolDocumentation
-import scala.meta.pc.SymbolSearch
-
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.core.Types.TermRef
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j.CompletionItem
+
+import scala.meta.internal.pc.ItemResolver
+import scala.meta.pc.PresentationCompilerConfig
+import scala.meta.pc.SymbolDocumentation
+import scala.meta.pc.SymbolSearch
 
 object CompletionItemResolver extends ItemResolver:
 

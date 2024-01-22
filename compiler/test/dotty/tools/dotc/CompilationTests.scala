@@ -2,23 +2,26 @@ package dotty
 package tools
 package dotc
 
-import scala.language.unsafeNulls
-
-import org.junit.{ Test, BeforeClass, AfterClass, Ignore }
+import dotty.tools.dotc.config.ScalaSettings
+import org.junit.AfterClass
 import org.junit.Assert._
 import org.junit.Assume._
+import org.junit.BeforeClass
+import org.junit.Ignore
+import org.junit.Test
 import org.junit.experimental.categories.Category
 
 import java.io.File
 import java.nio.file._
 import java.util.stream.{ Stream => JStream }
-import scala.jdk.CollectionConverters._
-import scala.util.matching.Regex
 import scala.concurrent.duration._
+import scala.jdk.CollectionConverters._
+import scala.language.unsafeNulls
+import scala.util.matching.Regex
+
 import TestSources.sources
 import reporting.TestReporter
 import vulpix._
-import dotty.tools.dotc.config.ScalaSettings
 
 class CompilationTests {
   import ParallelTesting._

@@ -2,18 +2,26 @@ package dotty.tools
 package dotc
 package typer
 
+import java.util.Timer
+import java.util.TimerTask
+import scala.util.control.NonFatal
+
 import backend.sjs.JSDefinitions
 import core.*
-import Contexts.*, Types.*, Symbols.*, Names.*, Decorators.*, ProtoTypes.*
-import Flags.*, SymDenotations.*
+import Contexts.*
+import Types.*
+import Symbols.*
+import Names.*
+import Decorators.*
+import ProtoTypes.*
+import Flags.*
+import SymDenotations.*
 import NameKinds.FlatName
 import StdNames.*
 import config.Printers.{implicits, implicitsDetailed}
 import ast.{untpd, tpd}
 import Implicits.{hasExtMethod, Candidate}
-import java.util.{Timer, TimerTask}
 import collection.mutable
-import scala.util.control.NonFatal
 import cc.isCaptureChecking
 
 /** This trait defines the method `importSuggestionAddendum` that adds an addendum

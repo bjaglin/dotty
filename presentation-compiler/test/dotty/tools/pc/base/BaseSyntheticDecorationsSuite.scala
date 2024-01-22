@@ -1,15 +1,13 @@
 package dotty.tools.pc.base
 
-import java.net.URI
+import dotty.tools.pc.utils.TextEdits
+import org.eclipse.lsp4j.TextEdit
 
+import java.net.URI
+import scala.language.unsafeNulls
 import scala.meta.internal.jdk.CollectionConverters._
 import scala.meta.internal.metals.CompilerSyntheticDecorationsParams
 import scala.meta.internal.metals.CompilerVirtualFileParams
-import scala.language.unsafeNulls
-
-import dotty.tools.pc.utils.TextEdits
-
-import org.eclipse.lsp4j.TextEdit
 
 class BaseSyntheticDecorationsSuite extends BasePCSuite {
 

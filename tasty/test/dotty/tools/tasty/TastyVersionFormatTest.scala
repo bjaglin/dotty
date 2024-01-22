@@ -1,7 +1,8 @@
 package dotty.tools.tasty
 
 import org.junit.Assert._
-import org.junit.{Test, Ignore}
+import org.junit.Ignore
+import org.junit.Test
 
 import TastyFormat._
 import TastyBuffer._

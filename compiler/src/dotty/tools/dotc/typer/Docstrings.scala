@@ -3,7 +3,10 @@ package dotc
 package typer
 
 import core.*
-import Contexts.*, Symbols.*, Decorators.*, Comments.{_, given}
+import Contexts.*
+import Symbols.*
+import Decorators.*
+import Comments.{_, given}
 import ast.tpd
 
 object Docstrings {

@@ -1,10 +1,5 @@
 package dotty.tools.pc
 
-import java.nio.file.Paths
-
-import scala.meta.internal.pc.CodeActionErrorMessages
-import scala.meta.pc.OffsetParams
-
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
@@ -13,8 +8,11 @@ import dotty.tools.dotc.interactive.Interactive
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.util.SourceFile
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j as l
+
+import java.nio.file.Paths
+import scala.meta.internal.pc.CodeActionErrorMessages
+import scala.meta.pc.OffsetParams
 
 final class ConvertToNamedArgumentsProvider(
     driver: InteractiveDriver,

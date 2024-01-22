@@ -2,24 +2,28 @@ package dotty.tools
 package dotc
 package transform
 
+import scala.annotation.tailrec
+import scala.collection.mutable
+
 import core.*
 import MegaPhase.*
-import Symbols.*, Contexts.*, Types.*, StdNames.*, NameOps.*
+import Symbols.*
+import Contexts.*
+import Types.*
+import StdNames.*
+import NameOps.*
 import patmat.SpaceEngine
 import util.Spans.*
 import typer.Applications.*
-
 import Annotations.*
-import Flags.*, Constants.*
+import Flags.*
+import Constants.*
 import Decorators.*
 import NameKinds.{PatMatStdBinderName, PatMatAltsName, PatMatResultName}
 import config.Printers.patmatch
 import reporting.*
 import ast.*
 import util.Property.*
-
-import scala.annotation.tailrec
-import scala.collection.mutable
 
 /** The pattern matching transform.
  *  After this phase, the only Match nodes remaining in the code are simple switches

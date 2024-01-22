@@ -1,6 +1,8 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.dotc.util.Property
+
 import core.Contexts.*
 import core.NameKinds.*
 import core.Symbols.*
@@ -9,7 +11,6 @@ import core.Decorators.*
 import core.Names.TermName
 import MegaPhase.MiniPhase
 import config.Printers.transforms
-import dotty.tools.dotc.util.Property
 
 /** Add accessors for all protected accesses. An accessor is needed if
  *  according to the rules of the JVM a protected class member is not accessible

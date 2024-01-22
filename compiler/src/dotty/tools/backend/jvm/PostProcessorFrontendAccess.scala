@@ -1,13 +1,16 @@
 package dotty.tools.backend.jvm
 
-import scala.collection.mutable.{Clearable, HashSet}
-import dotty.tools.dotc.util.*
-import dotty.tools.dotc.reporting.Message
-import dotty.tools.io.AbstractFile
-import java.util.{Collection => JCollection, Map => JMap}
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.report
 import dotty.tools.dotc.core.Phases
+import dotty.tools.dotc.report
+import dotty.tools.dotc.reporting.Message
+import dotty.tools.dotc.util.*
+import dotty.tools.io.AbstractFile
+
+import java.util.{Collection => JCollection}
+import java.util.{Map => JMap}
+import scala.collection.mutable.Clearable
+import scala.collection.mutable.HashSet
 import scala.compiletime.uninitialized
 
 /**

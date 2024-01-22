@@ -1,7 +1,9 @@
 package dotty.tools.dotc
 package core
 
-import Types.*, Symbols.*, Contexts.*
+import Types.*
+import Symbols.*
+import Contexts.*
 import cc.CaptureSet.IdempotentCaptRefMap
 
 /** Substitution operations on types. See the corresponding `subst` and

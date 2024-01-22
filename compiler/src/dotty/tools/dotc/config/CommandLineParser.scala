@@ -1,7 +1,8 @@
 package dotty.tools.dotc.config
 
 import java.lang.Character.isWhitespace
-import java.nio.file.{Files, Paths}
+import java.nio.file.Files
+import java.nio.file.Paths
 import scala.annotation.tailrec
 import scala.collection.mutable.ArrayBuffer
 import scala.jdk.CollectionConverters.*

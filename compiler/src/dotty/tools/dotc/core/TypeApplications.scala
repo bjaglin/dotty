@@ -2,6 +2,8 @@ package dotty.tools
 package dotc
 package core
 
+import dotty.tools.dotc.config.Config
+
 import Types.*
 import Contexts.*
 import Symbols.*
@@ -11,7 +13,6 @@ import util.Stats.*
 import Names.*
 import StdNames.nme
 import Flags.{Module, Provisional}
-import dotty.tools.dotc.config.Config
 
 object TypeApplications {
 

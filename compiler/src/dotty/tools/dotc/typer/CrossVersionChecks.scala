@@ -2,12 +2,19 @@ package dotty.tools
 package dotc
 package transform
 
+import scala.util.Failure
+import scala.util.Success
+
 import core.*
-import Symbols.*, Types.*, Contexts.*, Flags.*, Decorators.*, reporting.*
+import Symbols.*
+import Types.*
+import Contexts.*
+import Flags.*
+import Decorators.*
+import reporting.*
 import util.SrcPos
 import config.{ScalaVersion, NoScalaVersion, Feature, ScalaRelease}
 import MegaPhase.MiniPhase
-import scala.util.{Failure, Success}
 import ast.tpd
 
 class CrossVersionChecks extends MiniPhase:

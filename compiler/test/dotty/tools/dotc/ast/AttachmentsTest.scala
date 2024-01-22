@@ -3,9 +3,10 @@ package dotty.tools.dotc.ast
 import dotty.tools.DottyTest
 import dotty.tools.dotc.ast.Trees._
 import dotty.tools.dotc.util.Property
-
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
+import org.junit.Assert.fail
 import org.junit.Test
-import org.junit.Assert.{assertEquals, assertTrue, fail}
 
 class AttachmentsTests extends DottyTest {
 

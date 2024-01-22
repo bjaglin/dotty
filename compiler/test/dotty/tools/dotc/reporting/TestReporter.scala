@@ -2,22 +2,30 @@ package dotty.tools
 package dotc
 package reporting
 
-import scala.language.unsafeNulls
-import java.io.{BufferedReader, FileInputStream, FileOutputStream, FileReader, PrintStream, PrintWriter, StringReader, StringWriter, File as JFile}
+import dotty.Properties
+
+import java.io.BufferedReader
+import java.io.FileInputStream
+import java.io.FileOutputStream
+import java.io.FileReader
+import java.io.PrintStream
+import java.io.PrintWriter
+import java.io.StringReader
+import java.io.StringWriter
+import java.io.{File => JFile}
 import java.text.SimpleDateFormat
 import java.util.Date
-import core.Decorators.*
-
 import scala.collection.mutable
+import scala.compiletime.uninitialized
+import scala.io.Codec
 import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
+
+import core.Decorators.*
 import util.SourcePosition
 import core.Contexts.*
 import Diagnostic.*
-import dotty.Properties
 import interfaces.Diagnostic.{ERROR, WARNING}
-
-import scala.io.Codec
-import scala.compiletime.uninitialized
 
 class TestReporter protected (outWriter: PrintWriter, logLevel: Int)
 extends Reporter with UniqueMessagePositions with HideNonSensicalMessages with MessageRendering {

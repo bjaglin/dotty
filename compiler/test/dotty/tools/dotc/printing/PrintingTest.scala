@@ -2,25 +2,23 @@ package dotty
 package tools
 package dotc
 
+import dotty.tools.io.Directory
+import org.junit.Test
+
+import java.io.File
+import java.io._
+import java.lang.System.{lineSeparator => EOL}
+import java.nio.charset.StandardCharsets
+import java.nio.file.{Path => JPath}
+import scala.io.Source
 import scala.language.unsafeNulls
+import scala.util.Using
 
 import vulpix.FileDiff
 import vulpix.TestConfiguration
 import vulpix.TestConfiguration
 import reporting.TestReporter
-
-import java.io._
-import java.nio.file.{Path => JPath}
-import java.lang.System.{lineSeparator => EOL}
-import java.nio.charset.StandardCharsets
-
 import interfaces.Diagnostic.INFO
-import dotty.tools.io.Directory
-
-import scala.io.Source
-import org.junit.Test
-import scala.util.Using
-import java.io.File
 
 class PrintingTest {
 

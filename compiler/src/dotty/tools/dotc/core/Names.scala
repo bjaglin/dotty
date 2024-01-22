@@ -2,15 +2,15 @@ package dotty.tools
 package dotc
 package core
 
+import scala.annotation.internal.sharable
 import scala.io.Codec
+
 import util.NameTransformer
 import printing.{Showable, Texts, Printer}
 import Texts.Text
 import StdNames.str
 import config.Config
 import util.{LinearMap, HashSet}
-
-import scala.annotation.internal.sharable
 
 object Names {
   import NameKinds.*

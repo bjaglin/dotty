@@ -1,10 +1,24 @@
 package dotty.tools.backend.sjs
 
-import scala.language.unsafeNulls
+import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
+import dotty.tools.dotc.core.*
+import dotty.tools.dotc.transform.sjs.JSSymUtils.*
+import org.scalajs.ir
+import org.scalajs.ir.Names.ClassName
+import org.scalajs.ir.Names.FieldName
+import org.scalajs.ir.Names.LabelName
+import org.scalajs.ir.Names.LocalName
+import org.scalajs.ir.Names.MethodName
+import org.scalajs.ir.Names.SimpleMethodName
+import org.scalajs.ir.OriginalName
+import org.scalajs.ir.OriginalName.NoOriginalName
+import org.scalajs.ir.UTF8String
+import org.scalajs.ir.{Trees => js}
+import org.scalajs.ir.{Types => jstpe}
 
 import scala.collection.mutable
+import scala.language.unsafeNulls
 
-import dotty.tools.dotc.core.*
 import Contexts.*
 import Flags.*
 import Types.*
@@ -12,18 +26,6 @@ import Symbols.*
 import NameOps.*
 import Names.*
 import StdNames.*
-
-import dotty.tools.dotc.transform.sjs.JSSymUtils.*
-
-import org.scalajs.ir
-import org.scalajs.ir.{Trees => js, Types => jstpe}
-import org.scalajs.ir.Names.{LocalName, LabelName, FieldName, SimpleMethodName, MethodName, ClassName}
-import org.scalajs.ir.OriginalName
-import org.scalajs.ir.OriginalName.NoOriginalName
-import org.scalajs.ir.UTF8String
-
-import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
-
 import JSDefinitions.jsdefn
 
 /** Encoding of symbol names for JavaScript

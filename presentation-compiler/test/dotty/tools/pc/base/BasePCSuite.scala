@@ -1,27 +1,29 @@
 package dotty.tools.pc.base
 
-import java.nio.charset.StandardCharsets
-import java.nio.file.{Files, Path}
-import java.util.Comparator
-import java.util.concurrent.{Executors, ScheduledExecutorService}
-import java.lang.management.ManagementFactory
-
-import scala.collection.immutable
-import scala.meta.internal.jdk.CollectionConverters.*
-import scala.meta.internal.metals.{ClasspathSearch, ExcludedPackagesHandler}
-import scala.meta.internal.pc.PresentationCompilerConfigImpl
-import scala.meta.pc.{PresentationCompiler, PresentationCompilerConfig}
-import scala.language.unsafeNulls
-
+import dotty.tools.pc.ScalaPresentationCompiler
 import dotty.tools.pc.*
 import dotty.tools.pc.completions.CompletionSource
-import dotty.tools.pc.ScalaPresentationCompiler
 import dotty.tools.pc.tests.buildinfo.BuildInfo
 import dotty.tools.pc.utils._
-
 import org.eclipse.lsp4j.MarkupContent
 import org.eclipse.lsp4j.jsonrpc.messages.Either as JEither
 import org.junit.runner.RunWith
+
+import java.lang.management.ManagementFactory
+import java.nio.charset.StandardCharsets
+import java.nio.file.Files
+import java.nio.file.Path
+import java.util.Comparator
+import java.util.concurrent.Executors
+import java.util.concurrent.ScheduledExecutorService
+import scala.collection.immutable
+import scala.language.unsafeNulls
+import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.metals.ClasspathSearch
+import scala.meta.internal.metals.ExcludedPackagesHandler
+import scala.meta.internal.pc.PresentationCompilerConfigImpl
+import scala.meta.pc.PresentationCompiler
+import scala.meta.pc.PresentationCompilerConfig
 
 object TestResources:
   val scalaLibrary = BuildInfo.ideTestsDependencyClasspath.map(_.toPath).toSeq

@@ -2,14 +2,18 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
-import Contexts.*, Decorators.*, Denotations.*, SymDenotations.*, Symbols.*, Types.*
-import Annotations.*
-
 import dotty.tools.dotc.util.Spans.Span
-
-import org.junit.Test
 import org.junit.Assert.*
+import org.junit.Test
+
+import core.*
+import Contexts.*
+import Decorators.*
+import Denotations.*
+import SymDenotations.*
+import Symbols.*
+import Types.*
+import Annotations.*
 
 class TypeTestsCastsTest extends DottyTest:
   val defn = ctx.definitions; import defn.*

@@ -1,10 +1,11 @@
 package dotty.tools.dotc.printing
 
-import scala.language.unsafeNulls
-
 import dotty.tools.DottyTest
 import org.junit.Assert._
-import org.junit.{Ignore, Test}
+import org.junit.Ignore
+import org.junit.Test
+
+import scala.language.unsafeNulls
 
 /** Adapted from Ammonite HighlightTests
  */

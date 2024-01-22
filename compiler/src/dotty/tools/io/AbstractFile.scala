@@ -5,14 +5,16 @@
 
 package dotty.tools.io
 
-import scala.language.unsafeNulls
-
-import java.io.{
-  IOException, InputStream, OutputStream, BufferedOutputStream,
-  ByteArrayOutputStream
-}
+import java.io.BufferedOutputStream
+import java.io.ByteArrayOutputStream
+import java.io.IOException
+import java.io.InputStream
+import java.io.OutputStream
 import java.net.URL
-import java.nio.file.{FileAlreadyExistsException, Files, Paths}
+import java.nio.file.FileAlreadyExistsException
+import java.nio.file.Files
+import java.nio.file.Paths
+import scala.language.unsafeNulls
 
 /**
  * An abstraction over files for use in the reflection/compiler libraries.

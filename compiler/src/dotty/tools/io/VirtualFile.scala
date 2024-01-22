@@ -5,9 +5,11 @@
 
 package dotty.tools.io
 
+import java.io.ByteArrayInputStream
+import java.io.ByteArrayOutputStream
+import java.io.InputStream
+import java.io.OutputStream
 import scala.language.unsafeNulls
-
-import java.io.{ ByteArrayInputStream, ByteArrayOutputStream, InputStream, OutputStream }
 
 /** This class implements an in-memory file.
  *

@@ -1,21 +1,23 @@
 package dotty.tools.backend.jvm
 
+import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Decorators.em
+import dotty.tools.dotc.core.Phases
+import dotty.tools.dotc.profile.ThreadPoolFactory
+import dotty.tools.io.AbstractFile
+
 import java.nio.channels.ClosedByInterruptException
 import java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy
 import java.util.concurrent.*
-
 import scala.collection.mutable.ListBuffer
-import scala.concurrent.duration.Duration
-import scala.concurrent.{Await, ExecutionContext, ExecutionContextExecutor, Future}
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.io.AbstractFile
-import dotty.tools.dotc.profile.ThreadPoolFactory
-import scala.util.control.NonFatal
-import dotty.tools.dotc.core.Phases
-import dotty.tools.dotc.core.Decorators.em
-
-import scala.language.unsafeNulls
 import scala.compiletime.uninitialized
+import scala.concurrent.Await
+import scala.concurrent.ExecutionContext
+import scala.concurrent.ExecutionContextExecutor
+import scala.concurrent.Future
+import scala.concurrent.duration.Duration
+import scala.language.unsafeNulls
+import scala.util.control.NonFatal
 
 /**
  * Interface to handle post-processing and classfile writing (see [[PostProcessor]]) of generated

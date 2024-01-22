@@ -6,10 +6,8 @@ import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.transform.MegaPhase.MiniPhase
 
-
-import scala.collection.mutable
-
 import java.util.IdentityHashMap
+import scala.collection.mutable
 
 object CollectNullableFields {
   val name: String = "collectNullableFields"

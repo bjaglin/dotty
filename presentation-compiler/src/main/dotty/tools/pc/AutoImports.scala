@@ -1,10 +1,5 @@
 package dotty.tools.pc
 
-import scala.annotation.tailrec
-import scala.jdk.CollectionConverters.*
-import scala.meta.internal.pc.AutoImportPosition
-import scala.meta.pc.PresentationCompilerConfig
-
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Comments.Comment
 import dotty.tools.dotc.core.Contexts.*
@@ -14,8 +9,12 @@ import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j as l
+
+import scala.annotation.tailrec
+import scala.jdk.CollectionConverters.*
+import scala.meta.internal.pc.AutoImportPosition
+import scala.meta.pc.PresentationCompilerConfig
 
 object AutoImports:
 

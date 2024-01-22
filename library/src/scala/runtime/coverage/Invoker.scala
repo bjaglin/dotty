@@ -1,11 +1,13 @@
 package scala.runtime.coverage
 
+import java.io.File
+import java.io.FileWriter
+import java.nio.file.Files
 import scala.annotation.internal.sharable
 import scala.annotation.nowarn
 import scala.collection.concurrent.TrieMap
-import scala.collection.mutable.{BitSet, AnyRefMap}
-import java.io.{File, FileWriter}
-import java.nio.file.Files
+import scala.collection.mutable.AnyRefMap
+import scala.collection.mutable.BitSet
 
 @sharable // avoids false positive by -Ycheck-reentrant
 object Invoker {

@@ -2,7 +2,10 @@ package dotty.tools
 package dotc
 package core
 
-import Types.*, Contexts.*, Symbols.*, Decorators.*
+import Types.*
+import Contexts.*
+import Symbols.*
+import Decorators.*
 import util.Property
 import Names.Name
 

@@ -1,7 +1,8 @@
 package dotty.tools.tasty
 
-import util.Util.dble
 import java.nio.charset.StandardCharsets
+
+import util.Util.dble
 
 object TastyBuffer {
 

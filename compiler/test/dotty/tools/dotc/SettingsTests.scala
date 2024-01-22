@@ -1,19 +1,17 @@
 package dotty.tools
 package dotc
 
+import dotty.tools.dotc.config.Settings._
+import dotty.tools.vulpix.TestConfiguration.mkClasspath
+import org.junit.Assert._
+import org.junit.Test
+
+import java.nio.file._
 import scala.language.unsafeNulls
 
 import reporting.StoreReporter
 import vulpix.TestConfiguration
-
 import core.Contexts.{Context, ContextBase}
-import dotty.tools.dotc.config.Settings._
-import dotty.tools.vulpix.TestConfiguration.mkClasspath
-
-import java.nio.file._
-
-import org.junit.Test
-import org.junit.Assert._
 
 class SettingsTests {
 

@@ -2,7 +2,9 @@ package dotty.tools
 package dotc
 package core
 
-import Types.*, Symbols.*, Contexts.*
+import Types.*
+import Symbols.*
+import Contexts.*
 import printing.Printer
 import printing.Texts.Text
 

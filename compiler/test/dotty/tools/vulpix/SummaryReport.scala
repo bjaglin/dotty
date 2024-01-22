@@ -2,8 +2,9 @@ package dotty
 package tools
 package vulpix
 
-import scala.language.unsafeNulls
 import scala.collection.mutable
+import scala.language.unsafeNulls
+
 import dotc.reporting.TestReporter
 
 /** `SummaryReporting` can be used by unit tests by utilizing `@AfterClass` to

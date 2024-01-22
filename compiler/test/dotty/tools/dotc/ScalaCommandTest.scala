@@ -1,12 +1,13 @@
 package dotty.tools.dotc
 
-import scala.language.unsafeNulls
-
-import org.junit.Test
+import dotty.tools.dotc.config.Settings._
 import org.junit.Assert._
 import org.junit.Rule
+import org.junit.Test
 import org.junit.rules.TemporaryFolder
-import dotty.tools.dotc.config.Settings._
+
+import scala.language.unsafeNulls
+
 import core.Contexts.{Context, ContextBase}
 
 class ScalaCommandTest:

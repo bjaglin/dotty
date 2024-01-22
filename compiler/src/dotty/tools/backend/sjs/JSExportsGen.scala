@@ -1,11 +1,23 @@
 package dotty.tools.backend.sjs
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.core.*
+import dotty.tools.dotc.report
+import dotty.tools.dotc.transform.sjs.JSExportUtils.*
+import dotty.tools.dotc.transform.sjs.JSSymUtils.*
+import dotty.tools.dotc.util.SourcePosition
+import dotty.tools.dotc.util.SrcPos
+import org.scalajs.ir.Names.DefaultModuleID
+import org.scalajs.ir.OriginalName.NoOriginalName
+import org.scalajs.ir.Position
+import org.scalajs.ir.Position.NoPosition
+import org.scalajs.ir.Trees.OptimizerHints
+import org.scalajs.ir.{Names => jsNames}
+import org.scalajs.ir.{Trees => js}
+import org.scalajs.ir.{Types => jstpe}
 
 import scala.annotation.tailrec
 import scala.collection.mutable
-
-import dotty.tools.dotc.core.*
+import scala.language.unsafeNulls
 
 import Contexts.*
 import Decorators.*
@@ -18,19 +30,6 @@ import Phases.*
 import Symbols.*
 import Types.*
 import TypeErasure.ErasedValueType
-
-import dotty.tools.dotc.util.{SourcePosition, SrcPos}
-import dotty.tools.dotc.report
-
-import org.scalajs.ir.{Position, Names => jsNames, Trees => js, Types => jstpe}
-import org.scalajs.ir.Names.DefaultModuleID
-import org.scalajs.ir.OriginalName.NoOriginalName
-import org.scalajs.ir.Position.NoPosition
-import org.scalajs.ir.Trees.OptimizerHints
-
-import dotty.tools.dotc.transform.sjs.JSExportUtils.*
-import dotty.tools.dotc.transform.sjs.JSSymUtils.*
-
 import JSEncoding.*
 
 final class JSExportsGen(jsCodeGen: JSCodeGen)(using Context) {

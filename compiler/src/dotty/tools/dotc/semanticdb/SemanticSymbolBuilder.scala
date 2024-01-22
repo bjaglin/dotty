@@ -2,14 +2,14 @@ package dotty.tools
 package dotc
 package semanticdb
 
+import scala.annotation.tailrec
+import scala.collection.mutable
+
 import core.*
 import Contexts.*
 import Symbols.*
 import Flags.*
 import Names.Name
-
-import scala.annotation.tailrec
-import scala.collection.mutable
 
 class SemanticSymbolBuilder:
   import Scala3.{_, given}

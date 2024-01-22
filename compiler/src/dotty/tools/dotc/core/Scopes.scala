@@ -7,6 +7,8 @@ package dotty.tools
 package dotc
 package core
 
+import scala.compiletime.uninitialized
+
 import Symbols.*
 import Types.{TermRef, NoPrefix}
 import Flags.*
@@ -17,9 +19,7 @@ import Denotations.*
 import printing.Texts.*
 import printing.Printer
 import SymDenotations.NoDenotation
-
 import collection.mutable
-import scala.compiletime.uninitialized
 
 object Scopes {
 

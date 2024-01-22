@@ -1,13 +1,13 @@
 package dotty.tools
 package vulpix
 
-import scala.language.unsafeNulls
+import org.junit.AfterClass
+import org.junit.Assert._
+import org.junit.Test
 
 import java.io.{File => JFile}
-import org.junit.Assert._
-import org.junit.{ Test, AfterClass }
-
 import scala.concurrent.duration._
+import scala.language.unsafeNulls
 import scala.util.control.NonFatal
 
 /** Unit tests for the Vulpix test suite */

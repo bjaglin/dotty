@@ -2,6 +2,8 @@ package dotty.tools
 package dotc
 package config
 
+import dotty.tools.io.File
+
 import scala.language.unsafeNulls
 
 import WrappedProperties.AccessControl
@@ -11,7 +13,6 @@ import ClassPath.split
 import PartialFunction.condOpt
 import core.Contexts.*
 import Settings.*
-import dotty.tools.io.File
 
 object PathResolver {
 

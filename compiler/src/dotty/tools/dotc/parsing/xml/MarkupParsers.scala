@@ -3,14 +3,14 @@ package dotc
 package parsing
 package xml
 
-import scala.language.unsafeNulls
-import scala.compiletime.uninitialized
-
-import scala.collection.mutable
 import scala.collection.BufferedIterator
+import scala.collection.mutable
+import scala.compiletime.uninitialized
+import scala.language.unsafeNulls
+import scala.util.control.ControlThrowable
+
 import core.Contexts.Context
 import mutable.{ Buffer, ArrayBuffer, ListBuffer }
-import scala.util.control.ControlThrowable
 import util.Chars.SU
 import Parsers.*
 import util.Spans.*

@@ -1,24 +1,28 @@
 package dotty.tools.dotc.core.tasty
 
-import scala.language.unsafeNulls
-
+import dotty.tools.dotc.Driver
+import dotty.tools.dotc.Main
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.tpd.TreeOps
-import dotty.tools.dotc.{Driver, Main}
 import dotty.tools.dotc.core.Comments.docCtx
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Decorators.{toTermName, toTypeName}
+import dotty.tools.dotc.core.Decorators.toTermName
+import dotty.tools.dotc.core.Decorators.toTypeName
 import dotty.tools.dotc.core.Mode
 import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.interfaces.Diagnostic.ERROR
 import dotty.tools.dotc.reporting.TestReporter
-import dotty.tools.io.{Directory, File, Path}
-
-import dotty.tools.vulpix.TestConfiguration
-
-import org.junit.Test
-import org.junit.Assert.{assertEquals, assertFalse, fail}
 import dotty.tools.io.AbstractFile
+import dotty.tools.io.Directory
+import dotty.tools.io.File
+import dotty.tools.io.Path
+import dotty.tools.vulpix.TestConfiguration
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
+import org.junit.Assert.fail
+import org.junit.Test
+
+import scala.language.unsafeNulls
 
 class CommentPicklingTest {
 

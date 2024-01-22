@@ -2,12 +2,14 @@ package dotty
 package tools
 package scripting
 
-import scala.language.unsafeNulls
+import org.junit.AfterClass
+import org.junit.Ignore
+import org.junit.Test
 
 import java.io.File
 import java.nio.file.Path
+import scala.language.unsafeNulls
 
-import org.junit.{Test, Ignore, AfterClass}
 import vulpix.TestConfiguration
 import ScriptTestEnv.*
 

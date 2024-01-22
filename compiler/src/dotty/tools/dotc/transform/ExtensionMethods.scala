@@ -5,13 +5,23 @@
 package dotty.tools.dotc
 package transform
 
-import dotty.tools.dotc.transform.MegaPhase.*
-import ValueClasses.*
 import dotty.tools.dotc.ast.tpd
+import dotty.tools.dotc.transform.MegaPhase.*
+
 import scala.collection.mutable
+
+import ValueClasses.*
 import core.*
-import Types.*, Contexts.*, Names.*, Flags.*, DenotTransformers.*, Phases.*
-import SymDenotations.*, Symbols.*, StdNames.*, Denotations.*
+import Types.*
+import Contexts.*
+import Names.*
+import Flags.*
+import DenotTransformers.*
+import Phases.*
+import SymDenotations.*
+import Symbols.*
+import StdNames.*
+import Denotations.*
 import TypeErasure.{ valueErasure, ErasedValueType }
 import NameKinds.{ExtMethName, BodyRetainerName}
 import Decorators.*

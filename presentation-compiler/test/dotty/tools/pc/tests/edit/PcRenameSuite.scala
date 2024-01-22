@@ -1,7 +1,6 @@
 package dotty.tools.pc.tests.edit
 
 import dotty.tools.pc.base.BasePcRenameSuite
-
 import org.junit.Test
 
 class PcRenameSuite extends BasePcRenameSuite:

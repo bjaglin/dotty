@@ -1,12 +1,13 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
+import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.transform.MegaPhase.*
+
+import core.*
 import Flags.*
 import Contexts.*
 import Symbols.*
-import dotty.tools.dotc.ast.tpd
 import reporting.*
 
 

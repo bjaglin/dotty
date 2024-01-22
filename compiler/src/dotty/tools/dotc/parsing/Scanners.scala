@@ -2,29 +2,34 @@ package dotty.tools
 package dotc
 package parsing
 
+import dotty.tools.dotc.config.Feature.sourceVersion
+import dotty.tools.dotc.reporting.Message.rewriteNotice
+
+import java.util.Objects
+import scala.annotation.switch
+import scala.annotation.tailrec
+import scala.collection.immutable.SortedMap
+import scala.collection.mutable
 import scala.language.unsafeNulls
 
-import core.Names.*, core.Contexts.*, core.Decorators.*, util.Spans.*
-import core.StdNames.*, core.Comments.*
+import core.Names.*
+import core.Contexts.*
+import core.Decorators.*
+import util.Spans.*
+import core.StdNames.*
+import core.Comments.*
 import util.SourceFile
 import util.Chars.*
 import util.{SourcePosition, CharBuffer}
 import util.Spans.Span
 import config.Config
 import Tokens.*
-import scala.annotation.{switch, tailrec}
-import scala.collection.mutable
-import scala.collection.immutable.SortedMap
 import rewrites.Rewrites.patch
 import config.Feature
 import config.Feature.{migrateTo3, fewerBracesEnabled}
 import config.SourceVersion.{`3.0`, `3.0-migration`}
 import config.MigrationVersion
 import reporting.{NoProfile, Profile, Message}
-
-import java.util.Objects
-import dotty.tools.dotc.reporting.Message.rewriteNotice
-import dotty.tools.dotc.config.Feature.sourceVersion
 
 object Scanners {
 

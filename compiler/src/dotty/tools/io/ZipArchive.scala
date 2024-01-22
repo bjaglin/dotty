@@ -5,15 +5,18 @@
 
 package dotty.tools.io
 
-import scala.language.unsafeNulls
-
+import java.io.FilterInputStream
+import java.io.IOException
+import java.io.InputStream
+import java.io.OutputStream
 import java.net.URL
-import java.io.{ IOException, InputStream, OutputStream, FilterInputStream }
 import java.nio.file.Files
-import java.util.zip.{ ZipEntry, ZipFile }
 import java.util.jar.Manifest
+import java.util.zip.ZipEntry
+import java.util.zip.ZipFile
 import scala.collection.mutable
 import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
 
 /** An abstraction for zip files and streams.  Everything is written the way
  *  it is for performance: we come through here a lot on every run.  Be careful

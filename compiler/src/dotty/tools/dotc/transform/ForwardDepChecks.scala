@@ -2,15 +2,20 @@ package dotty.tools
 package dotc
 package transform
 
+import scala.compiletime.uninitialized
+
 import core.*
-import Symbols.*, Types.*, Contexts.*, Flags.*, Decorators.*, reporting.*
+import Symbols.*
+import Types.*
+import Contexts.*
+import Flags.*
+import Decorators.*
+import reporting.*
 import util.Spans.Span
 import util.Store
 import collection.immutable
 import ast.tpd
 import MegaPhase.MiniPhase
-
-import scala.compiletime.uninitialized
 
 object ForwardDepChecks:
 

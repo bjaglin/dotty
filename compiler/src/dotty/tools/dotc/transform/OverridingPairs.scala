@@ -2,15 +2,20 @@ package dotty.tools
 package dotc
 package transform
 
+import scala.annotation.tailrec
+import scala.compiletime.uninitialized
+
 import core.*
-import Flags.*, Symbols.*, Contexts.*, Scopes.*, Decorators.*, Types.Type
+import Flags.*
+import Symbols.*
+import Contexts.*
+import Scopes.*
+import Decorators.*
+import Types.Type
 import NameKinds.DefaultGetterName
 import NullOpsDecorator.*
 import collection.immutable.BitSet
-import scala.annotation.tailrec
 import cc.isCaptureChecking
-
-import scala.compiletime.uninitialized
 
 /** A module that can produce a kind of iterator (`Cursor`),
  *  which yields all pairs of overriding/overridden symbols

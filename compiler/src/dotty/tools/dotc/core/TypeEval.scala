@@ -2,7 +2,11 @@ package dotty.tools
 package dotc
 package core
 
-import Types.*, Contexts.*, Symbols.*, Constants.*, Decorators.*
+import Types.*
+import Contexts.*
+import Symbols.*
+import Constants.*
+import Decorators.*
 import config.Printers.typr
 import reporting.trace
 import StdNames.tpnme

@@ -1,14 +1,13 @@
 package dotty.tools.pc.base
 
-import java.net.URI
-
-import scala.meta.internal.jdk.CollectionConverters.*
-import scala.meta.internal.metals.{CompilerOffsetParams, CompilerRangeParams}
-import scala.language.unsafeNulls
-
 import dotty.tools.pc.utils.TextEdits
-
 import org.eclipse.lsp4j as l
+
+import java.net.URI
+import scala.language.unsafeNulls
+import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.metals.CompilerOffsetParams
+import scala.meta.internal.metals.CompilerRangeParams
 
 class BaseExtractMethodSuite extends BaseCodeActionSuite:
   def checkEdit(

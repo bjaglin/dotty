@@ -2,8 +2,10 @@ package dotty.tools
 package dotc
 package reporting
 
+import java.io.BufferedReader
+import java.io.PrintWriter
+
 import core.Contexts.*
-import java.io.{ BufferedReader, PrintWriter }
 import Diagnostic.Error
 
 /**

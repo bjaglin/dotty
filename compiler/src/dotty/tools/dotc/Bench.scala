@@ -1,12 +1,12 @@
 package dotty.tools
 package dotc
 
+import scala.annotation.internal.sharable
+import scala.compiletime.uninitialized
+
 import core.Contexts.*
 import reporting.Reporter
 import io.AbstractFile
-
-import scala.annotation.internal.sharable
-import scala.compiletime.uninitialized
 
 /** A main class for running compiler benchmarks. Can instantiate a given
  *  number of compilers and run each (sequentially) a given number of times

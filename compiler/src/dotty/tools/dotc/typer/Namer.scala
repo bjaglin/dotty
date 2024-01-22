@@ -2,13 +2,28 @@ package dotty.tools
 package dotc
 package typer
 
+import scala.compiletime.uninitialized
+
 import core.*
 import ast.*
-import Trees.*, StdNames.*, Scopes.*, Denotations.*, NamerOps.*, ContextOps.*
-import Contexts.*, Symbols.*, Types.*, SymDenotations.*, Names.*, NameOps.*, Flags.*
-import Decorators.*, Comments.{_, given}
+import Trees.*
+import StdNames.*
+import Scopes.*
+import Denotations.*
+import NamerOps.*
+import ContextOps.*
+import Contexts.*
+import Symbols.*
+import Types.*
+import SymDenotations.*
+import Names.*
+import NameOps.*
+import Flags.*
+import Decorators.*
+import Comments.{_, given}
 import NameKinds.DefaultGetterName
-import ast.desugar, ast.desugar.*
+import ast.desugar
+import ast.desugar.*
 import ProtoTypes.*
 import util.Spans.*
 import util.Property
@@ -28,8 +43,6 @@ import TypeErasure.erasure
 import reporting.*
 import config.Feature.sourceVersion
 import config.SourceVersion.*
-
-import scala.compiletime.uninitialized
 
 /** This class creates symbols from definitions and imports and gives them
  *  lazy types.

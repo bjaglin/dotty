@@ -1,7 +1,7 @@
 package dotty.tools.repl
 
-import dotty.tools.dotc.config.Properties.*
 import dotty.tools.dotc.config.CompilerCommand
+import dotty.tools.dotc.config.Properties.*
 
 object ReplCommand extends CompilerCommand:
   override def cmdName: String = "scala"

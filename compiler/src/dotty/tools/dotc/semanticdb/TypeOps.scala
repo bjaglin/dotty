@@ -2,6 +2,11 @@ package dotty.tools
 package dotc
 package semanticdb
 
+import dotty.tools.dotc.core.Names.Designator
+import dotty.tools.dotc.{semanticdb => s}
+
+import scala.util.chaining.scalaUtilChainingOps
+
 import core.Symbols.*
 import core.Contexts.Context
 import core.Types.*
@@ -9,13 +14,8 @@ import core.Annotations.Annotation
 import core.Flags
 import core.Names.Name
 import core.StdNames.tpnme
-import scala.util.chaining.scalaUtilChainingOps
-
 import collection.mutable
-
-import dotty.tools.dotc.{semanticdb => s}
 import Scala3.{FakeSymbol, SemanticSymbol, WildcardTypeSymbol, TypeParamRefSymbol, TermParamRefSymbol, RefinementSymbol}
-import dotty.tools.dotc.core.Names.Designator
 
 class TypeOps:
   import SymbolScopeOps.*

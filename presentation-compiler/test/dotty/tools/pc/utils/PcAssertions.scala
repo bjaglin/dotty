@@ -1,13 +1,12 @@
 package dotty.tools.pc.utils
 
-import scala.language.unsafeNulls
-
-import dotty.tools.pc.completions.CompletionSource
 import dotty.tools.dotc.util.DiffUtil
+import dotty.tools.pc.completions.CompletionSource
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.hamcrest
 import org.hamcrest.*
+
+import scala.language.unsafeNulls
 
 trait PcAssertions:
 

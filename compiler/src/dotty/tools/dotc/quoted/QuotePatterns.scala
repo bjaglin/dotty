@@ -5,7 +5,6 @@ import dotty.tools.dotc.ast.TreeTypeMap
 import dotty.tools.dotc.ast.Trees.*
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.untpd
-import dotty.tools.dotc.core.*
 import dotty.tools.dotc.core.Annotations.*
 import dotty.tools.dotc.core.Constants.*
 import dotty.tools.dotc.core.Contexts.*
@@ -17,8 +16,8 @@ import dotty.tools.dotc.core.StdNames.*
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.core.TypeOps.*
 import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.*
 import dotty.tools.dotc.reporting.IllegalVariableInPatternAlternative
-
 
 import scala.collection.mutable
 

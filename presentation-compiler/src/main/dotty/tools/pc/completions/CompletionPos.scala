@@ -1,10 +1,6 @@
 package dotty.tools.pc
 package completions
 
-import java.net.URI
-
-import scala.meta.pc.OffsetParams
-
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.ast.untpd.ImportSelector
 import dotty.tools.dotc.core.Contexts.*
@@ -13,9 +9,11 @@ import dotty.tools.dotc.util.Chars
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j as l
+
+import java.net.URI
 import scala.annotation.tailrec
+import scala.meta.pc.OffsetParams
 
 enum CompletionKind:
   case Empty, Scope, Members

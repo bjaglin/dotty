@@ -1,16 +1,16 @@
 package dotty.tools.dotc.core.tasty
 
-import org.junit.Assert._
-import org.junit.{Test, Ignore}
-
-import dotty.tools.tasty.TastyFormat._
-import dotty.tools.tasty.TastyBuffer._
 import dotty.tools.tasty.TastyBuffer
-import dotty.tools.tasty.TastyReader
-import dotty.tools.tasty.UnpickleException
+import dotty.tools.tasty.TastyBuffer._
+import dotty.tools.tasty.TastyFormat._
 import dotty.tools.tasty.TastyHeaderUnpickler
+import dotty.tools.tasty.TastyReader
 import dotty.tools.tasty.TastyVersion
+import dotty.tools.tasty.UnpickleException
 import dotty.tools.tasty.UnpicklerConfig
+import org.junit.Assert._
+import org.junit.Ignore
+import org.junit.Test
 
 class TastyHeaderUnpicklerTest {
 

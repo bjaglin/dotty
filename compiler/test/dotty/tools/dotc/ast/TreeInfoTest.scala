@@ -2,11 +2,12 @@ package dotty.tools
 package dotc
 package ast
 
+import org.junit.Assert._
 import org.junit.Test
+
 import core.Names._
 import core.StdNames.nme
 import core.Symbols._
-import org.junit.Assert._
 import core.Contexts.Context
 
 class TreeInfoTest extends DottyTest {

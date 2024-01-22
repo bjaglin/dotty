@@ -3,12 +3,14 @@ package dotc
 package core
 package tasty
 
+import dotty.tools.tasty.TastyBuffer
+import dotty.tools.tasty.TastyFormat
+import dotty.tools.tasty.TastyHash
+
 import scala.language.unsafeNulls
 
-import dotty.tools.tasty.{TastyBuffer, TastyFormat, TastyHash}
 import TastyFormat.*
 import TastyBuffer.*
-
 import collection.mutable
 import core.Symbols.ClassSymbol
 import Decorators.*

@@ -4,16 +4,21 @@
 package dotty.tools.dotc
 package classpath
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.ClassPath
+import dotty.tools.io.ClassRepresentation
+import dotty.tools.io.FileZipArchive
+import dotty.tools.io.ManifestResources
 
 import java.io.File
 import java.net.URL
 import java.nio.file.Files
-import java.nio.file.attribute.{BasicFileAttributes, FileTime}
-
+import java.nio.file.attribute.BasicFileAttributes
+import java.nio.file.attribute.FileTime
 import scala.annotation.tailrec
-import dotty.tools.io.{AbstractFile, ClassPath, ClassRepresentation, FileZipArchive, ManifestResources}
-import dotty.tools.dotc.core.Contexts.*
+import scala.language.unsafeNulls
+
 import FileUtils.*
 
 /**

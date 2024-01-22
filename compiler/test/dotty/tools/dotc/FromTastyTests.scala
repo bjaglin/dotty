@@ -2,15 +2,15 @@ package dotty
 package tools
 package dotc
 
-import scala.language.unsafeNulls
-
-import org.junit.{AfterClass, Test}
-import reporting.TestReporter
-import vulpix._
+import org.junit.AfterClass
+import org.junit.Test
 
 import java.io.{File => JFile}
-
 import scala.concurrent.duration._
+import scala.language.unsafeNulls
+
+import reporting.TestReporter
+import vulpix._
 
 class FromTastyTests {
   import TestConfiguration._

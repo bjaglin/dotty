@@ -1,15 +1,17 @@
 package dotty.tools.io
 
-import scala.language.unsafeNulls
-
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.ClassPath
+import dotty.tools.io.Directory
+import dotty.tools.io.PlainDirectory
 import org.junit.Test
 
 import java.io.File
-import dotty.tools.io.AbstractFile
-import java.nio.file.{Files, Paths}
+import java.nio.file.Files
+import java.nio.file.Paths
 import java.nio.file.StandardCopyOption._
 import java.nio.file.attribute.PosixFilePermissions
-import dotty.tools.io.{ PlainDirectory, Directory, ClassPath }
+import scala.language.unsafeNulls
 
 class ClasspathTest {
 

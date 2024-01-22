@@ -7,8 +7,13 @@ import core.*
 import Decorators.*
 import NameKinds.BoundaryName
 import MegaPhase.*
-import Types.*, Contexts.*, Flags.*, DenotTransformers.*
-import Symbols.*, StdNames.*, Trees.*
+import Types.*
+import Contexts.*
+import Flags.*
+import DenotTransformers.*
+import Symbols.*
+import StdNames.*
+import Trees.*
 import util.Property
 import Constants.Constant
 import Flags.MethodOrLazy

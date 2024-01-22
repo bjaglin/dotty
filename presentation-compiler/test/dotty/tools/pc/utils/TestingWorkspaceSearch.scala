@@ -1,22 +1,19 @@
 package dotty.tools.pc.utils
 
-import java.io.File
-import java.nio.file.Paths
-
-import scala.collection.mutable
-import scala.meta.internal.metals.{
-  CompilerVirtualFileParams,
-  Fuzzy,
-  WorkspaceSymbolQuery
-}
-import scala.meta.pc.SymbolSearchVisitor
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.semanticdb.SemanticSymbolBuilder
 import dotty.tools.pc.CompilerSearchVisitor
+
+import java.io.File
+import java.nio.file.Paths
+import scala.collection.mutable
+import scala.language.unsafeNulls
+import scala.meta.internal.metals.CompilerVirtualFileParams
+import scala.meta.internal.metals.Fuzzy
+import scala.meta.internal.metals.WorkspaceSymbolQuery
+import scala.meta.pc.SymbolSearchVisitor
 
 object TestingWorkspaceSearch:
   def empty: TestingWorkspaceSearch = new TestingWorkspaceSearch(Nil)

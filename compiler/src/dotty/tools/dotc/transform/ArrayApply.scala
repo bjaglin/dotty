@@ -3,7 +3,12 @@ package dotc
 package transform
 
 import ast.tpd
-import core.*, Contexts.*, Decorators.*, Symbols.*, Flags.*, StdNames.*
+import core.*
+import Contexts.*
+import Decorators.*
+import Symbols.*
+import Flags.*
+import StdNames.*
 import reporting.trace
 import util.Property
 import MegaPhase.*

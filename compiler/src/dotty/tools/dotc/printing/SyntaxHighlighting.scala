@@ -1,8 +1,6 @@
 package dotty.tools.dotc
 package printing
 
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.StdNames.*
@@ -10,10 +8,11 @@ import dotty.tools.dotc.parsing.Parsers.Parser
 import dotty.tools.dotc.parsing.Scanners.Scanner
 import dotty.tools.dotc.parsing.Tokens.*
 import dotty.tools.dotc.reporting.Reporter
-import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.dotc.util.SourceFile
+import dotty.tools.dotc.util.Spans.Span
 
 import java.util.Arrays
+import scala.language.unsafeNulls
 
 /** This object provides functions for syntax highlighting in the REPL */
 object SyntaxHighlighting {

@@ -1,9 +1,9 @@
 package dotty.tools.dotc.semanticdb
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.semanticdb.{Descriptor => d}
 
 import java.lang.System.{lineSeparator => EOL}
-import dotty.tools.dotc.semanticdb.{Descriptor => d}
+import scala.language.unsafeNulls
 
 class DescriptorParser(s: String) {
   var i = s.length

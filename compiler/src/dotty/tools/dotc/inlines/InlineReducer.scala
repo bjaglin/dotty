@@ -2,15 +2,19 @@ package dotty.tools
 package dotc
 package inlines
 
-import ast.*, core.*
-import Flags.*, Symbols.*, Types.*, Decorators.*, Contexts.*
+import ast.*
+import core.*
+import Flags.*
+import Symbols.*
+import Types.*
+import Decorators.*
+import Contexts.*
 import StdNames.nme
 import typer.*
 import Names.TermName
 import NameKinds.{InlineAccessorName, InlineBinderName, InlineScrutineeName}
 import config.Printers.inlining
 import util.SimpleIdentityMap
-
 import collection.mutable
 
 /** A utility class offering methods for rewriting inlined code */

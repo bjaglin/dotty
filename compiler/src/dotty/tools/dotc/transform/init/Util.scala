@@ -8,10 +8,8 @@ import Types.*
 import Symbols.*
 import StdNames.*
 import ast.tpd.*
-
 import reporting.trace as log
 import config.Printers.init as printer
-
 import Trace.*
 
 object Util:

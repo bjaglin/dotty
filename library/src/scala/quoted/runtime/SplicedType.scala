@@ -1,6 +1,7 @@
 package scala.quoted.runtime
 
-import scala.annotation.{Annotation, compileTimeOnly}
+import scala.annotation.Annotation
+import scala.annotation.compileTimeOnly
 
 /** Artifact of pickled type splices
  *

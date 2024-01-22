@@ -1,6 +1,8 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.uncheckedNN
+
 import MegaPhase.*
 import core.DenotTransformers.*
 import core.Symbols.*
@@ -12,7 +14,6 @@ import core.Names.*
 import core.NameKinds.TempResultName
 import core.Constants.*
 import util.Store
-import dotty.tools.uncheckedNN
 import ast.tpd.*
 import compiletime.uninitialized
 

@@ -2,10 +2,16 @@ package dotty.tools
 package dotc
 package core
 
+import java.lang.ref.WeakReference
+import scala.annotation.internal.sharable
+import scala.annotation.threadUnsafe
+import scala.util.hashing.{ MurmurHash3 => hashing }
+
 import Symbols.*
 import Flags.*
 import Names.*
-import StdNames.*, NameOps.*
+import StdNames.*
+import NameOps.*
 import NullOpsDecorator.*
 import NameKinds.{SkolemName, WildcardParamName}
 import Scopes.*
@@ -33,16 +39,11 @@ import config.Config
 import config.Feature.sourceVersion
 import config.SourceVersion
 import annotation.{tailrec, constructorOnly}
-import scala.util.hashing.{ MurmurHash3 => hashing }
 import config.Printers.{core, typr, matchTypes}
 import reporting.{trace, Message}
-import java.lang.ref.WeakReference
 import compiletime.uninitialized
 import cc.{CapturingType, CaptureSet, derivedCapturingType, isBoxedCapturing, RetainingType, isCaptureChecking}
 import CaptureSet.{CompareResult, IdempotentCaptRefMap, IdentityCaptRefMap}
-
-import scala.annotation.internal.sharable
-import scala.annotation.threadUnsafe
 
 
 

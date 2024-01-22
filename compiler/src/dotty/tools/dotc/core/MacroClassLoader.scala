@@ -1,8 +1,8 @@
 package dotty.tools.dotc.core
 
 import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.util.Property
 import dotty.tools.dotc.reporting.trace
+import dotty.tools.dotc.util.Property
 import dotty.tools.io.ClassPath
 
 object MacroClassLoader {

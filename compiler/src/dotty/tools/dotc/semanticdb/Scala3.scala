@@ -1,6 +1,15 @@
 package dotty.tools.dotc.semanticdb
 
 import dotty.tools.dotc.core
+import dotty.tools.dotc.core.Names.Designator
+import dotty.tools.dotc.util.SourceFile
+import dotty.tools.dotc.util.Spans.Span
+
+import java.lang.Character.isJavaIdentifierPart
+import java.lang.Character.isJavaIdentifierStart
+import scala.annotation.internal.sharable
+import scala.annotation.switch
+
 import core.Symbols.{ Symbol , defn, NoSymbol }
 import core.Contexts.*
 import core.Names
@@ -10,14 +19,6 @@ import core.Flags.*
 import core.NameKinds
 import core.StdNames.nme
 import SymbolInformation.{Kind => k}
-import dotty.tools.dotc.util.SourceFile
-import dotty.tools.dotc.util.Spans.Span
-import dotty.tools.dotc.core.Names.Designator
-
-import java.lang.Character.{isJavaIdentifierPart, isJavaIdentifierStart}
-
-import scala.annotation.internal.sharable
-import scala.annotation.switch
 
 object Scala3:
   import Symbols.*

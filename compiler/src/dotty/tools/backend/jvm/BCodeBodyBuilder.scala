@@ -2,28 +2,30 @@ package dotty.tools
 package backend
 package jvm
 
-import scala.language.unsafeNulls
-
-import scala.annotation.{switch, tailrec}
-import scala.collection.mutable.SortedMap
-
-import scala.tools.asm
-import scala.tools.asm.{Handle, Opcodes}
-import BCodeHelpers.InvokeStyle
-
-import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.CompilationUnit
+import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.Constants.*
+import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Decorators.em
 import dotty.tools.dotc.core.Flags.{Label => LabelFlag, _}
-import dotty.tools.dotc.core.Types.*
-import dotty.tools.dotc.core.StdNames.{nme, str}
+import dotty.tools.dotc.core.Phases.*
+import dotty.tools.dotc.core.StdNames.nme
+import dotty.tools.dotc.core.StdNames.str
 import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.report
 import dotty.tools.dotc.transform.Erasure
 import dotty.tools.dotc.util.Spans.*
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Phases.*
-import dotty.tools.dotc.core.Decorators.em
-import dotty.tools.dotc.report
+
+import scala.annotation.switch
+import scala.annotation.tailrec
+import scala.collection.mutable.SortedMap
+import scala.language.unsafeNulls
+import scala.tools.asm
+import scala.tools.asm.Handle
+import scala.tools.asm.Opcodes
+
+import BCodeHelpers.InvokeStyle
 
 /*
  *

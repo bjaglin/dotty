@@ -3,10 +3,12 @@
  */
 package dotty.tools.dotc.classpath
 
-import dotty.tools.io.{AbstractFile, VirtualDirectory}
-import FileUtils.*
-import dotty.tools.io.ClassPath
 import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.ClassPath
+import dotty.tools.io.VirtualDirectory
+
+import FileUtils.*
 
 /**
  * Provides factory methods for classpath. When creating classpath instances for a given path,

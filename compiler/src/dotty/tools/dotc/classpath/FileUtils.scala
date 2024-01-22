@@ -4,11 +4,12 @@
 package dotty.tools
 package dotc.classpath
 
-import scala.language.unsafeNulls
-
-import java.io.{File => JFile, FileFilter}
-import java.net.URL
 import dotty.tools.io.AbstractFile
+
+import java.io.FileFilter
+import java.io.{File => JFile}
+import java.net.URL
+import scala.language.unsafeNulls
 
 /**
  * Common methods related to Java files and abstract files used in the context of classpath

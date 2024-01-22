@@ -1,11 +1,15 @@
 package dotty.tools.dotc.classpath
 
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.ClassPath
+import dotty.tools.io.ClassRepresentation
+import dotty.tools.io.VirtualDirectory
+
+import java.net.URI
+import java.net.URL
 import scala.language.unsafeNulls
 
-import dotty.tools.io.{ClassPath, ClassRepresentation}
-import dotty.tools.io.{AbstractFile, VirtualDirectory}
 import FileUtils.*
-import java.net.{URI, URL}
 
 case class VirtualDirectoryClassPath(dir: VirtualDirectory) extends ClassPath with DirectoryLookup[ClassFileEntryImpl] with NoSourcePaths {
   type F = AbstractFile

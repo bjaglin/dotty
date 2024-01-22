@@ -2,14 +2,16 @@ package dotty.tools.dotc
 package core
 package tasty
 
-import dotty.tools.tasty.{TastyBuffer, TastyReader}
-import TastyBuffer.NameRef
+import dotty.tools.tasty.TastyBuffer
+import dotty.tools.tasty.TastyFormat.ASTsSection
+import dotty.tools.tasty.TastyReader
 
-import Contexts.*, Decorators.*
+import TastyBuffer.NameRef
+import Contexts.*
+import Decorators.*
 import Names.TermName
 import StdNames.nme
 import TastyUnpickler.*
-import dotty.tools.tasty.TastyFormat.ASTsSection
 
 /** Reads the package and class name of the class contained in this TASTy */
 class TastyClassName(bytes: Array[Byte]) {

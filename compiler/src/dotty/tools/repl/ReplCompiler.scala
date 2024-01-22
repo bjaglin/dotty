@@ -1,10 +1,14 @@
 package dotty.tools.repl
 
+import dotty.tools.dotc.CompilationUnit
+import dotty.tools.dotc.Compiler
+import dotty.tools.dotc.Run
 import dotty.tools.dotc.ast.Trees.*
-import dotty.tools.dotc.ast.{tpd, untpd}
+import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.tpd.TreeOps
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.core.CompilationUnitInfo
+import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.Names.*
@@ -13,11 +17,13 @@ import dotty.tools.dotc.core.StdNames.*
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.reporting.Diagnostic
 import dotty.tools.dotc.transform.PostTyper
-import dotty.tools.dotc.typer.ImportInfo.{withRootImports, RootRef}
+import dotty.tools.dotc.typer.ImportInfo.RootRef
+import dotty.tools.dotc.typer.ImportInfo.withRootImports
 import dotty.tools.dotc.typer.TyperPhase
+import dotty.tools.dotc.util.ParsedComment
+import dotty.tools.dotc.util.Property
+import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.Spans.*
-import dotty.tools.dotc.util.{ParsedComment, Property, SourceFile}
-import dotty.tools.dotc.{CompilationUnit, Compiler, Run}
 import dotty.tools.repl.results.*
 
 import scala.collection.mutable

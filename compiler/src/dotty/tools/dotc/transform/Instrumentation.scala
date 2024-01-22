@@ -2,17 +2,16 @@ package dotty.tools
 package dotc
 package transform
 
+import scala.compiletime.uninitialized
+
 import core.*
 import Contexts.*
 import Symbols.*
 import Flags.*
-
 import Decorators.*
 import MegaPhase.*
 import Names.*
 import Constants.Constant
-
-import scala.compiletime.uninitialized
 
 
 /** The phase is enabled if the -Yinstrument option is set.

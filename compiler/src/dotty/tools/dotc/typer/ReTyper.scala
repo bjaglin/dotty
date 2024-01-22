@@ -1,6 +1,8 @@
 package dotty.tools.dotc
 package typer
 
+import scala.util.control.NonFatal
+
 import core.*
 import Contexts.*
 import Types.*
@@ -9,7 +11,6 @@ import StdNames.*
 import Decorators.*
 import typer.ProtoTypes.*
 import ast.{tpd, untpd}
-import scala.util.control.NonFatal
 import util.Spans.Span
 import Nullables.*
 import staging.StagingLevel.*

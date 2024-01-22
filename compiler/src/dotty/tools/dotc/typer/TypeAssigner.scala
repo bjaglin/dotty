@@ -4,8 +4,19 @@ package typer
 
 import core.*
 import ast.*
-import Contexts.*, ContextOps.*, Constants.*, Types.*, Symbols.*, Names.*, Flags.*, Decorators.*
-import ErrorReporting.*, Annotations.*, Denotations.*, SymDenotations.*, StdNames.*
+import Contexts.*
+import ContextOps.*
+import Constants.*
+import Types.*
+import Symbols.*
+import Names.*
+import Flags.*
+import Decorators.*
+import ErrorReporting.*
+import Annotations.*
+import Denotations.*
+import SymDenotations.*
+import StdNames.*
 import util.SrcPos
 import NameOps.*
 import collection.mutable

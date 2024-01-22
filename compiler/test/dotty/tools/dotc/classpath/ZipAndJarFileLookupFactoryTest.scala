@@ -1,13 +1,14 @@
 package dotty.tools.dotc.classpath
 
-import scala.language.unsafeNulls
-
+import dotty.tools.dotc.core.Contexts.Context
+import dotty.tools.dotc.core.Contexts.ContextBase
+import dotty.tools.dotc.core.Contexts.ctx
+import dotty.tools.io.AbstractFile
 import org.junit.Test
+
 import java.nio.file._
 import java.nio.file.attribute.FileTime
-
-import dotty.tools.dotc.core.Contexts.{Context, ContextBase, ctx}
-import dotty.tools.io.AbstractFile
+import scala.language.unsafeNulls
 
 
 

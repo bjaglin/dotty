@@ -1,12 +1,16 @@
 package dotty.tools.dotc
 package core.tasty
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.core.tasty.TastyUnpickler.NameTable
+import dotty.tools.tasty.TastyBuffer
+import dotty.tools.tasty.TastyFormat
+import dotty.tools.tasty.TastyReader
+
 import scala.collection.immutable.BitSet
 import scala.collection.immutable.TreeMap
+import scala.language.unsafeNulls
 
-import dotty.tools.tasty.{TastyFormat, TastyReader, TastyBuffer}, TastyFormat.{isBooleanAttrTag, isStringAttrTag}
-import dotty.tools.dotc.core.tasty.TastyUnpickler.NameTable
+import TastyFormat.{isBooleanAttrTag, isStringAttrTag}
 
 class AttributeUnpickler(reader: TastyReader, nameAtRef: NameTable):
   import reader._

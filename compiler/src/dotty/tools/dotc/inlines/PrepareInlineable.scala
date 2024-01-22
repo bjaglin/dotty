@@ -2,7 +2,12 @@ package dotty.tools
 package dotc
 package inlines
 
-import dotty.tools.dotc.ast.{Trees, tpd, untpd}
+import dotty.tools.dotc.ast.Trees
+import dotty.tools.dotc.ast.tpd
+import dotty.tools.dotc.ast.untpd
+import dotty.tools.dotc.reporting.Message
+import dotty.tools.dotc.util.SrcPos
+
 import Trees.*
 import core.*
 import Flags.*
@@ -22,8 +27,6 @@ import staging.CrossStageSafety
 import config.Printers.inlining
 import util.Property
 import staging.StagingLevel
-import dotty.tools.dotc.reporting.Message
-import dotty.tools.dotc.util.SrcPos
 
 object PrepareInlineable {
   import tpd.*

@@ -2,14 +2,14 @@ package dotty.tools
 package dotc
 package core
 
+import scala.annotation.internal.sharable
+
 import Names.*
 import NameOps.*
 import StdNames.*
 import NameTags.*
 import Contexts.*
 import Decorators.*
-
-import scala.annotation.internal.sharable
 
 /** Defines possible kinds of NameInfo of a derived name */
 object NameKinds {

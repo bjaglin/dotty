@@ -4,11 +4,11 @@ package transform
 
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*
-import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.core.Types.*
-import dotty.tools.dotc.transform.MegaPhase.MiniPhase
 import dotty.tools.dotc.inlines.Inlines
+import dotty.tools.dotc.transform.MegaPhase.MiniPhase
 
 /** Check that `tree.rhs` can be right hand-side of an `inline` value definition. */
 class InlineVals extends MiniPhase:

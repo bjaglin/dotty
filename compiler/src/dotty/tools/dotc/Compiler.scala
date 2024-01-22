@@ -1,13 +1,14 @@
 package dotty.tools
 package dotc
 
+import dotty.tools.backend
+
 import core.*
 import Contexts.*
 import typer.{TyperPhase, RefChecks}
 import parsing.Parser
 import Phases.Phase
 import transform.*
-import dotty.tools.backend
 import backend.jvm.{CollectSuperCalls, GenBCode}
 import localopt.StringInterpolatorOpt
 

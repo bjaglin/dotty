@@ -2,17 +2,23 @@ package dotty.tools.dotc
 package core
 package tasty
 
-import scala.language.unsafeNulls
-
-import dotty.tools.tasty.{TastyFormat, TastyVersion, TastyBuffer, TastyReader, TastyHeaderUnpickler, UnpicklerConfig}
-import TastyFormat.NameTags.*, TastyFormat.nameTagToString
-import TastyBuffer.NameRef
+import dotty.tools.tasty.TastyBuffer
+import dotty.tools.tasty.TastyBuffer.Addr
+import dotty.tools.tasty.TastyFormat
+import dotty.tools.tasty.TastyHeader
+import dotty.tools.tasty.TastyHeaderUnpickler
+import dotty.tools.tasty.TastyReader
+import dotty.tools.tasty.TastyVersion
+import dotty.tools.tasty.UnpicklerConfig
 
 import scala.collection.mutable
+import scala.language.unsafeNulls
+
+import TastyFormat.NameTags.*
+import TastyFormat.nameTagToString
+import TastyBuffer.NameRef
 import Names.{TermName, termName, EmptyTermName}
 import NameKinds.*
-import dotty.tools.tasty.TastyHeader
-import dotty.tools.tasty.TastyBuffer.Addr
 
 object TastyUnpickler {
 

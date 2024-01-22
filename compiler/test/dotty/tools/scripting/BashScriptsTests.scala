@@ -2,16 +2,16 @@ package dotty
 package tools
 package scripting
 
-import scala.language.unsafeNulls
-
-import java.nio.file.Paths
-import org.junit.{Test, AfterClass}
+import org.junit.AfterClass
 import org.junit.Assert.assertEquals
 import org.junit.Assume.assumeFalse
+import org.junit.Test
 import org.junit.experimental.categories.Category
 
-import vulpix.TestConfiguration
+import java.nio.file.Paths
+import scala.language.unsafeNulls
 
+import vulpix.TestConfiguration
 import ScriptTestEnv.*
 
 /** Verifies correct handling of command line arguments by `dist/bin/scala` and `dist/bin/scalac`.

@@ -1,13 +1,11 @@
 package dotty.tools.backend.jvm
 
-import scala.language.unsafeNulls
-
 import org.junit.Assert._
 import org.junit.Test
 
-import scala.tools.asm.Opcodes._
-
 import scala.jdk.CollectionConverters._
+import scala.language.unsafeNulls
+import scala.tools.asm.Opcodes._
 
 class InlineBytecodeTests extends DottyBytecodeTest {
   import ASMConverters._

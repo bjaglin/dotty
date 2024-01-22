@@ -2,6 +2,9 @@ package dotty.tools.dotc
 package transform
 package sjs
 
+import dotty.tools.backend.sjs.JSDefinitions.jsdefn
+import org.scalajs.ir.Trees.JSGlobalRef
+
 import scala.collection.mutable
 
 import ast.tpd
@@ -18,14 +21,8 @@ import NameKinds.{DefaultGetterName, ModuleClassName}
 import NameOps.*
 import StdNames.*
 import Symbols.*
-
 import Types.*
-
 import JSSymUtils.*
-
-import org.scalajs.ir.Trees.JSGlobalRef
-
-import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 
 /** A macro transform that runs after typer and before pickler to perform
  *  additional Scala.js-specific checks and transformations necessary for

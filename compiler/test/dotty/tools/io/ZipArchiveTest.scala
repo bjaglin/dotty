@@ -1,18 +1,24 @@
 package dotty.tools.io
 
-import scala.language.unsafeNulls
-
-import java.io.IOException
-import java.net.{URI, URL, URLClassLoader}
-import java.nio.file.{Files, Path, Paths}
-import java.util.jar.{Attributes, Manifest, JarEntry, JarOutputStream}
-import java.lang.invoke.{MethodHandles, MethodType}
-
 import org.junit.Assert._
 import org.junit.Test
 
-import scala.util.chaining._
+import java.io.IOException
+import java.lang.invoke.MethodHandles
+import java.lang.invoke.MethodType
+import java.net.URI
+import java.net.URL
+import java.net.URLClassLoader
+import java.nio.file.Files
+import java.nio.file.Path
+import java.nio.file.Paths
+import java.util.jar.Attributes
+import java.util.jar.JarEntry
+import java.util.jar.JarOutputStream
+import java.util.jar.Manifest
+import scala.language.unsafeNulls
 import scala.util.Using
+import scala.util.chaining._
 
 class ZipArchiveTest {
 

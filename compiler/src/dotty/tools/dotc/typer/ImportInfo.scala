@@ -2,17 +2,22 @@ package dotty.tools
 package dotc
 package typer
 
+import scala.compiletime.uninitialized
+
 import ast.{tpd, untpd}
 import core.*
 import printing.{Printer, Showable}
 import util.SimpleIdentityMap
-import Symbols.*, Names.*, Types.*, Contexts.*, StdNames.*, Flags.*
+import Symbols.*
+import Names.*
+import Types.*
+import Contexts.*
+import StdNames.*
+import Flags.*
 import Implicits.RenamedImplicitRef
 import StdNames.nme
 import printing.Texts.Text
 import NameKinds.QualifiedName
-
-import scala.compiletime.uninitialized
 
 object ImportInfo {
 

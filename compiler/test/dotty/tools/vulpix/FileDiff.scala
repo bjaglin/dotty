@@ -1,14 +1,13 @@
 package dotty.tools.vulpix
 
-import scala.language.unsafeNulls
-
-import scala.io.Source
-import scala.util.Using
-
 import java.io.File
 import java.lang.System.{lineSeparator => EOL}
-import java.nio.file.{Files, Paths}
 import java.nio.charset.StandardCharsets
+import java.nio.file.Files
+import java.nio.file.Paths
+import scala.io.Source
+import scala.language.unsafeNulls
+import scala.util.Using
 
 
 object FileDiff {

@@ -1,9 +1,14 @@
 package scala
-import reflect.ClassTag
-
-import scala.collection.{LazyZip2, SeqView, Searching, Stepper, StepperShape}
+import scala.collection.LazyZip2
+import scala.collection.Searching
+import scala.collection.SeqView
+import scala.collection.Stepper
+import scala.collection.StepperShape
 import scala.collection.immutable.ArraySeq
-import scala.collection.mutable.{ArrayBuilder, Builder}
+import scala.collection.mutable.ArrayBuilder
+import scala.collection.mutable.Builder
+
+import reflect.ClassTag
 
 opaque type IArray[+T] = Array[? <: T]
 

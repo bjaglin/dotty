@@ -12,10 +12,7 @@ import SymDenotations.SymDenotation
 import Names.Name
 import StdNames.nme
 import NameOps.*
-
 import ast.*
-
-
 import MegaPhase.*
 
 /** Move static methods from companion to the class itself */

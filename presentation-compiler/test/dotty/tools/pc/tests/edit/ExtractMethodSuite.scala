@@ -1,7 +1,6 @@
 package dotty.tools.pc.tests.edit
 
 import dotty.tools.pc.base.BaseExtractMethodSuite
-
 import org.junit.Test
 
 class ExtractMethodSuite extends BaseExtractMethodSuite:

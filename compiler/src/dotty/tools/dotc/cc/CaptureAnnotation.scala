@@ -3,7 +3,10 @@ package dotc
 package cc
 
 import core.*
-import Types.*, Symbols.*, Contexts.*, Annotations.*
+import Types.*
+import Symbols.*
+import Contexts.*
+import Annotations.*
 import ast.Trees.*
 import ast.{tpd, untpd}
 import Decorators.*

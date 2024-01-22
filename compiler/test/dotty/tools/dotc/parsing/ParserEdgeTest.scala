@@ -2,10 +2,10 @@ package dotty.tools
 package dotc
 package parsing
 
+import org.junit.Test
+
 import ast.untpd._
 import core.Constants._
-
-import org.junit.Test
 
 class ParserEdgeTest extends ParserTest {
   //

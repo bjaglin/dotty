@@ -5,6 +5,10 @@ package parsing
 import dotty.tools.dotc.core.Constants.Constant
 import dotty.tools.dotc.core.Flags
 import dotty.tools.dotc.core.Flags.FlagSet
+import dotty.tools.dotc.util.SourceFile
+
+import scala.collection.mutable.LinkedHashMap
+import scala.collection.mutable.ListBuffer
 
 import JavaTokens.*
 import JavaScanners.*
@@ -19,10 +23,7 @@ import ast.Trees.*
 import Decorators.*
 import StdNames.*
 import reporting.*
-import dotty.tools.dotc.util.SourceFile
 import util.Spans.*
-
-import scala.collection.mutable.{ListBuffer, LinkedHashMap}
 
 object JavaParsers {
 

@@ -3,8 +3,14 @@ package dotc
 package ast
 
 import core.*
-import Types.*, Contexts.*, Flags.*
-import Symbols.*, Annotations.*, Trees.*, Symbols.*, Constants.Constant
+import Types.*
+import Contexts.*
+import Flags.*
+import Symbols.*
+import Annotations.*
+import Trees.*
+import Symbols.*
+import Constants.Constant
 import Decorators.*
 
 

@@ -1,12 +1,5 @@
 package dotty.tools.pc.completions
 
-import scala.collection.mutable.ListBuffer
-import scala.meta.internal.metals.ReportContext
-import scala.meta.internal.pc.CompletionFuzzy
-import scala.meta.internal.pc.InterpolationSplice
-import scala.meta.pc.PresentationCompilerConfig
-import scala.meta.pc.SymbolSearch
-
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
@@ -17,8 +10,14 @@ import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.pc.CompilerSearchVisitor
 import dotty.tools.pc.IndexedContext
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j as l
+
+import scala.collection.mutable.ListBuffer
+import scala.meta.internal.metals.ReportContext
+import scala.meta.internal.pc.CompletionFuzzy
+import scala.meta.internal.pc.InterpolationSplice
+import scala.meta.pc.PresentationCompilerConfig
+import scala.meta.pc.SymbolSearch
 
 object InterpolatorCompletions:
 

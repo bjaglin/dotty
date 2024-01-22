@@ -1,14 +1,5 @@
 package dotty.tools.pc
 
-import java.util as ju
-
-import scala.meta.internal.metals.Report
-import scala.meta.internal.metals.ReportContext
-import scala.meta.internal.pc.ScalaHover
-import scala.meta.pc.HoverSignature
-import scala.meta.pc.OffsetParams
-import scala.meta.pc.SymbolSearch
-
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Constants.*
 import dotty.tools.dotc.core.Contexts.*
@@ -24,6 +15,14 @@ import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.pc.printer.ShortenedTypePrinter
 import dotty.tools.pc.printer.ShortenedTypePrinter.IncludeDefaultParam
 import dotty.tools.pc.utils.MtagsEnrichments.*
+
+import java.util as ju
+import scala.meta.internal.metals.Report
+import scala.meta.internal.metals.ReportContext
+import scala.meta.internal.pc.ScalaHover
+import scala.meta.pc.HoverSignature
+import scala.meta.pc.OffsetParams
+import scala.meta.pc.SymbolSearch
 
 object HoverProvider:
 

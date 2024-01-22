@@ -4,13 +4,12 @@ import dotty.tools.DottyTest
 import dotty.tools.dotc.rewrites.Rewrites
 import dotty.tools.dotc.rewrites.Rewrites.ActionPatch
 import dotty.tools.dotc.util.SourceFile
+import org.junit.Assert._
+import org.junit.Test
 
 import scala.annotation.tailrec
 import scala.jdk.CollectionConverters.*
 import scala.runtime.Scala3RunTime.assertFailed
-
-import org.junit.Assert._
-import org.junit.Test
 
 /** This is a test suite that is meant to test the actions attached to the
   * diagnostic for a given code snippet.

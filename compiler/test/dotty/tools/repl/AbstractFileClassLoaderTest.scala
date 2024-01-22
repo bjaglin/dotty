@@ -1,9 +1,9 @@
 package dotty.tools.repl
 
-import scala.language.unsafeNulls
-
 import org.junit.Assert.*
 import org.junit.Test
+
+import scala.language.unsafeNulls
 
 class AbstractFileClassLoaderTest:
 

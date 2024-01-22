@@ -6,7 +6,6 @@ import core.*
 import MegaPhase.*
 import Contexts.*
 import Flags.*
-
 import Symbols.*
 import SymDenotations.*
 import Types.*

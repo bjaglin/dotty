@@ -1,9 +1,12 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.dotc.transform.MegaPhase.*
+
+import scala.collection.mutable
+
 import core.*
 import Names.*
-import dotty.tools.dotc.transform.MegaPhase.*
 import ast.untpd
 import Flags.*
 import Types.*
@@ -11,7 +14,6 @@ import Constants.Constant
 import Contexts.*
 import Symbols.*
 import Decorators.*
-import scala.collection.mutable
 import DenotTransformers.*
 import NameOps.*
 import NameKinds.OuterSelectName

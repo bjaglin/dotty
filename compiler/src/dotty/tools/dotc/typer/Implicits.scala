@@ -2,6 +2,10 @@ package dotty.tools
 package dotc
 package typer
 
+import scala.annotation.internal.sharable
+import scala.annotation.threadUnsafe
+import scala.compiletime.uninitialized
+
 import backend.sjs.JSDefinitions
 import core.*
 import ast.{TreeTypeMap, untpd, tpd}
@@ -23,7 +27,8 @@ import ProtoTypes.*
 import ErrorReporting.*
 import Inferencing.{fullyDefinedType, isFullyDefined}
 import Scopes.newScope
-import Typer.BindingPrec, BindingPrec.*
+import Typer.BindingPrec
+import BindingPrec.*
 import Hashable.*
 import util.{EqHashMap, Stats}
 import config.{Config, Feature, SourceVersion}
@@ -33,10 +38,6 @@ import collection.mutable
 import reporting.*
 import transform.Splicer
 import annotation.tailrec
-
-import scala.annotation.internal.sharable
-import scala.annotation.threadUnsafe
-import scala.compiletime.uninitialized
 
 /** Implicit resolution */
 object Implicits:

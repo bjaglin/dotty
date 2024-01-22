@@ -2,6 +2,8 @@ package dotty.tools
 package dotc
 package typer
 
+import scala.util.control.NonFatal
+
 import core.*
 import ast.{Trees, tpd, untpd, desugar}
 import util.Stats.record
@@ -21,19 +23,16 @@ import NameKinds.DefaultGetterName
 import ProtoTypes.*
 import Inferencing.*
 import reporting.*
-import Nullables.*, NullOpsDecorator.*
+import Nullables.*
+import NullOpsDecorator.*
 import config.Feature
-
 import collection.mutable
 import config.Printers.{overload, typr, unapp}
 import TypeApplications.*
 import Annotations.Annotation
-
 import Constants.{Constant, IntTag}
 import Denotations.SingleDenotation
 import annotation.threadUnsafe
-
-import scala.util.control.NonFatal
 
 object Applications {
   import tpd.*

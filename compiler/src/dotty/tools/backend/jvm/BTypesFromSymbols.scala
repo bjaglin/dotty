@@ -2,19 +2,18 @@ package dotty.tools
 package backend
 package jvm
 
-import scala.tools.asm
+import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Phases
+import dotty.tools.dotc.core.Phases.Phase
+import dotty.tools.dotc.core.Phases.*
+import dotty.tools.dotc.core.StdNames
+import dotty.tools.dotc.core.Symbols.*
+
 import scala.annotation.threadUnsafe
 import scala.collection.mutable
 import scala.collection.mutable.Clearable
-
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Phases.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Phases.Phase
-
-import dotty.tools.dotc.core.StdNames
-import dotty.tools.dotc.core.Phases
+import scala.tools.asm
 
 /**
  * This class mainly contains the method classBTypeFromSymbol, which extracts the necessary

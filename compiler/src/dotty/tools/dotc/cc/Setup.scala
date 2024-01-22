@@ -3,18 +3,28 @@ package dotc
 package cc
 
 import core.*
-import Phases.*, DenotTransformers.*, SymDenotations.*
-import Contexts.*, Names.*, Flags.*, Symbols.*, Decorators.*
-import Types.*, StdNames.*
+import Phases.*
+import DenotTransformers.*
+import SymDenotations.*
+import Contexts.*
+import Names.*
+import Flags.*
+import Symbols.*
+import Decorators.*
+import Types.*
+import StdNames.*
 import Annotations.Annotation
 import config.Feature
 import config.Printers.{capt, captDebug}
-import ast.tpd, tpd.*
-import transform.{PreRecheck, Recheck}, Recheck.*
+import ast.tpd
+import tpd.*
+import transform.{PreRecheck, Recheck}
+import Recheck.*
 import CaptureSet.{IdentityCaptRefMap, IdempotentCaptRefMap}
 import Synthetics.isExcluded
 import util.Property
-import printing.{Printer, Texts}, Texts.{Text, Str}
+import printing.{Printer, Texts}
+import Texts.{Text, Str}
 import collection.mutable
 
 /** Operations accessed from CheckCaptures */

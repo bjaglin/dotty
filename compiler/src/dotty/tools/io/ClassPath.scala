@@ -7,14 +7,15 @@
 package dotty.tools
 package io
 
-import scala.language.unsafeNulls
-
-import java.net.{MalformedURLException, URI, URISyntaxException, URL}
+import java.net.MalformedURLException
+import java.net.URI
+import java.net.URISyntaxException
+import java.net.URL
 import java.util.regex.PatternSyntaxException
+import scala.language.unsafeNulls
 
 import File.pathSeparator
 import Jar.isJarOrZip
-
 import dotc.classpath.{ PackageEntry, ClassPathEntries, PackageName }
 
 /**

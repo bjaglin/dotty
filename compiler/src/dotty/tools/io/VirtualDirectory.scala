@@ -4,10 +4,10 @@
 
 package dotty.tools.io
 
-import scala.language.unsafeNulls
-
+import java.io.InputStream
+import java.io.OutputStream
 import scala.collection.mutable
-import java.io.{InputStream, OutputStream}
+import scala.language.unsafeNulls
 /**
  * An in-memory directory.
  *

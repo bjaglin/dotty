@@ -2,7 +2,15 @@ package dotty.tools
 package dotc
 package core
 
-import Symbols.*, Types.*, Contexts.*, Flags.*, Names.*, StdNames.*, Phases.*
+import scala.annotation.tailrec
+
+import Symbols.*
+import Types.*
+import Contexts.*
+import Flags.*
+import Names.*
+import StdNames.*
+import Phases.*
 import Flags.JavaDefined
 import Uniques.unique
 import TypeOps.makePackageObjPrefixExplicit
@@ -13,7 +21,6 @@ import transform.ContextFunctionResults.*
 import unpickleScala2.Scala2Erasure
 import Decorators.*
 import Definitions.MaxImplementedFunctionArity
-import scala.annotation.tailrec
 
 /** The language in which the definition being erased was written. */
 enum SourceLanguage:

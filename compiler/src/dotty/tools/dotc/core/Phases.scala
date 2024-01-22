@@ -2,16 +2,21 @@ package dotty.tools
 package dotc
 package core
 
+import dotty.tools.backend.jvm.GenBCode
+import dotty.tools.dotc.transform.MegaPhase.*
+import dotty.tools.dotc.transform.*
+
+import scala.annotation.internal.sharable
+import scala.collection.mutable.ListBuffer
+import scala.compiletime.uninitialized
+import scala.util.control.NonFatal
+
 import Periods.*
 import Contexts.*
-import dotty.tools.backend.jvm.GenBCode
 import DenotTransformers.*
 import Denotations.*
 import Decorators.*
 import config.Printers.config
-import scala.collection.mutable.ListBuffer
-import dotty.tools.dotc.transform.MegaPhase.*
-import dotty.tools.dotc.transform.*
 import Periods.*
 import parsing.Parser
 import printing.XprintMode
@@ -19,9 +24,6 @@ import typer.{TyperPhase, RefChecks}
 import cc.CheckCaptures
 import typer.ImportInfo.withRootImports
 import ast.{tpd, untpd}
-import scala.annotation.internal.sharable
-import scala.util.control.NonFatal
-import scala.compiletime.uninitialized
 
 object Phases {
 

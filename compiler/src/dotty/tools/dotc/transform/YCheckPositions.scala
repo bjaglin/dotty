@@ -1,11 +1,13 @@
 package dotty.tools.dotc
 package transform
 
-import dotty.tools.dotc.ast.{tpd, untpd}
+import dotty.tools.dotc.ast.tpd
+import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Phases.{Phase, postTyperPhase}
+import dotty.tools.dotc.core.Phases.Phase
+import dotty.tools.dotc.core.Phases.postTyperPhase
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.util.SourceFile
 

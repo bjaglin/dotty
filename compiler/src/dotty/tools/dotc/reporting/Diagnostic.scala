@@ -2,15 +2,19 @@ package dotty.tools
 package dotc
 package reporting
 
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc.config.Settings.Setting
 import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.interfaces.Diagnostic.{ERROR, INFO, WARNING}
+import dotty.tools.dotc.interfaces.Diagnostic.ERROR
+import dotty.tools.dotc.interfaces.Diagnostic.INFO
+import dotty.tools.dotc.interfaces.Diagnostic.WARNING
 import dotty.tools.dotc.util.SourcePosition
 
-import java.util.{Collections, Optional, List => JList}
+import java.util.Collections
+import java.util.Optional
+import java.util.{List => JList}
+import scala.language.unsafeNulls
 import scala.util.chaining.*
+
 import core.Decorators.toMessage
 
 object Diagnostic:

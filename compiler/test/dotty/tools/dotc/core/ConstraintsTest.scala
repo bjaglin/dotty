@@ -1,18 +1,16 @@
 package dotty.tools
 package dotc.core
 
-import vulpix.TestConfiguration
-
+import dotty.tools.DottyTest
+import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Contexts.{*, given}
 import dotty.tools.dotc.core.Decorators.{*, given}
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.core.Types.*
-import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.typer.ProtoTypes.constrained
-
 import org.junit.Test
 
-import dotty.tools.DottyTest
+import vulpix.TestConfiguration
 
 class ConstraintsTest:
 

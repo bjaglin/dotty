@@ -2,11 +2,15 @@ package dotty.tools
 package dotc
 package printing
 
-import core.*, Contexts.*, Decorators.*, Names.*, Symbols.*
-import ast.tpd.*
-
-import org.junit.Test
 import org.junit.Assert.*
+import org.junit.Test
+
+import core.*
+import Contexts.*
+import Decorators.*
+import Names.*
+import Symbols.*
+import ast.tpd.*
 
 class PrinterTests extends DottyTest {
   override def initializeCtx(fc: FreshContext) = super.initializeCtx(fc.setSetting(fc.settings.color, "never"))

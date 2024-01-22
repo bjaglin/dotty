@@ -2,9 +2,23 @@ package dotty.tools
 package dotc
 package typer
 
+import dotty.tools.dotc.config.Feature
+import dotty.tools.dotc.config.SourceVersion
+import dotty.tools.dotc.core.Flags.Transparent
+import dotty.tools.dotc.util.Spans.NoSpan
+import dotty.tools.dotc.util.Spans.Span
+
+import scala.annotation.internal.sharable
+
 import core.*
 import ast.*
-import Contexts.*, Types.*, Denotations.*, Names.*, StdNames.*, NameOps.*, Symbols.*
+import Contexts.*
+import Types.*
+import Denotations.*
+import Names.*
+import StdNames.*
+import NameOps.*
+import Symbols.*
 import NameKinds.DepParamName
 import Trees.*
 import Constants.*
@@ -17,11 +31,6 @@ import Inferencing.*
 import ErrorReporting.*
 import util.SourceFile
 import TypeComparer.necessarySubType
-import dotty.tools.dotc.core.Flags.Transparent
-import dotty.tools.dotc.config.{ Feature, SourceVersion }
-
-import scala.annotation.internal.sharable
-import dotty.tools.dotc.util.Spans.{NoSpan, Span}
 
 object ProtoTypes {
 

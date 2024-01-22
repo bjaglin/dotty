@@ -1,13 +1,16 @@
 package dotty.tools
 package repl
 
-import scala.language.unsafeNulls
+import org.junit.After
+import org.junit.AfterClass
+import org.junit.Assert._
+import org.junit.BeforeClass
+import org.junit.Test
 
 import java.io.File
 import java.nio.file.Files
+import scala.language.unsafeNulls
 
-import org.junit.{ After, AfterClass, BeforeClass, Test }
-import org.junit.Assert._
 import io.{ Directory, PlainDirectory }
 import dotc.core.Contexts._
 import dotc.reporting.{ ErrorMessagesTest, StoreReporter }

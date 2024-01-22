@@ -2,18 +2,19 @@ package dotty
 package tools
 package dotc
 
-import scala.language.unsafeNulls
-
-import org.junit.{ Test, BeforeClass, AfterClass }
+import org.junit.AfterClass
 import org.junit.Assert._
 import org.junit.Assume._
+import org.junit.BeforeClass
+import org.junit.Test
 import org.junit.experimental.categories.Category
 
+import java.nio.file._
 import scala.concurrent.duration._
+import scala.language.unsafeNulls
+
 import reporting.TestReporter
 import vulpix._
-
-import java.nio.file._
 
 @Category(Array(classOf[BootstrappedOnlyTests]))
 class BootstrappedOnlyCompilationTests {

@@ -3,21 +3,28 @@ package dotc
 package core
 package tasty
 
-import scala.language.unsafeNulls
-
-import dotty.tools.tasty.TastyFormat.*
 import dotty.tools.tasty.TastyBuffer.*
+import dotty.tools.tasty.TastyFormat.ASTsSection
+import dotty.tools.tasty.TastyFormat.*
+
+import scala.language.unsafeNulls
 
 import ast.Trees.*
 import ast.{untpd, tpd}
-import Contexts.*, Symbols.*, Types.*, Names.*, Constants.*, Decorators.*, Annotations.*, Flags.*
+import Contexts.*
+import Symbols.*
+import Types.*
+import Names.*
+import Constants.*
+import Decorators.*
+import Annotations.*
+import Flags.*
 import Comments.{Comment, docCtx}
 import NameKinds.*
 import StdNames.{nme, tpnme}
 import config.Config
 import collection.mutable
 import reporting.{Profile, NoProfile}
-import dotty.tools.tasty.TastyFormat.ASTsSection
 import quoted.QuotePatterns
 
 object TreePickler:

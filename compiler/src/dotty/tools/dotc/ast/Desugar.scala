@@ -2,9 +2,21 @@ package dotty.tools
 package dotc
 package ast
 
+import scala.annotation.internal.sharable
+import scala.annotation.threadUnsafe
+
 import core.*
-import util.Spans.*, Types.*, Contexts.*, Constants.*, Names.*, NameOps.*, Flags.*
-import Symbols.*, StdNames.*, Trees.*, ContextOps.*
+import util.Spans.*
+import Types.*
+import Contexts.*
+import Constants.*
+import Names.*
+import NameOps.*
+import Flags.*
+import Symbols.*
+import StdNames.*
+import Trees.*
+import ContextOps.*
 import Decorators.*
 import Annotations.Annotation
 import NameKinds.{UniqueName, ContextBoundParamName, ContextFunctionParamName, DefaultGetterName, WildcardParamName}
@@ -18,9 +30,6 @@ import annotation.constructorOnly
 import printing.Formatting.hl
 import config.Printers
 import parsing.Parsers
-
-import scala.annotation.internal.sharable
-import scala.annotation.threadUnsafe
 
 object desugar {
   import untpd.*

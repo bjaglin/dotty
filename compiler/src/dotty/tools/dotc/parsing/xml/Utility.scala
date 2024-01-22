@@ -2,9 +2,8 @@ package dotty.tools.dotc
 package parsing
 package xml
 
-import scala.language.unsafeNulls
-
 import scala.collection.mutable
+import scala.language.unsafeNulls
 
 /**
  * The `Utility` object provides utility functions for processing instances

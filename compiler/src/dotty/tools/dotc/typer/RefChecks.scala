@@ -2,13 +2,23 @@ package dotty.tools
 package dotc
 package typer
 
+import scala.collection.mutable
+
 import transform.*
 import core.*
-import Symbols.*, Types.*, Contexts.*, Flags.*, Names.*, NameOps.*, NameKinds.*
-import StdNames.*, Denotations.*, Phases.*, SymDenotations.*
+import Symbols.*
+import Types.*
+import Contexts.*
+import Flags.*
+import Names.*
+import NameOps.*
+import NameKinds.*
+import StdNames.*
+import Denotations.*
+import Phases.*
+import SymDenotations.*
 import NameKinds.DefaultGetterName
 import util.Spans.*
-import scala.collection.mutable
 import ast.*
 import MegaPhase.*
 import config.Printers.{checks, noPrinter, capt}

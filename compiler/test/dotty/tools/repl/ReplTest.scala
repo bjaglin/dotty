@@ -1,23 +1,24 @@
 package dotty.tools
 package repl
 
+import dotty.tools.dotc.core.Contexts.Context
+import dotty.tools.dotc.reporting.MessageRendering
+import org.junit.After
+import org.junit.Assert._
+import org.junit.Before
+
+import java.io.ByteArrayOutputStream
+import java.io.PrintStream
+import java.io.{File => JFile}
+import java.lang.System.{lineSeparator => EOL}
+import java.nio.charset.StandardCharsets
+import scala.collection.mutable.ArrayBuffer
+import scala.io.Source
 import scala.language.unsafeNulls
+import scala.util.Using
 
 import vulpix.TestConfiguration
 import vulpix.FileDiff
-
-import java.lang.System.{lineSeparator => EOL}
-import java.io.{ByteArrayOutputStream, File => JFile, PrintStream}
-import java.nio.charset.StandardCharsets
-
-import scala.io.Source
-import scala.util.Using
-import scala.collection.mutable.ArrayBuffer
-
-import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.reporting.MessageRendering
-import org.junit.{After, Before}
-import org.junit.Assert._
 
 class ReplTest(options: Array[String] = ReplTest.defaultOptions, out: ByteArrayOutputStream = new ByteArrayOutputStream)
 extends ReplDriver(options, new PrintStream(out, true, StandardCharsets.UTF_8.name)) with MessageRendering:

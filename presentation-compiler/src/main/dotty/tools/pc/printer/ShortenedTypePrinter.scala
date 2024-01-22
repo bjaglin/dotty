@@ -1,11 +1,5 @@
 package dotty.tools.pc.printer
 
-import scala.collection.mutable
-import scala.meta.internal.jdk.CollectionConverters.*
-import scala.meta.internal.metals.ReportContext
-import scala.meta.pc.SymbolDocumentation
-import scala.meta.pc.SymbolSearch
-
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
 import dotty.tools.dotc.core.Flags.*
@@ -17,8 +11,8 @@ import dotty.tools.dotc.core.Names.NameOrdering
 import dotty.tools.dotc.core.StdNames
 import dotty.tools.dotc.core.Symbols.NoSymbol
 import dotty.tools.dotc.core.Symbols.Symbol
-import dotty.tools.dotc.core.Types.*
 import dotty.tools.dotc.core.Types.Type
+import dotty.tools.dotc.core.Types.*
 import dotty.tools.dotc.printing.RefinedPrinter
 import dotty.tools.dotc.printing.Texts.Text
 import dotty.tools.pc.AutoImports.AutoImportsGenerator
@@ -29,8 +23,13 @@ import dotty.tools.pc.IndexedContext
 import dotty.tools.pc.IndexedContext.Result
 import dotty.tools.pc.Params
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j.TextEdit
+
+import scala.collection.mutable
+import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.metals.ReportContext
+import scala.meta.pc.SymbolDocumentation
+import scala.meta.pc.SymbolSearch
 
 /**
  * A type printer that shortens types by replacing fully qualified names with shortened versions.

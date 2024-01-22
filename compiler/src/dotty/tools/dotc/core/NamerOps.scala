@@ -2,8 +2,16 @@ package dotty.tools
 package dotc
 package core
 
-import Contexts.*, Symbols.*, Types.*, Flags.*, Scopes.*, Decorators.*, Names.*, NameOps.*
-import SymDenotations.{LazyType, SymDenotation}, StdNames.nme
+import Contexts.*
+import Symbols.*
+import Types.*
+import Flags.*
+import Scopes.*
+import Decorators.*
+import Names.*
+import NameOps.*
+import SymDenotations.{LazyType, SymDenotation}
+import StdNames.nme
 import TypeApplications.EtaExpansion
 
 /** Operations that are shared between Namer and TreeUnpickler */

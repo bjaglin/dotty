@@ -1,7 +1,8 @@
 package scala.quoted
 package runtime
 
-import scala.annotation.{Annotation, compileTimeOnly}
+import scala.annotation.Annotation
+import scala.annotation.compileTimeOnly
 
 @compileTimeOnly("Illegal reference to `scala.quoted.runtime.Expr`")
 object Expr:

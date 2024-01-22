@@ -2,7 +2,13 @@ package dotty.tools
 package dotc
 package core
 
-import Types.*, Contexts.*, Symbols.*, Decorators.*, TypeApplications.*
+import scala.compiletime.uninitialized
+
+import Types.*
+import Contexts.*
+import Symbols.*
+import Decorators.*
+import TypeApplications.*
 import util.{SimpleIdentitySet, SimpleIdentityMap}
 import collection.mutable
 import printing.Printer
@@ -13,8 +19,6 @@ import reflect.ClassTag
 import annotation.tailrec
 import annotation.internal.sharable
 import cc.{CapturingType, derivedCapturingType}
-
-import scala.compiletime.uninitialized
 
 object OrderingConstraint {
 

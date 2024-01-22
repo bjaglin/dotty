@@ -1,15 +1,16 @@
 package dotty.tools.dotc.util
 
-import scala.language.unsafeNulls
-
-import dotty.tools.dotc.core.Comments.{Comment, docCtx}
+import dotty.tools.dotc.core.Comments.Comment
+import dotty.tools.dotc.core.Comments.docCtx
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Names.TermName
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.printing.SyntaxHighlighting
 
-import scala.Console.{BOLD, RESET}
+import scala.Console.BOLD
+import scala.Console.RESET
 import scala.collection.immutable.ListMap
+import scala.language.unsafeNulls
 
 /**
  * A parsed doc comment.

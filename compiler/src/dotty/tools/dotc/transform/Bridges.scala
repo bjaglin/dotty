@@ -3,7 +3,13 @@ package dotc
 package transform
 
 import core.*
-import Symbols.*, Types.*, Contexts.*, Decorators.*, Flags.*, Scopes.*, Phases.*
+import Symbols.*
+import Types.*
+import Contexts.*
+import Decorators.*
+import Flags.*
+import Scopes.*
+import Phases.*
 import DenotTransformers.*
 import ast.untpd
 import collection.{mutable, immutable}

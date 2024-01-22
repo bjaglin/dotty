@@ -1,16 +1,14 @@
 package dotty.tools.pc.tests.edit
 
-import java.net.URI
-
-import scala.meta.internal.jdk.CollectionConverters.*
-import scala.meta.internal.metals.CompilerOffsetParams
-import scala.language.unsafeNulls
-
 import dotty.tools.pc.base.BaseCodeActionSuite
 import dotty.tools.pc.utils.TextEdits
-
 import org.eclipse.lsp4j as l
 import org.junit.Test
+
+import java.net.URI
+import scala.language.unsafeNulls
+import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.metals.CompilerOffsetParams
 
 class AutoImplementAbstractMembersSuite extends BaseCodeActionSuite:
 

@@ -4,9 +4,11 @@ package transform
 
 import MegaPhase.MiniPhase
 import core.*
-import Symbols.*, Contexts.*, Types.*, Decorators.*
+import Symbols.*
+import Contexts.*
+import Types.*
+import Decorators.*
 import StdNames.nme
-
 import NameKinds.AdaptedClosureName
 
 /** Rewrite `(x1, ... xN) => f(x1, ... xN)` for N >= 0 to `f`,

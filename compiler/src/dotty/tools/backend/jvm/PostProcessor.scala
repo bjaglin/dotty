@@ -1,12 +1,13 @@
 package dotty.tools.backend.jvm
 
-import java.util.concurrent.ConcurrentHashMap
-
-import scala.collection.mutable.ListBuffer
-import dotty.tools.dotc.util.{SourcePosition, NoSourcePosition}
-import dotty.tools.io.AbstractFile
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.em
+import dotty.tools.dotc.util.NoSourcePosition
+import dotty.tools.dotc.util.SourcePosition
+import dotty.tools.io.AbstractFile
+
+import java.util.concurrent.ConcurrentHashMap
+import scala.collection.mutable.ListBuffer
 import scala.tools.asm.ClassWriter
 import scala.tools.asm.tree.ClassNode
 

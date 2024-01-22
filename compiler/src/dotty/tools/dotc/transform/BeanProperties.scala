@@ -6,13 +6,11 @@ import ast.tpd.*
 import Annotations.*
 import Contexts.*
 import Symbols.*
-
 import Decorators.*
 import Flags.*
 import Names.*
 import Types.*
 import util.Spans.*
-
 import DenotTransformers.*
 
 class BeanProperties(thisPhase: DenotTransformer):

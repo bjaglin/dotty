@@ -2,11 +2,14 @@ package dotty.tools
 package dotc
 package parsing
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.config.MigrationVersion
 
 import scala.annotation.internal.sharable
-import scala.collection.mutable.ListBuffer
+import scala.annotation.tailrec
 import scala.collection.immutable.BitSet
+import scala.collection.mutable.ListBuffer
+import scala.language.unsafeNulls
+
 import util.{ SourceFile, SourcePosition, NoSourcePosition }
 import Tokens.*
 import Scanners.*
@@ -26,14 +29,12 @@ import Symbols.NoSymbol
 import ScriptParsers.*
 import Decorators.*
 import util.Chars
-import scala.annotation.tailrec
 import rewrites.Rewrites.{patch, overlapsPatch}
 import reporting.*
 import config.Feature
 import config.Feature.{sourceVersion, migrateTo3, globalOnlyImports}
 import config.SourceVersion.*
 import config.SourceVersion
-import dotty.tools.dotc.config.MigrationVersion
 
 object Parsers {
 

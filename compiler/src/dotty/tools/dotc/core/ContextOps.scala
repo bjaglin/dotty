@@ -1,9 +1,14 @@
 package dotty.tools.dotc
 package core
 
-import Contexts.*, Symbols.*, Types.*, Flags.*
-import Denotations.*, SymDenotations.*
-import Names.Name, StdNames.nme
+import Contexts.*
+import Symbols.*
+import Types.*
+import Flags.*
+import Denotations.*
+import SymDenotations.*
+import Names.Name
+import StdNames.nme
 import ast.untpd
 
 /** Extension methods for contexts where we want to keep the ctx.<methodName> syntax */

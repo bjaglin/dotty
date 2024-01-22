@@ -2,8 +2,19 @@ package dotty.tools
 package dotc
 package inlines
 
-import ast.*, core.*
-import Flags.*, Symbols.*, Types.*, Decorators.*, Constants.*, Contexts.*
+import dotty.tools.dotc.transform.BetaReduce
+import dotty.tools.dotc.transform.Splicer
+
+import scala.annotation.constructorOnly
+
+import ast.*
+import core.*
+import Flags.*
+import Symbols.*
+import Types.*
+import Decorators.*
+import Constants.*
+import Contexts.*
 import StdNames.nme
 import typer.*
 import Names.Name
@@ -15,15 +26,11 @@ import config.Printers.inlining
 import ErrorReporting.errorTree
 import util.{SimpleIdentitySet, SrcPos}
 import Nullables.computeNullableDeeply
-
 import collection.mutable
 import reporting.trace
 import util.Spans.Span
-import dotty.tools.dotc.transform.Splicer
-import dotty.tools.dotc.transform.BetaReduce
 import quoted.QuoteUtils
 import staging.StagingLevel.{level, spliceContext}
-import scala.annotation.constructorOnly
 
 /** General support for inlining */
 object Inliner:

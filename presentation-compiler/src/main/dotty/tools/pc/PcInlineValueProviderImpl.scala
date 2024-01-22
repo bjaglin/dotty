@@ -1,12 +1,5 @@
 package dotty.tools.pc
 
-import scala.meta.internal.pc.Definition
-import scala.meta.internal.pc.InlineValueProvider
-import scala.meta.internal.pc.InlineValueProvider.Errors
-import scala.meta.internal.pc.RangeOffset
-import scala.meta.internal.pc.Reference
-import scala.meta.pc.OffsetParams
-
 import dotty.tools.dotc.ast.NavigateAST
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.ast.untpd
@@ -18,8 +11,14 @@ import dotty.tools.dotc.interactive.Interactive
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j as l
+
+import scala.meta.internal.pc.Definition
+import scala.meta.internal.pc.InlineValueProvider
+import scala.meta.internal.pc.InlineValueProvider.Errors
+import scala.meta.internal.pc.RangeOffset
+import scala.meta.internal.pc.Reference
+import scala.meta.pc.OffsetParams
 
 final class PcInlineValueProviderImpl(
     val driver: InteractiveDriver,

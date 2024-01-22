@@ -1,9 +1,12 @@
 package dotty.tools
 package vulpix
 
-import org.junit.{ Test, AfterClass }
+import org.junit.AfterClass
+import org.junit.Test
 import org.junit.experimental.categories.Category
+
 import scala.concurrent.duration._
+
 import TestConfiguration._
 
 /** Meta tests for the Vulpix test suite. This test follows the structure of

@@ -2,7 +2,6 @@ package dotty.tools.pc.tests.completion
 
 import dotty.tools.pc.base.BaseCompletionSuite
 import dotty.tools.pc.utils.MockEntries
-
 import org.junit.Test
 
 class CompletionMatchSuite extends BaseCompletionSuite:

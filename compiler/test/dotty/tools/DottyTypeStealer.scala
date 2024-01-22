@@ -1,16 +1,17 @@
 package dotty.tools
 
+import dotty.tools.dotc.core.Phases.erasurePhase
+import dotty.tools.dotc.core.Phases.typerPhase
+
 import scala.language.unsafeNulls
+import scala.util.CommandLineParser.FromString
 
 import dotc.ast.tpd
 import dotc.ast.tpd._
 import dotc.core.Contexts.{Context, atPhase}
-import dotty.tools.dotc.core.Phases.{typerPhase, erasurePhase}
 import dotc.core.Symbols.Symbol
 import dotc.core.Decorators._
 import dotc.core.Types.Type
-
-import scala.util.CommandLineParser.FromString
 
 /**Pass a string representing a Scala source file,
  * and then some type signatures referencing prior definitions.

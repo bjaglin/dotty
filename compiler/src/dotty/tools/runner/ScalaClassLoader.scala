@@ -1,16 +1,17 @@
 package dotty.tools
 package runner
 
-import scala.language.unsafeNulls
-
 import java.lang.ClassLoader
-import java.lang.invoke.{MethodHandles, MethodType}
+import java.lang.invoke.MethodHandles
+import java.lang.invoke.MethodType
+import java.lang.reflect.InvocationTargetException
 import java.lang.reflect.Modifier
-import java.net.{ URL, URLClassLoader }
-import java.lang.reflect.{ InvocationTargetException, UndeclaredThrowableException }
-
+import java.lang.reflect.UndeclaredThrowableException
+import java.net.URL
+import java.net.URLClassLoader
 import scala.annotation.internal.sharable
 import scala.annotation.tailrec
+import scala.language.unsafeNulls
 import scala.util.control.Exception.catching
 
 final class RichClassLoader(private val self: ClassLoader) extends AnyVal {

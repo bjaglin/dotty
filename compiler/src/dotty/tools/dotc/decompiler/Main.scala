@@ -1,10 +1,10 @@
 package dotty.tools.dotc.decompiler
 
-import java.nio.file.Files
-
 import dotty.tools.dotc
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.io.AbstractFile
+
+import java.nio.file.Files
 
 /** Main class of the `dotc -decompiler` decompiler.
  *

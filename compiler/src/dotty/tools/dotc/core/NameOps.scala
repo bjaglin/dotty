@@ -2,11 +2,18 @@ package dotty.tools
 package dotc
 package core
 
-import java.security.MessageDigest
 import java.nio.CharBuffer
+import java.security.MessageDigest
 import scala.io.Codec
+
 import Int.MaxValue
-import Names.*, StdNames.*, Contexts.*, Symbols.*, Flags.*, NameKinds.*, Types.*
+import Names.*
+import StdNames.*
+import Contexts.*
+import Symbols.*
+import Flags.*
+import NameKinds.*
+import Types.*
 import util.Chars.{isOperatorPart, digit2int}
 import Decorators.*
 import Definitions.*

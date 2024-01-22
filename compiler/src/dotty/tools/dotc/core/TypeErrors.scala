@@ -2,6 +2,8 @@ package dotty.tools
 package dotc
 package core
 
+import scala.annotation.constructorOnly
+
 import Types.*
 import Symbols.*
 import Flags.*
@@ -15,8 +17,6 @@ import ast.untpd
 import util.Property
 import config.Printers.{cyclicErrors, noPrinter}
 import collection.mutable
-
-import scala.annotation.constructorOnly
 
 abstract class TypeError(using creationContext: Context) extends Exception(""):
 

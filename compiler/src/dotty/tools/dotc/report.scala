@@ -1,15 +1,20 @@
 package dotty.tools.dotc
 
+import dotty.tools.dotc.config.MigrationVersion
+
+import java.lang.System.currentTimeMillis
+
 import reporting.*
 import Diagnostic.*
 import util.{SourcePosition, NoSourcePosition, SrcPos}
 import core.*
-import Contexts.*, Flags.*, Symbols.*, Decorators.*
+import Contexts.*
+import Flags.*
+import Symbols.*
+import Decorators.*
 import config.SourceVersion
 import ast.*
 import config.Feature.sourceVersion
-import java.lang.System.currentTimeMillis
-import dotty.tools.dotc.config.MigrationVersion
 
 object report:
 

@@ -2,6 +2,16 @@ package dotty.tools
 package dotc
 package printing
 
+import dotty.tools.dotc.ast.untpd.MemberDef
+import dotty.tools.dotc.ast.untpd.Modifiers
+import dotty.tools.dotc.ast.untpd.PackageDef
+import dotty.tools.dotc.ast.untpd.RefTree
+import dotty.tools.dotc.ast.untpd.Template
+import dotty.tools.dotc.ast.untpd.TypeDef
+import dotty.tools.dotc.ast.untpd.ValOrDefDef
+import dotty.tools.dotc.parsing.JavaParsers
+import dotty.tools.dotc.util.SourcePosition
+
 import core.*
 import Constants.*
 import Texts.*
@@ -24,11 +34,7 @@ import TypeApplications.*
 import NameKinds.{WildcardParamName, DefaultGetterName}
 import util.Chars.isOperatorPart
 import config.{Config, Feature}
-
-import dotty.tools.dotc.util.SourcePosition
-import dotty.tools.dotc.ast.untpd.{MemberDef, Modifiers, PackageDef, RefTree, Template, TypeDef, ValOrDefDef}
 import cc.{CaptureSet, CapturingType, toCaptureSet, IllegalCaptureRef}
-import dotty.tools.dotc.parsing.JavaParsers
 
 class RefinedPrinter(_ctx: Context) extends PlainPrinter(_ctx) {
 

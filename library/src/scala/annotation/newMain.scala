@@ -8,9 +8,9 @@
 
 package scala.annotation
 
+import scala.annotation.meta.param
 import scala.collection.mutable
 import scala.util.CommandLineParser.FromString
-import scala.annotation.meta.param
 
 /**
  * The annotation that designates a main function.

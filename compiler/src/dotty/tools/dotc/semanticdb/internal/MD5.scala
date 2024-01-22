@@ -1,10 +1,9 @@
 package dotty.tools.dotc.semanticdb.internal
 
-import scala.language.unsafeNulls
-
 import java.nio.ByteBuffer
 import java.nio.charset.StandardCharsets
 import java.security.MessageDigest
+import scala.language.unsafeNulls
 
 object MD5 {
   def compute(string: String): String = {

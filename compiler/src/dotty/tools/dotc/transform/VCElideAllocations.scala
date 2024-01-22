@@ -3,9 +3,15 @@ package transform
 
 import ast.tpd
 import core.*
-import Contexts.*, Symbols.*, Types.*, Flags.*, Phases.*
-import DenotTransformers.*, MegaPhase.*
-import TreeExtractors.*, ValueClasses.*
+import Contexts.*
+import Symbols.*
+import Types.*
+import Flags.*
+import Phases.*
+import DenotTransformers.*
+import MegaPhase.*
+import TreeExtractors.*
+import ValueClasses.*
 
 /** This phase elides unnecessary value class allocations
  *

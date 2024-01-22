@@ -1,7 +1,8 @@
 package dotty.tools.dotc.quoted
 
+import dotty.tools.dotc.ast.TreeTypeMap
 import dotty.tools.dotc.ast.Trees.*
-import dotty.tools.dotc.ast.{TreeTypeMap, tpd}
+import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.config.Printers.*
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*
@@ -9,19 +10,22 @@ import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.Mode
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.core.Types.*
-import dotty.tools.dotc.core.tasty.{ PositionPickler, TastyPickler, TastyPrinter, TreePickler, Attributes }
+import dotty.tools.dotc.core.tasty.Attributes
 import dotty.tools.dotc.core.tasty.DottyUnpickler
+import dotty.tools.dotc.core.tasty.PositionPickler
+import dotty.tools.dotc.core.tasty.TastyPickler
+import dotty.tools.dotc.core.tasty.TastyPrinter
+import dotty.tools.dotc.core.tasty.TreePickler
 import dotty.tools.dotc.core.tasty.TreeUnpickler.UnpickleMode
 import dotty.tools.dotc.report
 import dotty.tools.dotc.reporting.Message
+import dotty.tools.io.NoAbstractFile
 
+import scala.collection.mutable
 import scala.quoted.Quotes
 import scala.quoted.runtime.impl.*
 
-import scala.collection.mutable
-
 import QuoteUtils.*
-import dotty.tools.io.NoAbstractFile
 
 object PickledQuotes {
   import tpd.*

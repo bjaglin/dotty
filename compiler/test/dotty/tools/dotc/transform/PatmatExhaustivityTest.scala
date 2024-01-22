@@ -3,18 +3,16 @@ package tools
 package dotc
 package transform
 
+import dotty.tools.io.Directory
+import org.junit.Test
+
+import java.io._
+import java.nio.file.{Path => JPath}
 import scala.language.unsafeNulls
 
 import vulpix.FileDiff
 import vulpix.TestConfiguration
 import reporting.TestReporter
-
-import dotty.tools.io.Directory
-
-import java.io._
-import java.nio.file.{Path => JPath}
-
-import org.junit.Test
 
 class PatmatExhaustivityTest {
   val testsDir = "tests/patmat"

@@ -1,6 +1,10 @@
 package dotty.tools.dotc
 package core
 
+import dotty.tools.dotc.transform.sjs.JSSymUtils.sjsNeedsField
+
+import scala.annotation.tailrec
+
 import core.*
 import Types.*
 import Contexts.*
@@ -17,10 +21,6 @@ import Annotations.Annotation
 import Phases.*
 import ast.tpd.Literal
 import transform.Mixin
-
-import dotty.tools.dotc.transform.sjs.JSSymUtils.sjsNeedsField
-
-import scala.annotation.tailrec
 
 class SymUtils:
 

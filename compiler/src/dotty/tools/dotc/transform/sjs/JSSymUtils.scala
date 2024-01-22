@@ -2,6 +2,9 @@ package dotty.tools.dotc
 package transform
 package sjs
 
+import dotty.tools.backend.sjs.JSDefinitions.jsdefn
+import org.scalajs.ir.{Trees => js}
+
 import core.*
 import Constants.*
 import Contexts.*
@@ -11,13 +14,8 @@ import Names.*
 import Phases.*
 import StdNames.*
 import Symbols.*
-
 import ast.Trees.*
 import Types.*
-
-import dotty.tools.backend.sjs.JSDefinitions.jsdefn
-
-import org.scalajs.ir.{Trees => js}
 
 /** Additional extensions for `Symbol`s that are only relevant for Scala.js. */
 object JSSymUtils {

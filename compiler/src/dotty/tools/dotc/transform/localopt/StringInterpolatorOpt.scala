@@ -1,17 +1,17 @@
 package dotty.tools.dotc
 package transform.localopt
 
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Constants.Constant
 import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.StdNames.*
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.core.Types.*
 import dotty.tools.dotc.transform.MegaPhase.MiniPhase
 import dotty.tools.dotc.typer.ConstFold
+
+import scala.language.unsafeNulls
 
 /** MiniPhase to transform s and raw string interpolators from using StringContext to string
  *  concatenation. Since string concatenation uses the Java String builder, we get a performance

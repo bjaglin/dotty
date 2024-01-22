@@ -3,17 +3,30 @@ package dotc
 package transform
 package patmat
 
-import core.*, Constants.*, Contexts.*, Decorators.*, Flags.*, Names.*, NameOps.*, StdNames.*, Symbols.*, Types.*
-import ast.*, tpd.*
-import config.Printers.*
-import printing.{ Printer, * }, Texts.*
-import reporting.*
-import typer.*, Applications.*, Inferencing.*, ProtoTypes.*
-import util.*
-
 import scala.annotation.internal.sharable
 import scala.collection.mutable
 
+import core.*
+import Constants.*
+import Contexts.*
+import Decorators.*
+import Flags.*
+import Names.*
+import NameOps.*
+import StdNames.*
+import Symbols.*
+import Types.*
+import ast.*
+import tpd.*
+import config.Printers.*
+import printing.{ Printer, * }
+import Texts.*
+import reporting.*
+import typer.*
+import Applications.*
+import Inferencing.*
+import ProtoTypes.*
+import util.*
 import SpaceEngine.*
 
 /* Space logic for checking exhaustivity and unreachability of pattern matching

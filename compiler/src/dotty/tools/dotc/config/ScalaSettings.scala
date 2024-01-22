@@ -1,19 +1,23 @@
 package dotty.tools.dotc
 package config
 
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc.config.PathResolver.Defaults
-import dotty.tools.dotc.config.Settings.{Setting, SettingGroup}
+import dotty.tools.dotc.config.Settings.Setting
+import dotty.tools.dotc.config.Settings.SettingGroup
 import dotty.tools.dotc.config.SourceVersion
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.rewrites.Rewrites
-import dotty.tools.io.{AbstractFile, Directory, JDK9Reflectors, PlainDirectory, NoAbstractFile}
-import Setting.ChoiceWithHelp
-
-import scala.util.chaining.*
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.Directory
+import dotty.tools.io.JDK9Reflectors
+import dotty.tools.io.NoAbstractFile
+import dotty.tools.io.PlainDirectory
 
 import java.util.zip.Deflater
+import scala.language.unsafeNulls
+import scala.util.chaining.*
+
+import Setting.ChoiceWithHelp
 
 class ScalaSettings extends SettingGroup with AllScalaSettings
 

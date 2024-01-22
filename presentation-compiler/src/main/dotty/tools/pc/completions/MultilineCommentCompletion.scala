@@ -1,8 +1,8 @@
 package dotty.tools.pc.completions
 
-import scala.meta.pc.PresentationCompilerConfig
-
 import dotty.tools.dotc.util.SourcePosition
+
+import scala.meta.pc.PresentationCompilerConfig
 
 object MultilineCommentCompletion:
 

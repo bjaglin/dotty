@@ -1,19 +1,17 @@
 package dotty.tools.pc
 
-import java.nio.file.Paths
-import java.util as ju
-
-import scala.jdk.CollectionConverters._
-import scala.meta.pc.OffsetParams
-
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.interactive.Interactive
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.util.SourceFile
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j
 import org.eclipse.lsp4j.SelectionRange
+
+import java.nio.file.Paths
+import java.util as ju
+import scala.jdk.CollectionConverters._
+import scala.meta.pc.OffsetParams
 
 /**
  * Provides the functionality necessary for the `textDocument/selectionRange` request.

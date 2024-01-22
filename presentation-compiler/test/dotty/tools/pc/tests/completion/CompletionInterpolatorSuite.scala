@@ -1,9 +1,9 @@
 package dotty.tools.pc.tests.completion
 
 import dotty.tools.pc.base.BaseCompletionSuite
-
+import org.junit.FixMethodOrder
+import org.junit.Test
 import org.junit.runners.MethodSorters
-import org.junit.{FixMethodOrder, Test}
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 class CompletionInterpolatorSuite extends BaseCompletionSuite:

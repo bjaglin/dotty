@@ -1,6 +1,8 @@
 package scala.quoted.runtime
 
-import scala.quoted.{Quotes, Expr, Type}
+import scala.quoted.Expr
+import scala.quoted.Quotes
+import scala.quoted.Type
 
 /** Part of the Quotes interface that needs to be implemented by the compiler but is not visible to users */
 trait QuoteUnpickler:

@@ -1,6 +1,16 @@
 package dotty.tools
 package dotc
 
+import dotty.tools.dotc.transform.MegaPhase
+
+import java.io.BufferedWriter
+import java.io.OutputStreamWriter
+import java.nio.charset.StandardCharsets
+import scala.collection.mutable
+import scala.compiletime.uninitialized
+import scala.io.Codec
+import scala.util.control.NonFatal
+
 import core.*
 import Contexts.*
 import Periods.*
@@ -13,9 +23,7 @@ import typer.ImportInfo.withRootImports
 import Decorators.*
 import io.AbstractFile
 import Phases.{unfusedPhases, Phase}
-
 import sbt.interfaces.ProgressCallback
-
 import util.*
 import reporting.{Suppression, Action, Profile, ActiveProfile, NoProfile}
 import reporting.Diagnostic
@@ -26,17 +34,7 @@ import printing.XprintMode
 import typer.ImplicitRunInfo
 import config.Feature
 import StdNames.nme
-
-import java.io.{BufferedWriter, OutputStreamWriter}
-import java.nio.charset.StandardCharsets
-
-import scala.collection.mutable
-import scala.util.control.NonFatal
-import scala.io.Codec
-
 import Run.Progress
-import scala.compiletime.uninitialized
-import dotty.tools.dotc.transform.MegaPhase
 
 /** A compiler run. Exports various methods to compile source files */
 class Run(comp: Compiler, ictx: Context) extends ImplicitRunInfo with ConstraintRunInfo {

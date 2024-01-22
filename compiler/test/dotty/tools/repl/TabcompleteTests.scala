@@ -1,9 +1,9 @@
 package dotty.tools.repl
 
-import scala.language.unsafeNulls
-
 import org.junit.Assert._
 import org.junit.Test
+
+import scala.language.unsafeNulls
 
 /** These tests test input that has proved problematic */
 class TabcompleteTests extends ReplTest {

@@ -1,11 +1,11 @@
 package dotty.tools
 package runner
 
-import java.net.URL
-import scala.util.control.NonFatal
 import java.lang.reflect.InvocationTargetException
 import java.lang.reflect.UndeclaredThrowableException
+import java.net.URL
 import java.util.concurrent.ExecutionException
+import scala.util.control.NonFatal
 
 /**
  * This is a copy implementation from scala/scala scala.tools.nsc.CommonRunner trait

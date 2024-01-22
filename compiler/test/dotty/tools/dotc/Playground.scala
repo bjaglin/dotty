@@ -1,8 +1,8 @@
 package dotty.tools.dotc
 
 import dotty.tools.vulpix._
-import org.junit.Test
 import org.junit.Ignore
+import org.junit.Test
 
 @Ignore class Playground:
   import TestConfiguration._

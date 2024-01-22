@@ -1,6 +1,8 @@
 package dotty.tools.dotc
 package transform
 
+import scala.collection.mutable
+
 import core.*
 import ast.tpd.*
 import Contexts.*
@@ -11,8 +13,6 @@ import Constants.*
 import Types.*
 import Decorators.*
 import Flags.*
-
-import scala.collection.mutable
 
 class RepeatableAnnotations extends MiniPhase:
 

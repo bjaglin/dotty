@@ -8,13 +8,12 @@
 
 package dotty.tools.io
 
-import scala.language.unsafeNulls
-
 import java.io.{File => JavaIoFile, _}
-import java.nio.file.{Files, Paths}
+import java.nio.file.Files
+import java.nio.file.Paths
 import java.nio.file.StandardOpenOption.*
-
 import scala.io.Codec
+import scala.language.unsafeNulls
 /**
  * ''Note:  This library is considered experimental and should not be used unless you know what you are doing.''
  */

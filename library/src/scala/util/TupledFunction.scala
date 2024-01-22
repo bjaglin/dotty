@@ -1,7 +1,7 @@
 package scala.util
 
-import scala.annotation.implicitNotFound
 import scala.annotation.experimental
+import scala.annotation.implicitNotFound
 
 /** Type class relating a `FunctionN[..., R]` with an equivalent tupled function `Function1[TupleN[...], R]`
  *

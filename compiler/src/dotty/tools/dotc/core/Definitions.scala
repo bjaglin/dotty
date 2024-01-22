@@ -2,11 +2,25 @@ package dotty.tools
 package dotc
 package core
 
+import scala.annotation.tailrec
 import scala.annotation.{threadUnsafe => tu}
-import Types.*, Contexts.*, Symbols.*, SymDenotations.*, StdNames.*, Names.*, Phases.*
-import Flags.*, Scopes.*, Decorators.*, NameOps.*, Periods.*, NullOpsDecorator.*
-import unpickleScala2.Scala2Unpickler.ensureConstructor
 import scala.collection.mutable
+import scala.compiletime.uninitialized
+
+import Types.*
+import Contexts.*
+import Symbols.*
+import SymDenotations.*
+import StdNames.*
+import Names.*
+import Phases.*
+import Flags.*
+import Scopes.*
+import Decorators.*
+import NameOps.*
+import Periods.*
+import NullOpsDecorator.*
+import unpickleScala2.Scala2Unpickler.ensureConstructor
 import collection.mutable
 import Denotations.{SingleDenotation, staticRef}
 import util.{SimpleIdentityMap, SourceFile, NoSource}
@@ -17,9 +31,6 @@ import config.Feature
 import Symbols.requiredModuleRef
 import cc.{CaptureSet, RetainingType}
 import ast.tpd.ref
-
-import scala.annotation.tailrec
-import scala.compiletime.uninitialized
 
 object Definitions {
 

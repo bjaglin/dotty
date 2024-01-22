@@ -2,9 +2,25 @@ package dotty.tools
 package dotc
 package reporting
 
+import dotty.tools.dotc.rewrites.Rewrites.ActionPatch
+import dotty.tools.dotc.util.SourceFile
+import dotty.tools.dotc.util.SourcePosition
+import dotty.tools.dotc.util.Spans.Span
+
+import java.util.regex.Matcher.quoteReplacement
+import scala.jdk.CollectionConverters.*
+import scala.util.control.NonFatal
+import scala.util.matching.Regex
+
 import core.*
 import Contexts.*
-import Decorators.*, Symbols.*, Names.*, NameOps.*, Types.*, Flags.*, Phases.*
+import Decorators.*
+import Symbols.*
+import Names.*
+import NameOps.*
+import Types.*
+import Flags.*
+import Phases.*
 import Denotations.SingleDenotation
 import SymDenotations.SymDenotation
 import NameKinds.{WildcardParamName, ContextFunctionParamName}
@@ -19,20 +35,12 @@ import typer.ErrorReporting.{err, matchReductionAddendum, substitutableTypeSymbo
 import typer.ProtoTypes.{ViewProto, SelectionProto, FunProto}
 import typer.Implicits.*
 import typer.Inferencing
-import scala.util.control.NonFatal
 import StdNames.nme
 import printing.Formatting.hl
 import ast.Trees.*
 import ast.untpd
 import ast.tpd
-import scala.util.matching.Regex
-import java.util.regex.Matcher.quoteReplacement
 import cc.CaptureSet.IdentityCaptRefMap
-import dotty.tools.dotc.rewrites.Rewrites.ActionPatch
-import dotty.tools.dotc.util.Spans.Span
-import dotty.tools.dotc.util.SourcePosition
-import scala.jdk.CollectionConverters.*
-import dotty.tools.dotc.util.SourceFile
 import DidYouMean.*
 
 /**  Messages

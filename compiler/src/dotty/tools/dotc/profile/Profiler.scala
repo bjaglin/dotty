@@ -1,18 +1,26 @@
 package dotty.tools.dotc.profile
 
+import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Phases.Phase
+import dotty.tools.io.AbstractFile
+
+import java.io.FileWriter
+import java.io.PrintWriter
+import java.lang.management.ClassLoadingMXBean
+import java.lang.management.CompilationMXBean
+import java.lang.management.GarbageCollectorMXBean
+import java.lang.management.ManagementFactory
+import java.lang.management.MemoryMXBean
+import java.lang.management.RuntimeMXBean
+import java.util.concurrent.TimeUnit
+import java.util.concurrent.atomic.AtomicInteger
+import javax.management.Notification
+import javax.management.NotificationEmitter
+import javax.management.NotificationListener
+import javax.management.openmbean.CompositeData
 import scala.annotation.*
 import scala.language.unsafeNulls
 
-import java.io.{FileWriter, PrintWriter}
-import java.lang.management.{ManagementFactory, GarbageCollectorMXBean, RuntimeMXBean, MemoryMXBean, ClassLoadingMXBean, CompilationMXBean}
-import java.util.concurrent.TimeUnit
-import java.util.concurrent.atomic.AtomicInteger
-import javax.management.openmbean.CompositeData
-import javax.management.{Notification, NotificationEmitter, NotificationListener}
-
-import dotty.tools.dotc.core.Phases.Phase
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.io.AbstractFile
 import annotation.internal.sharable
 
 object Profiler {

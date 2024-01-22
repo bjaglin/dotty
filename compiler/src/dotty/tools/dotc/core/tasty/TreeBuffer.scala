@@ -3,14 +3,15 @@ package dotc
 package core
 package tasty
 
-import dotty.tools.tasty.util.Util.dble
 import dotty.tools.tasty.TastyBuffer
-import TastyBuffer.{Addr, NoAddr, AddrWidth}
+import dotty.tools.tasty.util.Util.dble
 
+import java.util.Arrays
+
+import TastyBuffer.{Addr, NoAddr, AddrWidth}
 import util.Util.bestFit
 import config.Printers.pickling
 import ast.untpd.Tree
-import java.util.Arrays
 
 class TreeBuffer extends TastyBuffer(50000) {
 

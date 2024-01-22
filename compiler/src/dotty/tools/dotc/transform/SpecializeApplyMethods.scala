@@ -1,12 +1,22 @@
 package dotty.tools.dotc
 package transform
 
-import ast.Trees.*, ast.tpd, core.*
-import Contexts.*, Types.*, Decorators.*, Symbols.*, DenotTransformers.*
-import SymDenotations.*, Scopes.*, StdNames.*, NameOps.*, Names.*
-import MegaPhase.MiniPhase
-
 import scala.collection.mutable
+
+import ast.Trees.*
+import ast.tpd
+import core.*
+import Contexts.*
+import Types.*
+import Decorators.*
+import Symbols.*
+import DenotTransformers.*
+import SymDenotations.*
+import Scopes.*
+import StdNames.*
+import NameOps.*
+import Names.*
+import MegaPhase.MiniPhase
 
 
 /** This phase synthesizes specialized methods for FunctionN, this is done

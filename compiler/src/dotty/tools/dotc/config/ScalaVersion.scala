@@ -3,10 +3,11 @@
 package dotty.tools
 package dotc.config
 
-import scala.language.unsafeNulls
-
 import scala.annotation.internal.sharable
-import scala.util.{Try, Success, Failure}
+import scala.language.unsafeNulls
+import scala.util.Failure
+import scala.util.Success
+import scala.util.Try
 
 /**
  * Represents a single Scala version in a manner that

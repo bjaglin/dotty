@@ -1,9 +1,10 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.dotc.core.Contexts.*
+
 import core.*
 import MegaPhase.MiniPhase
-import dotty.tools.dotc.core.Contexts.*
 import ast.*
 import Flags.*
 import Symbols.*

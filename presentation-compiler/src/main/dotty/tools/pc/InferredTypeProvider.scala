@@ -1,14 +1,5 @@
 package dotty.tools.pc
 
-import java.nio.file.Paths
-
-import scala.annotation.tailrec
-import scala.meta.internal.metals.ReportContext
-import scala.meta.pc.OffsetParams
-import scala.meta.pc.PresentationCompilerConfig
-import scala.meta.pc.SymbolSearch
-import scala.meta as m
-
 import dotty.tools.dotc.ast.Trees.*
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.core.Contexts.*
@@ -25,9 +16,16 @@ import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.printer.ShortenedTypePrinter
 import dotty.tools.pc.printer.ShortenedTypePrinter.IncludeDefaultParam
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j.TextEdit
 import org.eclipse.lsp4j as l
+
+import java.nio.file.Paths
+import scala.annotation.tailrec
+import scala.meta.internal.metals.ReportContext
+import scala.meta.pc.OffsetParams
+import scala.meta.pc.PresentationCompilerConfig
+import scala.meta.pc.SymbolSearch
+import scala.meta as m
 
 /**
  * Tries to calculate edits needed to insert the inferred type annotation

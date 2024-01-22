@@ -1,6 +1,9 @@
 package dotty.tools
 package dotc
 
+import scala.annotation.internal.sharable
+import scala.util.control.NoStackTrace
+
 import core.*
 import Contexts.*
 import SymDenotations.ClassDenotation
@@ -15,8 +18,6 @@ import typer.Nullables
 import core.Decorators.*
 import config.{SourceVersion, Feature}
 import StdNames.nme
-import scala.annotation.internal.sharable
-import scala.util.control.NoStackTrace
 import transform.MacroAnnotations
 
 class CompilationUnit protected (val source: SourceFile, val info: CompilationUnitInfo | Null) {

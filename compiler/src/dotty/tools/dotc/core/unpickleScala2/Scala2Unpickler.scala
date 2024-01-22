@@ -3,17 +3,34 @@ package dotc
 package core
 package unpickleScala2
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.ast.tpd
+import dotty.tools.dotc.ast.untpd
 
 import java.io.IOException
-import java.lang.Float.intBitsToFloat
 import java.lang.Double.longBitsToDouble
+import java.lang.Float.intBitsToFloat
+import scala.annotation.switch
+import scala.collection.mutable
+import scala.collection.mutable.ListBuffer
+import scala.language.unsafeNulls
 
-import Contexts.*, Symbols.*, Types.*, Scopes.*, SymDenotations.*, Names.*, NameOps.*
-import StdNames.*, Denotations.*, NameOps.*, Flags.*, Constants.*, Annotations.*, Phases.*
+import Contexts.*
+import Symbols.*
+import Types.*
+import Scopes.*
+import SymDenotations.*
+import Names.*
+import NameOps.*
+import StdNames.*
+import Denotations.*
+import NameOps.*
+import Flags.*
+import Constants.*
+import Annotations.*
+import Phases.*
 import NameKinds.{Scala2MethodNameKinds, SuperAccessorName, ExpandedName}
 import util.Spans.*
-import dotty.tools.dotc.ast.{tpd, untpd}, ast.tpd.*
+import ast.tpd.*
 import ast.untpd.Modifiers
 import backend.sjs.JSDefinitions
 import printing.Texts.*
@@ -28,9 +45,6 @@ import PickleFormat.*
 import Decorators.*
 import TypeApplications.*
 import classfile.ClassfileParser
-import scala.collection.mutable
-import scala.collection.mutable.ListBuffer
-import scala.annotation.switch
 import reporting.*
 
 object Scala2Unpickler {

@@ -1,24 +1,32 @@
 package dotty.tools.backend.jvm
 
-import java.io.{DataOutputStream, IOException, BufferedOutputStream, FileOutputStream}
+import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Decorators.em
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.JarArchive
+import dotty.tools.io.PlainFile
+import dotty.tools.io.PlainFile.toPlainFile
+
+import java.io.BufferedOutputStream
+import java.io.DataOutputStream
+import java.io.FileOutputStream
+import java.io.IOException
 import java.nio.ByteBuffer
-import java.nio.channels.{ClosedByInterruptException, FileChannel}
+import java.nio.channels.ClosedByInterruptException
+import java.nio.channels.FileChannel
 import java.nio.charset.StandardCharsets.UTF_8
 import java.nio.file.*
 import java.nio.file.attribute.FileAttribute
 import java.util
 import java.util.concurrent.ConcurrentHashMap
-import java.util.zip.{CRC32, Deflater, ZipEntry, ZipOutputStream}
-
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.em
-import dotty.tools.io.{AbstractFile, PlainFile}
-import dotty.tools.io.PlainFile.toPlainFile
-import BTypes.InternalName
-import scala.util.chaining.*
-import dotty.tools.io.JarArchive
-
+import java.util.zip.CRC32
+import java.util.zip.Deflater
+import java.util.zip.ZipEntry
+import java.util.zip.ZipOutputStream
 import scala.language.unsafeNulls
+import scala.util.chaining.*
+
+import BTypes.InternalName
 
 
 class ClassfileWriters(frontendAccess: PostProcessorFrontendAccess) {

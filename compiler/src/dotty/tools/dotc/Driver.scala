@@ -1,17 +1,18 @@
 package dotty.tools.dotc
 
 import dotty.tools.FatalError
+import dotty.tools.dotc.ast.Positioned
+import dotty.tools.io.AbstractFile
+
+import scala.util.control.NonFatal
+
 import config.CompilerCommand
 import core.Comments.{ContextDoc, ContextDocstrings}
 import core.Contexts.*
 import core.{MacroClassLoader, TypeError}
-import dotty.tools.dotc.ast.Positioned
-import dotty.tools.io.AbstractFile
 import reporting.*
 import core.Decorators.*
 import config.Feature
-
-import scala.util.control.NonFatal
 import fromtasty.{TASTYCompiler, TastyFileUtil}
 
 /** Run the Dotty compiler.

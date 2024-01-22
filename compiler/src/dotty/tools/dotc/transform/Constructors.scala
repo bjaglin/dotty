@@ -1,16 +1,16 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import MegaPhase.*
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.StdNames.*
+
+import core.*
+import MegaPhase.*
 import ast.*
 import Flags.*
 import Names.Name
 import NameOps.*
 import NameKinds.{FieldName, ExplicitFieldName}
-
 import Symbols.*
 import Decorators.*
 import DenotTransformers.*

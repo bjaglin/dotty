@@ -1,11 +1,11 @@
 package dotty.tools.scripting
 
-import scala.language.unsafeNulls
-
-import java.nio.file.{ Path }
 import java.io.File
+import java.lang.reflect.Method
+import java.lang.reflect.Modifier
 import java.net.{ URLClassLoader }
-import java.lang.reflect.{ Modifier, Method }
+import java.nio.file.{ Path }
+import scala.language.unsafeNulls
 
 object Util:
   def deleteFile(target: File): Unit =

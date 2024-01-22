@@ -1,16 +1,5 @@
 package dotty.tools.pc.utils
 
-import scala.annotation.tailrec
-import scala.meta.internal.jdk.CollectionConverters.*
-import scala.meta.internal.mtags.CommonMtagsEnrichments
-import scala.meta.internal.mtags.KeywordWrapper
-import scala.meta.pc.OffsetParams
-import scala.meta.pc.RangeParams
-import scala.meta.pc.SymbolDocumentation
-import scala.meta.pc.SymbolSearch
-import scala.util.control.NonFatal
-import scala.jdk.OptionConverters.*
-
 import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Denotations.*
@@ -28,8 +17,18 @@ import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans
 import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.SemanticdbSymbols
-
 import org.eclipse.lsp4j as l
+
+import scala.annotation.tailrec
+import scala.jdk.OptionConverters.*
+import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.mtags.CommonMtagsEnrichments
+import scala.meta.internal.mtags.KeywordWrapper
+import scala.meta.pc.OffsetParams
+import scala.meta.pc.RangeParams
+import scala.meta.pc.SymbolDocumentation
+import scala.meta.pc.SymbolSearch
+import scala.util.control.NonFatal
 
 object MtagsEnrichments extends CommonMtagsEnrichments:
 

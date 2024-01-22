@@ -1,12 +1,11 @@
 package dotty.tools
 
-import scala.language.unsafeNulls
+import dotty.Properties
 
 import java.io.File
 import java.nio.file._
-
 import scala.jdk.CollectionConverters._
-import dotty.Properties
+import scala.language.unsafeNulls
 
 object TestSources {
 

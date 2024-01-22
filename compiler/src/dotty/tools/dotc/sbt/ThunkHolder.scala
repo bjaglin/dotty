@@ -2,9 +2,10 @@ package dotty.tools
 package dotc
 package sbt
 
+import xsbti.api
+
 import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
-import xsbti.api
 
 /** Create and hold thunks. A thunk is a (potentially) unevaluated value
  *  that may be evaluated once.

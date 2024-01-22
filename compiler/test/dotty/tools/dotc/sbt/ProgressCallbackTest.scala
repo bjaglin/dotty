@@ -1,22 +1,20 @@
 package dotty.tools.dotc.sbt
 
 import dotty.tools.DottyTest
-import dotty.tools.dotc.core.Contexts.FreshContext
-import dotty.tools.dotc.sbt.ProgressCallbackTest.*
-
-import org.junit.Assert.*
-import org.junit.Test
-
-import dotty.tools.toOption
-import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Contexts.ctx
 import dotty.tools.dotc.CompilationUnit
 import dotty.tools.dotc.Compiler
-import dotty.tools.dotc.Run
-import dotty.tools.dotc.core.Phases.Phase
-import dotty.tools.io.VirtualDirectory
 import dotty.tools.dotc.NoCompilationUnit
+import dotty.tools.dotc.Run
+import dotty.tools.dotc.core.Contexts.Context
+import dotty.tools.dotc.core.Contexts.FreshContext
+import dotty.tools.dotc.core.Contexts.ctx
+import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.dotc.interactive.Interactive.Include.all
+import dotty.tools.dotc.sbt.ProgressCallbackTest.*
+import dotty.tools.io.VirtualDirectory
+import dotty.tools.toOption
+import org.junit.Assert.*
+import org.junit.Test
 
 final class ProgressCallbackTest extends DottyTest:
 

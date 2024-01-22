@@ -1,17 +1,18 @@
 package dotty.tools.dotc
 package rewrites
 
+import dotty.tools.dotc.reporting.CodeAction
+import dotty.tools.dotc.reporting.Reporter
+import dotty.tools.dotc.util.SourcePosition
+
+import java.io.OutputStreamWriter
+import java.nio.charset.StandardCharsets.UTF_8
+import scala.annotation.tailrec
+
 import util.{SourceFile, Spans}
 import Spans.Span
 import core.Contexts.*
 import collection.mutable
-import scala.annotation.tailrec
-import dotty.tools.dotc.reporting.Reporter
-import dotty.tools.dotc.util.SourcePosition;
-
-import java.io.OutputStreamWriter
-import java.nio.charset.StandardCharsets.UTF_8
-import dotty.tools.dotc.reporting.CodeAction
 
 /** Handles rewriting of Scala2 files to Dotty */
 object Rewrites {

@@ -1,7 +1,9 @@
 package dotty.tools.dotc.core.tasty
 import dotty.tools.tasty.TastyBuffer
-import collection.mutable
+
 import java.util.Arrays
+
+import collection.mutable
 
 class ScratchData:
   var delta, delta1 = new Array[Int](0)

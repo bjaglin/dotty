@@ -1,19 +1,23 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.uncheckedNN
+
+import scala.compiletime.uninitialized
+
 import ast.{TreeTypeMap, tpd}
 import config.Printers.tailrec
 import core.*
-import Contexts.*, Flags.*, Symbols.*, Decorators.em
+import Contexts.*
+import Flags.*
+import Symbols.*
+import Decorators.em
 import Constants.Constant
 import NameKinds.{TailLabelName, TailLocalName, TailTempName}
 import StdNames.nme
 import reporting.*
 import transform.MegaPhase.MiniPhase
 import util.LinearSet
-import dotty.tools.uncheckedNN
-
-import scala.compiletime.uninitialized
 
 /** A Tail Rec Transformer.
  *

@@ -5,7 +5,8 @@ package core
 import scala.language.unsafeNulls
 
 import ast.{ untpd, tpd }
-import Symbols.*, Contexts.*
+import Symbols.*
+import Contexts.*
 import util.{SourceFile, ReadOnlyMap}
 import util.Spans.*
 import util.CommentParsing.*

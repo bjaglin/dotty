@@ -1,17 +1,17 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
 import dotty.tools.dotc.core.DenotTransformers.IdentityDenotTransformer
+
+import java.io.File.separatorChar
+
+import core.*
 import Contexts.*
 import Symbols.*
 import Flags.*
 import SymDenotations.*
-
 import Decorators.*
 import MegaPhase.*
-import java.io.File.separatorChar
-
 import ValueClasses.*
 
 /** Make private term members that are accessed from another class

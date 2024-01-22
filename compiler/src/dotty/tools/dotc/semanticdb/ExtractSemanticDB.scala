@@ -2,7 +2,22 @@ package dotty.tools
 package dotc
 package semanticdb
 
+import dotty.tools.dotc.reporting.Diagnostic.Warning
+import dotty.tools.dotc.semanticdb.DiagnosticOps.*
+import dotty.tools.dotc.{semanticdb => s}
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.JarArchive
+
+import java.nio.file.Path
+import scala.PartialFunction.condOpt
+import scala.annotation.tailrec
+import scala.annotation.{threadUnsafe => tu}
+import scala.collection.mutable
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
+import scala.util.Failure
+import scala.util.Success
+import scala.util.Using
 
 import core.*
 import Phases.*
@@ -17,19 +32,7 @@ import NameOps.*
 import Denotations.StaleSymbol
 import util.Spans.Span
 import util.SourceFile
-
-import scala.collection.mutable
-import scala.annotation.{ threadUnsafe => tu, tailrec }
-import scala.jdk.CollectionConverters.*
-import scala.PartialFunction.condOpt
 import typer.ImportInfo.withRootImports
-
-import dotty.tools.dotc.reporting.Diagnostic.Warning
-import dotty.tools.dotc.{semanticdb => s}
-import dotty.tools.io.{AbstractFile, JarArchive}
-import dotty.tools.dotc.semanticdb.DiagnosticOps.*
-import scala.util.{Using, Failure, Success}
-import java.nio.file.Path
 
 
 /** Extract symbol references and uses to semanticdb files.

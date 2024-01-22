@@ -2,30 +2,38 @@ package dotty.tools
 package dotc
 package core
 
-import java.io.{IOException, File}
-import java.nio.channels.ClosedByInterruptException
+import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
+import dotty.tools.dotc.classpath.FileUtils.isTasty
+import dotty.tools.dotc.core.tasty.TastyUnpickler
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.ClassPath
+import dotty.tools.io.ClassRepresentation
+import dotty.tools.tasty.TastyHeaderUnpickler
+import dotty.tools.tasty.TastyVersion
+import dotty.tools.tasty.UnpickleException
+import dotty.tools.tasty.UnpicklerConfig
 
+import java.io.File
+import java.io.IOException
+import java.nio.channels.ClosedByInterruptException
 import scala.util.control.NonFatal
 
-import dotty.tools.dotc.classpath.FileUtils.isTasty
-import dotty.tools.io.{ ClassPath, ClassRepresentation, AbstractFile }
-import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
-
-import Contexts.*, Symbols.*, Flags.*, SymDenotations.*, Types.*, Scopes.*, Names.*
+import Contexts.*
+import Symbols.*
+import Flags.*
+import SymDenotations.*
+import Types.*
+import Scopes.*
+import Names.*
 import NameOps.*
 import StdNames.*
 import classfile.{ClassfileParser, ClassfileTastyUUIDParser}
 import Decorators.*
-
 import util.Stats
 import reporting.trace
-
 import ast.desugar
-
 import parsing.JavaParsers.OutlineJavaParser
 import parsing.Parsers.OutlineParser
-import dotty.tools.tasty.{TastyHeaderUnpickler, UnpickleException, UnpicklerConfig, TastyVersion}
-import dotty.tools.dotc.core.tasty.TastyUnpickler
 
 object SymbolLoaders {
   import ast.untpd.*

@@ -1,12 +1,5 @@
 package dotty.tools.pc
 
-import java.nio.file.Paths
-
-import scala.meta.internal.metals.CompilerOffsetParams
-import scala.meta.pc.OffsetParams
-import scala.meta.pc.VirtualFileParams
-import scala.meta as m
-
 import dotty.tools.dotc.ast.NavigateAST
 import dotty.tools.dotc.ast.Positioned
 import dotty.tools.dotc.ast.tpd
@@ -27,6 +20,12 @@ import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.utils.MtagsEnrichments.*
+
+import java.nio.file.Paths
+import scala.meta.internal.metals.CompilerOffsetParams
+import scala.meta.pc.OffsetParams
+import scala.meta.pc.VirtualFileParams
+import scala.meta as m
 
 abstract class PcCollector[T](
     driver: InteractiveDriver,

@@ -2,10 +2,17 @@ package dotty.tools
 package dotc
 package ast
 
-import core.*
-import Types.*, Contexts.*, Constants.*, Names.*, Flags.*
 import dotty.tools.dotc.typer.ProtoTypes
-import Symbols.*, StdNames.*, Trees.*
+
+import core.*
+import Types.*
+import Contexts.*
+import Constants.*
+import Names.*
+import Flags.*
+import Symbols.*
+import StdNames.*
+import Trees.*
 import util.{Property, SourceFile, NoSource}
 import util.Spans.Span
 import annotation.constructorOnly

@@ -13,12 +13,13 @@
 package dotty.tools
 package repl
 
+import java.net.URL
+import java.net.URLConnection
+import java.net.URLStreamHandler
+import java.util.Collections
 import scala.language.unsafeNulls
 
 import io.AbstractFile
-
-import java.net.{URL, URLConnection, URLStreamHandler}
-import java.util.Collections
 
 class AbstractFileClassLoader(val root: AbstractFile, parent: ClassLoader) extends ClassLoader(parent):
   private def findAbstractFile(name: String) = root.lookupPath(name.split('/').toIndexedSeq, directory = false)

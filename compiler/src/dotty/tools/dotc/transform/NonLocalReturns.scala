@@ -1,13 +1,18 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.dotc.config.MigrationVersion
+
 import core.*
-import Contexts.*, Symbols.*, Types.*, Flags.*, StdNames.*
+import Contexts.*
+import Symbols.*
+import Types.*
+import Flags.*
+import StdNames.*
 import MegaPhase.*
 import NameKinds.NonLocalReturnKeyName
 import config.SourceVersion.*
 import Decorators.em
-import dotty.tools.dotc.config.MigrationVersion
 
 object NonLocalReturns {
   import ast.tpd.*

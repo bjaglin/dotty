@@ -3,10 +3,13 @@ package dotc
 package parsing
 
 import dotty.tools.io._
-import scala.io.Codec
-import util._
-import Tokens._, Scanners._
 import org.junit.Test
+
+import scala.io.Codec
+
+import util._
+import Tokens._
+import Scanners._
 
 class ScannerTest extends DottyTest {
 

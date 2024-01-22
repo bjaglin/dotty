@@ -2,15 +2,19 @@ package dotty.tools
 package dotc
 package reporting
 
+import scala.annotation.threadUnsafe
+import scala.language.unsafeNulls
+
 import core.*
-import Contexts.*, Decorators.*, Symbols.*, Types.*, Flags.*
+import Contexts.*
+import Decorators.*
+import Symbols.*
+import Types.*
+import Flags.*
 import printing.{RefinedPrinter, MessageLimiter, ErrorMessageLimiter}
 import printing.Texts.Text
 import printing.Formatting.hl
 import config.SourceVersion
-
-import scala.language.unsafeNulls
-import scala.annotation.threadUnsafe
 
 /** ## Tips for error message generation
  *

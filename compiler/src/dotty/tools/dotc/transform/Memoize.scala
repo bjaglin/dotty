@@ -1,6 +1,8 @@
 package dotty.tools.dotc
 package transform
 
+import scala.compiletime.uninitialized
+
 import core.*
 import DenotTransformers.*
 import Contexts.*
@@ -8,18 +10,14 @@ import Phases.*
 import SymDenotations.SymDenotation
 import Denotations.*
 import Symbols.*
-
 import Constants.*
 import MegaPhase.*
 import NameOps.*
 import Flags.*
 import Decorators.*
 import StdNames.nme
-
 import sjs.JSSymUtils.*
-
 import util.Store
-import scala.compiletime.uninitialized
 
 object Memoize {
   val name: String = "memoize"

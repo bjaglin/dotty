@@ -1,22 +1,20 @@
 package dotty.tools.pc.utils
 
+import org.eclipse.lsp4j.Location
+
 import java.net.URI
 import java.util.Optional
 import java.util as ju
-
 import scala.jdk.CollectionConverters.*
 import scala.jdk.OptionConverters.*
-import scala.meta.internal.metals.{ClasspathSearch, WorkspaceSymbolQuery}
-import scala.meta.pc.SymbolSearch.Result
-import scala.meta.pc.{
-  ParentSymbols,
-  SymbolDocumentation,
-  SymbolSearch,
-  SymbolSearchVisitor
-}
 import scala.language.unsafeNulls
-
-import org.eclipse.lsp4j.Location
+import scala.meta.internal.metals.ClasspathSearch
+import scala.meta.internal.metals.WorkspaceSymbolQuery
+import scala.meta.pc.ParentSymbols
+import scala.meta.pc.SymbolDocumentation
+import scala.meta.pc.SymbolSearch
+import scala.meta.pc.SymbolSearch.Result
+import scala.meta.pc.SymbolSearchVisitor
 
 /* Mocking symbol search is an external part of presentation compiler,
  * which is used for 3 purposes: finding Symbols that match our query,

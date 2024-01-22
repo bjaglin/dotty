@@ -3,15 +3,19 @@ package dotc
 package parsing
 package xml
 
-import scala.language.unsafeNulls
-import scala.compiletime.uninitialized
-
 import scala.collection.mutable
+import scala.compiletime.uninitialized
+import scala.language.unsafeNulls
+
 import core.*
 import Decorators.*
 import Flags.Mutable
-import Names.*, StdNames.*, ast.Trees.*, ast.{tpd, untpd}
-import Symbols.*, Contexts.*
+import Names.*
+import StdNames.*
+import ast.Trees.*
+import ast.{tpd, untpd}
+import Symbols.*
+import Contexts.*
 import util.Spans.*
 import Parsers.Parser
 

@@ -1,6 +1,8 @@
 package dotty.tools
 package repl
 
+import scala.annotation.internal.sharable
+
 import dotc.CompilationUnit
 import dotc.ast.untpd
 import dotc.core.Contexts.*
@@ -9,8 +11,6 @@ import dotc.parsing.Parsers.Parser
 import dotc.parsing.Tokens
 import dotc.reporting.{Diagnostic, StoreReporter}
 import dotc.util.SourceFile
-
-import scala.annotation.internal.sharable
 
 /** A parsing result from string input */
 sealed trait ParseResult

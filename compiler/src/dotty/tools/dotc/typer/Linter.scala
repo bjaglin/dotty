@@ -3,7 +3,11 @@ package dotc
 package typer
 
 import core.*
-import Types.*, Contexts.*, Symbols.*, Flags.*, Constants.*
+import Types.*
+import Contexts.*
+import Symbols.*
+import Flags.*
+import Constants.*
 import reporting.*
 import Decorators.i
 

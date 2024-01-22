@@ -6,10 +6,11 @@
 package dotty.tools
 package io
 
+import java.io.InputStream
+import java.io.OutputStream
+import java.nio.file.InvalidPathException
+import java.nio.file.Paths
 import scala.language.unsafeNulls
-
-import java.io.{InputStream, OutputStream}
-import java.nio.file.{InvalidPathException, Paths}
 
 /** ''Note:  This library is considered experimental and should not be used unless you know what you are doing.'' */
 class PlainDirectory(givenPath: Directory) extends PlainFile(givenPath) {

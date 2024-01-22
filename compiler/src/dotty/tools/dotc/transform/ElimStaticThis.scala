@@ -1,12 +1,14 @@
 package dotty.tools.dotc
 package transform
 
+import dotty.tools.dotc.ast.tpd
+import dotty.tools.dotc.core.Types.TermRef
+import dotty.tools.dotc.core.Types.ThisType
+
 import core.*
 import Contexts.*
 import Flags.*
-import dotty.tools.dotc.ast.tpd
 import MegaPhase.MiniPhase
-import dotty.tools.dotc.core.Types.{ThisType, TermRef}
 
 /** Replace This references to module classes in static methods by global identifiers to the
  *  corresponding modules.

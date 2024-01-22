@@ -1,7 +1,6 @@
 package dotty.tools.pc.tests.tokens
 
 import dotty.tools.pc.base.BaseSemanticTokensSuite
-
 import org.junit.Test
 
 class SemanticTokensSuite extends BaseSemanticTokensSuite:

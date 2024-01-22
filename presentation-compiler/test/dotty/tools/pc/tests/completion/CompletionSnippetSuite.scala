@@ -1,7 +1,6 @@
 package dotty.tools.pc.tests.completion
 
 import dotty.tools.pc.base.BaseCompletionSuite
-
 import org.junit.Test
 
 class CompletionSnippetSuite extends BaseCompletionSuite:

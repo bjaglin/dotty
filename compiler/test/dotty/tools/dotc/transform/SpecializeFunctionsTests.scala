@@ -2,11 +2,10 @@ package dotty.tools
 package dotc
 package transform
 
-import scala.language.unsafeNulls
-
+import dotty.tools.backend.jvm.DottyBytecodeTest
 import org.junit.Test
 
-import dotty.tools.backend.jvm.DottyBytecodeTest
+import scala.language.unsafeNulls
 
 class SpecializeFunctionsTests extends DottyBytecodeTest {
 

@@ -1,8 +1,5 @@
 package dotty.tools.pc
 
-import scala.annotation.tailrec
-import scala.util.control.NonFatal
-
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.NameOps.moduleClassName
@@ -13,6 +10,9 @@ import dotty.tools.dotc.core.Types.*
 import dotty.tools.dotc.typer.ImportInfo
 import dotty.tools.pc.IndexedContext.Result
 import dotty.tools.pc.utils.MtagsEnrichments.*
+
+import scala.annotation.tailrec
+import scala.util.control.NonFatal
 
 sealed trait IndexedContext:
   given ctx: Context

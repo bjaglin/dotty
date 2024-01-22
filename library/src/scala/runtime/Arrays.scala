@@ -1,8 +1,7 @@
 package scala.runtime
 
-import scala.reflect.ClassTag
-
 import java.lang.{reflect => jlr}
+import scala.reflect.ClassTag
 
 /** All but the first two operations should be short-circuited and implemented specially by
  *  the backend.

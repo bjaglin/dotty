@@ -2,8 +2,9 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
 import dotty.tools.dotc.transform.MegaPhase.*
+
+import core.*
 import Flags.*
 import Types.*
 import Contexts.*

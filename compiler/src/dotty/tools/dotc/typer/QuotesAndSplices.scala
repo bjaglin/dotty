@@ -4,7 +4,6 @@ package typer
 import dotty.tools.dotc.ast.*
 import dotty.tools.dotc.config.Feature.*
 import dotty.tools.dotc.config.SourceVersion.*
-import dotty.tools.dotc.core.*
 import dotty.tools.dotc.core.Annotations.*
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*
@@ -14,19 +13,20 @@ import dotty.tools.dotc.core.Names.*
 import dotty.tools.dotc.core.StdNames.*
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.*
 import dotty.tools.dotc.inlines.PrepareInlineable
 import dotty.tools.dotc.quoted.QuotePatterns
+import dotty.tools.dotc.reporting.IllegalVariableInPatternAlternative
 import dotty.tools.dotc.staging.StagingLevel.*
-
 import dotty.tools.dotc.typer.ErrorReporting.errorTree
 import dotty.tools.dotc.typer.Implicits.*
 import dotty.tools.dotc.typer.Inferencing.*
 import dotty.tools.dotc.util.Property
 import dotty.tools.dotc.util.Spans.*
 import dotty.tools.dotc.util.Stats.record
-import dotty.tools.dotc.reporting.IllegalVariableInPatternAlternative
-import scala.collection.mutable
+
 import scala.collection.SeqMap
+import scala.collection.mutable
 
 /** Type quotes `'{ ... }` and splices `${ ... }` */
 trait QuotesAndSplices {

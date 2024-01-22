@@ -1,17 +1,8 @@
 package dotty.tools.pc
 package completions
 
-import java.util as ju
-
-import scala.jdk.CollectionConverters._
-import scala.meta.internal.metals.ReportContext
-import scala.meta.pc.OffsetParams
-import scala.meta.pc.PresentationCompilerConfig
-import scala.meta.pc.PresentationCompilerConfig.OverrideDefFormat
-import scala.meta.pc.SymbolSearch
-
-import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.ast.tpd.Tree
+import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
 import dotty.tools.dotc.core.Flags.*
@@ -30,8 +21,15 @@ import dotty.tools.pc.AutoImports.AutoImportsGenerator
 import dotty.tools.pc.printer.ShortenedTypePrinter
 import dotty.tools.pc.printer.ShortenedTypePrinter.IncludeDefaultParam
 import dotty.tools.pc.utils.MtagsEnrichments.*
-
 import org.eclipse.lsp4j as l
+
+import java.util as ju
+import scala.jdk.CollectionConverters._
+import scala.meta.internal.metals.ReportContext
+import scala.meta.pc.OffsetParams
+import scala.meta.pc.PresentationCompilerConfig
+import scala.meta.pc.PresentationCompilerConfig.OverrideDefFormat
+import scala.meta.pc.SymbolSearch
 
 object OverrideCompletions:
   private type TargetDef = TypeDef | DefDef

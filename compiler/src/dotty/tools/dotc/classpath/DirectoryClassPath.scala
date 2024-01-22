@@ -3,20 +3,27 @@
  */
 package dotty.tools.dotc.classpath
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.classpath.PackageNameUtils.packageContains
+import dotty.tools.dotc.classpath.PackageNameUtils.separatePkgAndClassNames
+import dotty.tools.io.AbstractFile
+import dotty.tools.io.ClassPath
+import dotty.tools.io.ClassRepresentation
+import dotty.tools.io.EfficientClassPath
+import dotty.tools.io.JDK9Reflectors
+import dotty.tools.io.PlainFile
 
 import java.io.{File => JFile}
-import java.net.{URI, URL}
-import java.nio.file.{FileSystems, Files}
+import java.net.URI
+import java.net.URL
+import java.nio.file.FileSystems
+import java.nio.file.Files
+import scala.collection.immutable.ArraySeq
+import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
+import scala.util.control.NonFatal
 
-import dotty.tools.dotc.classpath.PackageNameUtils.{packageContains, separatePkgAndClassNames}
-import dotty.tools.io.{AbstractFile, PlainFile, ClassPath, ClassRepresentation, EfficientClassPath, JDK9Reflectors}
 import FileUtils.*
 import PlainFile.toPlainFile
-
-import scala.jdk.CollectionConverters.*
-import scala.collection.immutable.ArraySeq
-import scala.util.control.NonFatal
 
 /**
  * A trait allowing to look for classpath entries in directories. It provides common logic for

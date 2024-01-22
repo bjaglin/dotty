@@ -2,7 +2,11 @@ package dotty.tools
 package dotc
 package core
 
-import Contexts.*, Types.*, Symbols.*, Names.*, Flags.*
+import Contexts.*
+import Types.*
+import Symbols.*
+import Names.*
+import Flags.*
 import Denotations.SingleDenotation
 import Decorators.*
 import collection.mutable

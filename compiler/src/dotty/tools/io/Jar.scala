@@ -7,14 +7,16 @@
 package dotty.tools
 package io
 
+import java.io.DataOutputStream
+import java.io.InputStream
+import java.io.OutputStream
+import java.util.jar.*
+import scala.annotation.tailrec
+import scala.collection.mutable
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
 
-import java.io.{ InputStream, OutputStream, DataOutputStream }
-import java.util.jar.*
-import scala.jdk.CollectionConverters.*
-import scala.collection.mutable
 import Attributes.Name
-import scala.annotation.tailrec
 
 // Attributes.Name instances:
 //

@@ -1,13 +1,16 @@
 package dotty.tools
 package repl
 
-import scala.language.unsafeNulls
+import org.junit.AfterClass
+import org.junit.BeforeClass
+import org.junit.Ignore
+import org.junit.Test
 
 import java.io.File
-import java.nio.file.{Path, Files}
+import java.nio.file.Files
+import java.nio.file.Path
 import java.util.Comparator
-
-import org.junit.{Test, Ignore, BeforeClass, AfterClass}
+import scala.language.unsafeNulls
 
 import dotc.Driver
 import dotc.reporting.TestReporter

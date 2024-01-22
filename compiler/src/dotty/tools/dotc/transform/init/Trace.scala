@@ -2,14 +2,14 @@ package dotty.tools.dotc
 package transform
 package init
 
+import scala.collection.mutable
+
 import core.*
 import Contexts.*
 import ast.tpd.*
 import util.SourcePosition
-
-import Decorators.*, printing.SyntaxHighlighting
-
-import scala.collection.mutable
+import Decorators.*
+import printing.SyntaxHighlighting
 
 /** Logic related to evaluation trace for showing friendly error messages
  *

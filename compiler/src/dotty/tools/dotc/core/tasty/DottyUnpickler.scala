@@ -3,20 +3,24 @@ package dotc
 package core
 package tasty
 
+import dotty.tools.dotc.ast.tpd
+import dotty.tools.io.AbstractFile
+import dotty.tools.tasty.TastyFormat.ASTsSection
+import dotty.tools.tasty.TastyFormat.AttributesSection
+import dotty.tools.tasty.TastyFormat.CommentsSection
+import dotty.tools.tasty.TastyFormat.PositionsSection
+import dotty.tools.tasty.TastyReader
+import dotty.tools.tasty.TastyVersion
+
 import scala.language.unsafeNulls
 
-import Contexts.*, SymDenotations.*,  Decorators.*
-import dotty.tools.dotc.ast.tpd
+import Contexts.*
+import SymDenotations.*
+import Decorators.*
 import TastyUnpickler.*
 import classfile.ClassfileParser
 import Names.SimpleName
 import TreeUnpickler.UnpickleMode
-
-import dotty.tools.tasty.TastyReader
-import dotty.tools.tasty.TastyFormat.{ASTsSection, PositionsSection, CommentsSection, AttributesSection}
-import dotty.tools.tasty.TastyVersion
-
-import dotty.tools.io.AbstractFile
 
 object DottyUnpickler {
 

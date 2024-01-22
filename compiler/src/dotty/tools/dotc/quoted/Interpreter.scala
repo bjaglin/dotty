@@ -1,19 +1,12 @@
 package dotty.tools.dotc
 package quoted
 
-import scala.language.unsafeNulls
-
-import scala.collection.mutable
-import scala.reflect.ClassTag
-
-import java.io.{PrintWriter, StringWriter}
-import java.lang.reflect.{InvocationTargetException, Method => JLRMethod}
-
-import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.TreeMapWithImplicits
+import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.Annotations.*
 import dotty.tools.dotc.core.Constants.*
 import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.CyclicReference
 import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Denotations.staticRef
 import dotty.tools.dotc.core.Flags.*
@@ -24,11 +17,18 @@ import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.core.TypeErasure
 import dotty.tools.dotc.core.Types.*
 import dotty.tools.dotc.quoted.*
+import dotty.tools.dotc.reporting.Message
 import dotty.tools.dotc.typer.ImportInfo.withRootImports
 import dotty.tools.dotc.util.SrcPos
-import dotty.tools.dotc.reporting.Message
 import dotty.tools.repl.AbstractFileClassLoader
-import dotty.tools.dotc.core.CyclicReference
+
+import java.io.PrintWriter
+import java.io.StringWriter
+import java.lang.reflect.InvocationTargetException
+import java.lang.reflect.{Method => JLRMethod}
+import scala.collection.mutable
+import scala.language.unsafeNulls
+import scala.reflect.ClassTag
 
 /** Tree interpreter for metaprogramming constructs */
 class Interpreter(pos: SrcPos, classLoader0: ClassLoader)(using Context):

@@ -2,6 +2,9 @@ package dotty.tools.dotc
 package transform
 package init
 
+import scala.annotation.tailrec
+import scala.collection.mutable
+
 import core.*
 import Contexts.*
 import Symbols.*
@@ -9,18 +12,13 @@ import Types.*
 import StdNames.*
 import NameKinds.OuterSelectName
 import NameKinds.SuperAccessorName
-
 import ast.tpd.*
 import config.Printers.init as printer
 import reporting.trace as log
-
 import Errors.*
 import Trace.*
 import Util.*
 import Cache.*
-
-import scala.collection.mutable
-import scala.annotation.tailrec
 
 /**
  * Checks safe initialization of objects

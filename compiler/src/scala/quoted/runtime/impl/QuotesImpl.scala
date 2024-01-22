@@ -1,29 +1,28 @@
 package scala.quoted
 package runtime.impl
 
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc
+import dotty.tools.dotc.NoCompilationUnit
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.core.Annotations
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.NameKinds
+import dotty.tools.dotc.core.NameKinds.ExceptionBinderName
 import dotty.tools.dotc.core.NameOps.*
 import dotty.tools.dotc.core.StdNames.*
 import dotty.tools.dotc.core.Types
-import dotty.tools.dotc.NoCompilationUnit
 import dotty.tools.dotc.quoted.MacroExpansion
 import dotty.tools.dotc.quoted.PickledQuotes
 import dotty.tools.dotc.quoted.QuotePatterns
 import dotty.tools.dotc.quoted.reflect.*
 
-import scala.quoted.runtime.{QuoteUnpickler, QuoteMatching}
+import scala.language.unsafeNulls
+import scala.quoted.runtime.QuoteMatching
+import scala.quoted.runtime.QuoteUnpickler
 import scala.quoted.runtime.impl.printers.*
-
 import scala.reflect.TypeTest
-import dotty.tools.dotc.core.NameKinds.ExceptionBinderName
 
 object QuotesImpl {
 

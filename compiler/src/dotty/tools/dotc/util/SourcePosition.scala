@@ -2,13 +2,13 @@ package dotty.tools
 package dotc
 package util
 
+import scala.annotation.internal.sharable
 import scala.language.unsafeNulls
 
 import printing.{Showable, Printer}
 import printing.Texts.*
 import core.Contexts.Context
 import Spans.{Span, NoSpan}
-import scala.annotation.internal.sharable
 
 /** A source position is comprised of a span and a source file */
 case class SourcePosition(source: SourceFile, span: Span, outer: SourcePosition = NoSourcePosition)

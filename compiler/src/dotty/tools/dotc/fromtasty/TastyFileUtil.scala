@@ -1,11 +1,11 @@
 package dotty.tools.dotc
 package fromtasty
 
-import scala.language.unsafeNulls
-
-import dotty.tools.dotc.core.tasty.TastyClassName
 import dotty.tools.dotc.core.StdNames.nme.EMPTY_PACKAGE
+import dotty.tools.dotc.core.tasty.TastyClassName
 import dotty.tools.io.AbstractFile
+
+import scala.language.unsafeNulls
 
 object TastyFileUtil {
   /** Get the class path of a tasty file

@@ -2,14 +2,18 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
-import Symbols.*, Contexts.*, Types.*, Flags.*, Decorators.*
+import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 
-import collection.mutable.{LinkedHashMap, LinkedHashSet}
-import annotation.constructorOnly
 import scala.compiletime.uninitialized
 
-import dotty.tools.backend.sjs.JSDefinitions.jsdefn
+import core.*
+import Symbols.*
+import Contexts.*
+import Types.*
+import Flags.*
+import Decorators.*
+import collection.mutable.{LinkedHashMap, LinkedHashSet}
+import annotation.constructorOnly
 
 /** Exposes the dependencies of the `root` tree in three functions or maps:
  *  `freeVars`, `tracked`, and `logicalOwner`.

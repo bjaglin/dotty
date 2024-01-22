@@ -3,7 +3,6 @@ package dotc
 package parsing
 
 import dotty.tools.dotc.ast.Trees._
-
 import org.junit.Assert._
 import org.junit.Test
 

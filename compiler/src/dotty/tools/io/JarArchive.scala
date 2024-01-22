@@ -1,10 +1,9 @@
 package dotty.tools.io
 
-import scala.language.unsafeNulls
-
-import java.nio.file.{FileSystemAlreadyExistsException, FileSystems}
-
+import java.nio.file.FileSystemAlreadyExistsException
+import java.nio.file.FileSystems
 import scala.jdk.CollectionConverters.*
+import scala.language.unsafeNulls
 
 /**
  * This class implements an [[AbstractFile]] backed by a jar

@@ -2,9 +2,9 @@ package dotty.tools
 package dotc
 package parsing
 
-import util.Chars.*
-
 import scala.compiletime.uninitialized
+
+import util.Chars.*
 
 abstract class CharArrayReader { self =>
 

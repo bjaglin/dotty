@@ -9,10 +9,9 @@
 package dotty.tools.dotc
 package sbt
 
-import scala.language.unsafeNulls
-
 import xsbti.api.*
 
+import scala.language.unsafeNulls
 import scala.util.Try
 
 object DefaultShowAPI {

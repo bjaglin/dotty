@@ -1,20 +1,19 @@
 package dotty.tools.pc
 package completions
 
-import scala.meta.internal.pc.CompletionItemData
-
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.core.Types.Type
 import dotty.tools.pc.printer.ShortenedTypePrinter
 import dotty.tools.pc.utils.MtagsEnrichments.decoded
-
 import org.eclipse.lsp4j.CompletionItemKind
 import org.eclipse.lsp4j.CompletionItemTag
 import org.eclipse.lsp4j.InsertTextMode
 import org.eclipse.lsp4j.Range
 import org.eclipse.lsp4j.TextEdit
+
+import scala.meta.internal.pc.CompletionItemData
 
 enum CompletionSource:
   case Empty

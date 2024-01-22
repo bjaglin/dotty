@@ -1,14 +1,32 @@
 package dotty.tools.backend.sjs
 
-import scala.language.unsafeNulls
-
-import scala.annotation.switch
-import scala.collection.mutable
-
 import dotty.tools.FatalError
 import dotty.tools.dotc.CompilationUnit
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.*
+import dotty.tools.dotc.report
+import dotty.tools.dotc.transform.Erasure
+import dotty.tools.dotc.transform.ValueClasses
+import dotty.tools.dotc.transform.sjs.JSSymUtils.*
+import dotty.tools.dotc.util.SourcePosition
+import org.scalajs.ir
+import org.scalajs.ir.ClassKind
+import org.scalajs.ir.Names.ClassName
+import org.scalajs.ir.Names.MethodName
+import org.scalajs.ir.Names.SimpleMethodName
+import org.scalajs.ir.OriginalName
+import org.scalajs.ir.OriginalName.NoOriginalName
+import org.scalajs.ir.Position
+import org.scalajs.ir.Trees.OptimizerHints
+import org.scalajs.ir.{Names => jsNames}
+import org.scalajs.ir.{Trees => js}
+import org.scalajs.ir.{Types => jstpe}
+
+import scala.annotation.switch
+import scala.collection.mutable
+import scala.language.unsafeNulls
+import scala.reflect.NameTransformer
+
 import Contexts.*
 import Decorators.*
 import Flags.*
@@ -19,24 +37,8 @@ import Symbols.*
 import Phases.*
 import StdNames.*
 import TypeErasure.ErasedValueType
-
-import dotty.tools.dotc.transform.{Erasure, ValueClasses}
-
-import dotty.tools.dotc.util.SourcePosition
-import dotty.tools.dotc.report
-
-import org.scalajs.ir
-import org.scalajs.ir.{ClassKind, Position, Names => jsNames, Trees => js, Types => jstpe}
-import org.scalajs.ir.Names.{ClassName, MethodName, SimpleMethodName}
-import org.scalajs.ir.OriginalName
-import org.scalajs.ir.OriginalName.NoOriginalName
-import org.scalajs.ir.Trees.OptimizerHints
-
-import dotty.tools.dotc.transform.sjs.JSSymUtils.*
-
 import JSEncoding.*
 import ScopedVar.withScopedVars
-import scala.reflect.NameTransformer
 
 /** Main codegen for Scala.js IR.
  *

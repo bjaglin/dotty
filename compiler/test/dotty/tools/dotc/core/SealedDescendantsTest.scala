@@ -1,12 +1,10 @@
 package dotty.tools.dotc.core
 
+import dotty.tools.DottyTest
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Symbols.*
-
 import org.junit.Assert._
 import org.junit.Test
-
-import dotty.tools.DottyTest
 
 class SealedDescendantsTest extends DottyTest {
 

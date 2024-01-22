@@ -3,12 +3,23 @@ package dotc
 package transform
 package patmat
 
-import core.*, Annotations.*, Contexts.*, Decorators.*, Flags.*, Names.*, StdNames.*, Symbols.*, Types.*
-import ast.*, tpd.*
+import org.junit
 
-import vulpix.TestConfiguration, TestConfiguration.basicClasspath
-
-import org.junit, junit.Test, junit.Assert.*
+import core.*
+import Annotations.*
+import Contexts.*
+import Decorators.*
+import Flags.*
+import Names.*
+import StdNames.*
+import Symbols.*
+import Types.*
+import ast.*
+import tpd.*
+import vulpix.TestConfiguration
+import TestConfiguration.basicClasspath
+import junit.Test
+import junit.Assert.*
 
 class SpaceEngineTest:
   import SpaceEngine.*

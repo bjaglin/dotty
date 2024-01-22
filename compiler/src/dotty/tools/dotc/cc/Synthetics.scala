@@ -3,7 +3,12 @@ package dotc
 package cc
 
 import core.*
-import Symbols.*, SymDenotations.*, Contexts.*, Flags.*, Types.*, Decorators.*
+import Symbols.*
+import SymDenotations.*
+import Contexts.*
+import Flags.*
+import Types.*
+import Decorators.*
 import StdNames.nme
 import Names.Name
 import NameKinds.DefaultGetterName

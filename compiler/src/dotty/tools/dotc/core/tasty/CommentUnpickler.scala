@@ -1,16 +1,16 @@
 package dotty.tools.dotc
 package core.tasty
 
+import dotty.tools.tasty.TastyBuffer
+import dotty.tools.tasty.TastyReader
+
+import java.nio.charset.StandardCharsets
 import scala.language.unsafeNulls
 
 import core.Comments.Comment
 import util.Spans.Span
 import util.HashMap
-
-import dotty.tools.tasty.{TastyReader, TastyBuffer}
 import TastyBuffer.Addr
-
-import java.nio.charset.StandardCharsets
 
 class CommentUnpickler(reader: TastyReader) {
   import reader.*

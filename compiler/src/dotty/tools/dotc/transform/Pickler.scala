@@ -2,13 +2,17 @@ package dotty.tools
 package dotc
 package transform
 
+import dotty.tools.dotc.printing.OutlinePrinter
+import dotty.tools.io.JarArchive
+
+import java.io.PrintStream
+
 import core.*
 import Contexts.*
 import Decorators.*
 import tasty.*
 import config.Printers.{noPrinter, pickling}
 import config.Feature
-import java.io.PrintStream
 import io.ClassfileWriterOps
 import StdNames.{str, nme}
 import Periods.*
@@ -19,8 +23,6 @@ import reporting.{ThrowingReporter, Profile, Message}
 import collection.mutable
 import util.concurrent.{Executor, Future}
 import compiletime.uninitialized
-import dotty.tools.io.JarArchive
-import dotty.tools.dotc.printing.OutlinePrinter
 
 object Pickler {
   val name: String = "pickler"

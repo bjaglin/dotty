@@ -1,12 +1,11 @@
 package dotty.tools.io
 
-import scala.language.unsafeNulls
-
+import dotty.tools.io.AbstractFile
 import org.junit.Test
 
-import dotty.tools.io.AbstractFile
 import java.nio.file.Files._
 import java.nio.file.attribute.PosixFilePermissions
+import scala.language.unsafeNulls
 
 class AbstractFileTest {
   //

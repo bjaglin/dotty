@@ -2,11 +2,11 @@ package dotty.tools
 package backend
 package jvm
 
-import scala.language.unsafeNulls
-
 import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.report
+
+import scala.language.unsafeNulls
 
 /**
  * This trait contains code shared between GenBCode and GenASM that depends on types defined in

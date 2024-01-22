@@ -1,10 +1,11 @@
 package dotty.tools
 package dotc
 
-import core.Contexts.*
-import reporting.Reporter
 import java.io.EOFException
 import scala.annotation.tailrec
+
+import core.Contexts.*
+import reporting.Reporter
 
 /** A compiler which stays resident between runs. This is more of a PoC than
  *  something that's expected to be used often

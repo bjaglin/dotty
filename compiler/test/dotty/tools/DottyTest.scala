@@ -4,16 +4,16 @@ package tools
 import scala.language.unsafeNulls
 
 import vulpix.TestConfiguration
-
 import dotc.core._
 import dotc.core.Comments.{ContextDoc, ContextDocstrings}
 import dotc.core.Contexts._
 import dotc.core.Symbols._
-import Types._, Symbols._, Decorators._
+import Types._
+import Symbols._
+import Decorators._
 import dotc.core.Decorators._
 import dotc.ast.tpd
 import dotc.Compiler
-
 import dotc.core.Phases.Phase
 
 trait DottyTest extends ContextEscapeDetection {

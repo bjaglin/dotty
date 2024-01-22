@@ -3,7 +3,12 @@ package dotc
 package transform
 
 import core.*
-import Contexts.*, Symbols.*, Types.*, Annotations.*, Constants.*, Phases.*
+import Contexts.*
+import Symbols.*
+import Types.*
+import Annotations.*
+import Constants.*
+import Phases.*
 import StdNames.nme
 import ast.untpd
 import ast.tpd.*

@@ -1,6 +1,7 @@
 package dotty.tools.dotc.util
 
 import scala.annotation.switch
+
 import Character.{LETTER_NUMBER, LOWERCASE_LETTER, OTHER_LETTER, TITLECASE_LETTER, UPPERCASE_LETTER}
 import Character.{MATH_SYMBOL, OTHER_SYMBOL}
 import Character.{isJavaIdentifierPart, isUnicodeIdentifierStart, isUnicodeIdentifierPart}

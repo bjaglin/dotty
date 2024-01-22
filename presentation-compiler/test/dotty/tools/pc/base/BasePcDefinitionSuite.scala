@@ -1,18 +1,17 @@
 package dotty.tools.pc.base
 
-import java.nio.file.Paths
-
-import scala.meta.internal.metals.CompilerOffsetParams
-import scala.meta.pc.OffsetParams
-import scala.language.unsafeNulls
-
+import dotty.tools.dotc.util.SourceFile
+import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans.Span
-import dotty.tools.dotc.util.{SourceFile, SourcePosition}
 import dotty.tools.pc.utils.MtagsEnrichments.toLsp
 import dotty.tools.pc.utils.TextEdits
-
 import org.eclipse.lsp4j.TextEdit
 import org.eclipse.lsp4j as l
+
+import java.nio.file.Paths
+import scala.language.unsafeNulls
+import scala.meta.internal.metals.CompilerOffsetParams
+import scala.meta.pc.OffsetParams
 
 abstract class BasePcDefinitionSuite extends BasePCSuite:
 

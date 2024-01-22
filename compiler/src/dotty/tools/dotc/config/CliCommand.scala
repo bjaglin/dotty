@@ -1,14 +1,13 @@
 package dotty.tools.dotc
 package config
 
+import scala.PartialFunction.cond
 import scala.language.unsafeNulls
+import scala.util.chaining.given
 
 import Settings.*
 import core.Contexts.*
 import printing.Highlighting
-
-import scala.util.chaining.given
-import scala.PartialFunction.cond
 
 trait CliCommand:
 

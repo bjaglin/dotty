@@ -1,13 +1,14 @@
 package dotty.tools.dotc
 package ast
 
+import dotty.tools.dotc.core.Types.AnnotatedType
+import dotty.tools.dotc.core.Types.ImportType
+import dotty.tools.dotc.core.Types.Type
+
 import core.Contexts.*
 import core.Decorators.*
 import util.Spans.*
 import Trees.{MemberDef, DefTree, WithLazyFields}
-import dotty.tools.dotc.core.Types.AnnotatedType
-import dotty.tools.dotc.core.Types.ImportType
-import dotty.tools.dotc.core.Types.Type
 
 /** Utility functions to go from typed to untyped ASTs */
 // TODO: Handle trees with mixed source files

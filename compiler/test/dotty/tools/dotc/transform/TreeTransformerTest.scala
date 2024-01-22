@@ -2,7 +2,9 @@ package dotty.tools
 package dotc
 package transform
 
-import org.junit.{Assert, Test}
+import org.junit.Assert
+import org.junit.Test
+
 import MegaPhase._
 import ast.tpd
 import core.Constants.Constant

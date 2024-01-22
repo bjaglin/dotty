@@ -1,9 +1,9 @@
 package dotty.tools.pc.tests.hover
 
 import dotty.tools.pc.base.BaseHoverSuite
-
-import org.junit.Test
 import dotty.tools.pc.utils.MockEntries
+import org.junit.Test
+
 import scala.meta.pc.SymbolDocumentation
 
 class HoverDocSuite extends BaseHoverSuite:

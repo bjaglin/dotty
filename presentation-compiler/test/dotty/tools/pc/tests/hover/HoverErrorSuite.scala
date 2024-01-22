@@ -1,7 +1,6 @@
 package dotty.tools.pc.tests.hover
 
 import dotty.tools.pc.base.BaseHoverSuite
-
 import org.junit.Test
 
 class HoverErrorSuite extends BaseHoverSuite:

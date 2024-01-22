@@ -1,11 +1,11 @@
 package dotty.tools.pc.utils
 
+import dotty.tools.pc.utils.TestExtensions.*
+import org.eclipse.lsp4j.DocumentHighlight
+import org.eclipse.lsp4j.Range
+
 import scala.collection.immutable
 import scala.language.unsafeNulls
-
-import dotty.tools.pc.utils.TestExtensions.*
-
-import org.eclipse.lsp4j.{DocumentHighlight, Range}
 
 trait RangeReplace:
 

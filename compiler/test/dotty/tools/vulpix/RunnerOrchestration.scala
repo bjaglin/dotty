@@ -2,19 +2,21 @@ package dotty
 package tools
 package vulpix
 
-import scala.language.unsafeNulls
-
-import java.io.{ File => JFile, InputStreamReader, BufferedReader, PrintStream }
-import java.nio.file.Paths
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.io.PrintStream
+import java.io.{File => JFile}
 import java.nio.charset.StandardCharsets
-import java.util.concurrent.atomic.AtomicBoolean
+import java.nio.file.Paths
 import java.util.concurrent.TimeoutException
-
-import scala.concurrent.duration.Duration
-import scala.concurrent.{ Await, Future }
-import scala.concurrent.ExecutionContext.Implicits.global
+import java.util.concurrent.atomic.AtomicBoolean
 import scala.collection.mutable
 import scala.compiletime.uninitialized
+import scala.concurrent.Await
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.concurrent.Future
+import scala.concurrent.duration.Duration
+import scala.language.unsafeNulls
 
 /** Vulpix spawns JVM subprocesses (`numberOfSlaves`) in order to run tests
  *  without compromising the main JVM

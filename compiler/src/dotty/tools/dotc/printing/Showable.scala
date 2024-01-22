@@ -2,8 +2,9 @@ package dotty.tools.dotc
 package printing
 
 import core.*
-
-import Contexts.*, Texts.*, Decorators.*
+import Contexts.*
+import Texts.*
+import Decorators.*
 import config.Config.summarizeDepth
 
 trait Showable extends Any {

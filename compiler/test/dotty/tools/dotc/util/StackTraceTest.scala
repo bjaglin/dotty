@@ -1,13 +1,15 @@
 
 package dotty.tools.dotc.util
 
-import scala.language.unsafeNulls
-
-import scala.util.{Failure, Success, Try}
-import scala.util.chaining.given
-
-import org.junit.Assert.{assertEquals, assertTrue}
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
+
+import scala.language.unsafeNulls
+import scala.util.Failure
+import scala.util.Success
+import scala.util.Try
+import scala.util.chaining.given
 
 class StackTraceTest:
   val CausedBy   = "Caused by: "

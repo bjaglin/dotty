@@ -2,19 +2,27 @@ package dotty.tools
 package dotc
 package inlines
 
-import ast.*, core.*
-import Flags.*, Symbols.*, Types.*, Decorators.*, Constants.*, Contexts.*
+import dotty.tools.dotc.util.SourceFile
+import dotty.tools.dotc.util.SourcePosition
+import dotty.tools.dotc.util.SrcPos
+
+import ast.*
+import core.*
+import Flags.*
+import Symbols.*
+import Types.*
+import Decorators.*
+import Constants.*
+import Contexts.*
 import StdNames.{tpnme, nme}
 import typer.*
 import NameKinds.BodyRetainerName
 import SymDenotations.SymDenotation
 import config.Printers.inlining
 import ErrorReporting.errorTree
-import dotty.tools.dotc.util.{SourceFile, SourcePosition, SrcPos}
 import parsing.Parsers.Parser
 import transform.{PostTyper, Inlining, CrossVersionChecks}
 import staging.StagingLevel
-
 import collection.mutable
 import reporting.{NotConstant, trace}
 import util.Spans.Span

@@ -1,7 +1,7 @@
 package dotty.tools.dotc.core.tasty
 
-import dotty.tools.dotc.ast.{tpd, untpd}
-
+import dotty.tools.dotc.ast.tpd
+import dotty.tools.dotc.ast.untpd
 import dotty.tools.tasty.TastyBuffer
 import dotty.tools.tasty.TastyFormat.*
 

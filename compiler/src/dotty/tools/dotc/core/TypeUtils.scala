@@ -3,7 +3,11 @@ package dotc
 package core
 
 import TypeErasure.ErasedValueType
-import Types.*, Contexts.*, Symbols.*, Flags.*, Decorators.*
+import Types.*
+import Contexts.*
+import Symbols.*
+import Flags.*
+import Decorators.*
 import Names.Name
 
 class TypeUtils {

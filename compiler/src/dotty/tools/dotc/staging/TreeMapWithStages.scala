@@ -1,10 +1,11 @@
 package dotty.tools.dotc
 package staging
 
-import dotty.tools.dotc.ast.{TreeMapWithImplicits, tpd}
+import dotty.tools.dotc.ast.TreeMapWithImplicits
+import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.config.Printers.staging
-import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Decorators.*
 import dotty.tools.dotc.core.Symbols.*
 import dotty.tools.dotc.staging.StagingLevel.*
 

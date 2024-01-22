@@ -2,7 +2,8 @@ package dotty.tools
 package dotc
 package parsing
 
-import core._, ast._
+import core._
+import ast._
 
 object desugarPackage extends DeSugarTest {
 

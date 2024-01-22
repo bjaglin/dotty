@@ -2,7 +2,11 @@ package dotty.tools.dotc
 package transform
 
 import core.*
-import Decorators.*, Flags.*, Types.*, Contexts.*, Symbols.*
+import Decorators.*
+import Flags.*
+import Types.*
+import Contexts.*
+import Symbols.*
 import ast.tpd.*
 import Flags.*
 import MegaPhase.MiniPhase

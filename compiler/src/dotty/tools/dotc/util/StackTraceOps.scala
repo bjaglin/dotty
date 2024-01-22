@@ -12,11 +12,12 @@
 
 package dotty.tools.dotc.util
 
-import scala.language.unsafeNulls
-
-import collection.mutable, mutable.ListBuffer
-import scala.util.chaining.given
 import java.lang.System.lineSeparator
+import scala.language.unsafeNulls
+import scala.util.chaining.given
+
+import collection.mutable
+import mutable.ListBuffer
 
 object StackTraceOps:
 

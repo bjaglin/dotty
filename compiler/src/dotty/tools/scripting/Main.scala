@@ -1,10 +1,11 @@
 package dotty.tools.scripting
 
-import scala.language.unsafeNulls
+import dotty.tools.dotc.config.Properties.isWin
 
 import java.io.File
-import java.nio.file.{Path, Paths}
-import dotty.tools.dotc.config.Properties.isWin
+import java.nio.file.Path
+import java.nio.file.Paths
+import scala.language.unsafeNulls
 
 /** Main entry point to the Scripting execution engine */
 object Main:

@@ -4,9 +4,13 @@ package transform
 
 import ast.{Trees, tpd}
 import core.*
-import Contexts.*, Trees.*, Types.*
-import DenotTransformers.*, MegaPhase.*
-import ExtensionMethods.*, ValueClasses.*
+import Contexts.*
+import Trees.*
+import Types.*
+import DenotTransformers.*
+import MegaPhase.*
+import ExtensionMethods.*
+import ValueClasses.*
 
 
 /** This phase inlines calls to methods of value classes.
