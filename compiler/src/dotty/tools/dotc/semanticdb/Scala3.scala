@@ -18,7 +18,7 @@ import core.Types.{Type, TypeBounds}
 import core.Flags.*
 import core.NameKinds
 import core.StdNames.nme
-import SymbolInformation.{Kind => k}
+import SymbolInformation.Kind as k
 
 object Scala3:
   import Symbols.*

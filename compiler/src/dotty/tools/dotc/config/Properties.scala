@@ -4,7 +4,7 @@ package config
 
 import java.io.IOException
 import java.nio.charset.StandardCharsets
-import java.util.jar.Attributes.{ Name => AttributeName }
+import java.util.jar.Attributes.Name as AttributeName
 import scala.annotation.internal.sharable
 import scala.language.unsafeNulls
 

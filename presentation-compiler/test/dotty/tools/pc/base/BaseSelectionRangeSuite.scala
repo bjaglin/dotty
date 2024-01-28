@@ -1,6 +1,6 @@
 package dotty.tools.pc.base
 
-import dotty.tools.pc.utils.TestExtensions._
+import dotty.tools.pc.utils.TestExtensions.*
 import org.eclipse.lsp4j as l
 
 import java.nio.file.Paths

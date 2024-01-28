@@ -1,12 +1,12 @@
 package dotty.tools
 package dotc
 
-import dotty.tools.dotc.config.Settings._
+import dotty.tools.dotc.config.Settings.*
 import dotty.tools.vulpix.TestConfiguration.mkClasspath
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
-import java.nio.file._
+import java.nio.file.*
 import scala.language.unsafeNulls
 
 import reporting.StoreReporter

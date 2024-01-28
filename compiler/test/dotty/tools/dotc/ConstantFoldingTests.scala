@@ -1,12 +1,12 @@
 package dotty.tools.dotc
 
-import dotty.tools.backend.jvm._
+import dotty.tools.backend.jvm.*
 import dotty.tools.dotc.config.CompilerCommand
 import dotty.tools.dotc.core.Contexts.FreshContext
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
 import scala.tools.asm.tree.MethodNode
 

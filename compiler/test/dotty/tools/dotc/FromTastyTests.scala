@@ -5,12 +5,12 @@ package dotc
 import org.junit.AfterClass
 import org.junit.Test
 
-import java.io.{File => JFile}
-import scala.concurrent.duration._
+import java.io.File as JFile
+import scala.concurrent.duration.*
 import scala.language.unsafeNulls
 
 import reporting.TestReporter
-import vulpix._
+import vulpix.*
 
 class FromTastyTests {
   import TestConfiguration._

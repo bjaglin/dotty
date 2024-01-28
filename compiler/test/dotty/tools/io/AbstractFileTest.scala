@@ -3,7 +3,7 @@ package dotty.tools.io
 import dotty.tools.io.AbstractFile
 import org.junit.Test
 
-import java.nio.file.Files._
+import java.nio.file.Files.*
 import java.nio.file.attribute.PosixFilePermissions
 import scala.language.unsafeNulls
 

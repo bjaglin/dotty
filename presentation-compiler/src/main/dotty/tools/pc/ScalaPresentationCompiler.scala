@@ -4,21 +4,21 @@ import dotty.tools.dotc.reporting.StoreReporter
 import dotty.tools.pc.buildinfo.BuildInfo
 import dotty.tools.pc.completions.CompletionProvider
 import dotty.tools.pc.completions.OverrideCompletions
+import org.eclipse.lsp4j as l
 import org.eclipse.lsp4j.DocumentHighlight
 import org.eclipse.lsp4j.TextEdit
-import org.eclipse.lsp4j as l
 
 import java.io.File
 import java.net.URI
 import java.nio.file.Path
+import java.util as ju
 import java.util.Optional
 import java.util.concurrent.CompletableFuture
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.ScheduledExecutorService
-import java.util as ju
 import scala.concurrent.ExecutionContext
 import scala.concurrent.ExecutionContextExecutor
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
 import scala.meta.internal.metals.CompilerVirtualFileParams
 import scala.meta.internal.metals.EmptyCancelToken

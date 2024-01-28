@@ -4,24 +4,24 @@ package dotc
 
 import dotty.tools.dotc.config.ScalaSettings
 import org.junit.AfterClass
-import org.junit.Assert._
-import org.junit.Assume._
+import org.junit.Assert.*
+import org.junit.Assume.*
 import org.junit.BeforeClass
 import org.junit.Ignore
 import org.junit.Test
 import org.junit.experimental.categories.Category
 
 import java.io.File
-import java.nio.file._
-import java.util.stream.{ Stream => JStream }
-import scala.concurrent.duration._
-import scala.jdk.CollectionConverters._
+import java.nio.file.*
+import java.util.stream.Stream as JStream
+import scala.concurrent.duration.*
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
 import scala.util.matching.Regex
 
 import TestSources.sources
 import reporting.TestReporter
-import vulpix._
+import vulpix.*
 
 class CompilationTests {
   import ParallelTesting._

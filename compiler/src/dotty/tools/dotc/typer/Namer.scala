@@ -20,7 +20,7 @@ import Names.*
 import NameOps.*
 import Flags.*
 import Decorators.*
-import Comments.{_, given}
+import Comments.{*, given}
 import NameKinds.DefaultGetterName
 import ast.desugar
 import ast.desugar.*

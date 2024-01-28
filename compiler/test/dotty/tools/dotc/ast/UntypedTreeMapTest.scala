@@ -2,10 +2,10 @@ package dotty.tools
 package dotc
 package ast
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
-import dotc.core.Contexts._
+import dotc.core.Contexts.*
 import dotc.parsing.Parsers.Parser
 import dotc.util.SourceFile
 

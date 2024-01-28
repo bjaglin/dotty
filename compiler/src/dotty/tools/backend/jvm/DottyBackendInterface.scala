@@ -1,13 +1,13 @@
 package dotty.tools.backend.jvm
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.report
 import dotty.tools.dotc.util.ReadOnlyMap
 import dotty.tools.io.AbstractFile
 
-import java.io.{File => _}
+import java.io.File as _
 import scala.language.unsafeNulls
 import scala.reflect.ClassTag
 

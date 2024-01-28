@@ -22,10 +22,10 @@ import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.utils.MtagsEnrichments.*
 
 import java.nio.file.Paths
+import scala.meta as m
 import scala.meta.internal.metals.CompilerOffsetParams
 import scala.meta.pc.OffsetParams
 import scala.meta.pc.VirtualFileParams
-import scala.meta as m
 
 abstract class PcCollector[T](
     driver: InteractiveDriver,

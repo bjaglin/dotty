@@ -4,7 +4,7 @@ import dotty.tools.DottyTest
 import dotty.tools.dotc.rewrites.Rewrites
 import dotty.tools.dotc.rewrites.Rewrites.ActionPatch
 import dotty.tools.dotc.util.SourceFile
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
 import scala.annotation.tailrec

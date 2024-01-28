@@ -1,11 +1,11 @@
 package dotty.tools.dotc.interactive
 
-import dotty.tools.dotc.ast.tpd._
+import dotty.tools.dotc.ast.tpd.*
 import dotty.tools.dotc.ast.untpd
-import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Denotations.SingleDenotation
-import dotty.tools.dotc.core.Flags._
-import dotty.tools.dotc.core.NameOps._
+import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.NameOps.*
 import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.core.Names.termName
 import dotty.tools.dotc.core.StdNames.nme

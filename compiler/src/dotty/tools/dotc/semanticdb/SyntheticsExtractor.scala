@@ -5,7 +5,7 @@ import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.NameKinds
 import dotty.tools.dotc.core.StdNames.nme
-import dotty.tools.dotc.{semanticdb => s}
+import dotty.tools.dotc.semanticdb as s
 
 
 class SyntheticsExtractor:

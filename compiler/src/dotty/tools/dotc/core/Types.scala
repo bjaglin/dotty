@@ -5,7 +5,7 @@ package core
 import java.lang.ref.WeakReference
 import scala.annotation.internal.sharable
 import scala.annotation.threadUnsafe
-import scala.util.hashing.{ MurmurHash3 => hashing }
+import scala.util.hashing.MurmurHash3 as hashing
 
 import Symbols.*
 import Flags.*

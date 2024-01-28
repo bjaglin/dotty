@@ -12,7 +12,7 @@ import dotty.tools.io.EfficientClassPath
 import dotty.tools.io.JDK9Reflectors
 import dotty.tools.io.PlainFile
 
-import java.io.{File => JFile}
+import java.io.File as JFile
 import java.net.URI
 import java.net.URL
 import java.nio.file.FileSystems

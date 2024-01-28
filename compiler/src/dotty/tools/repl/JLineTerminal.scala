@@ -7,8 +7,8 @@ import dotty.tools.dotc.printing.SyntaxHighlighting
 import dotty.tools.dotc.reporting.Reporter
 import dotty.tools.dotc.util.SourceFile
 import org.jline.reader
-import org.jline.reader.Parser.ParseContext
 import org.jline.reader.*
+import org.jline.reader.Parser.ParseContext
 import org.jline.reader.impl.LineReaderImpl
 import org.jline.reader.impl.history.DefaultHistory
 import org.jline.terminal.TerminalBuilder

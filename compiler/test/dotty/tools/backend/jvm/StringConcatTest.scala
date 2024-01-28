@@ -1,13 +1,13 @@
 package dotty.tools.backend.jvm
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
 
-import scala.tools.asm.Opcodes._
+import scala.tools.asm.Opcodes.*
 
-import ASMConverters._
+import ASMConverters.*
 
 
 class StringConcatTest extends DottyBytecodeTest {

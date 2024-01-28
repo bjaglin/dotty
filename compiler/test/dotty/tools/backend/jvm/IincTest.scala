@@ -1,9 +1,9 @@
 package dotty.tools.backend.jvm
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
-import scala.tools.asm.Opcodes._
+import scala.tools.asm.Opcodes.*
 
 class IincTest extends DottyBytecodeTest {
   import ASMConverters._

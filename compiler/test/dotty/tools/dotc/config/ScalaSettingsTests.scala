@@ -1,11 +1,11 @@
 package dotty.tools.dotc
 package config
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
 import CommandLineParser.tokenize
-import Settings._
+import Settings.*
 import core.Decorators.toMessage
 
 class ScalaSettingsTests:

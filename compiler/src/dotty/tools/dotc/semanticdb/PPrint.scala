@@ -1,8 +1,8 @@
 package dotty.tools.dotc.semanticdb
 
+import dotty.tools.dotc.semanticdb as s
 import dotty.tools.dotc.semanticdb.Scala3.given
 import dotty.tools.dotc.util.SourceFile
-import dotty.tools.dotc.{semanticdb => s}
 
 import scala.collection.mutable
 

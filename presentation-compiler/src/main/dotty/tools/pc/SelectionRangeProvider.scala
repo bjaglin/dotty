@@ -10,7 +10,7 @@ import org.eclipse.lsp4j.SelectionRange
 
 import java.nio.file.Paths
 import java.util as ju
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 import scala.meta.pc.OffsetParams
 
 /**

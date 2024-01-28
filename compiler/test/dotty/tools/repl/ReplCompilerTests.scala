@@ -1,7 +1,7 @@
 package dotty.tools.repl
 
 import dotty.tools.dotc.core.Contexts.Context
-import org.junit.Assert.{assertTrue => assert, _}
+import org.junit.Assert.{assertTrue as assert, *}
 import org.junit.Ignore
 import org.junit.Test
 

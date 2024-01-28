@@ -5,7 +5,7 @@ import dotty.tools.dotc.interfaces.Diagnostic.ERROR
 import dotty.tools.dotc.interfaces.Diagnostic.INFO
 import dotty.tools.dotc.interfaces.Diagnostic.WARNING
 import dotty.tools.dotc.reporting.Diagnostic
-import dotty.tools.dotc.{semanticdb => s}
+import dotty.tools.dotc.semanticdb as s
 
 import scala.annotation.internal.sharable
 

@@ -1,7 +1,7 @@
 package dotty.tools.dotc.classpath
 
 import dotty.tools.dotc.core.Contexts.Context
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
 import java.io.ByteArrayOutputStream
@@ -11,7 +11,7 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.util.jar.Attributes
 import java.util.jar.Attributes.Name
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
 import scala.util.Properties
 

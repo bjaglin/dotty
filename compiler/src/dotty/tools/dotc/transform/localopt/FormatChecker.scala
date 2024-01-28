@@ -1,7 +1,7 @@
 package dotty.tools.dotc
 package transform.localopt
 
-import dotty.tools.dotc.ast.tpd.{Match => _, *}
+import dotty.tools.dotc.ast.tpd.{Match as _, *}
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Phases.typerPhase
 import dotty.tools.dotc.core.Symbols.*

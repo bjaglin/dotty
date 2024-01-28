@@ -7,7 +7,7 @@ import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.Constants.*
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.em
-import dotty.tools.dotc.core.Flags.{Label => LabelFlag, _}
+import dotty.tools.dotc.core.Flags.{Label as LabelFlag, *}
 import dotty.tools.dotc.core.Phases.*
 import dotty.tools.dotc.core.StdNames.nme
 import dotty.tools.dotc.core.StdNames.str

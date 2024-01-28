@@ -2,7 +2,7 @@ package dotty.tools
 package dotc
 package semanticdb
 
-import dotty.tools.dotc.{semanticdb => s}
+import dotty.tools.dotc.semanticdb as s
 
 import core.Contexts.Context
 import core.Constants.*

@@ -7,15 +7,15 @@ import org.junit.Assume.assumeTrue
 import org.junit.Test
 import org.junit.experimental.categories.Category
 
-import java.io.{File => JFile}
+import java.io.File as JFile
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
-import scala.concurrent.duration._
+import scala.concurrent.duration.*
 import scala.language.unsafeNulls
 
 import reporting.TestReporter
-import vulpix._
+import vulpix.*
 
 
 class IdempotencyTests {

@@ -2,15 +2,15 @@ package dotty.tools
 package dotc
 package parsing
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
 import ast.Trees.mods
-import ast.untpd._
-import ast.{ Trees => d }
+import ast.untpd.*
+import ast.Trees as d
 import Parsers.Parser
 import util.SourceFile
-import core.Contexts._
+import core.Contexts.*
 import core.Flags
 
 object ModifiersParsingTest {

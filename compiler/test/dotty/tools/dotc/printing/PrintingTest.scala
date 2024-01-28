@@ -5,11 +5,11 @@ package dotc
 import dotty.tools.io.Directory
 import org.junit.Test
 
+import java.io.*
 import java.io.File
-import java.io._
-import java.lang.System.{lineSeparator => EOL}
+import java.lang.System.lineSeparator as EOL
 import java.nio.charset.StandardCharsets
-import java.nio.file.{Path => JPath}
+import java.nio.file.Path as JPath
 import scala.io.Source
 import scala.language.unsafeNulls
 import scala.util.Using

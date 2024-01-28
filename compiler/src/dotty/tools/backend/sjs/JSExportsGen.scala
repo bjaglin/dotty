@@ -6,14 +6,14 @@ import dotty.tools.dotc.transform.sjs.JSExportUtils.*
 import dotty.tools.dotc.transform.sjs.JSSymUtils.*
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.SrcPos
+import org.scalajs.ir.Names as jsNames
 import org.scalajs.ir.Names.DefaultModuleID
 import org.scalajs.ir.OriginalName.NoOriginalName
 import org.scalajs.ir.Position
 import org.scalajs.ir.Position.NoPosition
+import org.scalajs.ir.Trees as js
 import org.scalajs.ir.Trees.OptimizerHints
-import org.scalajs.ir.{Names => jsNames}
-import org.scalajs.ir.{Trees => js}
-import org.scalajs.ir.{Types => jstpe}
+import org.scalajs.ir.Types as jstpe
 
 import scala.annotation.tailrec
 import scala.collection.mutable

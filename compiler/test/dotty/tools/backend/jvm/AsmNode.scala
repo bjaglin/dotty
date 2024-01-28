@@ -1,12 +1,12 @@
 package dotty.tools.backend.jvm
 
 import java.lang.reflect.Modifier
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
 import scala.tools.asm
 
-import asm._
-import asm.tree._
+import asm.*
+import asm.tree.*
 
 sealed trait AsmNode[+T] {
   def node: T

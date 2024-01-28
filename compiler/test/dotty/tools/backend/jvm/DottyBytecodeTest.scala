@@ -2,25 +2,25 @@ package dotty
 package tools
 package backend.jvm
 
-import dotty.tools.io.{VirtualDirectory => Directory}
-import org.junit.Assert._
+import dotty.tools.io.VirtualDirectory as Directory
+import org.junit.Assert.*
 
+import java.io.File as JFile
 import java.io.InputStream
-import java.io.{File => JFile}
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
 import scala.tools.asm
 import scala.tools.asm.ClassReader
 import scala.tools.asm.ClassWriter
-import scala.tools.asm.tree._
+import scala.tools.asm.tree.*
 
 import vulpix.TestConfiguration
 import dotc.core.Contexts.{Context, ContextBase, ctx}
 import dotc.core.Comments.{ContextDoc, ContextDocstrings}
 import dotc.core.Phases.Phase
 import dotc.Compiler
-import asm._
-import asm.tree._
+import asm.*
+import asm.tree.*
 import io.{AbstractFile, JavaClassPath, VirtualDirectory}
 
 trait DottyBytecodeTest {

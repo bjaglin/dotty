@@ -5,9 +5,9 @@ import java.io.File
 import java.nio.charset.Charset
 import java.nio.charset.StandardCharsets.UTF_8
 import java.nio.file.Files
-import java.nio.file.{Path => JPath}
+import java.nio.file.Path as JPath
 import scala.io.Source
-import scala.jdk.StreamConverters._
+import scala.jdk.StreamConverters.*
 import scala.language.unsafeNulls
 import scala.reflect.ClassTag
 import scala.util.Using.resource

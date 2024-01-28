@@ -1,16 +1,16 @@
 package dotty.tools
 
-import dotty.tools.dotc._
+import dotty.tools.dotc.*
 
-import java.io._
+import java.io.*
 import java.net.URI
-import java.nio.file._
-import javax.tools._
-import scala.jdk.CollectionConverters._
+import java.nio.file.*
+import javax.tools.*
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
 
-import core._
-import core.Contexts._
+import core.*
+import core.Contexts.*
 import dotc.core.Comments.{ContextDoc, ContextDocstrings}
 
 /** Initialize a compiler context with the given `classpath`, compile all

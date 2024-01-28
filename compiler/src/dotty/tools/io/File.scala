@@ -8,7 +8,7 @@
 
 package dotty.tools.io
 
-import java.io.{File => JavaIoFile, _}
+import java.io.{File as JavaIoFile, *}
 import java.nio.file.Files
 import java.nio.file.Paths
 import java.nio.file.StandardOpenOption.*

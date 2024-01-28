@@ -11,7 +11,7 @@ import Contexts.*
 import Decorators.em
 import config.{ PathResolver, Feature }
 import Phases.*
-import config.Printers.plugins.{ println => debug }
+import config.Printers.plugins.println as debug
 import config.Properties
 
 /** Support for run-time loading of compiler plugins.

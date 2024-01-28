@@ -12,7 +12,7 @@ import Symbols.Symbol
 import Scopes.Scope
 import Constants.Constant
 import Names.Name
-import Denotations._
+import Denotations.*
 import Annotations.Annotation
 import Contexts.Context
 import typer.Implicits.*

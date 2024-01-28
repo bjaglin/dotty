@@ -23,7 +23,7 @@ import dotty.tools.repl.AbstractFileClassLoader
 import java.io.PrintWriter
 import java.io.StringWriter
 import java.lang.reflect.InvocationTargetException
-import java.lang.reflect.{Method => JLRMethod}
+import java.lang.reflect.Method as JLRMethod
 import scala.language.unsafeNulls
 import scala.quoted.Quotes
 import scala.quoted.runtime.impl.*

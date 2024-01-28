@@ -4,7 +4,7 @@ import dotty.tools.vulpix.ParallelTesting
 import dotty.tools.vulpix.TestFlags
 import dotty.tools.vulpix.TestGroup
 
-import scala.concurrent.duration._
+import scala.concurrent.duration.*
 
 object comptest extends ParallelTesting {
 

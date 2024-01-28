@@ -4,8 +4,8 @@ package core
 package tasty
 
 import dotty.tools.tasty.TastyBuffer.*
-import dotty.tools.tasty.TastyFormat.ASTsSection
 import dotty.tools.tasty.TastyFormat.*
+import dotty.tools.tasty.TastyFormat.ASTsSection
 
 import scala.language.unsafeNulls
 

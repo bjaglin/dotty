@@ -3,18 +3,18 @@ package tools
 package dotc
 
 import org.junit.AfterClass
-import org.junit.Assert._
-import org.junit.Assume._
+import org.junit.Assert.*
+import org.junit.Assume.*
 import org.junit.BeforeClass
 import org.junit.Test
 import org.junit.experimental.categories.Category
 
-import java.nio.file._
-import scala.concurrent.duration._
+import java.nio.file.*
+import scala.concurrent.duration.*
 import scala.language.unsafeNulls
 
 import reporting.TestReporter
-import vulpix._
+import vulpix.*
 
 @Category(Array(classOf[BootstrappedOnlyTests]))
 class BootstrappedOnlyCompilationTests {

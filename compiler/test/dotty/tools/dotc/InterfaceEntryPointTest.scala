@@ -1,15 +1,15 @@
 package dotty
 package tools.dotc
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 import org.junit.experimental.categories.Category
 
-import java.nio.file._
+import java.nio.file.*
 import scala.collection.mutable.ListBuffer
 import scala.language.unsafeNulls
 
-import interfaces._
+import interfaces.*
 
 /** Test that demonstrates how to use dotty-interfaces
  *

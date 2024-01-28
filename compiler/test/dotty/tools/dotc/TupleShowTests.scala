@@ -3,7 +3,7 @@ package dotc
 
 import org.junit.Test
 
-import java.lang.System.{ lineSeparator => EOL }
+import java.lang.System.lineSeparator as EOL
 
 import core.*
 import Decorators.*

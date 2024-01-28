@@ -2,7 +2,7 @@ package dotty.tools.dotc
 package transform
 
 import MegaPhase.*
-import core.DenotTransformers.{IdentityDenotTransformer}
+import core.DenotTransformers.IdentityDenotTransformer
 import core.Symbols.*
 import core.Contexts.*
 import core.Types.*

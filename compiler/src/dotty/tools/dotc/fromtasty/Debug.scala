@@ -4,7 +4,7 @@ package fromtasty
 
 import dotty.tools.io.Directory
 
-import java.io.{File => JFile}
+import java.io.File as JFile
 import java.nio.file.Files
 import java.nio.file.Paths
 import scala.language.unsafeNulls

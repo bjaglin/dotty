@@ -1,6 +1,6 @@
 package dotty.tools.dotc
 
-import dotty.tools.vulpix._
+import dotty.tools.vulpix.*
 import org.junit.Ignore
 import org.junit.Test
 

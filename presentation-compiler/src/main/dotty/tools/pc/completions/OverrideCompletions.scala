@@ -1,8 +1,8 @@
 package dotty.tools.pc
 package completions
 
-import dotty.tools.dotc.ast.tpd.Tree
 import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd.Tree
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
 import dotty.tools.dotc.core.Flags.*
@@ -24,7 +24,7 @@ import dotty.tools.pc.utils.MtagsEnrichments.*
 import org.eclipse.lsp4j as l
 
 import java.util as ju
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 import scala.meta.internal.metals.ReportContext
 import scala.meta.pc.OffsetParams
 import scala.meta.pc.PresentationCompilerConfig

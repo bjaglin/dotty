@@ -7,8 +7,8 @@ import dotty.tools.dotc.reporting.Message
 import dotty.tools.dotc.util.*
 import dotty.tools.io.AbstractFile
 
-import java.util.{Collection => JCollection}
-import java.util.{Map => JMap}
+import java.util.Collection as JCollection
+import java.util.Map as JMap
 import scala.collection.mutable.Clearable
 import scala.collection.mutable.HashSet
 import scala.compiletime.uninitialized

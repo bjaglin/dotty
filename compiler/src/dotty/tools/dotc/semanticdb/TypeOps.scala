@@ -3,7 +3,7 @@ package dotc
 package semanticdb
 
 import dotty.tools.dotc.core.Names.Designator
-import dotty.tools.dotc.{semanticdb => s}
+import dotty.tools.dotc.semanticdb as s
 
 import scala.util.chaining.scalaUtilChainingOps
 

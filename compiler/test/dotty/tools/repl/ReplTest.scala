@@ -4,13 +4,13 @@ package repl
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.reporting.MessageRendering
 import org.junit.After
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Before
 
 import java.io.ByteArrayOutputStream
+import java.io.File as JFile
 import java.io.PrintStream
-import java.io.{File => JFile}
-import java.lang.System.{lineSeparator => EOL}
+import java.lang.System.lineSeparator as EOL
 import java.nio.charset.StandardCharsets
 import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
