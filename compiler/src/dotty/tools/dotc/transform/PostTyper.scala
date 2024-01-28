@@ -12,27 +12,27 @@ import dotty.tools.dotc.typer.VarianceChecker
 
 import scala.collection.mutable
 
-import core.*
+import core._
 import typer.ErrorReporting.errorTree
-import Types.*
-import Contexts.*
-import Names.*
-import Flags.*
-import DenotTransformers.*
-import Phases.*
-import SymDenotations.*
-import StdNames.*
-import Annotations.*
-import Trees.*
-import Scopes.*
-import Decorators.*
-import Symbols.*
-import NameOps.*
+import Types._
+import Contexts._
+import Names._
+import Flags._
+import DenotTransformers._
+import Phases._
+import SymDenotations._
+import StdNames._
+import Annotations._
+import Trees._
+import Scopes._
+import Decorators._
+import Symbols._
+import NameOps._
 import ContextFunctionResults.annotateContextResults
 import config.Printers.typr
 import config.Feature
 import util.SrcPos
-import reporting.*
+import reporting._
 import NameKinds.WildcardParamName
 
 object PostTyper {

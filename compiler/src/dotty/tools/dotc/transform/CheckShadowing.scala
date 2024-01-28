@@ -7,10 +7,10 @@ import dotty.tools.dotc.ast.tpd.TreeTraverser
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.ast.untpd.ImportSelector
 import dotty.tools.dotc.cc.boxedCaptureSet
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Denotations.SingleDenotation
 import dotty.tools.dotc.core.Flags.EmptyFlags
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.Mode.Type
 import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.core.Names.SimpleName

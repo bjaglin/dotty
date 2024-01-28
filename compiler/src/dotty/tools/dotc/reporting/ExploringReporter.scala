@@ -6,7 +6,7 @@ import scala.language.unsafeNulls
 
 import collection.mutable
 import core.Contexts.Context
-import Diagnostic.*
+import Diagnostic._
 
 /** A re-usable Reporter used in Contexts#test */
 class ExploringReporter extends StoreReporter(null, fromTyperState = false):

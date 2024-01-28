@@ -2,12 +2,12 @@ package dotty.tools
 package dotc
 package reporting
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Mode
 import dotty.tools.dotc.core.Symbols.NoSymbol
 import dotty.tools.dotc.core.Symbols.Symbol
-import dotty.tools.dotc.reporting.Diagnostic.*
-import dotty.tools.dotc.reporting.Message.*
+import dotty.tools.dotc.reporting.Diagnostic._
+import dotty.tools.dotc.reporting.Message._
 import dotty.tools.dotc.util.NoSourcePosition
 
 import java.io.BufferedReader

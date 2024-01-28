@@ -6,22 +6,22 @@ import dotty.tools.io.File
 import java.io.PrintWriter
 import scala.collection.mutable
 import scala.language.unsafeNulls
-import scala.util.chaining.*
+import scala.util.chaining._
 import scala.util.hashing.MurmurHash3
 
 import ExtractDependencies.internalError
 import ast.{Positioned, Trees, tpd}
-import core.*
-import core.Decorators.*
-import Annotations.*
-import Contexts.*
-import Flags.*
-import Phases.*
-import Trees.*
-import Types.*
-import Symbols.*
-import Names.*
-import NameOps.*
+import core._
+import core.Decorators._
+import Annotations._
+import Contexts._
+import Flags._
+import Phases._
+import Trees._
+import Types._
+import Symbols._
+import Names._
+import NameOps._
 import inlines.Inlines
 import transform.ValueClasses
 

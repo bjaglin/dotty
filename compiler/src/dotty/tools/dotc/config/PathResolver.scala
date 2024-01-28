@@ -11,8 +11,8 @@ import io.{ClassPath, Directory, Path}
 import classpath.{AggregateClassPath, ClassPathFactory, JrtClassPath}
 import ClassPath.split
 import PartialFunction.condOpt
-import core.Contexts.*
-import Settings.*
+import core.Contexts._
+import Settings._
 
 object PathResolver {
 

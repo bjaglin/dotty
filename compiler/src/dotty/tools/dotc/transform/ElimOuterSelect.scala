@@ -1,10 +1,10 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
+import core._
 import MegaPhase.MiniPhase
-import Contexts.*
-import Types.*
+import Contexts._
+import Types._
 import NameKinds.OuterSelectName
 
 /** This phase rewrites outer selects `E.n_<outer>` which were introduced by

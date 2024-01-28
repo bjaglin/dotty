@@ -1,15 +1,15 @@
 package dotty.tools.dotc.quoted
 
 import dotty.tools.dotc.ast.TreeTypeMap
-import dotty.tools.dotc.ast.Trees.*
+import dotty.tools.dotc.ast.Trees._
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.config.Printers.*
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.config.Printers._
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.Mode
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.core.tasty.Attributes
 import dotty.tools.dotc.core.tasty.DottyUnpickler
 import dotty.tools.dotc.core.tasty.PositionPickler
@@ -23,9 +23,9 @@ import dotty.tools.io.NoAbstractFile
 
 import scala.collection.mutable
 import scala.quoted.Quotes
-import scala.quoted.runtime.impl.*
+import scala.quoted.runtime.impl._
 
-import QuoteUtils.*
+import QuoteUtils._
 
 object PickledQuotes {
   import tpd.*

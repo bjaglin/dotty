@@ -9,10 +9,10 @@ import java.io.IOException
 import java.io.RandomAccessFile
 import java.net.URI
 import java.net.URL
-import java.nio.file.*
+import java.nio.file._
 import java.nio.file.attribute.BasicFileAttributes
 import java.nio.file.attribute.FileTime
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.util.Random.alphanumeric
 

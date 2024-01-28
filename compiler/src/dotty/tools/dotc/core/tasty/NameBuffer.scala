@@ -7,11 +7,11 @@ import dotty.tools.tasty.TastyBuffer
 
 import scala.io.Codec
 
-import TastyBuffer.*
+import TastyBuffer._
 import collection.mutable
 import Names.{Name, chrs, SimpleName, DerivedName, TypeName}
-import NameKinds.*
-import NameOps.*
+import NameKinds._
+import NameOps._
 import NameTags.{SIGNED, TARGETSIGNED}
 
 class NameBuffer extends TastyBuffer(10000) {

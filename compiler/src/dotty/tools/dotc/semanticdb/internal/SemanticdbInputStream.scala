@@ -7,7 +7,7 @@ import java.util.Arrays
 import scala.collection.mutable
 import scala.language.unsafeNulls
 
-import SemanticdbInputStream.*
+import SemanticdbInputStream._
 
 object SemanticdbInputStream {
 

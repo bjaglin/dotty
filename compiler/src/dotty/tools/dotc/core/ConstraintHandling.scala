@@ -2,15 +2,15 @@ package dotty.tools
 package dotc
 package core
 
-import Types.*
-import Contexts.*
-import Symbols.*
-import Decorators.*
-import Flags.*
+import Types._
+import Contexts._
+import Symbols._
+import Decorators._
+import Flags._
 import config.Config
 import config.Printers.typr
 import typer.ProtoTypes.{newTypeVar, representedParamRef}
-import UnificationDirection.*
+import UnificationDirection._
 import NameKinds.AvoidNameKind
 import util.SimpleIdentitySet
 import NullOpsDecorator.stripNull

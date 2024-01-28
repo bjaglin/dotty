@@ -1,10 +1,10 @@
 package dotty.tools.pc
 
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.core.Types.TermRef
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 import org.eclipse.lsp4j.CompletionItem
 
 import scala.meta.internal.pc.ItemResolver

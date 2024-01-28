@@ -2,8 +2,8 @@ package dotty.tools
 package backend
 package jvm
 
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.report
 
 import scala.language.unsafeNulls

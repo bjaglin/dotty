@@ -1,6 +1,6 @@
 package dotty.tools.dotc.profile
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.io.AbstractFile
 
@@ -18,7 +18,7 @@ import javax.management.Notification
 import javax.management.NotificationEmitter
 import javax.management.NotificationListener
 import javax.management.openmbean.CompositeData
-import scala.annotation.*
+import scala.annotation._
 import scala.language.unsafeNulls
 
 import annotation.internal.sharable

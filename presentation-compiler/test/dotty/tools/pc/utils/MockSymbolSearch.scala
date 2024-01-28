@@ -4,9 +4,9 @@ import org.eclipse.lsp4j.Location
 
 import java.net.URI
 import java.util.Optional
-import java.util as ju
-import scala.jdk.CollectionConverters.*
-import scala.jdk.OptionConverters.*
+import java.{util => ju}
+import scala.jdk.CollectionConverters._
+import scala.jdk.OptionConverters._
 import scala.language.unsafeNulls
 import scala.meta.internal.metals.ClasspathSearch
 import scala.meta.internal.metals.WorkspaceSymbolQuery

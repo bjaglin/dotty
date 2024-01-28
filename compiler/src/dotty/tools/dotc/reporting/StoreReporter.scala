@@ -2,10 +2,10 @@ package dotty.tools
 package dotc
 package reporting
 
-import core.Contexts.*
+import core.Contexts._
 import collection.mutable
 import config.Printers.typr
-import Diagnostic.*
+import Diagnostic._
 
 /** This class implements a Reporter that stores all messages
   *

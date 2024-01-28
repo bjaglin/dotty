@@ -2,13 +2,13 @@ package dotty.tools
 package dotc
 package core
 
-import Contexts.*
-import Types.*
-import Symbols.*
-import Names.*
-import Flags.*
+import Contexts._
+import Types._
+import Symbols._
+import Names._
+import Flags._
 import Denotations.SingleDenotation
-import Decorators.*
+import Decorators._
 import collection.mutable
 import config.SourceVersion.future
 import config.Feature.sourceVersion

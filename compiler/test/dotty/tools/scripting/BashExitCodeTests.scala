@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets.UTF_8
 import java.nio.file.Files
 import scala.language.unsafeNulls
 
-import ScriptTestEnv.*
+import ScriptTestEnv._
 
 @Category(Array(classOf[BootstrappedOnlyTests]))
 class BashExitCodeTests:

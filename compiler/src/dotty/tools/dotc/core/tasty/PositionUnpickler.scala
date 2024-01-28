@@ -11,7 +11,7 @@ import scala.compiletime.uninitialized
 
 import TastyFormat.SOURCE
 import TastyBuffer.{Addr, NameRef}
-import util.Spans.*
+import util.Spans._
 import Names.TermName
 
 /** Unpickler for tree positions */

@@ -11,7 +11,7 @@ package dotty.tools.io
 import java.io.{File => JavaIoFile, _}
 import java.nio.file.Files
 import java.nio.file.Paths
-import java.nio.file.StandardOpenOption.*
+import java.nio.file.StandardOpenOption._
 import scala.io.Codec
 import scala.language.unsafeNulls
 /**

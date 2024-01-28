@@ -1,13 +1,13 @@
 package dotty.tools.pc.utils
 
-import org.eclipse.lsp4j as l
+import org.eclipse.{lsp4j => l}
 
 import scala.annotation.tailrec
 import scala.collection.immutable
 import scala.collection.mutable.ListBuffer
 import scala.language.unsafeNulls
 import scala.meta.internal.pc.SemanticTokens
-import scala.meta.internal.pc.SemanticTokens.*
+import scala.meta.internal.pc.SemanticTokens._
 import scala.meta.pc.Node
 
 object TestSemanticTokens:

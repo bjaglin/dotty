@@ -3,10 +3,10 @@ package transform
 
 import scala.compiletime.uninitialized
 
-import core.*
+import core._
 import DenotTransformers.SymTransformer
-import Contexts.*
-import Flags.*
+import Contexts._
+import Flags._
 import SymDenotations.SymDenotation
 import collection.mutable
 import MegaPhase.MiniPhase

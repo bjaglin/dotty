@@ -4,13 +4,13 @@ package core
 
 import dotty.tools.dotc.reporting.trace
 
-import Decorators.*
-import Symbols.*
-import Types.*
-import Flags.*
+import Decorators._
+import Symbols._
+import Types._
+import Flags._
 import Contexts.ctx
 import config.Feature.migrateTo3
-import config.Printers.*
+import config.Printers._
 
 trait PatternTypeConstrainer { self: TypeComparer =>
 

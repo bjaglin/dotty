@@ -5,10 +5,10 @@ import org.junit.Test
 
 import java.lang.System.{ lineSeparator => EOL }
 
-import core.*
-import Decorators.*
-import Symbols.*
-import printing.Texts.*
+import core._
+import Decorators._
+import Symbols._
+import printing.Texts._
 
 class TupleShowTests extends DottyTest:
   def IntType = defn.IntType

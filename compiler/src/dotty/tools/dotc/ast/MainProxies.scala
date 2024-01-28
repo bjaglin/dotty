@@ -1,16 +1,16 @@
 package dotty.tools.dotc
 package ast
 
-import core.*
-import Symbols.*
-import Types.*
-import Contexts.*
-import Decorators.*
-import util.Spans.*
-import Flags.*
-import Constants.*
+import core._
+import Symbols._
+import Types._
+import Contexts._
+import Decorators._
+import util.Spans._
+import Flags._
+import Constants._
 import StdNames.{nme, tpnme}
-import ast.Trees.*
+import ast.Trees._
 import Names.Name
 import Comments.Comment
 import NameKinds.DefaultGetterName

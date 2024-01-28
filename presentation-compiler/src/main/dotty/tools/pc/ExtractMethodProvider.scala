@@ -1,9 +1,9 @@
 package dotty.tools.pc
 
-import dotty.tools.dotc.ast.Trees.*
+import dotty.tools.dotc.ast.Trees._
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.tpd.DeepFolder
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.core.Types.MethodType
 import dotty.tools.dotc.core.Types.PolyType
@@ -14,9 +14,9 @@ import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.pc.printer.ShortenedTypePrinter
 import dotty.tools.pc.printer.ShortenedTypePrinter.IncludeDefaultParam
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 import org.eclipse.lsp4j.TextEdit
-import org.eclipse.lsp4j as l
+import org.eclipse.{lsp4j => l}
 
 import java.nio.file.Paths
 import scala.meta.internal.metals.ReportContext
@@ -24,7 +24,7 @@ import scala.meta.internal.pc.ExtractMethodUtils
 import scala.meta.pc.OffsetParams
 import scala.meta.pc.RangeParams
 import scala.meta.pc.SymbolSearch
-import scala.meta as m
+import scala.{meta => m}
 
 final class ExtractMethodProvider(
     range: RangeParams,

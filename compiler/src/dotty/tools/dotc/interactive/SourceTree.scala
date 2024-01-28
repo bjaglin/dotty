@@ -4,13 +4,13 @@ package interactive
 
 
 import ast.tpd
-import core.*
-import Contexts.*
-import NameOps.*
-import Symbols.*
-import StdNames.*
-import util.*
-import util.Spans.*
+import core._
+import Contexts._
+import NameOps._
+import Symbols._
+import StdNames._
+import util._
+import util.Spans._
 
 /**
  * A `tree` coming from `source`

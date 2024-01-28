@@ -5,7 +5,7 @@ import dotty.tools.dotc.reporting.Diagnostic
 import dotty.tools.dotc.util.SourceFile
 
 import java.net.URI
-import java.util as ju
+import java.{util => ju}
 import scala.compiletime.uninitialized
 
 /**

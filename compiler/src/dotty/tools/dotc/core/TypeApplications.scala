@@ -4,13 +4,13 @@ package core
 
 import dotty.tools.dotc.config.Config
 
-import Types.*
-import Contexts.*
-import Symbols.*
+import Types._
+import Contexts._
+import Symbols._
 import SymDenotations.LazyType
-import Decorators.*
-import util.Stats.*
-import Names.*
+import Decorators._
+import util.Stats._
+import Names._
 import StdNames.nme
 import Flags.{Module, Provisional}
 

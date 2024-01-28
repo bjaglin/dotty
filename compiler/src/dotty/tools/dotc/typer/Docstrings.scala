@@ -2,10 +2,10 @@ package dotty.tools
 package dotc
 package typer
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Decorators.*
+import core._
+import Contexts._
+import Symbols._
+import Decorators._
 import Comments.{_, given}
 import ast.tpd
 

@@ -1,9 +1,9 @@
 package dotty.tools.io
 
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
 import dotty.tools.dotc.report
-import dotty.tools.io.*
+import dotty.tools.io._
 
 import scala.annotation.constructorOnly
 import scala.language.unsafeNulls

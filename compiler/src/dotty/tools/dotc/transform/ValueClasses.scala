@@ -1,13 +1,13 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import Types.*
-import Symbols.*
-import Contexts.*
-import Phases.*
-import Flags.*
-import StdNames.*
+import core._
+import Types._
+import Symbols._
+import Contexts._
+import Phases._
+import Flags._
+import StdNames._
 
 /** Methods that apply to user-defined value classes */
 object ValueClasses {

@@ -2,13 +2,13 @@ package dotty.tools.dotc
 package transform
 
 import ast.{Trees, tpd}
-import core.*
-import Contexts.*
-import Trees.*
-import Types.*
-import StdNames.*
-import Symbols.*
-import ValueClasses.*
+import core._
+import Contexts._
+import Trees._
+import Types._
+import StdNames._
+import Symbols._
+import ValueClasses._
 
 object TreeExtractors {
   import tpd.*

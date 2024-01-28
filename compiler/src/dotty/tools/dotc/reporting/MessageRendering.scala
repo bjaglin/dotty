@@ -7,11 +7,11 @@ import scala.annotation.switch
 import scala.collection.mutable
 import scala.language.unsafeNulls
 
-import core.Contexts.*
-import core.Decorators.*
+import core.Contexts._
+import core.Decorators._
 import printing.Highlighting.{Blue, Red, Yellow}
 import printing.SyntaxHighlighting
-import Diagnostic.*
+import Diagnostic._
 import util.{ SourcePosition, NoSourcePosition }
 import util.Chars.{ LF, CR, FF, SU }
 

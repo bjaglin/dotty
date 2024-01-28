@@ -11,29 +11,29 @@ import scala.collection.mutable.ListBuffer
 import scala.language.unsafeNulls
 
 import util.{ SourceFile, SourcePosition, NoSourcePosition }
-import Tokens.*
-import Scanners.*
+import Tokens._
+import Scanners._
 import xml.MarkupParsers.MarkupParser
-import core.*
-import Flags.*
-import Contexts.*
-import Names.*
+import core._
+import Flags._
+import Contexts._
+import Names._
 import NameKinds.{WildcardParamName, QualifiedName}
-import NameOps.*
+import NameOps._
 import ast.{Positioned, Trees}
-import ast.Trees.*
-import StdNames.*
-import util.Spans.*
-import Constants.*
+import ast.Trees._
+import StdNames._
+import util.Spans._
+import Constants._
 import Symbols.NoSymbol
-import ScriptParsers.*
-import Decorators.*
+import ScriptParsers._
+import Decorators._
 import util.Chars
 import rewrites.Rewrites.{patch, overlapsPatch}
-import reporting.*
+import reporting._
 import config.Feature
 import config.Feature.{sourceVersion, migrateTo3, globalOnlyImports}
-import config.SourceVersion.*
+import config.SourceVersion._
 import config.SourceVersion
 
 object Parsers {

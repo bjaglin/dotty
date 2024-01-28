@@ -6,17 +6,17 @@ import dotty.tools.dotc.ast.tpd
 
 import scala.annotation.tailrec
 
-import MegaPhase.*
-import core.DenotTransformers.*
-import core.Symbols.*
-import core.Contexts.*
-import core.Phases.*
-import core.Types.*
-import core.Flags.*
-import core.Decorators.*
+import MegaPhase._
+import core.DenotTransformers._
+import core.Symbols._
+import core.Contexts._
+import core.Phases._
+import core.Types._
+import core.Flags._
+import core.Decorators._
 import core.StdNames.nme
-import core.Names.*
-import core.NameOps.*
+import core.Names._
+import core.NameOps._
 import core.NameKinds.SuperArgName
 import collection.mutable
 

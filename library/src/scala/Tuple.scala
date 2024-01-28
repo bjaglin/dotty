@@ -1,8 +1,8 @@
 package scala
 
 import annotation.{experimental, showAsInfix}
-import compiletime.*
-import compiletime.ops.int.*
+import compiletime._
+import compiletime.ops.int._
 
 /** Tuple of arbitrary arity */
 sealed trait Tuple extends Product {

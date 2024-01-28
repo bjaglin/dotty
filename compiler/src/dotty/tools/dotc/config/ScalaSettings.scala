@@ -5,7 +5,7 @@ import dotty.tools.dotc.config.PathResolver.Defaults
 import dotty.tools.dotc.config.Settings.Setting
 import dotty.tools.dotc.config.Settings.SettingGroup
 import dotty.tools.dotc.config.SourceVersion
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.rewrites.Rewrites
 import dotty.tools.io.AbstractFile
 import dotty.tools.io.Directory
@@ -15,7 +15,7 @@ import dotty.tools.io.PlainDirectory
 
 import java.util.zip.Deflater
 import scala.language.unsafeNulls
-import scala.util.chaining.*
+import scala.util.chaining._
 
 import Setting.ChoiceWithHelp
 

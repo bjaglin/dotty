@@ -4,7 +4,7 @@ import dotty.tools.pc.utils.TestSemanticTokens
 
 import java.net.URI
 import scala.language.unsafeNulls
-import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.jdk.CollectionConverters._
 import scala.meta.internal.metals.CompilerVirtualFileParams
 
 class BaseSemanticTokensSuite extends BasePCSuite:

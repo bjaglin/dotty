@@ -1,13 +1,13 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import Types.*
-import Contexts.*
-import Symbols.*
-import Decorators.*
+import core._
+import Types._
+import Contexts._
+import Symbols._
+import Decorators._
 import StdNames.nme
-import ast.*
+import ast._
 
 /** Provides methods to produce fully parameterized versions of instance methods,
  *  where the `this` of the enclosing class is abstracted out in an extra leading

@@ -1,15 +1,15 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
+import core._
 import DenotTransformers.SymTransformer
-import Contexts.*
+import Contexts._
 import SymDenotations.SymDenotation
-import Types.*
-import Symbols.*
-import MegaPhase.*
-import Flags.*
-import NameOps.*
+import Types._
+import Symbols._
+import MegaPhase._
+import Flags._
+import NameOps._
 
 
 /** Performs the following rewritings for fields of a class:

@@ -5,14 +5,14 @@ package unpickleScala2
 
 import scala.collection.mutable.ListBuffer
 
-import Symbols.*
-import Types.*
-import Contexts.*
-import Flags.*
-import Names.*
-import StdNames.*
-import Phases.*
-import Decorators.*
+import Symbols._
+import Types._
+import Contexts._
+import Flags._
+import Names._
+import StdNames._
+import Phases._
+import Decorators._
 
 /** Erasure logic specific to Scala 2 symbols. */
 object Scala2Erasure:

@@ -2,8 +2,8 @@ package dotty.tools
 package dotc
 package fromtasty
 
-import core.*
-import Contexts.*
+import core._
+import Contexts._
 import Phases.Phase
 
 class TASTYCompiler extends Compiler {

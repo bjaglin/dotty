@@ -1,6 +1,6 @@
 package dotty.tools.pc.base
 
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 import dotty.tools.pc.utils.RangeReplace
 import dotty.tools.pc.utils.TestHovers
 

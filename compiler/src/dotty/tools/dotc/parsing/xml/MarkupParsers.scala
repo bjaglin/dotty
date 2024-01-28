@@ -12,13 +12,13 @@ import scala.util.control.ControlThrowable
 import core.Contexts.Context
 import mutable.{ Buffer, ArrayBuffer, ListBuffer }
 import util.Chars.SU
-import Parsers.*
-import util.Spans.*
-import core.*
-import Constants.*
+import Parsers._
+import util.Spans._
+import core._
+import Constants._
 import Decorators.{em, toMessage}
 import util.SourceFile
-import Utility.*
+import Utility._
 
 
 // XXX/Note: many/most of the functions in here are almost direct cut and pastes

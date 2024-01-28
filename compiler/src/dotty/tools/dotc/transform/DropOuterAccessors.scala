@@ -1,16 +1,16 @@
 package dotty.tools.dotc
 package transform
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 
-import core.*
+import core._
 import MegaPhase.MiniPhase
-import ast.*
-import Flags.*
-import Symbols.*
-import Contexts.*
-import Decorators.*
-import DenotTransformers.*
+import ast._
+import Flags._
+import Symbols._
+import Contexts._
+import Decorators._
+import DenotTransformers._
 import ExplicitOuter.isOuterParamAccessor
 import CountOuterAccesses.mightBeDropped
 import collection.mutable

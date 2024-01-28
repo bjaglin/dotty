@@ -1,18 +1,18 @@
 package dotty.tools.pc
 package completions
 
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.core.Comments.Comment
 import dotty.tools.dotc.core.Constants.Constant
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.NameOps.*
-import dotty.tools.dotc.core.Names.*
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.NameOps._
+import dotty.tools.dotc.core.Names._
 import dotty.tools.dotc.core.StdNames
-import dotty.tools.dotc.core.StdNames.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.StdNames._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.interactive.Completion
 import dotty.tools.dotc.interactive.Completion.Mode
 import dotty.tools.dotc.util.SourcePosition
@@ -20,7 +20,7 @@ import dotty.tools.dotc.util.SrcPos
 import dotty.tools.pc.AutoImports.AutoImportsGenerator
 import dotty.tools.pc.buildinfo.BuildInfo
 import dotty.tools.pc.completions.OverrideCompletions.OverrideExtractor
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 
 import java.nio.file.Path
 import java.nio.file.Paths
@@ -30,7 +30,7 @@ import scala.meta.internal.metals.ReportContext
 import scala.meta.internal.mtags.CoursierComplete
 import scala.meta.internal.pc.IdentifierComparator
 import scala.meta.internal.pc.MemberOrdering
-import scala.meta.pc.*
+import scala.meta.pc._
 
 class Completions(
     pos: SourcePosition,

@@ -1,8 +1,8 @@
 package dotty.tools.dotc
 package core
 
-import Contexts.*
-import Types.*
+import Contexts._
+import Types._
 
 /** Defines operations on nullable types and tree. */
 object NullOpsDecorator:

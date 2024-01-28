@@ -2,15 +2,15 @@ package dotty
 package tools
 package scripting
 
-import dotty.tools.dotc.config.Properties.*
+import dotty.tools.dotc.config.Properties._
 
 import java.io.File
 import java.nio.file.Files
 import java.nio.file.Path
 import java.nio.file.Paths
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
-import scala.sys.process.*
+import scala.sys.process._
 
 /**
  * Common Code for supporting scripting tests.

@@ -8,10 +8,10 @@ import scala.util.control.NonFatal
 
 import config.CompilerCommand
 import core.Comments.{ContextDoc, ContextDocstrings}
-import core.Contexts.*
+import core.Contexts._
 import core.{MacroClassLoader, TypeError}
-import reporting.*
-import core.Decorators.*
+import reporting._
+import core.Decorators._
 import config.Feature
 import fromtasty.{TASTYCompiler, TastyFileUtil}
 

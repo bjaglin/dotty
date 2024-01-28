@@ -1,10 +1,10 @@
 package dotty.tools.dotc.config
 
 import dotty.tools.backend.sjs.JSDefinitions
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core._
 
-import Contexts.*
-import Symbols.*
+import Contexts._
+import Symbols._
 
 object SJSPlatform {
   /** The `SJSPlatform` for the current context. */

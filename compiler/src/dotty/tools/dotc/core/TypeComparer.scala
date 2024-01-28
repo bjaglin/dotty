@@ -4,14 +4,14 @@ package core
 
 import scala.util.control.NonFatal
 
-import Types.*
-import Contexts.*
-import Symbols.*
-import Flags.*
-import Names.*
-import NameOps.*
-import Denotations.*
-import Decorators.*
+import Types._
+import Contexts._
+import Symbols._
+import Flags._
+import Names._
+import NameOps._
+import Denotations._
+import Decorators._
 import Phases.{gettersPhase, elimByNamePhase}
 import StdNames.nme
 import TypeOps.refineUsingParent
@@ -22,14 +22,14 @@ import config.Feature.{migrateTo3, sourceVersion}
 import config.Printers.{subtyping, gadts, matchTypes, noPrinter}
 import config.SourceVersion
 import TypeErasure.{erasedLub, erasedGlb}
-import TypeApplications.*
+import TypeApplications._
 import Variances.{Variance, variancesConform}
 import Constants.Constant
 import typer.ProtoTypes.constrained
 import typer.Applications.productSelectorTypes
 import reporting.trace
 import annotation.constructorOnly
-import cc.*
+import cc._
 import NameKinds.WildcardParamName
 
 /** Provides methods to compare types.

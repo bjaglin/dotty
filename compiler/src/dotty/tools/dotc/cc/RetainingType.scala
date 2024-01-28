@@ -2,11 +2,11 @@ package dotty.tools
 package dotc
 package cc
 
-import core.*
-import Types.*
-import Symbols.*
-import Contexts.*
-import ast.tpd.*
+import core._
+import Types._
+import Symbols._
+import Contexts._
+import ast.tpd._
 import Annotations.Annotation
 import Decorators.i
 

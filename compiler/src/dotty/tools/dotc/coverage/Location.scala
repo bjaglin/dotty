@@ -2,12 +2,12 @@ package dotty.tools.dotc
 package coverage
 
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.util.SourceFile
 
 import java.nio.file.Path
 
-import ast.tpd.*
+import ast.tpd._
 
 /** Information about the location of a coverable piece of code.
   *

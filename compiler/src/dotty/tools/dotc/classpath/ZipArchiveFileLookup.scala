@@ -12,7 +12,7 @@ import java.io.File
 import java.net.URL
 import scala.language.unsafeNulls
 
-import FileUtils.*
+import FileUtils._
 
 /**
  * A trait allowing to look for classpath entries of given type in zip and jar files.

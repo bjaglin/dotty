@@ -2,7 +2,7 @@ package dotty.tools.pc.completions
 
 import dotty.tools.dotc.ast.NavigateAST
 import dotty.tools.dotc.ast.Positioned
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.ast.untpd.UntypedTreeTraverser
 import dotty.tools.dotc.core.Comments

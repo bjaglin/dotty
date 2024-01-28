@@ -1,18 +1,18 @@
 package dotty.tools.dotc
 package transform
 
-import dotty.tools.dotc.ast.Trees.*
+import dotty.tools.dotc.ast.Trees._
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.config.Printers.{macroAnnot => debug}
-import dotty.tools.dotc.core.Annotations.*
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
+import dotty.tools.dotc.core.Annotations._
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
 import dotty.tools.dotc.core.DenotTransformers.IdentityDenotTransformer
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.MacroClassLoader
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
-import dotty.tools.dotc.quoted.*
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
+import dotty.tools.dotc.quoted._
 import dotty.tools.dotc.util.SrcPos
 
 import java.lang.reflect.InvocationTargetException

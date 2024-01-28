@@ -1,9 +1,9 @@
 package dotty.tools.dotc
 package transform.localopt
 
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.core.Constants.Constant
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 
 object FormatInterpolatorTransform:
 

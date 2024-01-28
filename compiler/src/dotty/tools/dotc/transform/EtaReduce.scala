@@ -3,11 +3,11 @@ package dotc
 package transform
 
 import MegaPhase.MiniPhase
-import core.*
-import Symbols.*
-import Contexts.*
-import Types.*
-import Decorators.*
+import core._
+import Symbols._
+import Contexts._
+import Types._
+import Decorators._
 import StdNames.nme
 import NameKinds.AdaptedClosureName
 

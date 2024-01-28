@@ -5,17 +5,17 @@ package sjs
 import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 import org.scalajs.ir.{Trees => js}
 
-import core.*
-import Constants.*
-import Contexts.*
-import Flags.*
-import NameOps.*
-import Names.*
-import Phases.*
-import StdNames.*
-import Symbols.*
-import ast.Trees.*
-import Types.*
+import core._
+import Constants._
+import Contexts._
+import Flags._
+import NameOps._
+import Names._
+import Phases._
+import StdNames._
+import Symbols._
+import ast.Trees._
+import Types._
 
 /** Additional extensions for `Symbol`s that are only relevant for Scala.js. */
 object JSSymUtils {

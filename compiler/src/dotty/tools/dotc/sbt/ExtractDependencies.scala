@@ -5,15 +5,15 @@ import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.classpath.FileUtils.hasClassExtension
 import dotty.tools.dotc.classpath.FileUtils.hasTastyExtension
 import dotty.tools.dotc.classpath.FileUtils.isTasty
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
 import dotty.tools.dotc.core.Denotations.StaleSymbol
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.NameOps.*
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.Phases.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.NameOps._
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.Phases._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.util.NoSourcePosition
 import dotty.tools.dotc.util.SrcPos
 import dotty.tools.io
@@ -23,7 +23,7 @@ import dotty.tools.io.PlainFile
 import dotty.tools.io.ZipArchive
 import xsbti.UseScope
 import xsbti.api.DependencyContext
-import xsbti.api.DependencyContext.*
+import xsbti.api.DependencyContext._
 
 import java.io.File
 import java.nio.file.Path
@@ -32,7 +32,7 @@ import java.util.EnumSet
 import scala.collection.Set
 import scala.collection.mutable
 import scala.compiletime.uninitialized
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 
 /** This phase sends information on classes' dependencies to sbt via callbacks.

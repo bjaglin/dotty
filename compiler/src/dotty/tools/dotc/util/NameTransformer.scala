@@ -5,7 +5,7 @@ package util
 import scala.annotation.internal.sharable
 import scala.language.unsafeNulls
 
-import core.Names.*
+import core.Names._
 
 /** Provides functions to encode and decode Scala symbolic names.
  */

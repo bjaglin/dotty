@@ -5,27 +5,27 @@ package ast
 import scala.annotation.internal.sharable
 import scala.annotation.threadUnsafe
 
-import core.*
-import util.Spans.*
-import Types.*
-import Contexts.*
-import Constants.*
-import Names.*
-import NameOps.*
-import Flags.*
-import Symbols.*
-import StdNames.*
-import Trees.*
-import ContextOps.*
-import Decorators.*
+import core._
+import util.Spans._
+import Types._
+import Contexts._
+import Constants._
+import Names._
+import NameOps._
+import Flags._
+import Symbols._
+import StdNames._
+import Trees._
+import ContextOps._
+import Decorators._
 import Annotations.Annotation
 import NameKinds.{UniqueName, ContextBoundParamName, ContextFunctionParamName, DefaultGetterName, WildcardParamName}
 import typer.{Namer, Checking}
 import util.{Property, SourceFile, SourcePosition, Chars}
 import config.Feature.{sourceVersion, migrateTo3, enabled}
-import config.SourceVersion.*
+import config.SourceVersion._
 import collection.mutable.ListBuffer
-import reporting.*
+import reporting._
 import annotation.constructorOnly
 import printing.Formatting.hl
 import config.Printers

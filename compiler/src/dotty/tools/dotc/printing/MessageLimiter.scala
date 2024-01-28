@@ -2,8 +2,8 @@ package dotty.tools
 package dotc
 package printing
 
-import core.*
-import Contexts.*
+import core._
+import Contexts._
 import util.Property
 import Texts.Text
 

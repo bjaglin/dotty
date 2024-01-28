@@ -2,7 +2,7 @@ package dotty.tools
 package dotc
 package reporting
 
-import core.Contexts.*
+import core.Contexts._
 import Diagnostic.Error
 
 /**

@@ -6,11 +6,11 @@ import xsbti.api.SafeLazy.strict
 
 import scala.language.unsafeNulls
 
-import core.*
-import Contexts.*
-import Flags.*
-import Symbols.*
-import NameOps.*
+import core._
+import Contexts._
+import Flags._
+import Symbols._
+import NameOps._
 
 /** Utilities to deal with xsbti.api.
  *

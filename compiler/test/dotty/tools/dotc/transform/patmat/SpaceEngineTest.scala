@@ -5,21 +5,21 @@ package patmat
 
 import org.junit
 
-import core.*
-import Annotations.*
-import Contexts.*
-import Decorators.*
-import Flags.*
-import Names.*
-import StdNames.*
-import Symbols.*
-import Types.*
-import ast.*
-import tpd.*
+import core._
+import Annotations._
+import Contexts._
+import Decorators._
+import Flags._
+import Names._
+import StdNames._
+import Symbols._
+import Types._
+import ast._
+import tpd._
 import vulpix.TestConfiguration
 import TestConfiguration.basicClasspath
 import junit.Test
-import junit.Assert.*
+import junit.Assert._
 
 class SpaceEngineTest:
   import SpaceEngine.*

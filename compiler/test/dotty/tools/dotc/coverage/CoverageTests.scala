@@ -5,11 +5,11 @@ import dotty.Properties
 import dotty.tools.dotc.Main
 import dotty.tools.dotc.reporting.TestReporter
 import dotty.tools.dotc.util.DiffUtil
-import dotty.tools.vulpix.TestConfiguration.*
-import dotty.tools.vulpix.*
+import dotty.tools.vulpix.TestConfiguration._
+import dotty.tools.vulpix._
 import org.junit.AfterClass
-import org.junit.Assert.*
-import org.junit.Assume.*
+import org.junit.Assert._
+import org.junit.Assume._
 import org.junit.Test
 import org.junit.experimental.categories.Category
 
@@ -20,7 +20,7 @@ import java.nio.file.Paths
 import java.nio.file.StandardCopyOption
 import java.util.stream.Collectors
 import scala.collection.mutable.Buffer
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.util.Properties.userDir
 

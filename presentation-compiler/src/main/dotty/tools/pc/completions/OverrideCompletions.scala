@@ -2,10 +2,10 @@ package dotty.tools.pc
 package completions
 
 import dotty.tools.dotc.ast.tpd.Tree
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.NameKinds.DefaultGetterName
 import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.core.StdNames
@@ -20,10 +20,10 @@ import dotty.tools.pc.AutoImports.AutoImport
 import dotty.tools.pc.AutoImports.AutoImportsGenerator
 import dotty.tools.pc.printer.ShortenedTypePrinter
 import dotty.tools.pc.printer.ShortenedTypePrinter.IncludeDefaultParam
-import dotty.tools.pc.utils.MtagsEnrichments.*
-import org.eclipse.lsp4j as l
+import dotty.tools.pc.utils.MtagsEnrichments._
+import org.eclipse.{lsp4j => l}
 
-import java.util as ju
+import java.{util => ju}
 import scala.jdk.CollectionConverters._
 import scala.meta.internal.metals.ReportContext
 import scala.meta.pc.OffsetParams

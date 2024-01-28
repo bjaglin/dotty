@@ -14,11 +14,11 @@ import dotty.tools.tasty.UnpicklerConfig
 import scala.collection.mutable
 import scala.language.unsafeNulls
 
-import TastyFormat.NameTags.*
+import TastyFormat.NameTags._
 import TastyFormat.nameTagToString
 import TastyBuffer.NameRef
 import Names.{TermName, termName, EmptyTermName}
-import NameKinds.*
+import NameKinds._
 
 object TastyUnpickler {
 

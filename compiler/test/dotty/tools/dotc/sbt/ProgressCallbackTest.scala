@@ -10,10 +10,10 @@ import dotty.tools.dotc.core.Contexts.FreshContext
 import dotty.tools.dotc.core.Contexts.ctx
 import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.dotc.interactive.Interactive.Include.all
-import dotty.tools.dotc.sbt.ProgressCallbackTest.*
+import dotty.tools.dotc.sbt.ProgressCallbackTest._
 import dotty.tools.io.VirtualDirectory
 import dotty.tools.toOption
-import org.junit.Assert.*
+import org.junit.Assert._
 import org.junit.Test
 
 final class ProgressCallbackTest extends DottyTest:

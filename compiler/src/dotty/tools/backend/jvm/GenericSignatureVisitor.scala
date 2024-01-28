@@ -1,13 +1,13 @@
 package dotty.tools.backend.jvm
 
-import scala.annotation.*
+import scala.annotation._
 import scala.collection.mutable
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.tools.asm.ClassReader
 import scala.tools.asm.Handle
 import scala.tools.asm.Type
-import scala.tools.asm.tree.*
+import scala.tools.asm.tree._
 import scala.util.control.NoStackTrace
 import scala.util.control.NonFatal
 

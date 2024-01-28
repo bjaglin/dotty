@@ -4,7 +4,7 @@ import org.eclipse.lsp4j.Location
 import org.eclipse.lsp4j.Position
 import org.eclipse.lsp4j.Range
 
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.meta.pc.SymbolDocumentation
 
 /* This is a mock class which is used to test presentation compiler

@@ -2,7 +2,7 @@ package dotty.tools
 package dotc
 package config
 
-import core.Decorators.*
+import core.Decorators._
 import util.Property
 
 enum SourceVersion:

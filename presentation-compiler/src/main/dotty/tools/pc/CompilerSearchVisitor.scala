@@ -1,15 +1,15 @@
 package dotty.tools.pc
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.Symbols._
 
 import java.util.logging.Level
 import java.util.logging.Logger
 import scala.meta.internal.metals.Report
 import scala.meta.internal.metals.ReportContext
-import scala.meta.pc.*
+import scala.meta.pc._
 import scala.util.control.NonFatal
 
 class CompilerSearchVisitor(

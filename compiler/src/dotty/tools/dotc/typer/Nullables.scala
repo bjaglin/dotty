@@ -2,19 +2,19 @@ package dotty.tools
 package dotc
 package typer
 
-import core.*
-import Types.*
-import Contexts.*
-import Symbols.*
-import Decorators.*
-import Constants.*
+import core._
+import Types._
+import Contexts._
+import Symbols._
+import Decorators._
+import Constants._
 import annotation.tailrec
 import StdNames.nme
 import util.Property
 import Names.Name
 import util.Spans.Span
-import Flags.*
-import NullOpsDecorator.*
+import Flags._
+import NullOpsDecorator._
 import collection.mutable
 import config.Printers.nullables
 import ast.{tpd, untpd}

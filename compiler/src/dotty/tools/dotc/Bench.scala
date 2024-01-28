@@ -4,7 +4,7 @@ package dotc
 import scala.annotation.internal.sharable
 import scala.compiletime.uninitialized
 
-import core.Contexts.*
+import core.Contexts._
 import reporting.Reporter
 import io.AbstractFile
 

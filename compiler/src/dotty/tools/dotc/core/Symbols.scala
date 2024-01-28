@@ -8,22 +8,22 @@ import dotty.tools.tasty.TastyVersion
 import scala.annotation.internal.sharable
 import scala.compiletime.uninitialized
 
-import Periods.*
-import Names.*
-import Scopes.*
-import Flags.*
-import Decorators.*
-import Contexts.*
-import Phases.*
-import SymDenotations.*
-import Denotations.*
-import printing.Texts.*
+import Periods._
+import Names._
+import Scopes._
+import Flags._
+import Decorators._
+import Contexts._
+import Phases._
+import SymDenotations._
+import Denotations._
+import printing.Texts._
 import printing.Printer
-import Types.*
-import util.Spans.*
-import DenotTransformers.*
-import StdNames.*
-import NameOps.*
+import Types._
+import util.Spans._
+import DenotTransformers._
+import StdNames._
+import NameOps._
 import NameKinds.LazyImplicitName
 import ast.tpd
 import tpd.{Tree, TreeProvider, TreeOps}

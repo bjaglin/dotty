@@ -1,6 +1,6 @@
 package dotty.tools.backend.jvm
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Decorators.em
 import dotty.tools.dotc.core.Phases
 import dotty.tools.dotc.profile.ThreadPoolFactory
@@ -8,7 +8,7 @@ import dotty.tools.io.AbstractFile
 
 import java.nio.channels.ClosedByInterruptException
 import java.util.concurrent.ThreadPoolExecutor.CallerRunsPolicy
-import java.util.concurrent.*
+import java.util.concurrent._
 import scala.collection.mutable.ListBuffer
 import scala.compiletime.uninitialized
 import scala.concurrent.Await

@@ -4,28 +4,28 @@ package typer
 
 import scala.compiletime.uninitialized
 
-import core.*
-import ast.*
-import Trees.*
-import StdNames.*
-import Scopes.*
-import Denotations.*
-import NamerOps.*
-import ContextOps.*
-import Contexts.*
-import Symbols.*
-import Types.*
-import SymDenotations.*
-import Names.*
-import NameOps.*
-import Flags.*
-import Decorators.*
+import core._
+import ast._
+import Trees._
+import StdNames._
+import Scopes._
+import Denotations._
+import NamerOps._
+import ContextOps._
+import Contexts._
+import Symbols._
+import Types._
+import SymDenotations._
+import Names._
+import NameOps._
+import Flags._
+import Decorators._
 import Comments.{_, given}
 import NameKinds.DefaultGetterName
 import ast.desugar
-import ast.desugar.*
-import ProtoTypes.*
-import util.Spans.*
+import ast.desugar._
+import ProtoTypes._
+import util.Spans._
 import util.Property
 import collection.mutable
 import tpd.tpes
@@ -35,14 +35,14 @@ import config.Printers.typr
 import inlines.{Inlines, PrepareInlineable}
 import parsing.JavaParsers.JavaParser
 import parsing.Parsers.Parser
-import Annotations.*
-import Inferencing.*
-import Nullables.*
-import transform.ValueClasses.*
+import Annotations._
+import Inferencing._
+import Nullables._
+import transform.ValueClasses._
 import TypeErasure.erasure
-import reporting.*
+import reporting._
 import config.Feature.sourceVersion
-import config.SourceVersion.*
+import config.SourceVersion._
 
 /** This class creates symbols from definitions and imports and gives them
  *  lazy types.

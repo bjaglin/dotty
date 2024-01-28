@@ -11,7 +11,7 @@ import scala.language.unsafeNulls
 import scala.util.Failure
 import scala.util.Success
 
-import core.Contexts.*
+import core.Contexts._
 import annotation.tailrec
 import collection.mutable.ArrayBuffer
 import reflect.ClassTag

@@ -3,14 +3,14 @@ package dotc
 package transform
 
 import ast.{Trees, tpd}
-import core.*
-import Contexts.*
-import Trees.*
-import Types.*
-import DenotTransformers.*
-import MegaPhase.*
-import ExtensionMethods.*
-import ValueClasses.*
+import core._
+import Contexts._
+import Trees._
+import Types._
+import DenotTransformers._
+import MegaPhase._
+import ExtensionMethods._
+import ValueClasses._
 
 
 /** This phase inlines calls to methods of value classes.

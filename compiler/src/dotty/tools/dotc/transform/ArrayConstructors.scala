@@ -5,12 +5,12 @@ import dotty.tools.dotc.ast.tpd
 
 import scala.collection.immutable.::
 
-import core.*
-import MegaPhase.*
-import Contexts.*
-import Symbols.*
-import Types.*
-import StdNames.*
+import core._
+import MegaPhase._
+import Contexts._
+import Symbols._
+import Types._
+import StdNames._
 
 
 /** This phase rewrites calls to array constructors to newArray method in Dotty.runtime.Arrays module.

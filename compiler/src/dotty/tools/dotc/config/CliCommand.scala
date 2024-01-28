@@ -5,8 +5,8 @@ import scala.PartialFunction.cond
 import scala.language.unsafeNulls
 import scala.util.chaining.given
 
-import Settings.*
-import core.Contexts.*
+import Settings._
+import core.Contexts._
 import printing.Highlighting
 
 trait CliCommand:

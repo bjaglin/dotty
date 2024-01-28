@@ -18,11 +18,11 @@ import java.net.URL
 import java.nio.file.FileSystems
 import java.nio.file.Files
 import scala.collection.immutable.ArraySeq
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.util.control.NonFatal
 
-import FileUtils.*
+import FileUtils._
 import PlainFile.toPlainFile
 
 /**

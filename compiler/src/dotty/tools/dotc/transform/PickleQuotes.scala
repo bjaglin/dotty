@@ -3,26 +3,26 @@ package transform
 
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.untpd
-import dotty.tools.dotc.config.ScalaRelease.*
-import dotty.tools.dotc.core.Annotations.*
-import dotty.tools.dotc.core.StdNames.*
+import dotty.tools.dotc.config.ScalaRelease._
+import dotty.tools.dotc.core.Annotations._
+import dotty.tools.dotc.core.StdNames._
 import dotty.tools.dotc.inlines.Inlines
-import dotty.tools.dotc.quoted.*
+import dotty.tools.dotc.quoted._
 
 import scala.annotation.constructorOnly
 import scala.collection.mutable
 
-import core.*
-import Decorators.*
-import Flags.*
-import Types.*
-import Contexts.*
-import Symbols.*
-import Constants.*
-import ast.Trees.*
+import core._
+import Decorators._
+import Flags._
+import Types._
+import Contexts._
+import Symbols._
+import Constants._
+import ast.Trees._
 import ast.untpd
 import ast.TreeTypeMap
-import NameKinds.*
+import NameKinds._
 
 /** Translates quoted terms and types to `unpickleExprV2` or `unpickleType` method calls.
  *

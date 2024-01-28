@@ -5,24 +5,24 @@ package core
 import scala.compiletime.uninitialized
 
 import SymDenotations.{ SymDenotation, ClassDenotation, NoDenotation, LazyType, stillValid, acceptStale, traceInvalid }
-import Contexts.*
-import Names.*
-import NameKinds.*
-import StdNames.*
+import Contexts._
+import Names._
+import NameKinds._
+import StdNames._
 import Symbols.NoSymbol
-import Symbols.*
-import Types.*
-import Periods.*
-import Flags.*
-import DenotTransformers.*
-import Decorators.*
-import Signature.MatchDegree.*
-import printing.Texts.*
+import Symbols._
+import Types._
+import Periods._
+import Flags._
+import DenotTransformers._
+import Decorators._
+import Signature.MatchDegree._
+import printing.Texts._
 import printing.Printer
 import io.AbstractFile
 import config.Config
 import config.Printers.overload
-import util.common.*
+import util.common._
 import typer.ProtoTypes.NoViewsAllowed
 import collection.mutable.ListBuffer
 

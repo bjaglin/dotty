@@ -3,7 +3,7 @@ package dotc
 package reporting
 
 import dotty.tools.dotc.config.Settings.Setting
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.interfaces.Diagnostic.ERROR
 import dotty.tools.dotc.interfaces.Diagnostic.INFO
 import dotty.tools.dotc.interfaces.Diagnostic.WARNING
@@ -13,7 +13,7 @@ import java.util.Collections
 import java.util.Optional
 import java.util.{List => JList}
 import scala.language.unsafeNulls
-import scala.util.chaining.*
+import scala.util.chaining._
 
 import core.Decorators.toMessage
 

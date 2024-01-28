@@ -1,19 +1,19 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import Flags.*
-import Contexts.*
-import Symbols.*
+import core._
+import Flags._
+import Contexts._
+import Symbols._
 import DenotTransformers.SymTransformer
 import Types.MethodType
 import Annotations.Annotation
 import SymDenotations.SymDenotation
 import Names.Name
 import StdNames.nme
-import NameOps.*
-import ast.*
-import MegaPhase.*
+import NameOps._
+import ast._
+import MegaPhase._
 
 /** Move static methods from companion to the class itself */
 class MoveStatics extends MiniPhase with SymTransformer {

@@ -1,18 +1,18 @@
 package dotty.tools.pc
 
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.core.Comments.Comment
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans
-import dotty.tools.pc.utils.MtagsEnrichments.*
-import org.eclipse.lsp4j as l
+import dotty.tools.pc.utils.MtagsEnrichments._
+import org.eclipse.{lsp4j => l}
 
 import scala.annotation.tailrec
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.meta.internal.pc.AutoImportPosition
 import scala.meta.pc.PresentationCompilerConfig
 

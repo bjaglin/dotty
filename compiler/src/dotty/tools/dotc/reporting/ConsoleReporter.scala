@@ -5,7 +5,7 @@ package reporting
 import java.io.BufferedReader
 import java.io.PrintWriter
 
-import core.Contexts.*
+import core.Contexts._
 import Diagnostic.Error
 
 /**

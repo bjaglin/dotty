@@ -1,12 +1,12 @@
 package dotty.tools.pc
 
-import dotty.tools.dotc.ast.Trees.*
+import dotty.tools.dotc.ast.Trees._
 import dotty.tools.dotc.ast.untpd
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.NameOps.*
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.NameOps._
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.interactive.Interactive
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.util.SourceFile
@@ -15,9 +15,9 @@ import dotty.tools.dotc.util.Spans
 import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.printer.ShortenedTypePrinter
 import dotty.tools.pc.printer.ShortenedTypePrinter.IncludeDefaultParam
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 import org.eclipse.lsp4j.TextEdit
-import org.eclipse.lsp4j as l
+import org.eclipse.{lsp4j => l}
 
 import java.nio.file.Paths
 import scala.annotation.tailrec
@@ -25,7 +25,7 @@ import scala.meta.internal.metals.ReportContext
 import scala.meta.pc.OffsetParams
 import scala.meta.pc.PresentationCompilerConfig
 import scala.meta.pc.SymbolSearch
-import scala.meta as m
+import scala.{meta => m}
 
 /**
  * Tries to calculate edits needed to insert the inferred type annotation

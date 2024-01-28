@@ -1,6 +1,6 @@
 package dotty.tools.pc.utils
 
-import dotty.tools.pc.utils.TestExtensions.*
+import dotty.tools.pc.utils.TestExtensions._
 import org.eclipse.lsp4j.DocumentHighlight
 import org.eclipse.lsp4j.Range
 

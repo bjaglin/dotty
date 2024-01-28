@@ -4,12 +4,12 @@ package core
 
 import scala.annotation.internal.sharable
 
-import Names.*
-import NameOps.*
-import StdNames.*
-import NameTags.*
-import Contexts.*
-import Decorators.*
+import Names._
+import NameOps._
+import StdNames._
+import NameTags._
+import Contexts._
+import Decorators._
 
 /** Defines possible kinds of NameInfo of a derived name */
 object NameKinds {

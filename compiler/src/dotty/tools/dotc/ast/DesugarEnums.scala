@@ -4,19 +4,19 @@ package ast
 
 import scala.annotation.internal.sharable
 
-import core.*
-import util.Spans.*
-import Types.*
-import Contexts.*
-import Constants.*
-import Names.*
-import Flags.*
-import Symbols.*
-import StdNames.*
-import Trees.*
-import Decorators.*
+import core._
+import util.Spans._
+import Types._
+import Contexts._
+import Constants._
+import Names._
+import Flags._
+import Symbols._
+import StdNames._
+import Trees._
+import Decorators._
 import util.{Property, SourceFile}
-import typer.ErrorReporting.*
+import typer.ErrorReporting._
 import transform.SyntheticMembers.ExtendsSingletonMirror
 
 /** Helper methods to desugar enums */

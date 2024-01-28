@@ -3,9 +3,9 @@ package dotc
 package parsing
 
 import util.SourceFile
-import core.*
-import Contexts.*
-import Parsers.*
+import core._
+import Contexts._
+import Parsers._
 
 
 /** <p>Performs the following context-free rewritings:</p>

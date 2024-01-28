@@ -1,11 +1,11 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import Contexts.*
+import core._
+import Contexts._
 import DenotTransformers.IdentityDenotTransformer
-import SyntheticMembers.*
-import ast.tpd.*
+import SyntheticMembers._
+import ast.tpd._
 
 /** A phase that adds mirror support for anonymous mirrors created at inlining. */
 class PostInlining extends MacroTransform, IdentityDenotTransformer:

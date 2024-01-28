@@ -6,7 +6,7 @@ import dotty.tools.dotc.{semanticdb => s}
 
 import scala.collection.mutable
 
-import SymbolInformation.Kind.*
+import SymbolInformation.Kind._
 class SymbolInformationPrinter (symtab: PrinterSymtab):
   val notes = InfoNotes()
   val infoPrinter = InfoPrinter(notes)

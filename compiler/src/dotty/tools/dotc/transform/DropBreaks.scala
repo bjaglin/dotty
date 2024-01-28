@@ -3,17 +3,17 @@ package dotc
 package transform
 
 import ast.{Trees, tpd}
-import core.*
-import Decorators.*
+import core._
+import Decorators._
 import NameKinds.BoundaryName
-import MegaPhase.*
-import Types.*
-import Contexts.*
-import Flags.*
-import DenotTransformers.*
-import Symbols.*
-import StdNames.*
-import Trees.*
+import MegaPhase._
+import Types._
+import Contexts._
+import Flags._
+import DenotTransformers._
+import Symbols._
+import StdNames._
+import Trees._
 import util.Property
 import Constants.Constant
 import Flags.MethodOrLazy

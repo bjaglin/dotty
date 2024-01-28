@@ -4,13 +4,13 @@ package transform
 
 import scala.compiletime.uninitialized
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Flags.*
-import Decorators.*
-import MegaPhase.*
-import Names.*
+import core._
+import Contexts._
+import Symbols._
+import Flags._
+import Decorators._
+import MegaPhase._
+import Names._
 import Constants.Constant
 
 

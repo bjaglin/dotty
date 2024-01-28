@@ -11,11 +11,11 @@ import scala.annotation.internal.sharable
 import scala.annotation.switch
 
 import core.Symbols.{ Symbol , defn, NoSymbol }
-import core.Contexts.*
+import core.Contexts._
 import core.Names
 import core.Names.Name
 import core.Types.{Type, TypeBounds}
-import core.Flags.*
+import core.Flags._
 import core.NameKinds
 import core.StdNames.nme
 import SymbolInformation.{Kind => k}

@@ -2,15 +2,15 @@ package dotty.tools
 package dotc
 package inlines
 
-import ast.*
-import core.*
-import Flags.*
-import Symbols.*
-import Types.*
-import Decorators.*
-import Contexts.*
+import ast._
+import core._
+import Flags._
+import Symbols._
+import Types._
+import Decorators._
+import Contexts._
 import StdNames.nme
-import typer.*
+import typer._
 import Names.TermName
 import NameKinds.{InlineAccessorName, InlineBinderName, InlineScrutineeName}
 import config.Printers.inlining

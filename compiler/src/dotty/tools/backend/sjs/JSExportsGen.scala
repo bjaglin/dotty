@@ -1,9 +1,9 @@
 package dotty.tools.backend.sjs
 
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core._
 import dotty.tools.dotc.report
-import dotty.tools.dotc.transform.sjs.JSExportUtils.*
-import dotty.tools.dotc.transform.sjs.JSSymUtils.*
+import dotty.tools.dotc.transform.sjs.JSExportUtils._
+import dotty.tools.dotc.transform.sjs.JSSymUtils._
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.SrcPos
 import org.scalajs.ir.Names.DefaultModuleID
@@ -19,18 +19,18 @@ import scala.annotation.tailrec
 import scala.collection.mutable
 import scala.language.unsafeNulls
 
-import Contexts.*
-import Decorators.*
-import Denotations.*
-import Flags.*
-import Names.*
+import Contexts._
+import Decorators._
+import Denotations._
+import Flags._
+import Names._
 import NameKinds.DefaultGetterName
-import NameOps.*
-import Phases.*
-import Symbols.*
-import Types.*
+import NameOps._
+import Phases._
+import Symbols._
+import Types._
 import TypeErasure.ErasedValueType
-import JSEncoding.*
+import JSEncoding._
 
 final class JSExportsGen(jsCodeGen: JSCodeGen)(using Context) {
   import jsCodeGen.*

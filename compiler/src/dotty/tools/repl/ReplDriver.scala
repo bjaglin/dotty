@@ -2,7 +2,7 @@ package dotty.tools.repl
 
 import dotty.tools.dotc.CompilationUnit
 import dotty.tools.dotc.Driver
-import dotty.tools.dotc.ast.Trees.*
+import dotty.tools.dotc.ast.Trees._
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.config.CommandLineParser.tokenize
@@ -10,18 +10,18 @@ import dotty.tools.dotc.config.CompilerCommand
 import dotty.tools.dotc.config.Properties.javaVersion
 import dotty.tools.dotc.config.Properties.javaVmName
 import dotty.tools.dotc.config.Properties.simpleVersionString
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
 import dotty.tools.dotc.core.Denotations.Denotation
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.Mode
 import dotty.tools.dotc.core.NameKinds.DefaultGetterName
 import dotty.tools.dotc.core.NameKinds.SimpleNameKind
-import dotty.tools.dotc.core.NameOps.*
+import dotty.tools.dotc.core.NameOps._
 import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.core.Phases.typerPhase
 import dotty.tools.dotc.core.Phases.unfusedPhases
-import dotty.tools.dotc.core.StdNames.*
+import dotty.tools.dotc.core.StdNames._
 import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.core.Symbols.defn
 import dotty.tools.dotc.interactive.Completion
@@ -33,9 +33,9 @@ import dotty.tools.dotc.reporting.StoreReporter
 import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans.Span
-import dotty.tools.io.*
-import dotty.tools.runner.ScalaClassLoader.*
-import org.jline.reader.*
+import dotty.tools.io._
+import dotty.tools.runner.ScalaClassLoader._
+import org.jline.reader._
 
 import java.io.PrintStream
 import java.io.{File => JFile}
@@ -43,7 +43,7 @@ import java.nio.charset.StandardCharsets
 import scala.annotation.tailrec
 import scala.collection.mutable
 import scala.compiletime.uninitialized
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.util.Using
 import scala.util.control.NonFatal

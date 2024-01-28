@@ -2,16 +2,16 @@ package dotty.tools.dotc
 package transform
 
 import ast.tpd
-import core.*
-import Contexts.*
-import Symbols.*
-import Types.*
-import Flags.*
-import Phases.*
-import DenotTransformers.*
-import MegaPhase.*
-import TreeExtractors.*
-import ValueClasses.*
+import core._
+import Contexts._
+import Symbols._
+import Types._
+import Flags._
+import Phases._
+import DenotTransformers._
+import MegaPhase._
+import TreeExtractors._
+import ValueClasses._
 
 /** This phase elides unnecessary value class allocations
  *

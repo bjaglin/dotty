@@ -4,30 +4,30 @@ package interactive
 
 import dotty.tools.io.AbstractFile
 
-import java.io.*
+import java.io._
 import java.net.URI
 import java.nio.charset.StandardCharsets
-import java.nio.file.*
+import java.nio.file._
 import java.nio.file.attribute.BasicFileAttributes
-import java.util.zip.*
-import scala.collection.*
+import java.util.zip._
+import scala.collection._
 import scala.io.Codec
 import scala.language.unsafeNulls
 
 import ast.{Trees, tpd}
-import core.*
-import core.Decorators.*
-import Contexts.*
-import Names.*
-import NameOps.*
-import Symbols.*
-import SymDenotations.*
-import Trees.*
-import Types.*
+import core._
+import core.Decorators._
+import Contexts._
+import Names._
+import NameOps._
+import Symbols._
+import SymDenotations._
+import Trees._
+import Types._
 import Denotations.staticRef
-import classpath.*
-import reporting.*
-import util.*
+import classpath._
+import reporting._
+import util._
 
 /** A Driver subclass designed to be used from IDEs */
 class InteractiveDriver(val settings: List[String]) extends Driver {

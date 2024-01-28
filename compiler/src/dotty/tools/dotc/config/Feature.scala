@@ -2,14 +2,14 @@ package dotty.tools
 package dotc
 package config
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Names.*
+import core._
+import Contexts._
+import Symbols._
+import Names._
 import StdNames.nme
-import Decorators.*
+import Decorators._
 import util.{SrcPos, NoSourcePosition}
-import SourceVersion.*
+import SourceVersion._
 import reporting.Message
 import NameKinds.QualifiedName
 

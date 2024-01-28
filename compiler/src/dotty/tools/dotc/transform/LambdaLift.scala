@@ -3,17 +3,17 @@ package transform
 
 import scala.compiletime.uninitialized
 
-import MegaPhase.*
+import MegaPhase._
 import core.Denotations.NonSymSingleDenotation
-import core.DenotTransformers.*
-import core.Symbols.*
-import core.Contexts.*
-import core.Types.*
-import core.Flags.*
-import core.Decorators.*
+import core.DenotTransformers._
+import core.Symbols._
+import core.Contexts._
+import core.Types._
+import core.Flags._
+import core.Decorators._
 import core.StdNames.nme
-import core.Names.*
-import core.NameOps.*
+import core.Names._
+import core.NameOps._
 import core.NameKinds.ExpandPrefixName
 import ExplicitOuter.outer
 import util.Store

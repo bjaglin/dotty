@@ -5,14 +5,14 @@ import dotty.tools.dotc.core.DenotTransformers.IdentityDenotTransformer
 
 import java.io.File.separatorChar
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Flags.*
-import SymDenotations.*
-import Decorators.*
-import MegaPhase.*
-import ValueClasses.*
+import core._
+import Contexts._
+import Symbols._
+import Flags._
+import SymDenotations._
+import Decorators._
+import MegaPhase._
+import ValueClasses._
 
 /** Make private term members that are accessed from another class
  *  non-private by resetting the Private flag and expanding their name.

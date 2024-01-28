@@ -2,24 +2,24 @@ package dotty.tools
 package dotc
 package cc
 
-import core.*
-import Phases.*
-import DenotTransformers.*
-import SymDenotations.*
-import Contexts.*
-import Names.*
-import Flags.*
-import Symbols.*
-import Decorators.*
-import Types.*
-import StdNames.*
+import core._
+import Phases._
+import DenotTransformers._
+import SymDenotations._
+import Contexts._
+import Names._
+import Flags._
+import Symbols._
+import Decorators._
+import Types._
+import StdNames._
 import Annotations.Annotation
 import config.Feature
 import config.Printers.{capt, captDebug}
 import ast.tpd
-import tpd.*
+import tpd._
 import transform.{PreRecheck, Recheck}
-import Recheck.*
+import Recheck._
 import CaptureSet.{IdentityCaptRefMap, IdempotentCaptRefMap}
 import Synthetics.isExcluded
 import util.Property

@@ -5,7 +5,7 @@ import dotty.tools.pc.utils.MockEntries
 import org.eclipse.lsp4j.Location
 import org.junit.Test
 
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.meta.pc.OffsetParams
 

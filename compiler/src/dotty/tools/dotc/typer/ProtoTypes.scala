@@ -10,25 +10,25 @@ import dotty.tools.dotc.util.Spans.Span
 
 import scala.annotation.internal.sharable
 
-import core.*
-import ast.*
-import Contexts.*
-import Types.*
-import Denotations.*
-import Names.*
-import StdNames.*
-import NameOps.*
-import Symbols.*
+import core._
+import ast._
+import Contexts._
+import Types._
+import Denotations._
+import Names._
+import StdNames._
+import NameOps._
+import Symbols._
 import NameKinds.DepParamName
-import Trees.*
-import Constants.*
+import Trees._
+import Constants._
 import util.{Stats, SimpleIdentityMap, SimpleIdentitySet}
-import Decorators.*
-import Uniques.*
+import Decorators._
+import Uniques._
 import inlines.Inlines
 import config.Printers.typr
-import Inferencing.*
-import ErrorReporting.*
+import Inferencing._
+import ErrorReporting._
 import util.SourceFile
 import TypeComparer.necessarySubType
 

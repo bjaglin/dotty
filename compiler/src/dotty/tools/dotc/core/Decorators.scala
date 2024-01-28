@@ -6,13 +6,13 @@ import scala.annotation.tailrec
 import scala.collection.mutable.ListBuffer
 import scala.util.control.NonFatal
 
-import Contexts.*
-import Names.*
-import Phases.*
-import Symbols.*
+import Contexts._
+import Names._
+import Phases._
+import Symbols._
 import printing.{ Printer, Showable }
-import printing.Formatting.*
-import printing.Texts.*
+import printing.Formatting._
+import printing.Texts._
 import transform.MegaPhase
 import reporting.{Message, NoExplanation}
 

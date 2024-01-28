@@ -10,22 +10,22 @@ import scala.collection.mutable.ListBuffer
 import scala.compiletime.uninitialized
 
 import typer.ProtoTypes
-import core.*
+import core._
 import Scopes.newScope
-import util.Spans.*
-import Types.*
-import Contexts.*
-import Constants.*
-import Names.*
-import Flags.*
-import NameOps.*
-import Symbols.*
-import StdNames.*
-import Annotations.*
-import Trees.*
-import Symbols.*
-import Decorators.*
-import DenotTransformers.*
+import util.Spans._
+import Types._
+import Contexts._
+import Constants._
+import Names._
+import Flags._
+import NameOps._
+import Symbols._
+import StdNames._
+import Annotations._
+import Trees._
+import Symbols._
+import Decorators._
+import DenotTransformers._
 import collection.{immutable, mutable}
 import util.{Property, SourceFile}
 import NameKinds.{TempResultName, OuterSelectName}

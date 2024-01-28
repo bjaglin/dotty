@@ -2,9 +2,9 @@ package dotty.tools.pc.utils
 
 import dotty.tools.dotc.util.DiffUtil
 import dotty.tools.pc.completions.CompletionSource
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 import org.hamcrest
-import org.hamcrest.*
+import org.hamcrest._
 
 import scala.language.unsafeNulls
 

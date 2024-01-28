@@ -5,10 +5,10 @@ package semanticdb
 import scala.annotation.tailrec
 import scala.collection.mutable
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Flags.*
+import core._
+import Contexts._
+import Symbols._
+import Flags._
 import Names.Name
 
 class SemanticSymbolBuilder:

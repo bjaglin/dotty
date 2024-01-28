@@ -7,17 +7,17 @@ import dotty.tools.io.JarArchive
 
 import java.io.PrintStream
 
-import core.*
-import Contexts.*
-import Decorators.*
-import tasty.*
+import core._
+import Contexts._
+import Decorators._
+import tasty._
 import config.Printers.{noPrinter, pickling}
 import config.Feature
 import io.ClassfileWriterOps
 import StdNames.{str, nme}
-import Periods.*
-import Phases.*
-import Symbols.*
+import Periods._
+import Phases._
+import Symbols._
 import Flags.Module
 import reporting.{ThrowingReporter, Profile, Message}
 import collection.mutable

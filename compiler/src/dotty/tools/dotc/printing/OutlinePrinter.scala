@@ -2,15 +2,15 @@ package dotty.tools
 package dotc
 package printing
 
-import core.*
-import Texts.*
-import Flags.*
-import NameOps.*
-import StdNames.*
-import Contexts.*
-import Symbols.*
+import core._
+import Texts._
+import Flags._
+import NameOps._
+import StdNames._
+import Contexts._
+import Symbols._
 import ast.{Trees, untpd}
-import Trees.*
+import Trees._
 
 object OutlinePrinter:
   def apply(_ctx: Context): Printer = new OutlinePrinter(_ctx)

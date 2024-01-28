@@ -14,10 +14,10 @@ import dotty.tools.tasty.TastyVersion
 
 import scala.language.unsafeNulls
 
-import Contexts.*
-import SymDenotations.*
-import Decorators.*
-import TastyUnpickler.*
+import Contexts._
+import SymDenotations._
+import Decorators._
+import TastyUnpickler._
 import classfile.ClassfileParser
 import Names.SimpleName
 import TreeUnpickler.UnpickleMode

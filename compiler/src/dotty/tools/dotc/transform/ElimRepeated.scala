@@ -2,18 +2,18 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
+import core._
 import StdNames.nme
-import Types.*
-import transform.MegaPhase.*
-import Flags.*
-import Contexts.*
-import Symbols.*
-import Decorators.*
-import Denotations.*
-import SymDenotations.*
-import DenotTransformers.*
-import NullOpsDecorator.*
+import Types._
+import transform.MegaPhase._
+import Flags._
+import Contexts._
+import Symbols._
+import Decorators._
+import Denotations._
+import SymDenotations._
+import DenotTransformers._
+import NullOpsDecorator._
 
 object ElimRepeated {
   val name: String = "elimRepeated"

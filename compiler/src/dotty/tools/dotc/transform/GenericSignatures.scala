@@ -5,17 +5,17 @@ package transform
 import java.lang.StringBuilder
 import scala.collection.mutable.ListBuffer
 
-import core.Annotations.*
-import core.Contexts.*
-import core.Phases.*
-import core.Decorators.*
+import core.Annotations._
+import core.Contexts._
+import core.Phases._
+import core.Decorators._
 import core.Definitions
-import core.Flags.*
+import core.Flags._
 import core.Names.Name
-import core.Symbols.*
+import core.Symbols._
 import core.TypeApplications.{EtaExpansion, TypeParamInfo}
 import core.TypeErasure.{erasedGlb, erasure, fullErasure, isGenericArrayElement, tupleArity}
-import core.Types.*
+import core.Types._
 import core.classfile.ClassfileConstants
 import config.Printers.transforms
 import reporting.trace

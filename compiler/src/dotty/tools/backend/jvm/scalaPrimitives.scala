@@ -4,11 +4,11 @@ package backend.jvm
 import scala.annotation.threadUnsafe
 
 import dotc.ast.Trees.Select
-import dotc.ast.tpd.*
-import dotc.core.*
-import Contexts.*
+import dotc.ast.tpd._
+import dotc.core._
+import Contexts._
 import Names.TermName
-import StdNames.*
+import StdNames._
 import Types.{JavaArrayType, UnspecifiedErrorType, Type}
 import Symbols.{Symbol, NoSymbol}
 import Decorators.em

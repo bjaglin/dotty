@@ -1,8 +1,8 @@
 package dotty.tools.dotc.quoted
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Symbols._
 
 object QuoteUtils:
   import tpd.*

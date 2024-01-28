@@ -6,7 +6,7 @@ import java.io.File
 import scala.language.unsafeNulls
 
 import io.{JarArchive, AbstractFile, Path}
-import core.Contexts.*
+import core.Contexts._
 import core.Decorators.em
 
 class TASTYRun(comp: Compiler, ictx: Context) extends Run(comp, ictx) {

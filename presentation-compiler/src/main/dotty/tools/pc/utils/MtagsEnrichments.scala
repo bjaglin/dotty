@@ -1,14 +1,14 @@
 package dotty.tools.pc.utils
 
-import dotty.tools.dotc.ast.tpd.*
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Denotations.*
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.NameOps.*
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.StdNames.*
+import dotty.tools.dotc.ast.tpd._
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Denotations._
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.NameOps._
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.StdNames._
 import dotty.tools.dotc.core.SymDenotations.NoDenotation
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.core.Types.AppliedType
 import dotty.tools.dotc.core.Types.Type
 import dotty.tools.dotc.interactive.Interactive
@@ -17,11 +17,11 @@ import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans
 import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.SemanticdbSymbols
-import org.eclipse.lsp4j as l
+import org.eclipse.{lsp4j => l}
 
 import scala.annotation.tailrec
-import scala.jdk.OptionConverters.*
-import scala.meta.internal.jdk.CollectionConverters.*
+import scala.jdk.OptionConverters._
+import scala.meta.internal.jdk.CollectionConverters._
 import scala.meta.internal.mtags.CommonMtagsEnrichments
 import scala.meta.internal.mtags.KeywordWrapper
 import scala.meta.pc.OffsetParams

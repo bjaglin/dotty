@@ -2,16 +2,16 @@ package dotty.tools.dotc
 package transform
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Phases.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.Phases._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.inlines.Inlines
 import dotty.tools.dotc.staging.CrossStageSafety
 import dotty.tools.dotc.staging.HealType
-import dotty.tools.dotc.staging.StagingLevel.*
+import dotty.tools.dotc.staging.StagingLevel._
 import dotty.tools.dotc.util.SrcPos
 
 /** Checks that staging level consistency holds and heals types used in higher levels.

@@ -4,7 +4,7 @@ package dotc
 import java.io.EOFException
 import scala.annotation.tailrec
 
-import core.Contexts.*
+import core.Contexts._
 import reporting.Reporter
 
 /** A compiler which stays resident between runs. This is more of a PoC than

@@ -2,18 +2,18 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
+import core._
 import Scopes.newScope
-import Contexts.*
-import Symbols.*
-import Types.*
-import Flags.*
-import Decorators.*
-import StdNames.*
-import Constants.*
-import MegaPhase.*
+import Contexts._
+import Symbols._
+import Types._
+import Flags._
+import Decorators._
+import StdNames._
+import Constants._
+import MegaPhase._
 import Names.TypeName
-import NullOpsDecorator.*
+import NullOpsDecorator._
 import ast.untpd
 
 /** Expand SAM closures that cannot be represented by the JVM as lambdas to anonymous classes.

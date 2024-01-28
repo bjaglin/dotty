@@ -18,13 +18,13 @@ import java.util.Date
 import scala.collection.mutable
 import scala.compiletime.uninitialized
 import scala.io.Codec
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 
-import core.Decorators.*
+import core.Decorators._
 import util.SourcePosition
-import core.Contexts.*
-import Diagnostic.*
+import core.Contexts._
+import Diagnostic._
 import interfaces.Diagnostic.{ERROR, WARNING}
 
 class TestReporter protected (outWriter: PrintWriter, logLevel: Int)

@@ -5,9 +5,9 @@ import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.Types.TermRef
 import dotty.tools.dotc.core.Types.ThisType
 
-import core.*
-import Contexts.*
-import Flags.*
+import core._
+import Contexts._
+import Flags._
 import MegaPhase.MiniPhase
 
 /** Replace This references to module classes in static methods by global identifiers to the

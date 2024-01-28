@@ -1,15 +1,15 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import Symbols.*
-import Types.*
-import Contexts.*
-import DenotTransformers.*
-import Flags.*
-import util.Spans.*
-import StdNames.*
-import NameOps.*
+import core._
+import Symbols._
+import Types._
+import Contexts._
+import DenotTransformers._
+import Flags._
+import util.Spans._
+import StdNames._
+import NameOps._
 import typer.Nullables
 
 class MixinOps(cls: ClassSymbol, thisPhase: DenotTransformer)(using Context) {

@@ -10,7 +10,7 @@ import java.nio.file.Path
 import scala.language.unsafeNulls
 
 import vulpix.TestConfiguration
-import ScriptTestEnv.*
+import ScriptTestEnv._
 
 /** Runs all tests contained in `compiler/test-resources/scripting/` */
 class ScriptingTests:

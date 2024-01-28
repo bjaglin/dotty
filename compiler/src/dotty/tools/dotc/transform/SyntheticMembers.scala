@@ -1,24 +1,24 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import Symbols.*
-import Types.*
-import Contexts.*
-import Names.*
-import StdNames.*
-import Constants.*
-import Flags.*
-import DenotTransformers.*
-import Decorators.*
-import NameOps.*
+import core._
+import Symbols._
+import Types._
+import Contexts._
+import Names._
+import StdNames._
+import Constants._
+import Flags._
+import DenotTransformers._
+import Decorators._
+import NameOps._
 import Annotations.Annotation
 import typer.ProtoTypes.constrained
 import ast.untpd
 import util.Property
 import util.Spans.Span
 import config.Printers.derive
-import NullOpsDecorator.*
+import NullOpsDecorator._
 
 object SyntheticMembers {
 

@@ -6,7 +6,7 @@ import scala.annotation.internal.sharable
 import scala.language.unsafeNulls
 
 import printing.{Showable, Printer}
-import printing.Texts.*
+import printing.Texts._
 import core.Contexts.Context
 import Spans.{Span, NoSpan}
 

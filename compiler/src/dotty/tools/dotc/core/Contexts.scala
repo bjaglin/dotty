@@ -12,27 +12,27 @@ import scala.annotation.internal.sharable
 import scala.io.Codec
 
 import interfaces.CompilerCallback
-import Decorators.*
-import Periods.*
-import Names.*
-import Phases.*
-import Types.*
-import Symbols.*
-import Scopes.*
-import Uniques.*
-import ast.Trees.*
+import Decorators._
+import Periods._
+import Names._
+import Phases._
+import Types._
+import Symbols._
+import Scopes._
+import Uniques._
+import ast.Trees._
 import ast.untpd
 import util.{NoSource, SimpleIdentityMap, SourceFile, HashSet, ReusableInstance}
 import typer.{Implicits, ImportInfo, SearchHistory, SearchRoot, TypeAssigner, Typer, Nullables}
 import inlines.Inliner
-import Nullables.*
+import Nullables._
 import Implicits.ContextualImplicits
-import config.Settings.*
+import config.Settings._
 import config.Config
-import reporting.*
+import reporting._
 import io.{AbstractFile, NoAbstractFile, PlainFile, Path}
 import collection.mutable
-import printing.*
+import printing._
 import config.{JavaPlatform, SJSPlatform, Platform, ScalaSettings}
 import classfile.ReusableDataReader
 import StdNames.nme
@@ -40,7 +40,7 @@ import compiletime.uninitialized
 import DenotTransformers.DenotTransformer
 import util.Property.Key
 import util.Store
-import plugins.*
+import plugins._
 
 object Contexts {
 

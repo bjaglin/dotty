@@ -1,14 +1,14 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import Contexts.*
-import Types.*
-import MegaPhase.*
-import ast.Trees.*
-import Symbols.*
-import Decorators.*
-import Flags.*
+import core._
+import Contexts._
+import Types._
+import MegaPhase._
+import ast.Trees._
+import Symbols._
+import Decorators._
+import Flags._
 
 
 /** Transform references of the form

@@ -7,16 +7,16 @@ import scala.collection.mutable
 import scala.compiletime.uninitialized
 import scala.language.unsafeNulls
 
-import core.*
-import Decorators.*
+import core._
+import Decorators._
 import Flags.Mutable
-import Names.*
-import StdNames.*
-import ast.Trees.*
+import Names._
+import StdNames._
+import ast.Trees._
 import ast.{tpd, untpd}
-import Symbols.*
-import Contexts.*
-import util.Spans.*
+import Symbols._
+import Contexts._
+import util.Spans._
 import Parsers.Parser
 
 /** This class builds instance of `Tree` that represent XML.

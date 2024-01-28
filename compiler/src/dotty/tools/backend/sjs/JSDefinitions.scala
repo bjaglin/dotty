@@ -1,17 +1,17 @@
 package dotty.tools.backend.sjs
 
 import dotty.tools.dotc.config.SJSPlatform
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core._
 
 import scala.annotation.threadUnsafe
 import scala.compiletime.uninitialized
 import scala.language.unsafeNulls
 
-import Names.*
-import Types.*
-import Contexts.*
-import Symbols.*
-import StdNames.*
+import Names._
+import Types._
+import Contexts._
+import Symbols._
+import StdNames._
 
 object JSDefinitions {
   /** The Scala.js-specific definitions for the current context. */

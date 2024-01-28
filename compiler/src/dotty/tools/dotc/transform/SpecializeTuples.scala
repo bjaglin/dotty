@@ -2,19 +2,19 @@ package dotty.tools
 package dotc
 package transform
 
-import ast.Trees.*
+import ast.Trees._
 import ast.tpd
-import core.*
-import Contexts.*
-import Types.*
-import Decorators.*
-import Symbols.*
-import DenotTransformers.*
-import SymDenotations.*
-import Scopes.*
-import StdNames.*
-import NameOps.*
-import Names.*
+import core._
+import Contexts._
+import Types._
+import Decorators._
+import Symbols._
+import DenotTransformers._
+import SymDenotations._
+import Scopes._
+import StdNames._
+import NameOps._
+import Names._
 import MegaPhase.MiniPhase
 import inlines.Inliner.isElideableExpr
 

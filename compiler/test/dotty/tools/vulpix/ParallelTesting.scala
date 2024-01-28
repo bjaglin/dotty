@@ -29,7 +29,7 @@ import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.io.Codec
 import scala.io.Source
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.util.Random
 import scala.util.Try
@@ -40,7 +40,7 @@ import scala.util.{Failure => TryFailure}
 import scala.util.{Success => TrySuccess}
 
 import dotc.{Compiler, Driver}
-import dotc.core.Contexts.*
+import dotc.core.Contexts._
 import dotc.decompiler
 import dotc.report
 import dotc.interfaces.Diagnostic.ERROR

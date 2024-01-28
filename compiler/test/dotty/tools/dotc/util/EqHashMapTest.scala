@@ -1,6 +1,6 @@
 package dotty.tools.dotc.util
 
-import org.junit.Assert.*
+import org.junit.Assert._
 import org.junit.Test
 
 class EqHashMapTest:

@@ -11,20 +11,20 @@ import scala.compiletime.uninitialized
 import scala.io.Codec
 import scala.util.control.NonFatal
 
-import core.*
-import Contexts.*
-import Periods.*
-import Symbols.*
-import Scopes.*
+import core._
+import Contexts._
+import Periods._
+import Symbols._
+import Scopes._
 import Names.Name
 import Denotations.Denotation
 import typer.Typer
 import typer.ImportInfo.withRootImports
-import Decorators.*
+import Decorators._
 import io.AbstractFile
 import Phases.{unfusedPhases, Phase}
 import sbt.interfaces.ProgressCallback
-import util.*
+import util._
 import reporting.{Suppression, Action, Profile, ActiveProfile, NoProfile}
 import reporting.Diagnostic
 import reporting.Diagnostic.Warning

@@ -1,7 +1,7 @@
 package dotty.tools.pc.utils
 
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.semanticdb.SemanticSymbolBuilder
 import dotty.tools.pc.CompilerSearchVisitor

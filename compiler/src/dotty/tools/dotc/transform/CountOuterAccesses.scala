@@ -1,13 +1,13 @@
 package dotty.tools.dotc
 package transform
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 
-import core.*
+import core._
 import MegaPhase.MiniPhase
-import ast.*
-import Flags.*
-import Symbols.*
+import ast._
+import Flags._
+import Symbols._
 import ExplicitOuter.isOuterParamAccessor
 import collection.mutable
 

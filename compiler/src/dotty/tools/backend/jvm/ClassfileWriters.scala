@@ -1,6 +1,6 @@
 package dotty.tools.backend.jvm
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Decorators.em
 import dotty.tools.io.AbstractFile
 import dotty.tools.io.JarArchive
@@ -15,7 +15,7 @@ import java.nio.ByteBuffer
 import java.nio.channels.ClosedByInterruptException
 import java.nio.channels.FileChannel
 import java.nio.charset.StandardCharsets.UTF_8
-import java.nio.file.*
+import java.nio.file._
 import java.nio.file.attribute.FileAttribute
 import java.util
 import java.util.concurrent.ConcurrentHashMap
@@ -24,7 +24,7 @@ import java.util.zip.Deflater
 import java.util.zip.ZipEntry
 import java.util.zip.ZipOutputStream
 import scala.language.unsafeNulls
-import scala.util.chaining.*
+import scala.util.chaining._
 
 import BTypes.InternalName
 

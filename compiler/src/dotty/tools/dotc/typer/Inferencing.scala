@@ -4,20 +4,20 @@ package typer
 
 import scala.annotation.internal.sharable
 
-import core.*
-import ast.*
-import Contexts.*
-import Types.*
-import Flags.*
-import Symbols.*
-import ProtoTypes.*
+import core._
+import ast._
+import Contexts._
+import Types._
+import Flags._
+import Symbols._
+import ProtoTypes._
 import NameKinds.UniqueName
-import util.Spans.*
+import util.Spans._
 import util.{Stats, SimpleIdentityMap, SimpleIdentitySet, SrcPos}
 import Decorators._
 import config.Printers.{gadts, typr}
 import annotation.tailrec
-import reporting.*
+import reporting._
 import collection.mutable
 
 object Inferencing {

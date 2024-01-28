@@ -5,7 +5,7 @@ import dotty.tools.dotc.ast.Trees.PackageDef
 import dotty.tools.dotc.ast.Trees.ValDef
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.Phases.Phase
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core._
 import dotty.tools.dotc.core.tasty.TastyUnpickler
 import dotty.tools.dotc.interfaces
 import dotty.tools.dotc.report
@@ -20,16 +20,16 @@ import java.io.DataOutputStream
 import java.nio.channels.ClosedByInterruptException
 import java.util.Optional
 import scala.collection.mutable
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.tools.asm
-import scala.tools.asm.tree.*
+import scala.tools.asm.tree._
 
-import Contexts.*
-import Phases.*
-import Symbols.*
+import Contexts._
+import Phases._
+import Symbols._
 import StdNames.nme
-import tpd.*
+import tpd._
 
 
 class CodeGen(val int: DottyBackendInterface, val primitives: DottyPrimitives)( val bTypes: BTypesFromSymbols[int.type]) { self =>

@@ -2,7 +2,7 @@ package dotty.tools
 package dotc
 package reporting
 
-import core.*
+import core._
 import Contexts.{Context, ctx}
 import Symbols.{Symbol, NoSymbol}
 import collection.mutable

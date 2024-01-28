@@ -2,19 +2,19 @@ package dotty.tools.dotc
 package transform
 
 import dotty.tools.dotc.ast.TreeMapWithImplicits
-import dotty.tools.dotc.ast.Trees.*
+import dotty.tools.dotc.ast.Trees._
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.DenotTransformers.IdentityDenotTransformer
 import dotty.tools.dotc.inlines.Inlines
-import dotty.tools.dotc.quoted.*
+import dotty.tools.dotc.quoted._
 import dotty.tools.dotc.staging.StagingLevel
 
 import scala.collection.mutable.ListBuffer
 
-import core.*
-import Flags.*
-import Contexts.*
-import Symbols.*
+import core._
+import Flags._
+import Contexts._
+import Symbols._
 
 /** Inlines all calls to inline methods that are not in an inline method or a quote */
 class Inlining extends MacroTransform, IdentityDenotTransformer {

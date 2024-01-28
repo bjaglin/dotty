@@ -1,8 +1,8 @@
 package dotty.tools.backend.jvm
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core._
 import dotty.tools.dotc.report
 import dotty.tools.dotc.util.ReadOnlyMap
 import dotty.tools.io.AbstractFile
@@ -11,12 +11,12 @@ import java.io.{File => _}
 import scala.language.unsafeNulls
 import scala.reflect.ClassTag
 
-import Contexts.*
-import Types.*
-import Symbols.*
-import Phases.*
+import Contexts._
+import Types._
+import Symbols._
+import Phases._
 import Decorators.em
-import tpd.*
+import tpd._
 import StdNames.nme
 import NameKinds.{LazyBitMapName, LazyLocalName}
 import Names.Name

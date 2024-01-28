@@ -7,17 +7,17 @@ import java.security.MessageDigest
 import scala.io.Codec
 
 import Int.MaxValue
-import Names.*
-import StdNames.*
-import Contexts.*
-import Symbols.*
-import Flags.*
-import NameKinds.*
-import Types.*
+import Names._
+import StdNames._
+import Contexts._
+import Symbols._
+import Flags._
+import NameKinds._
+import Types._
 import util.Chars.{isOperatorPart, digit2int}
-import Decorators.*
-import Definitions.*
-import nme.*
+import Decorators._
+import Definitions._
+import nme._
 
 object NameOps {
 

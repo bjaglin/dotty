@@ -4,15 +4,15 @@ package core
 
 import scala.annotation.constructorOnly
 
-import Types.*
-import Symbols.*
-import Flags.*
-import Names.*
-import Contexts.*
-import SymDenotations.*
-import Denotations.*
-import Decorators.*
-import reporting.*
+import Types._
+import Symbols._
+import Flags._
+import Names._
+import Contexts._
+import SymDenotations._
+import Denotations._
+import Decorators._
+import reporting._
 import ast.untpd
 import util.Property
 import config.Printers.{cyclicErrors, noPrinter}

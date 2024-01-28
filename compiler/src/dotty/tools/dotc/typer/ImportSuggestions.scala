@@ -7,17 +7,17 @@ import java.util.TimerTask
 import scala.util.control.NonFatal
 
 import backend.sjs.JSDefinitions
-import core.*
-import Contexts.*
-import Types.*
-import Symbols.*
-import Names.*
-import Decorators.*
-import ProtoTypes.*
-import Flags.*
-import SymDenotations.*
+import core._
+import Contexts._
+import Types._
+import Symbols._
+import Names._
+import Decorators._
+import ProtoTypes._
+import Flags._
+import SymDenotations._
 import NameKinds.FlatName
-import StdNames.*
+import StdNames._
 import config.Printers.{implicits, implicitsDetailed}
 import ast.{untpd, tpd}
 import Implicits.{hasExtMethod, Candidate}

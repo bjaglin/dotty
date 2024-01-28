@@ -7,24 +7,24 @@ import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
 import scala.util.control.NonFatal
 
 import core.Names.Name
-import core.DenotTransformers.*
-import core.SymDenotations.*
-import core.Contexts.*
-import core.Symbols.*
-import core.Types.*
-import core.Flags.*
-import core.StdNames.*
+import core.DenotTransformers._
+import core.SymDenotations._
+import core.Contexts._
+import core.Symbols._
+import core.Types._
+import core.Flags._
+import core.StdNames._
 import core.NameKinds.{DocArtifactName, OuterSelectName}
-import core.Decorators.*
-import core.Phases.*
+import core.Decorators._
+import core.Phases._
 import core.Mode
-import typer.*
-import reporting.*
-import ast.Trees.*
+import typer._
+import reporting._
+import ast.Trees._
 import ast.{tpd, untpd}
-import util.Chars.*
+import util.Chars._
 import collection.mutable
-import ProtoTypes.*
+import ProtoTypes._
 import staging.StagingLevel
 import inlines.Inlines.inInlineMethod
 

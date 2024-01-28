@@ -1,6 +1,6 @@
 package dotty.tools.backend.sjs
 
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core._
 import dotty.tools.dotc.report
 import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
@@ -11,7 +11,7 @@ import java.net.URI
 import java.net.URISyntaxException
 import scala.language.unsafeNulls
 
-import Contexts.*
+import Contexts._
 import Decorators.em
 
 /** Conversion utilities from dotty Positions to IR Positions. */

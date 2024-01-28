@@ -5,15 +5,15 @@ package typer
 import scala.compiletime.uninitialized
 
 import ast.{tpd, untpd}
-import core.*
+import core._
 import printing.{Printer, Showable}
 import util.SimpleIdentityMap
-import Symbols.*
-import Names.*
-import Types.*
-import Contexts.*
-import StdNames.*
-import Flags.*
+import Symbols._
+import Names._
+import Types._
+import Contexts._
+import StdNames._
+import Flags._
 import Implicits.RenamedImplicitRef
 import StdNames.nme
 import printing.Texts.Text

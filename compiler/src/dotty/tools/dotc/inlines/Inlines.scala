@@ -6,16 +6,16 @@ import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.SrcPos
 
-import ast.*
-import core.*
-import Flags.*
-import Symbols.*
-import Types.*
-import Decorators.*
-import Constants.*
-import Contexts.*
+import ast._
+import core._
+import Flags._
+import Symbols._
+import Types._
+import Decorators._
+import Constants._
+import Contexts._
 import StdNames.{tpnme, nme}
-import typer.*
+import typer._
 import NameKinds.BodyRetainerName
 import SymDenotations.SymDenotation
 import config.Printers.inlining

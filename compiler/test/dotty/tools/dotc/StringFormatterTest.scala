@@ -1,20 +1,20 @@
 package dotty.tools
 package dotc
 
-import org.junit.Assert.*
+import org.junit.Assert._
 import org.junit.Test
 
-import core.*
-import Contexts.*
-import Decorators.*
-import Denotations.*
-import Flags.*
-import Names.*
-import StdNames.*
-import SymDenotations.*
-import Symbols.*
-import Types.*
-import config.Printers.*
+import core._
+import Contexts._
+import Decorators._
+import Denotations._
+import Flags._
+import Names._
+import StdNames._
+import SymDenotations._
+import Symbols._
+import Types._
+import config.Printers._
 import printing.Formatting.Show
 
 class StringFormatterTest extends AbstractStringFormatterTest:

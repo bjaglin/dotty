@@ -9,11 +9,11 @@ import dotty.tools.tasty.TastyHash
 
 import scala.language.unsafeNulls
 
-import TastyFormat.*
-import TastyBuffer.*
+import TastyFormat._
+import TastyBuffer._
 import collection.mutable
 import core.Symbols.ClassSymbol
-import Decorators.*
+import Decorators._
 
 object TastyPickler:
   private val versionString = s"Scala ${config.Properties.simpleVersionString}"

@@ -3,7 +3,7 @@ package dotc
 package semanticdb
 
 import dotty.tools.dotc.reporting.Diagnostic.Warning
-import dotty.tools.dotc.semanticdb.DiagnosticOps.*
+import dotty.tools.dotc.semanticdb.DiagnosticOps._
 import dotty.tools.dotc.{semanticdb => s}
 import dotty.tools.io.AbstractFile
 import dotty.tools.io.JarArchive
@@ -13,22 +13,22 @@ import scala.PartialFunction.condOpt
 import scala.annotation.tailrec
 import scala.annotation.{threadUnsafe => tu}
 import scala.collection.mutable
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.util.Failure
 import scala.util.Success
 import scala.util.Using
 
-import core.*
-import Phases.*
-import ast.tpd.*
+import core._
+import Phases._
+import ast.tpd._
 import ast.Trees.{mods, WithEndMarker}
-import Contexts.*
-import Symbols.*
-import Flags.*
+import Contexts._
+import Symbols._
+import Flags._
 import Names.Name
 import StdNames.nme
-import NameOps.*
+import NameOps._
 import Denotations.StaleSymbol
 import util.Spans.Span
 import util.SourceFile

@@ -18,23 +18,23 @@ import scala.compiletime.uninitialized
 import scala.language.unsafeNulls
 import scala.util.control.NonFatal
 
-import Contexts.*
-import Symbols.*
-import Types.*
-import Names.*
-import StdNames.*
-import NameOps.*
-import Scopes.*
-import Decorators.*
-import SymDenotations.*
-import unpickleScala2.Scala2Unpickler.*
-import Constants.*
-import Annotations.*
-import util.Spans.*
-import Phases.*
+import Contexts._
+import Symbols._
+import Types._
+import Names._
+import StdNames._
+import NameOps._
+import Scopes._
+import Decorators._
+import SymDenotations._
+import unpickleScala2.Scala2Unpickler._
+import Constants._
+import Annotations._
+import util.Spans._
+import Phases._
 import ast.{ tpd, untpd }
-import ast.tpd.*
-import util.*
+import ast.tpd._
+import util._
 import typer.Checking.checkNonCyclic
 import io.{AbstractFile, ZipArchive}
 

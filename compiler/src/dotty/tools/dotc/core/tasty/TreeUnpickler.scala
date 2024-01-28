@@ -5,7 +5,7 @@ package tasty
 
 import dotty.tools.dotc.quoted.QuotePatterns
 import dotty.tools.tasty.TastyBuffer
-import dotty.tools.tasty.TastyFormat.*
+import dotty.tools.tasty.TastyFormat._
 import dotty.tools.tasty.TastyReader
 
 import scala.annotation.constructorOnly
@@ -18,32 +18,32 @@ import scala.compiletime.uninitialized
 import scala.language.unsafeNulls
 
 import Comments.docCtx
-import Contexts.*
-import Symbols.*
-import Types.*
-import Scopes.*
-import SymDenotations.*
-import Denotations.*
-import Names.*
-import NameOps.*
-import StdNames.*
-import Flags.*
-import Constants.*
-import Annotations.*
-import NameKinds.*
-import NamerOps.*
-import ContextOps.*
+import Contexts._
+import Symbols._
+import Types._
+import Scopes._
+import SymDenotations._
+import Denotations._
+import Names._
+import NameOps._
+import StdNames._
+import Flags._
+import Constants._
+import Annotations._
+import NameKinds._
+import NamerOps._
+import ContextOps._
 import Variances.Invariant
 import TastyUnpickler.NameTable
 import typer.ConstFold
 import typer.Checking.checkNonCyclic
-import typer.Nullables.*
-import util.Spans.*
+import typer.Nullables._
+import util.Spans._
 import util.{SourceFile, Property}
 import ast.{Trees, tpd, untpd}
-import Trees.*
-import Decorators.*
-import TastyBuffer.*
+import Trees._
+import Decorators._
+import TastyBuffer._
 import config.Printers.pickling
 
 /** Unpickler for typed trees

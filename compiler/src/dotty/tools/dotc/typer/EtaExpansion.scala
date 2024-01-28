@@ -2,18 +2,18 @@ package dotty.tools
 package dotc
 package typer
 
-import core.*
+import core._
 import ast.{Trees, untpd, tpd}
-import Contexts.*
-import Types.*
-import Flags.*
-import Symbols.*
-import Names.*
+import Contexts._
+import Types._
+import Flags._
+import Symbols._
+import Names._
 import NameKinds.UniqueName
-import util.Spans.*
+import util.Spans._
 import util.Property
 import collection.mutable
-import Trees.*
+import Trees._
 
 /** A class that handles argument lifting. Argument lifting is needed in the following
  *  scenarios:

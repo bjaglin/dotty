@@ -2,7 +2,7 @@ package dotty.tools.pc.completions
 
 import dotty.tools.dotc.ast.NavigateAST
 import dotty.tools.dotc.ast.Trees.ValDef
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.core.Constants.Constant
 import dotty.tools.dotc.core.ContextOps.localContext
@@ -11,7 +11,7 @@ import dotty.tools.dotc.core.Flags
 import dotty.tools.dotc.core.Flags.Method
 import dotty.tools.dotc.core.NameKinds.DefaultGetterName
 import dotty.tools.dotc.core.Names.Name
-import dotty.tools.dotc.core.StdNames.*
+import dotty.tools.dotc.core.StdNames._
 import dotty.tools.dotc.core.SymDenotations.NoDenotation
 import dotty.tools.dotc.core.Symbols
 import dotty.tools.dotc.core.Symbols.NoSymbol
@@ -28,7 +28,7 @@ import dotty.tools.dotc.core.Types.TypeBounds
 import dotty.tools.dotc.core.Types.WildcardType
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.pc.IndexedContext
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 
 import scala.annotation.tailrec
 import scala.util.Try

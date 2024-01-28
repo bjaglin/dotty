@@ -1,7 +1,7 @@
 package scala.util
 import scala.math.BigInt
 
-import quoted.*
+import quoted._
 import annotation.internal.sharable
 
 

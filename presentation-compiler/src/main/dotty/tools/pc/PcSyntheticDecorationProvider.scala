@@ -2,11 +2,11 @@ package dotty.tools.pc
 
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.StdNames.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.StdNames._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.interactive.Interactive
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.util.SourceFile
@@ -14,7 +14,7 @@ import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.IndexedContext
 import dotty.tools.pc.printer.ShortenedTypePrinter
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 
 import java.nio.file.Paths
 import scala.meta.internal.metals.ReportContext

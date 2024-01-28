@@ -2,10 +2,10 @@ package dotty.tools
 package dotc
 package decompiler
 
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core._
 import dotty.tools.dotc.core.tasty.TastyHTMLPrinter
-import dotty.tools.dotc.reporting.*
+import dotty.tools.dotc.reporting._
 import dotty.tools.io.AbstractFile
 
 import scala.language.unsafeNulls

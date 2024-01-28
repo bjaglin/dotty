@@ -3,16 +3,16 @@ package transform
 
 import scala.collection.mutable
 
-import core.*
-import ast.tpd.*
-import Contexts.*
-import MegaPhase.*
-import Annotations.*
+import core._
+import ast.tpd._
+import Contexts._
+import MegaPhase._
+import Annotations._
 import Symbols.defn
-import Constants.*
-import Types.*
-import Decorators.*
-import Flags.*
+import Constants._
+import Types._
+import Decorators._
+import Flags._
 
 class RepeatableAnnotations extends MiniPhase:
 

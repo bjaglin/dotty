@@ -6,16 +6,16 @@ import dotty.tools.dotc.CompilationUnit
 import dotty.tools.dotc.ast.TreeTypeMap
 import dotty.tools.dotc.ast.Trees.SyntheticUnit
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.NameKinds.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.NameKinds._
 import dotty.tools.dotc.core.Names.TermName
-import dotty.tools.dotc.core.StdNames.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.StdNames._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.report
-import dotty.tools.dotc.util.Spans.*
+import dotty.tools.dotc.util.Spans._
 
 import scala.annotation.tailrec
 import scala.collection.immutable

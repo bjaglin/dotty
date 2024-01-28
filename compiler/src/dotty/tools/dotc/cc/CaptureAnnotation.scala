@@ -2,14 +2,14 @@ package dotty.tools
 package dotc
 package cc
 
-import core.*
-import Types.*
-import Symbols.*
-import Contexts.*
-import Annotations.*
-import ast.Trees.*
+import core._
+import Types._
+import Symbols._
+import Contexts._
+import Annotations._
+import ast.Trees._
 import ast.{tpd, untpd}
-import Decorators.*
+import Decorators._
 import config.Printers.capt
 import printing.Printer
 import printing.Texts.Text

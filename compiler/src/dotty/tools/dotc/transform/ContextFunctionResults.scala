@@ -2,16 +2,16 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Types.*
-import Annotations.*
-import Constants.*
-import Phases.*
+import core._
+import Contexts._
+import Symbols._
+import Types._
+import Annotations._
+import Constants._
+import Phases._
 import StdNames.nme
 import ast.untpd
-import ast.tpd.*
+import ast.tpd._
 import config.Config
 
 object ContextFunctionResults:

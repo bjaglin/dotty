@@ -2,10 +2,10 @@ package dotty.tools
 package dotc
 package cc
 
-import core.*
-import Types.*
-import Symbols.*
-import Contexts.*
+import core._
+import Types._
+import Symbols._
+import Contexts._
 import Decorators.i
 
 /** A (possibly boxed) capturing type. This is internally represented as an annotated type with a @retains

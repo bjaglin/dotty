@@ -7,35 +7,35 @@ import scala.annotation.threadUnsafe
 import scala.compiletime.uninitialized
 
 import backend.sjs.JSDefinitions
-import core.*
+import core._
 import ast.{TreeTypeMap, untpd, tpd}
-import util.Spans.*
+import util.Spans._
 import util.Stats.{record, monitored}
 import printing.{Showable, Printer}
-import printing.Texts.*
-import Contexts.*
-import Types.*
-import Flags.*
+import printing.Texts._
+import Contexts._
+import Types._
+import Flags._
 import Mode.ImplicitsEnabled
 import NameKinds.{LazyImplicitName, ContextBoundParamName}
-import Symbols.*
-import Types.*
-import Decorators.*
-import Names.*
-import StdNames.*
-import ProtoTypes.*
-import ErrorReporting.*
+import Symbols._
+import Types._
+import Decorators._
+import Names._
+import StdNames._
+import ProtoTypes._
+import ErrorReporting._
 import Inferencing.{fullyDefinedType, isFullyDefined}
 import Scopes.newScope
 import Typer.BindingPrec
-import BindingPrec.*
-import Hashable.*
+import BindingPrec._
+import Hashable._
 import util.{EqHashMap, Stats}
 import config.{Config, Feature, SourceVersion}
 import Feature.{migrateTo3, sourceVersion}
 import config.Printers.{implicits, implicitsDetailed}
 import collection.mutable
-import reporting.*
+import reporting._
 import transform.Splicer
 import annotation.tailrec
 

@@ -1,7 +1,7 @@
 package dotty.tools.repl
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Phases.Phase
 
 import scala.compiletime.uninitialized

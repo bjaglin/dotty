@@ -7,15 +7,15 @@ import dotty.tools.tasty.TastyBuffer
 import dotty.tools.tasty.TastyFormat.PositionsSection
 import dotty.tools.tasty.TastyFormat.SOURCE
 
-import TastyBuffer.*
-import ast.*
+import TastyBuffer._
+import ast._
 import Trees.WithLazyFields
 import util.{SourceFile, NoSource}
-import core.*
-import Annotations.*
-import Decorators.*
+import core._
+import Annotations._
+import Decorators._
 import collection.mutable
-import util.Spans.*
+import util.Spans._
 import reporting.Message
 
 object PositionPickler:

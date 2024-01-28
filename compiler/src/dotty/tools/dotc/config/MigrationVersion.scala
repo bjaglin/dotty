@@ -2,8 +2,8 @@ package dotty.tools
 package dotc
 package config
 
-import SourceVersion.*
-import Feature.*
+import SourceVersion._
+import Feature._
 import core.Contexts.Context
 
 class MigrationVersion(

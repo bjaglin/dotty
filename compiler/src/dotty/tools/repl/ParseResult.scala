@@ -5,7 +5,7 @@ import scala.annotation.internal.sharable
 
 import dotc.CompilationUnit
 import dotc.ast.untpd
-import dotc.core.Contexts.*
+import dotc.core.Contexts._
 import dotc.core.StdNames.str
 import dotc.parsing.Parsers.Parser
 import dotc.parsing.Tokens

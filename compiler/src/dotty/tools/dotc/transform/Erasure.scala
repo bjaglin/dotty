@@ -7,36 +7,36 @@ import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.core.Constants
 import dotty.tools.dotc.core.Flags
 
-import core.Phases.*
-import core.DenotTransformers.*
-import core.Denotations.*
-import core.SymDenotations.*
-import core.Symbols.*
-import core.Contexts.*
-import core.Types.*
-import core.Names.*
-import core.StdNames.*
-import core.NameOps.*
+import core.Phases._
+import core.DenotTransformers._
+import core.Denotations._
+import core.SymDenotations._
+import core.Symbols._
+import core.Contexts._
+import core.Types._
+import core.Names._
+import core.StdNames._
+import core.NameOps._
 import core.NameKinds.{AdaptedClosureName, BodyRetainerName, DirectMethName}
 import core.Scopes.newScopeWith
-import core.Decorators.*
-import core.Constants.*
-import core.Definitions.*
+import core.Decorators._
+import core.Constants._
+import core.Definitions._
 import core.Annotations.BodyAnnotation
 import typer.NoChecking
 import inlines.Inlines
-import typer.ProtoTypes.*
+import typer.ProtoTypes._
 import typer.ErrorReporting.errorTree
 import typer.Checking.checkValue
-import core.TypeErasure.*
-import core.Decorators.*
+import core.TypeErasure._
+import core.Decorators._
 import ast.TreeTypeMap
-import ValueClasses.*
-import ContextFunctionResults.*
-import ExplicitOuter.*
+import ValueClasses._
+import ContextFunctionResults._
+import ExplicitOuter._
 import core.Mode
 import util.Property
-import reporting.*
+import reporting._
 
 class Erasure extends Phase with DenotTransformer {
 

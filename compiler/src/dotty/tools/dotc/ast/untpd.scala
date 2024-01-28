@@ -4,20 +4,20 @@ package ast
 
 import dotty.tools.dotc.typer.ProtoTypes
 
-import core.*
-import Types.*
-import Contexts.*
-import Constants.*
-import Names.*
-import Flags.*
-import Symbols.*
-import StdNames.*
-import Trees.*
+import core._
+import Types._
+import Contexts._
+import Constants._
+import Names._
+import Flags._
+import Symbols._
+import StdNames._
+import Trees._
 import util.{Property, SourceFile, NoSource}
 import util.Spans.Span
 import annotation.constructorOnly
 import annotation.internal.sharable
-import Decorators.*
+import Decorators._
 
 object untpd extends Trees.Instance[Untyped] with UntypedTreeInfo {
 

@@ -3,7 +3,7 @@ package dotty.tools.pc.base
 import org.eclipse.lsp4j.SignatureHelp
 
 import java.nio.file.Paths
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.meta.internal.metals.CompilerOffsetParams
 

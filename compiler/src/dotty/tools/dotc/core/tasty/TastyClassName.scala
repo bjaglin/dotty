@@ -7,11 +7,11 @@ import dotty.tools.tasty.TastyFormat.ASTsSection
 import dotty.tools.tasty.TastyReader
 
 import TastyBuffer.NameRef
-import Contexts.*
-import Decorators.*
+import Contexts._
+import Decorators._
 import Names.TermName
 import StdNames.nme
-import TastyUnpickler.*
+import TastyUnpickler._
 
 /** Reads the package and class name of the class contained in this TASTy */
 class TastyClassName(bytes: Array[Byte]) {

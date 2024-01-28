@@ -1,10 +1,10 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import Contexts.*
-import Flags.*
-import Symbols.*
+import core._
+import Contexts._
+import Flags._
+import Symbols._
 import MegaPhase.MiniPhase
 import StdNames.nme
 import ast.tpd

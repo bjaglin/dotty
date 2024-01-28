@@ -1,11 +1,11 @@
 package dotty.tools.pc
 
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.semanticdb.*
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.semanticdb._
+import dotty.tools.pc.utils.MtagsEnrichments._
 
 import scala.util.control.NonFatal
 

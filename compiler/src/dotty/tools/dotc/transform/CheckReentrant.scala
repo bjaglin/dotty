@@ -1,13 +1,13 @@
 package dotty.tools.dotc
 package transform
 
-import dotty.tools.dotc.transform.MegaPhase.*
+import dotty.tools.dotc.transform.MegaPhase._
 
-import core.*
-import Flags.*
-import Contexts.*
-import Symbols.*
-import Decorators.*
+import core._
+import Flags._
+import Contexts._
+import Symbols._
+import Decorators._
 
 /** A no-op transform that checks whether the compiled sources are re-entrant.
  *  If -Ycheck:reentrant is set, the phase makes sure that there are no variables

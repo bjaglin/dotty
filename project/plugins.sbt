@@ -23,3 +23,5 @@ addSbtPlugin("com.typesafe" % "sbt-mima-plugin" % "1.1.2")
 addSbtPlugin("ch.epfl.scala" % "sbt-tasty-mima" % "1.0.0")
 
 addSbtPlugin("ch.epfl.scala" % "sbt-scalafix" % "0.11.1")
+resolvers += Resolver.sonatypeRepo("snapshots")
+dependencyOverrides += "ch.epfl.scala" % "scalafix-interfaces" % "0.11.1+82-6d329592-SNAPSHOT"

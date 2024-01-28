@@ -2,21 +2,21 @@ package dotty.tools
 package dotc
 package interactive
 
-import scala.collection.*
+import scala.collection._
 import scala.language.unsafeNulls
 
 import ast.{NavigateAST, Trees, tpd, untpd}
-import core.*
-import Decorators.*
-import ContextOps.*
-import Contexts.*
-import Flags.*
-import Names.*
-import NameOps.*
-import Symbols.*
-import Trees.*
-import Types.*
-import util.Spans.*
+import core._
+import Decorators._
+import ContextOps._
+import Contexts._
+import Flags._
+import Names._
+import NameOps._
+import Symbols._
+import Trees._
+import Types._
+import util.Spans._
 import util.SourceFile
 import util.SourcePosition
 

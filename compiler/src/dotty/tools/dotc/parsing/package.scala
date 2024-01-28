@@ -1,9 +1,9 @@
 package dotty.tools.dotc
 
-import util.Chars.*
+import util.Chars._
 import core.Names.Name
 import core.StdNames.nme
-import core.NameOps.*
+import core.NameOps._
 
 package object parsing {
 
