@@ -7,10 +7,10 @@ import scala.language.unsafeNulls
 import scala.util.CommandLineParser.FromString
 
 import dotc.ast.tpd
-import dotc.ast.tpd._
+import dotc.ast.tpd.*
 import dotc.core.Contexts.{Context, atPhase}
 import dotc.core.Symbols.Symbol
-import dotc.core.Decorators._
+import dotc.core.Decorators.*
 import dotc.core.Types.Type
 
 /**Pass a string representing a Scala source file,

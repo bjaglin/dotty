@@ -5,8 +5,8 @@ import dotty.Properties
 import dotty.tools.dotc.Main
 import dotty.tools.dotc.reporting.TestReporter
 import dotty.tools.dotc.util.DiffUtil
-import dotty.tools.vulpix.TestConfiguration.*
 import dotty.tools.vulpix.*
+import dotty.tools.vulpix.TestConfiguration.*
 import org.junit.AfterClass
 import org.junit.Assert.*
 import org.junit.Assume.*

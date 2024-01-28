@@ -4,20 +4,20 @@ import dotty.BootstrappedOnlyTests
 import dotty.tools.dotc.Main
 import dotty.tools.dotc.semanticdb.Scala3.given
 import dotty.tools.dotc.util.SourceFile
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 import org.junit.experimental.categories.Category
 
 import java.io.File
 import java.net.URLClassLoader
 import java.nio.charset.StandardCharsets
-import java.nio.file._
+import java.nio.file.*
 import java.util.Comparator
 import java.util.regex.Pattern
 import java.util.stream.Collectors
 import javax.tools.ToolProvider
 import scala.collection.mutable
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
 import scala.util.control.NonFatal
 

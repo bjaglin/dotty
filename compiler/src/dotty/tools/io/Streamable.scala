@@ -7,9 +7,9 @@ package dotty.tools.io
 
 import java.io.BufferedInputStream
 import java.io.BufferedReader
+import java.io.Closeable as JCloseable
 import java.io.InputStream
 import java.io.InputStreamReader
-import java.io.{Closeable => JCloseable}
 import java.net.URL
 import scala.collection.mutable.ArrayBuffer
 import scala.io.BufferedSource

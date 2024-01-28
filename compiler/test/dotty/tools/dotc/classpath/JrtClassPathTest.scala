@@ -10,7 +10,7 @@ import dotty.tools.dotc.config.PathResolver
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Contexts.ContextBase
 import dotty.tools.io.ClassPath
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4

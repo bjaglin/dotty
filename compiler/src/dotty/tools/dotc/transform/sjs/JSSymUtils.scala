@@ -3,7 +3,7 @@ package transform
 package sjs
 
 import dotty.tools.backend.sjs.JSDefinitions.jsdefn
-import org.scalajs.ir.{Trees => js}
+import org.scalajs.ir.Trees as js
 
 import core.*
 import Constants.*

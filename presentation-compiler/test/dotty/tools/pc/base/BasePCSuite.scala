@@ -1,10 +1,10 @@
 package dotty.tools.pc.base
 
-import dotty.tools.pc.ScalaPresentationCompiler
 import dotty.tools.pc.*
+import dotty.tools.pc.ScalaPresentationCompiler
 import dotty.tools.pc.completions.CompletionSource
 import dotty.tools.pc.tests.buildinfo.BuildInfo
-import dotty.tools.pc.utils._
+import dotty.tools.pc.utils.*
 import org.eclipse.lsp4j.MarkupContent
 import org.eclipse.lsp4j.jsonrpc.messages.Either as JEither
 import org.junit.runner.RunWith

@@ -1,11 +1,11 @@
 package dotty.tools.tasty
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Ignore
 import org.junit.Test
 
-import TastyFormat._
-import TastyBuffer._
+import TastyFormat.*
+import TastyBuffer.*
 
 class TastyVersionFormatTest {
 

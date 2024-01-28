@@ -1,6 +1,6 @@
 package dotty.tools.io
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
 import java.io.IOException
@@ -18,7 +18,7 @@ import java.util.jar.JarOutputStream
 import java.util.jar.Manifest
 import scala.language.unsafeNulls
 import scala.util.Using
-import scala.util.chaining._
+import scala.util.chaining.*
 
 class ZipArchiveTest {
 

@@ -20,8 +20,8 @@ import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.dotc.core.StdNames
 import dotty.tools.dotc.core.StdNames.nme
-import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.core.Types.AnnotatedType
 import dotty.tools.dotc.core.Types.ConstantType
 import dotty.tools.dotc.core.Types.NoType

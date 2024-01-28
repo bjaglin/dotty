@@ -1,6 +1,6 @@
 package dotty.tools.backend.jvm
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
 class StringInterpolatorOptTest extends DottyBytecodeTest {

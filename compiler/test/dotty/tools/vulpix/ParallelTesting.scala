@@ -5,10 +5,10 @@ package vulpix
 import dotty.tools.vulpix.TestConfiguration.defaultOptions
 
 import java.io.ByteArrayOutputStream
+import java.io.File as JFile
 import java.io.IOException
 import java.io.PrintStream
-import java.io.{File => JFile}
-import java.lang.System.{lineSeparator => EOL}
+import java.lang.System.lineSeparator as EOL
 import java.net.URL
 import java.nio.charset.Charset
 import java.nio.charset.StandardCharsets
@@ -22,22 +22,22 @@ import java.util.HashMap
 import java.util.Timer
 import java.util.TimerTask
 import java.util.concurrent.ExecutionException
+import java.util.concurrent.Executors as JExecutors
 import java.util.concurrent.TimeUnit
 import java.util.concurrent.TimeoutException
-import java.util.concurrent.{Executors => JExecutors}
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.io.Codec
 import scala.io.Source
 import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls
+import scala.util.Failure as TryFailure
 import scala.util.Random
+import scala.util.Success as TrySuccess
 import scala.util.Try
 import scala.util.Using
 import scala.util.control.NonFatal
 import scala.util.matching.Regex
-import scala.util.{Failure => TryFailure}
-import scala.util.{Success => TrySuccess}
 
 import dotc.{Compiler, Driver}
 import dotc.core.Contexts.*

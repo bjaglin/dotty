@@ -2,10 +2,10 @@ package dotty.tools
 package dotc
 package parsing
 
-import Tokens._
-import Parsers._
-import core._
-import ast.Trees._
+import Tokens.*
+import Parsers.*
+import core.*
+import ast.Trees.*
 import ast.desugar
 import core.Mode
 import Contexts.Context

@@ -3,9 +3,9 @@ package tools
 package vulpix
 
 import java.io.BufferedReader
+import java.io.File as JFile
 import java.io.InputStreamReader
 import java.io.PrintStream
-import java.io.{File => JFile}
 import java.nio.charset.StandardCharsets
 import java.nio.file.Paths
 import java.util.concurrent.TimeoutException

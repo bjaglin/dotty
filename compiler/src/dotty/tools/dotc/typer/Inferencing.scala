@@ -14,7 +14,7 @@ import ProtoTypes.*
 import NameKinds.UniqueName
 import util.Spans.*
 import util.{Stats, SimpleIdentityMap, SimpleIdentitySet, SrcPos}
-import Decorators._
+import Decorators.*
 import config.Printers.{gadts, typr}
 import annotation.tailrec
 import reporting.*

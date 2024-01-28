@@ -1,6 +1,6 @@
 package dotty.tools.repl
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
 class JavaDefinedTests extends ReplTest {

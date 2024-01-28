@@ -5,8 +5,8 @@ import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.utils.MtagsEnrichments.toLsp
 import dotty.tools.pc.utils.TextEdits
-import org.eclipse.lsp4j.TextEdit
 import org.eclipse.lsp4j as l
+import org.eclipse.lsp4j.TextEdit
 
 import java.nio.file.Paths
 import scala.language.unsafeNulls

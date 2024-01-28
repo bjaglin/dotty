@@ -1,6 +1,6 @@
 package dotty
 
-import java.nio.file._
+import java.nio.file.*
 import scala.language.unsafeNulls
 
 /** Runtime properties from defines or environmnent */

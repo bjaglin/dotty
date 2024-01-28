@@ -37,8 +37,8 @@ import dotty.tools.io.*
 import dotty.tools.runner.ScalaClassLoader.*
 import org.jline.reader.*
 
+import java.io.File as JFile
 import java.io.PrintStream
-import java.io.{File => JFile}
 import java.nio.charset.StandardCharsets
 import scala.annotation.tailrec
 import scala.collection.mutable

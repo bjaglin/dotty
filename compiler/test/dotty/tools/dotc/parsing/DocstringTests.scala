@@ -2,8 +2,8 @@ package dotty.tools
 package dotc
 package parsing
 
-import dotty.tools.dotc.ast.Trees._
-import org.junit.Assert._
+import dotty.tools.dotc.ast.Trees.*
+import org.junit.Assert.*
 import org.junit.Test
 
 class DocstringTests extends DocstringTest {

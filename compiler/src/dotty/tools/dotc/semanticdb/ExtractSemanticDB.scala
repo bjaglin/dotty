@@ -3,15 +3,15 @@ package dotc
 package semanticdb
 
 import dotty.tools.dotc.reporting.Diagnostic.Warning
+import dotty.tools.dotc.semanticdb as s
 import dotty.tools.dotc.semanticdb.DiagnosticOps.*
-import dotty.tools.dotc.{semanticdb => s}
 import dotty.tools.io.AbstractFile
 import dotty.tools.io.JarArchive
 
 import java.nio.file.Path
 import scala.PartialFunction.condOpt
 import scala.annotation.tailrec
-import scala.annotation.{threadUnsafe => tu}
+import scala.annotation.threadUnsafe as tu
 import scala.collection.mutable
 import scala.jdk.CollectionConverters.*
 import scala.language.unsafeNulls

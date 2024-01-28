@@ -3,15 +3,15 @@ package dotty.tools
 import org.junit.Test
 
 import java.io.File
-import java.nio.file._
+import java.nio.file.*
 
 import vulpix.TestConfiguration
-import dotc.ast.Trees._
-import dotc.core.Decorators._
-import dotc.core.Contexts._
-import dotc.core.Phases._
-import dotc.core.Types._
-import dotc.core.Symbols._
+import dotc.ast.Trees.*
+import dotc.core.Decorators.*
+import dotc.core.Contexts.*
+import dotc.core.Phases.*
+import dotc.core.Types.*
+import dotc.core.Symbols.*
 
 class AnnotationsTest:
 

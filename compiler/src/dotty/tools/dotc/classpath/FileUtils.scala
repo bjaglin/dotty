@@ -6,8 +6,8 @@ package dotc.classpath
 
 import dotty.tools.io.AbstractFile
 
+import java.io.File as JFile
 import java.io.FileFilter
-import java.io.{File => JFile}
 import java.net.URL
 import scala.language.unsafeNulls
 

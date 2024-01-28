@@ -6,7 +6,7 @@ import dotty.tools.dotc.core.Contexts.ctx
 import dotty.tools.io.AbstractFile
 import org.junit.Test
 
-import java.nio.file._
+import java.nio.file.*
 import java.nio.file.attribute.FileTime
 import scala.language.unsafeNulls
 

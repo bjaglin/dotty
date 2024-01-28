@@ -4,13 +4,13 @@ package ast
 
 import org.junit.Test
 
-import core._
-import Names._
-import Types._
-import Symbols._
-import StdNames._
-import Flags._
-import Contexts._
+import core.*
+import Names.*
+import Types.*
+import Symbols.*
+import StdNames.*
+import Flags.*
+import Contexts.*
 
 class DesugarTests extends DottyTest {
   import tpd._

@@ -4,8 +4,8 @@ import dotty.tools.dotc.CompilationUnit
 import dotty.tools.dotc.ast.Trees.PackageDef
 import dotty.tools.dotc.ast.Trees.ValDef
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.dotc.core.tasty.TastyUnpickler
 import dotty.tools.dotc.interfaces
 import dotty.tools.dotc.report

@@ -3,7 +3,7 @@ package dotc
 package core
 
 import scala.annotation.tailrec
-import scala.annotation.{threadUnsafe => tu}
+import scala.annotation.threadUnsafe as tu
 import scala.collection.mutable
 import scala.compiletime.uninitialized
 

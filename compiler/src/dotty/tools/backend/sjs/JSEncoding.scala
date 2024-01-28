@@ -12,9 +12,9 @@ import org.scalajs.ir.Names.MethodName
 import org.scalajs.ir.Names.SimpleMethodName
 import org.scalajs.ir.OriginalName
 import org.scalajs.ir.OriginalName.NoOriginalName
+import org.scalajs.ir.Trees as js
+import org.scalajs.ir.Types as jstpe
 import org.scalajs.ir.UTF8String
-import org.scalajs.ir.{Trees => js}
-import org.scalajs.ir.{Types => jstpe}
 
 import scala.collection.mutable
 import scala.language.unsafeNulls

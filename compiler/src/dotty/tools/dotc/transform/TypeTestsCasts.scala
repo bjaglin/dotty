@@ -19,7 +19,7 @@ import TypeErasure.*
 import core.Flags.*
 import util.Spans.*
 import reporting.*
-import config.Printers.{ transforms => debug }
+import config.Printers.transforms as debug
 import patmat.Typ
 
 /** This transform normalizes type tests and type casts,

@@ -1,7 +1,7 @@
 package dotty.tools.dotc
 
-import dotty.tools.dotc.config.Settings._
-import org.junit.Assert._
+import dotty.tools.dotc.config.Settings.*
+import org.junit.Assert.*
 import org.junit.Rule
 import org.junit.Test
 import org.junit.rules.TemporaryFolder

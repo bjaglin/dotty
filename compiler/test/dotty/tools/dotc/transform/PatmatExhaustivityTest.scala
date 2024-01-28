@@ -6,8 +6,8 @@ package transform
 import dotty.tools.io.Directory
 import org.junit.Test
 
-import java.io._
-import java.nio.file.{Path => JPath}
+import java.io.*
+import java.nio.file.Path as JPath
 import scala.language.unsafeNulls
 
 import vulpix.FileDiff

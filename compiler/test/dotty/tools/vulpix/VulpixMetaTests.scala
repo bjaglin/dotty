@@ -5,9 +5,9 @@ import org.junit.AfterClass
 import org.junit.Test
 import org.junit.experimental.categories.Category
 
-import scala.concurrent.duration._
+import scala.concurrent.duration.*
 
-import TestConfiguration._
+import TestConfiguration.*
 
 /** Meta tests for the Vulpix test suite. This test follows the structure of
  *  CompilationTests.scala. It is meant to be called from bash to diff with

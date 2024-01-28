@@ -2,7 +2,7 @@ package dotty.tools
 package dotc
 package reporting
 
-import java.lang.System.{lineSeparator => EOL}
+import java.lang.System.lineSeparator as EOL
 import scala.annotation.switch
 import scala.collection.mutable
 import scala.language.unsafeNulls

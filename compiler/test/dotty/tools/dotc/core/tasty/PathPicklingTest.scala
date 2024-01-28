@@ -24,13 +24,13 @@ import org.junit.Assert.fail
 import org.junit.Test
 
 import java.io.ByteArrayOutputStream
+import java.io.File as JFile
 import java.io.IOException
-import java.io.{File => JFile}
 import java.nio.file.Files
 import java.nio.file.NoSuchFileException
 import java.nio.file.Paths
 import scala.language.unsafeNulls
-import scala.sys.process._
+import scala.sys.process.*
 
 class PathPicklingTest {
 

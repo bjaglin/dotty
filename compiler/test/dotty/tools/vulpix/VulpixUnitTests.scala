@@ -2,11 +2,11 @@ package dotty.tools
 package vulpix
 
 import org.junit.AfterClass
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
-import java.io.{File => JFile}
-import scala.concurrent.duration._
+import java.io.File as JFile
+import scala.concurrent.duration.*
 import scala.language.unsafeNulls
 import scala.util.control.NonFatal
 

@@ -3,7 +3,7 @@ package transform
 
 import dotty.tools.dotc.ast.Trees.*
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.config.Printers.{macroAnnot => debug}
+import dotty.tools.dotc.config.Printers.macroAnnot as debug
 import dotty.tools.dotc.core.Annotations.*
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Decorators.*

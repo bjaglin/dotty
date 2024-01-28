@@ -1,10 +1,10 @@
 package dotty.tools
 package backend.jvm
 
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Test
 
-import scala.tools.asm.Opcodes._
+import scala.tools.asm.Opcodes.*
 
 class ArrayApplyOptTest extends DottyBytecodeTest {
   import ASMConverters._

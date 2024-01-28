@@ -2,7 +2,7 @@ package dotty.tools
 package dotc
 package reporting
 
-import org.junit.Assert._
+import org.junit.Assert.*
 
 import scala.language.unsafeNulls
 

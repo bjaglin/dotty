@@ -3,8 +3,8 @@ package dotty.tools.pc.utils
 import org.eclipse.lsp4j.Location
 
 import java.net.URI
-import java.util.Optional
 import java.util as ju
+import java.util.Optional
 import scala.jdk.CollectionConverters.*
 import scala.jdk.OptionConverters.*
 import scala.language.unsafeNulls

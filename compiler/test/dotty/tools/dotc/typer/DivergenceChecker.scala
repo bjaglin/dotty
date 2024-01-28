@@ -1,7 +1,7 @@
 package dotty.tools.dotc.typer
 
 import dotty.tools.DottyTest
-import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Contexts.*
 import org.junit.Assert.assertTrue
 import org.junit.Assert.fail
 import org.junit.Test

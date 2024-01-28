@@ -6,7 +6,7 @@ import core.*
 import Contexts.*
 import Symbols.*
 import Decorators.*
-import Comments.{_, given}
+import Comments.{*, given}
 import ast.tpd
 
 object Docstrings {

@@ -1,7 +1,7 @@
 package dotty.tools.vulpix
 
 import java.io.File
-import java.lang.System.{lineSeparator => EOL}
+import java.lang.System.lineSeparator as EOL
 import java.nio.charset.StandardCharsets
 import java.nio.file.Files
 import java.nio.file.Paths

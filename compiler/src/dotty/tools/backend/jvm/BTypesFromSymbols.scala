@@ -5,8 +5,8 @@ package jvm
 import dotty.tools.dotc.core.Contexts.*
 import dotty.tools.dotc.core.Flags.*
 import dotty.tools.dotc.core.Phases
-import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.dotc.core.Phases.*
+import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.dotc.core.StdNames
 import dotty.tools.dotc.core.Symbols.*
 

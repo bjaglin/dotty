@@ -5,6 +5,7 @@ package reporting
 import dotty.Properties
 
 import java.io.BufferedReader
+import java.io.File as JFile
 import java.io.FileInputStream
 import java.io.FileOutputStream
 import java.io.FileReader
@@ -12,7 +13,6 @@ import java.io.PrintStream
 import java.io.PrintWriter
 import java.io.StringReader
 import java.io.StringWriter
-import java.io.{File => JFile}
 import java.text.SimpleDateFormat
 import java.util.Date
 import scala.collection.mutable

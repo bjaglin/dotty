@@ -10,8 +10,8 @@ import dotty.tools.dotc.interfaces.Diagnostic.WARNING
 import dotty.tools.dotc.util.SourcePosition
 
 import java.util.Collections
+import java.util.List as JList
 import java.util.Optional
-import java.util.{List => JList}
 import scala.language.unsafeNulls
 import scala.util.chaining.*
 

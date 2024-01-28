@@ -1,7 +1,7 @@
 package dotty.tools.dotc.printing
 
 import dotty.tools.DottyTest
-import org.junit.Assert._
+import org.junit.Assert.*
 import org.junit.Ignore
 import org.junit.Test
 

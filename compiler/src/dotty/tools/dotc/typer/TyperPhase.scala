@@ -11,7 +11,7 @@ import Phases.*
 import Contexts.*
 import Symbols.*
 import ImportInfo.withRootImports
-import parsing.{Parser => ParserPhase}
+import parsing.Parser as ParserPhase
 import config.Printers.typr
 import inlines.PrepareInlineable
 import util.Stats.*

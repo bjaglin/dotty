@@ -4,8 +4,8 @@ package parsing
 
 import org.junit.Test
 
-import ast.untpd._
-import core.Constants._
+import ast.untpd.*
+import core.Constants.*
 
 class ParserEdgeTest extends ParserTest {
   //

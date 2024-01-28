@@ -11,16 +11,16 @@ import dotty.tools.dotc.transform.sjs.JSSymUtils.*
 import dotty.tools.dotc.util.SourcePosition
 import org.scalajs.ir
 import org.scalajs.ir.ClassKind
+import org.scalajs.ir.Names as jsNames
 import org.scalajs.ir.Names.ClassName
 import org.scalajs.ir.Names.MethodName
 import org.scalajs.ir.Names.SimpleMethodName
 import org.scalajs.ir.OriginalName
 import org.scalajs.ir.OriginalName.NoOriginalName
 import org.scalajs.ir.Position
+import org.scalajs.ir.Trees as js
 import org.scalajs.ir.Trees.OptimizerHints
-import org.scalajs.ir.{Names => jsNames}
-import org.scalajs.ir.{Trees => js}
-import org.scalajs.ir.{Types => jstpe}
+import org.scalajs.ir.Types as jstpe
 
 import scala.annotation.switch
 import scala.collection.mutable

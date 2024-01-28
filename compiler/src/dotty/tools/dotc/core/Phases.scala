@@ -3,8 +3,8 @@ package dotc
 package core
 
 import dotty.tools.backend.jvm.GenBCode
-import dotty.tools.dotc.transform.MegaPhase.*
 import dotty.tools.dotc.transform.*
+import dotty.tools.dotc.transform.MegaPhase.*
 
 import scala.annotation.internal.sharable
 import scala.collection.mutable.ListBuffer
