@@ -1,7 +1,7 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
+import core._
 import Contexts.Context
 import Phases.Phase
 

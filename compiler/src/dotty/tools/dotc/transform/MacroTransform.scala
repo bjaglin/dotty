@@ -1,10 +1,10 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import Phases.*
-import ast.Trees.*
-import Contexts.*
+import core._
+import Phases._
+import ast.Trees._
+import Contexts._
 
 /** A base class for transforms.
  *  A transform contains a compiler phase which applies a tree transformer.

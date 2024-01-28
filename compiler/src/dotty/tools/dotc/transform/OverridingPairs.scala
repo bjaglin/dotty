@@ -5,15 +5,15 @@ package transform
 import scala.annotation.tailrec
 import scala.compiletime.uninitialized
 
-import core.*
-import Flags.*
-import Symbols.*
-import Contexts.*
-import Scopes.*
-import Decorators.*
+import core._
+import Flags._
+import Symbols._
+import Contexts._
+import Scopes._
+import Decorators._
 import Types.Type
 import NameKinds.DefaultGetterName
-import NullOpsDecorator.*
+import NullOpsDecorator._
 import collection.immutable.BitSet
 import cc.isCaptureChecking
 

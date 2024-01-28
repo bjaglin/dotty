@@ -4,9 +4,9 @@ package printing
 
 import scala.annotation.internal.sharable
 
-import core.*
-import Texts.*
-import ast.Trees.*
+import core._
+import Texts._
+import ast.Trees._
 import Types.{Type, SingletonType, LambdaParam, NamedType}
 import Symbols.Symbol
 import Scopes.Scope
@@ -15,7 +15,7 @@ import Names.Name
 import Denotations._
 import Annotations.Annotation
 import Contexts.Context
-import typer.Implicits.*
+import typer.Implicits._
 import util.SourcePosition
 import typer.ImportInfo
 import cc.CaptureSet

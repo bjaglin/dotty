@@ -3,12 +3,12 @@ package transform
 
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.untpd
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.dotc.core.Phases.postTyperPhase
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.util.SourceFile
 
 /** Ycheck inlined positions */

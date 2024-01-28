@@ -2,15 +2,15 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
-import Contexts.*
-import Types.*
-import Symbols.*
-import Flags.*
-import DenotTransformers.*
-import StdNames.*
-import Decorators.*
-import MegaPhase.*
+import core._
+import Contexts._
+import Types._
+import Symbols._
+import Flags._
+import DenotTransformers._
+import StdNames._
+import Decorators._
+import MegaPhase._
 import NameKinds.ParamAccessorName
 
 /** For all private parameter accessors

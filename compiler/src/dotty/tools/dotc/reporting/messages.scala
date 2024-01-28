@@ -8,40 +8,40 @@ import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans.Span
 
 import java.util.regex.Matcher.quoteReplacement
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.util.control.NonFatal
 import scala.util.matching.Regex
 
-import core.*
-import Contexts.*
-import Decorators.*
-import Symbols.*
-import Names.*
-import NameOps.*
-import Types.*
-import Flags.*
-import Phases.*
+import core._
+import Contexts._
+import Decorators._
+import Symbols._
+import Names._
+import NameOps._
+import Types._
+import Flags._
+import Phases._
 import Denotations.SingleDenotation
 import SymDenotations.SymDenotation
 import NameKinds.{WildcardParamName, ContextFunctionParamName}
 import parsing.Scanners.Token
 import parsing.Tokens
-import printing.Highlighting.*
+import printing.Highlighting._
 import printing.Formatting
-import ErrorMessageID.*
+import ErrorMessageID._
 import ast.Trees
 import config.{Feature, ScalaVersion}
 import typer.ErrorReporting.{err, matchReductionAddendum, substitutableTypeSymbolsInScope}
 import typer.ProtoTypes.{ViewProto, SelectionProto, FunProto}
-import typer.Implicits.*
+import typer.Implicits._
 import typer.Inferencing
 import StdNames.nme
 import printing.Formatting.hl
-import ast.Trees.*
+import ast.Trees._
 import ast.untpd
 import ast.tpd
 import cc.CaptureSet.IdentityCaptRefMap
-import DidYouMean.*
+import DidYouMean._
 
 /**  Messages
   *  ========

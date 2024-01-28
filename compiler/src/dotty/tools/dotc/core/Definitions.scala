@@ -7,19 +7,19 @@ import scala.annotation.{threadUnsafe => tu}
 import scala.collection.mutable
 import scala.compiletime.uninitialized
 
-import Types.*
-import Contexts.*
-import Symbols.*
-import SymDenotations.*
-import StdNames.*
-import Names.*
-import Phases.*
-import Flags.*
-import Scopes.*
-import Decorators.*
-import NameOps.*
-import Periods.*
-import NullOpsDecorator.*
+import Types._
+import Contexts._
+import Symbols._
+import SymDenotations._
+import StdNames._
+import Names._
+import Phases._
+import Flags._
+import Scopes._
+import Decorators._
+import NameOps._
+import Periods._
+import NullOpsDecorator._
 import unpickleScala2.Scala2Unpickler.ensureConstructor
 import collection.mutable
 import Denotations.{SingleDenotation, staticRef}

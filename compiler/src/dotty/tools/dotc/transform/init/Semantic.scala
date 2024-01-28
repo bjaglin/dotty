@@ -5,20 +5,20 @@ package init
 import scala.annotation.tailrec
 import scala.collection.mutable
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Types.*
-import StdNames.*
+import core._
+import Contexts._
+import Symbols._
+import Types._
+import StdNames._
 import NameKinds.OuterSelectName
 import NameKinds.SuperAccessorName
-import ast.tpd.*
-import config.Printers.init as printer
-import reporting.trace as log
-import Errors.*
-import Trace.*
-import Util.*
-import Cache.*
+import ast.tpd._
+import config.Printers.{init => printer}
+import reporting.{trace => log}
+import Errors._
+import Trace._
+import Util._
+import Cache._
 
 /**
  * Checks safe initialization of objects

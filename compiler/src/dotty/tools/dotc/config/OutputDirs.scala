@@ -4,7 +4,7 @@ package config
 
 import scala.language.unsafeNulls
 
-import io.*
+import io._
 
 /** A class for holding mappings from source directories to
  *  their output location. This functionality can be accessed

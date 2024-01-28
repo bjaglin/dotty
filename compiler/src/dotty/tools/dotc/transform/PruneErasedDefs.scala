@@ -3,17 +3,17 @@ package transform
 
 import dotty.tools.dotc.core.Types.MethodType
 
-import core.*
-import Contexts.*
+import core._
+import Contexts._
 import DenotTransformers.SymTransformer
-import Flags.*
-import SymDenotations.*
-import Symbols.*
+import Flags._
+import SymDenotations._
+import Symbols._
 import typer.RefChecks
 import MegaPhase.MiniPhase
 import ast.tpd
 import config.Feature
-import Decorators.*
+import Decorators._
 
 /** This phase makes all erased term members of classes private so that they cannot
  *  conflict with non-erased members. This is needed so that subsequent phases like

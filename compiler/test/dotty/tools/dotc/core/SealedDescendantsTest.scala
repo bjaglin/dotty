@@ -2,7 +2,7 @@ package dotty.tools.dotc.core
 
 import dotty.tools.DottyTest
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 import org.junit.Assert._
 import org.junit.Test
 

@@ -13,7 +13,7 @@ import java.nio.file.Paths
 import scala.language.unsafeNulls
 
 import Contexts.{ Context, ctx }
-import Util.*
+import Util._
 
 class StringDriver(compilerArgs: Array[String], scalaSource: String) extends Driver:
   override def sourcesRequired: Boolean = false

@@ -4,31 +4,31 @@ package typer
 
 import scala.util.control.NonFatal
 
-import core.*
+import core._
 import ast.{Trees, tpd, untpd, desugar}
 import util.Stats.record
 import util.{SrcPos, NoSourcePosition}
-import Contexts.*
-import Flags.*
-import Symbols.*
+import Contexts._
+import Flags._
+import Symbols._
 import Denotations.Denotation
-import Types.*
-import Decorators.*
-import ErrorReporting.*
-import Trees.*
-import Names.*
-import StdNames.*
-import ContextOps.*
+import Types._
+import Decorators._
+import ErrorReporting._
+import Trees._
+import Names._
+import StdNames._
+import ContextOps._
 import NameKinds.DefaultGetterName
-import ProtoTypes.*
-import Inferencing.*
-import reporting.*
-import Nullables.*
-import NullOpsDecorator.*
+import ProtoTypes._
+import Inferencing._
+import reporting._
+import Nullables._
+import NullOpsDecorator._
 import config.Feature
 import collection.mutable
 import config.Printers.{overload, typr, unapp}
-import TypeApplications.*
+import TypeApplications._
 import Annotations.Annotation
 import Constants.{Constant, IntTag}
 import Denotations.SingleDenotation

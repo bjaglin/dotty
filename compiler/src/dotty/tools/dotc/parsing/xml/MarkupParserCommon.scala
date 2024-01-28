@@ -11,7 +11,7 @@ package xml
 
 import scala.collection.BufferedIterator
 
-import Utility.*
+import Utility._
 import util.Chars.SU
 
 /** This is not a public trait - it contains common code shared

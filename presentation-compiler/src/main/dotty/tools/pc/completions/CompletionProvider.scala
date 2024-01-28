@@ -2,7 +2,7 @@ package dotty.tools.pc
 package completions
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.core.Constants.Constant
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.StdNames
@@ -13,7 +13,7 @@ import dotty.tools.pc.AutoImports.AutoImportEdits
 import dotty.tools.pc.AutoImports.AutoImportsGenerator
 import dotty.tools.pc.printer.ShortenedTypePrinter
 import dotty.tools.pc.printer.ShortenedTypePrinter.IncludeDefaultParam
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 import org.eclipse.lsp4j.Command
 import org.eclipse.lsp4j.CompletionItem
 import org.eclipse.lsp4j.CompletionItemKind
@@ -21,7 +21,7 @@ import org.eclipse.lsp4j.CompletionList
 import org.eclipse.lsp4j.InsertTextFormat
 import org.eclipse.lsp4j.InsertTextMode
 import org.eclipse.lsp4j.TextEdit
-import org.eclipse.lsp4j.Range as LspRange
+import org.eclipse.lsp4j.{Range => LspRange}
 
 import java.nio.file.Path
 import scala.jdk.CollectionConverters._

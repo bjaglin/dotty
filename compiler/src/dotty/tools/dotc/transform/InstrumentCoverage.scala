@@ -3,17 +3,17 @@ package transform
 
 import java.io.File
 
-import ast.tpd.*
+import ast.tpd._
 import collection.mutable
-import core.Flags.*
+import core.Flags._
 import core.Contexts.{Context, ctx, inContext}
 import core.DenotTransformers.IdentityDenotTransformer
 import core.Symbols.{defn, Symbol}
 import core.Constants.Constant
 import core.NameOps.isContextFunction
 import core.StdNames.nme
-import core.Types.*
-import coverage.*
+import core.Types._
+import coverage._
 import typer.LiftCoverage
 import util.{SourcePosition, SourceFile}
 import util.Spans.Span

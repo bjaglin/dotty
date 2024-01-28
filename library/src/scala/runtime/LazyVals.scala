@@ -1,7 +1,7 @@
 package scala.runtime
 
 import java.util.concurrent.CountDownLatch
-import scala.annotation.*
+import scala.annotation._
 
 /**
  * Helper methods used in thread-safe lazy vals.

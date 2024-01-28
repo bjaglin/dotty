@@ -4,14 +4,14 @@ package transform
 
 import scala.collection.mutable.ListBuffer
 
-import core.*
-import MegaPhase.*
-import Symbols.*
-import Contexts.*
-import Types.*
-import Decorators.*
-import NameOps.*
-import Names.*
+import core._
+import MegaPhase._
+import Symbols._
+import Contexts._
+import Types._
+import Decorators._
+import NameOps._
+import Names._
 
 /** Rewrite an application
  *

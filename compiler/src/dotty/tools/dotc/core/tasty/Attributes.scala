@@ -1,6 +1,6 @@
 package dotty.tools.dotc.core.tasty
 
-import dotty.tools.tasty.TastyFormat.*
+import dotty.tools.tasty.TastyFormat._
 
 import scala.collection.immutable.BitSet
 import scala.collection.immutable.TreeMap

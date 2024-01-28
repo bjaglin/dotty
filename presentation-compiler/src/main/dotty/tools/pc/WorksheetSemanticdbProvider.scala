@@ -1,6 +1,6 @@
 package dotty.tools.pc
 
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 
 import java.nio.file.Path
 

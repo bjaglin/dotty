@@ -3,7 +3,7 @@ package core
 
 import scala.compiletime.uninitialized
 
-import Contexts.*
+import Contexts._
 import config.Printers.{default, typr}
 
 trait ConstraintRunInfo { self: Run =>

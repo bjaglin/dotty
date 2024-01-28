@@ -2,13 +2,13 @@ package dotty.tools
 package dotc
 package typer
 
-import core.*
-import Types.*
-import Contexts.*
-import Symbols.*
-import Flags.*
-import Constants.*
-import reporting.*
+import core._
+import Types._
+import Contexts._
+import Symbols._
+import Flags._
+import Constants._
+import reporting._
 import Decorators.i
 
 /** A module for linter checks done at typer */

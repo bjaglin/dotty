@@ -5,16 +5,16 @@ package printing
 import scala.collection.mutable
 import scala.language.unsafeNulls
 
-import core.*
-import Texts.*
-import Types.*
-import Flags.*
-import Symbols.*
-import Contexts.*
-import Decorators.*
+import core._
+import Texts._
+import Types._
+import Flags._
+import Symbols._
+import Contexts._
+import Decorators._
 import reporting.Message
 import util.DiffUtil
-import Highlighting.*
+import Highlighting._
 
 object Formatting {
 

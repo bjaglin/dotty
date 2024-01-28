@@ -1,7 +1,7 @@
 package dotty.tools.pc
 
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.Symbols.Symbol
 
 case class Params(

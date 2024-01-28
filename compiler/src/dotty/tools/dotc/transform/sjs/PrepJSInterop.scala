@@ -8,21 +8,21 @@ import org.scalajs.ir.Trees.JSGlobalRef
 import scala.collection.mutable
 
 import ast.tpd
-import core.*
+import core._
 import typer.Checking
 import util.SrcPos
-import Annotations.*
-import Constants.*
-import Contexts.*
-import Decorators.*
-import DenotTransformers.*
-import Flags.*
+import Annotations._
+import Constants._
+import Contexts._
+import Decorators._
+import DenotTransformers._
+import Flags._
 import NameKinds.{DefaultGetterName, ModuleClassName}
-import NameOps.*
-import StdNames.*
-import Symbols.*
-import Types.*
-import JSSymUtils.*
+import NameOps._
+import StdNames._
+import Symbols._
+import Types._
+import JSSymUtils._
 
 /** A macro transform that runs after typer and before pickler to perform
  *  additional Scala.js-specific checks and transformations necessary for

@@ -1,15 +1,15 @@
 package dotty.tools.pc
 
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.NameOps.moduleClassName
-import dotty.tools.dotc.core.Names.*
+import dotty.tools.dotc.core.Names._
 import dotty.tools.dotc.core.Scopes.EmptyScope
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.typer.ImportInfo
 import dotty.tools.pc.IndexedContext.Result
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 
 import scala.annotation.tailrec
 import scala.util.control.NonFatal

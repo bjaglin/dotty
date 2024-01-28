@@ -4,7 +4,7 @@ package jvm
 
 
 import dotty.tools.dotc.core.StdNames
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.transform.Erasure
 
 import scala.tools.asm.Handle

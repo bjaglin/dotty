@@ -4,11 +4,11 @@ package init
 
 import scala.collection.mutable
 
-import core.*
-import Contexts.*
-import ast.tpd.*
+import core._
+import Contexts._
+import ast.tpd._
 import util.SourcePosition
-import Decorators.*
+import Decorators._
 import printing.SyntaxHighlighting
 
 /** Logic related to evaluation trace for showing friendly error messages

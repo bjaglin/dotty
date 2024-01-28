@@ -1,8 +1,8 @@
 package dotty.tools.dotc
 package config
 
-import Settings.*
-import core.Contexts.*
+import Settings._
+import core.Contexts._
 
 abstract class CompilerCommand extends CliCommand:
   type ConcreteSettings = ScalaSettings

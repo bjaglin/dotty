@@ -5,18 +5,18 @@ package ast
 import scala.annotation.tailrec
 import scala.collection.mutable
 
-import core.*
-import Flags.*
-import Trees.*
-import Types.*
-import Contexts.*
-import Names.*
-import StdNames.*
-import NameOps.*
-import Symbols.*
+import core._
+import Flags._
+import Trees._
+import Types._
+import Contexts._
+import Names._
+import StdNames._
+import NameOps._
+import Symbols._
 import typer.ConstFold
 import reporting.trace
-import Decorators.*
+import Decorators._
 import Constants.Constant
 
 trait TreeInfo[T <: Untyped] { self: Trees.Instance[T] =>

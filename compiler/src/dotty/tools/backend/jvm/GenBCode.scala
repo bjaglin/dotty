@@ -2,16 +2,16 @@ package dotty.tools.backend.jvm
 
 import dotty.tools.dotc.CompilationUnit
 import dotty.tools.dotc.core.Phases.Phase
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core._
 import dotty.tools.dotc.interfaces.CompilerCallback
 import dotty.tools.dotc.report
-import dotty.tools.io.*
+import dotty.tools.io._
 
 import scala.collection.mutable
 import scala.compiletime.uninitialized
 
-import Contexts.*
-import Symbols.*
+import Contexts._
+import Symbols._
 
 class GenBCode extends Phase { self =>
 

@@ -1,7 +1,7 @@
 package dotty.tools.dotc
 package decompiler
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Phases.Phase
 import dotty.tools.io.File
 

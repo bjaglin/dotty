@@ -2,15 +2,15 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
-import Symbols.*
-import Types.*
-import Contexts.*
-import Decorators.*
-import Flags.*
-import Scopes.*
-import Phases.*
-import DenotTransformers.*
+import core._
+import Symbols._
+import Types._
+import Contexts._
+import Decorators._
+import Flags._
+import Scopes._
+import Phases._
+import DenotTransformers._
 import ast.untpd
 import collection.{mutable, immutable}
 import util.SrcPos

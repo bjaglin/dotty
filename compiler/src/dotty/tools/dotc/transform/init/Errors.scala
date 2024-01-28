@@ -3,13 +3,13 @@ package dotc
 package transform
 package init
 
-import ast.tpd.*
-import core.*
+import ast.tpd._
+import core._
 import util.Property
 import util.SourcePosition
-import Types.*
-import Symbols.*
-import Contexts.*
+import Types._
+import Symbols._
+import Contexts._
 import Trace.Trace
 
 object Errors:

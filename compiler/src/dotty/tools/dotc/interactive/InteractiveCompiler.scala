@@ -2,10 +2,10 @@ package dotty.tools
 package dotc
 package interactive
 
-import core.*
-import Phases.*
-import parsing.*
-import typer.*
+import core._
+import Phases._
+import parsing._
+import typer._
 
 class InteractiveCompiler extends Compiler {
   // TODO: Figure out what phases should be run in IDEs

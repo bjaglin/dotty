@@ -3,22 +3,22 @@ package util
 
 import dotty.tools.dotc.ast.NavigateAST
 import dotty.tools.dotc.ast.untpd
-import dotty.tools.dotc.core.NameOps.*
+import dotty.tools.dotc.core.NameOps._
 import dotty.tools.dotc.core.StdNames.nme
 import dotty.tools.dotc.core.Symbols.defn
 
-import ast.Trees.*
+import ast.Trees._
 import ast.tpd
-import core.Contexts.*
+import core.Contexts._
 import core.Denotations.{SingleDenotation, Denotation}
 import core.Flags
-import core.Names.*
+import core.Names._
 import core.NameKinds
-import core.Types.*
+import core.Types._
 import core.Symbols.{NoSymbol, isLocalToBlock}
 import interactive.Interactive
 import util.Spans.Span
-import reporting.*
+import reporting._
 
 
 object Signatures {

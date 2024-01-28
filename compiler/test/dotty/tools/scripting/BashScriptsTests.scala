@@ -12,7 +12,7 @@ import java.nio.file.Paths
 import scala.language.unsafeNulls
 
 import vulpix.TestConfiguration
-import ScriptTestEnv.*
+import ScriptTestEnv._
 
 /** Verifies correct handling of command line arguments by `dist/bin/scala` and `dist/bin/scalac`.
  *   +. arguments following a script path must be treated as script arguments

@@ -1,21 +1,21 @@
 package dotty.tools.pc
 
 import dotty.tools.dotc.ast.NavigateAST
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags.ModuleClass
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.interactive.Interactive
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 import org.eclipse.lsp4j.Location
 
 import java.nio.file.Paths
 import java.util.ArrayList
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.meta.internal.pc.DefinitionResultImpl
 import scala.meta.pc.DefinitionResult
 import scala.meta.pc.OffsetParams

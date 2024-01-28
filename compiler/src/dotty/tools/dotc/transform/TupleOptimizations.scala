@@ -3,15 +3,15 @@ package transform
 
 import dotty.tools.dotc.ast.tpd
 
-import core.*
-import Contexts.*
-import Decorators.*
-import Definitions.*
-import DenotTransformers.*
-import StdNames.*
-import Symbols.*
-import MegaPhase.*
-import Types.*
+import core._
+import Contexts._
+import Decorators._
+import Definitions._
+import DenotTransformers._
+import StdNames._
+import Symbols._
+import MegaPhase._
+import Types._
 
 /** Optimize generic operations on tuples */
 class TupleOptimizations extends MiniPhase with IdentityDenotTransformer {

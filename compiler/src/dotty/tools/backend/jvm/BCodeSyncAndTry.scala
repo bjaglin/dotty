@@ -5,7 +5,7 @@ package jvm
 import dotty.tools.dotc.CompilationUnit
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.core.StdNames.nme
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 
 import scala.collection.immutable
 import scala.language.unsafeNulls

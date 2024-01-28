@@ -8,20 +8,20 @@ import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.reporting.Message
 import dotty.tools.dotc.util.SrcPos
 
-import Trees.*
-import core.*
-import Flags.*
-import Symbols.*
-import Flags.*
-import Types.*
-import Decorators.*
+import Trees._
+import core._
+import Flags._
+import Symbols._
+import Flags._
+import Types._
+import Decorators._
 import StdNames.nme
-import Contexts.*
+import Contexts._
 import Names.{Name, TermName}
 import NameKinds.{InlineAccessorName, UniqueInlineName}
 import inlines.Inlines
-import NameOps.*
-import Annotations.*
+import NameOps._
+import Annotations._
 import transform.{AccessProxies, Splicer}
 import staging.CrossStageSafety
 import config.Printers.inlining

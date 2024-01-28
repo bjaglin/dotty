@@ -6,25 +6,25 @@ package dotty.tools.dotc
 package transform
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.transform.MegaPhase.*
+import dotty.tools.dotc.transform.MegaPhase._
 
 import scala.collection.mutable
 
-import ValueClasses.*
-import core.*
-import Types.*
-import Contexts.*
-import Names.*
-import Flags.*
-import DenotTransformers.*
-import Phases.*
-import SymDenotations.*
-import Symbols.*
-import StdNames.*
-import Denotations.*
+import ValueClasses._
+import core._
+import Types._
+import Contexts._
+import Names._
+import Flags._
+import DenotTransformers._
+import Phases._
+import SymDenotations._
+import Symbols._
+import StdNames._
+import Denotations._
 import TypeErasure.{ valueErasure, ErasedValueType }
 import NameKinds.{ExtMethName, BodyRetainerName}
-import Decorators.*
+import Decorators._
 
 /**
  * Perform Step 1 in the inline classes SIP: Creates extension methods for all

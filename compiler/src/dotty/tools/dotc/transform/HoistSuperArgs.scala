@@ -1,18 +1,18 @@
 package dotty.tools.dotc
 package transform
 
-import MegaPhase.*
-import core.DenotTransformers.*
-import core.Symbols.*
-import core.Contexts.*
+import MegaPhase._
+import core.DenotTransformers._
+import core.Symbols._
+import core.Contexts._
 import ast.TreeTypeMap
-import core.Types.*
-import core.Flags.*
-import core.Decorators.*
+import core.Types._
+import core.Flags._
+import core.Decorators._
 import collection.mutable
-import ast.Trees.*
+import ast.Trees._
 import core.NameKinds.SuperArgName
-import core.Decorators.*
+import core.Decorators._
 
 object HoistSuperArgs {
   val name: String = "hoistSuperArgs"

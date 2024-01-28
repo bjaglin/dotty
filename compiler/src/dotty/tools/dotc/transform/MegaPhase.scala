@@ -4,13 +4,13 @@ package transform
 
 import scala.compiletime.uninitialized
 
-import core.*
-import Contexts.*
-import Phases.*
-import Symbols.*
-import Decorators.*
+import core._
+import Contexts._
+import Phases._
+import Symbols._
+import Decorators._
 import Flags.PackageVal
-import staging.StagingLevel.*
+import staging.StagingLevel._
 
 /** A MegaPhase combines a number of mini-phases which are all executed in
  *  a single tree traversal.

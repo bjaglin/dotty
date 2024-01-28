@@ -1,8 +1,8 @@
 package dotty.tools.dotc.transform
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.transform.MegaPhase.MiniPhase
 

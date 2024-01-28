@@ -3,14 +3,14 @@ package typer
 
 import java.lang.ArithmeticException
 
-import ast.*
-import core.*
-import Symbols.*
-import Types.*
-import Constants.*
-import Names.*
-import StdNames.*
-import Contexts.*
+import ast._
+import core._
+import Symbols._
+import Types._
+import Constants._
+import Names._
+import StdNames._
+import Contexts._
 
 object ConstFold:
 

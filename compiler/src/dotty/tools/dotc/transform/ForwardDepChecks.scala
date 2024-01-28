@@ -4,13 +4,13 @@ package transform
 
 import scala.compiletime.uninitialized
 
-import core.*
-import Symbols.*
-import Types.*
-import Contexts.*
-import Flags.*
-import Decorators.*
-import reporting.*
+import core._
+import Symbols._
+import Types._
+import Contexts._
+import Flags._
+import Decorators._
+import reporting._
 import util.Spans.Span
 import util.Store
 import collection.immutable

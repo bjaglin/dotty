@@ -12,18 +12,18 @@ import scala.collection.immutable.SortedMap
 import scala.collection.mutable
 import scala.language.unsafeNulls
 
-import core.Names.*
-import core.Contexts.*
-import core.Decorators.*
-import util.Spans.*
-import core.StdNames.*
-import core.Comments.*
+import core.Names._
+import core.Contexts._
+import core.Decorators._
+import util.Spans._
+import core.StdNames._
+import core.Comments._
 import util.SourceFile
-import util.Chars.*
+import util.Chars._
 import util.{SourcePosition, CharBuffer}
 import util.Spans.Span
 import config.Config
-import Tokens.*
+import Tokens._
 import rewrites.Rewrites.patch
 import config.Feature
 import config.Feature.{migrateTo3, fewerBracesEnabled}

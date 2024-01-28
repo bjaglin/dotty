@@ -6,14 +6,14 @@ import scala.annotation.internal.sharable
 import scala.annotation.tailrec
 import scala.collection.mutable
 
-import Contexts.*
-import Decorators.*
-import Symbols.*
-import Types.*
+import Contexts._
+import Decorators._
+import Symbols._
+import Types._
 import NameKinds.UniqueName
 import config.Printers.{gadts, gadtsConstr}
 import util.{SimpleIdentitySet, SimpleIdentityMap}
-import printing.*
+import printing._
 
 object GadtConstraint:
   @sharable val empty: GadtConstraint =

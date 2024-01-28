@@ -2,14 +2,14 @@ package dotty.tools
 package dotc
 package reporting
 
-import scala.compiletime.*
+import scala.compiletime._
 import scala.language.unsafeNulls
 
-import core.*
-import Contexts.*
-import Decorators.*
-import config.*
-import printing.Formatting.*
+import core._
+import Contexts._
+import Decorators._
+import config._
+import printing.Formatting._
 
 /** Exposes the {{{ trace("question") { op } }}} syntax.
  *

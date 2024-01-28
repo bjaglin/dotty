@@ -3,24 +3,24 @@ package dotc
 package core
 package tasty
 
-import dotty.tools.tasty.TastyBuffer.*
+import dotty.tools.tasty.TastyBuffer._
 import dotty.tools.tasty.TastyFormat.ASTsSection
-import dotty.tools.tasty.TastyFormat.*
+import dotty.tools.tasty.TastyFormat._
 
 import scala.language.unsafeNulls
 
-import ast.Trees.*
+import ast.Trees._
 import ast.{untpd, tpd}
-import Contexts.*
-import Symbols.*
-import Types.*
-import Names.*
-import Constants.*
-import Decorators.*
-import Annotations.*
-import Flags.*
+import Contexts._
+import Symbols._
+import Types._
+import Names._
+import Constants._
+import Decorators._
+import Annotations._
+import Flags._
 import Comments.{Comment, docCtx}
-import NameKinds.*
+import NameKinds._
 import StdNames.{nme, tpnme}
 import config.Config
 import collection.mutable

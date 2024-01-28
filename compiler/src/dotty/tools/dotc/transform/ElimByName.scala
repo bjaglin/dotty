@@ -4,17 +4,17 @@ package transform
 
 import dotty.tools.dotc.core.Names.Name
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Types.*
-import Flags.*
-import SymDenotations.*
+import core._
+import Contexts._
+import Symbols._
+import Types._
+import Flags._
+import SymDenotations._
 import DenotTransformers.InfoTransformer
 import NameKinds.SuperArgName
 import core.StdNames.nme
-import MegaPhase.*
-import Decorators.*
+import MegaPhase._
+import Decorators._
 import typer.RefChecks
 import reporting.trace
 

@@ -5,7 +5,7 @@ package transform
 import dotty.tools.backend.jvm.DottyBytecodeTest
 import org.junit.Test
 
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 
 class SpecializeTuplesTests extends DottyBytecodeTest {
   @Test def noBoxing = {

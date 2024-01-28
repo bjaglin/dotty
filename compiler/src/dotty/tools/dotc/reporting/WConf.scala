@@ -2,7 +2,7 @@ package dotty.tools
 package dotc
 package reporting
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.util.SourcePosition
 
 import java.util.regex.PatternSyntaxException

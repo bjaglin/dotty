@@ -10,10 +10,10 @@ package io
 import java.io.DataOutputStream
 import java.io.InputStream
 import java.io.OutputStream
-import java.util.jar.*
+import java.util.jar._
 import scala.annotation.tailrec
 import scala.collection.mutable
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 
 import Attributes.Name

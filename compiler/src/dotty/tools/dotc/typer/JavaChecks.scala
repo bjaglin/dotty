@@ -1,8 +1,8 @@
 package dotty.tools.dotc
 package typer
 
-import core.Contexts.*
-import ast.tpd.*
+import core.Contexts._
+import ast.tpd._
 
 /** PostTyper doesn't run on java sources,
  *  but some checks still need to be applied.

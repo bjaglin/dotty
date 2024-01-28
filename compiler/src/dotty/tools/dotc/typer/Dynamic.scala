@@ -2,25 +2,25 @@ package dotty.tools
 package dotc
 package typer
 
-import dotty.tools.dotc.ast.Trees.*
+import dotty.tools.dotc.ast.Trees._
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.core.Constants.Constant
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.Mode
 import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.core.Names.TermName
-import dotty.tools.dotc.core.StdNames.*
+import dotty.tools.dotc.core.StdNames._
 import dotty.tools.dotc.core.TypeErasure
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.Types._
 
-import util.Spans.*
-import core.Symbols.*
+import util.Spans._
+import core.Symbols._
 import transform.ValueClasses
-import ErrorReporting.*
-import reporting.*
+import ErrorReporting._
+import reporting._
 import inlines.Inlines
 
 object Dynamic {

@@ -1,9 +1,9 @@
 package dotty.tools.dotc
 package transform
 
-import MegaPhase.*
-import core.DenotTransformers.*
-import core.Contexts.*
+import MegaPhase._
+import core.DenotTransformers._
+import core.Contexts._
 import ast.tpd
 
 /** This phase transforms wildcards in valdefs with their default value.

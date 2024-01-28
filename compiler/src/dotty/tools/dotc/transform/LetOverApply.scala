@@ -2,11 +2,11 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Decorators.*
-import MegaPhase.*
+import core._
+import Contexts._
+import Symbols._
+import Decorators._
+import MegaPhase._
 
 /** Rewrite `{ stats; expr}.f(args)` to `{ stats; expr.f(args) }` and
  *  `{ stats; expr }(args)` to `{ stats; expr(args) }` before proceeding,

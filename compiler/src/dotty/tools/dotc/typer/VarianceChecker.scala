@@ -6,15 +6,15 @@ import dotty.tools.dotc.ast.tpd
 
 import scala.compiletime.uninitialized
 
-import core.*
-import Types.*
-import Contexts.*
-import Flags.*
-import Symbols.*
-import Trees.*
-import Decorators.*
-import Variances.*
-import NameKinds.*
+import core._
+import Types._
+import Contexts._
+import Flags._
+import Symbols._
+import Trees._
+import Decorators._
+import Variances._
+import NameKinds._
 import util.SrcPos
 import config.Printers.variances
 import config.Feature.migrateTo3

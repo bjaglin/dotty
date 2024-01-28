@@ -4,13 +4,13 @@ package core
 
 import scala.annotation.internal.sharable
 
-import Symbols.*
-import Types.*
-import Contexts.*
-import Constants.*
-import Phases.*
+import Symbols._
+import Types._
+import Contexts._
+import Constants._
+import Phases._
 import ast.tpd
-import tpd.*
+import tpd._
 import util.Spans.Span
 import printing.{Showable, Printer}
 import printing.Texts.Text

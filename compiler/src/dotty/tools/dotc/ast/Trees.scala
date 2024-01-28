@@ -2,20 +2,20 @@ package dotty.tools
 package dotc
 package ast
 
-import core.*
-import Types.*
-import Names.*
-import NameOps.*
-import Flags.*
-import util.Spans.*
-import Contexts.*
-import Constants.*
+import core._
+import Types._
+import Names._
+import NameOps._
+import Flags._
+import util.Spans._
+import Contexts._
+import Constants._
 import typer.{ ConstFold, ProtoTypes }
-import SymDenotations.*
-import Symbols.*
-import Denotations.*
-import StdNames.*
-import Comments.*
+import SymDenotations._
+import Symbols._
+import Denotations._
+import StdNames._
+import Comments._
 import collection.mutable.ListBuffer
 import printing.Printer
 import printing.Texts.Text
@@ -26,8 +26,8 @@ import annotation.internal.sharable
 import annotation.unchecked.uncheckedVariance
 import annotation.constructorOnly
 import compiletime.uninitialized
-import Decorators.*
-import staging.StagingLevel.*
+import Decorators._
+import staging.StagingLevel._
 
 object Trees {
 

@@ -1,18 +1,18 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
-import MegaPhase.*
-import Contexts.*
-import Flags.*
-import Symbols.*
-import Decorators.*
-import DenotTransformers.*
-import Names.*
-import NameOps.*
-import NameKinds.*
-import NullOpsDecorator.*
-import ResolveSuper.*
+import core._
+import MegaPhase._
+import Contexts._
+import Flags._
+import Symbols._
+import Decorators._
+import DenotTransformers._
+import Names._
+import NameOps._
+import NameKinds._
+import NullOpsDecorator._
+import ResolveSuper._
 import reporting.IllegalSuperAccessor
 
 /** This phase implements super accessors in classes that need them.

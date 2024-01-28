@@ -5,12 +5,12 @@ package reporting
 import scala.annotation.threadUnsafe
 import scala.language.unsafeNulls
 
-import core.*
-import Contexts.*
-import Decorators.*
-import Symbols.*
-import Types.*
-import Flags.*
+import core._
+import Contexts._
+import Decorators._
+import Symbols._
+import Types._
+import Flags._
 import printing.{RefinedPrinter, MessageLimiter, ErrorMessageLimiter}
 import printing.Texts.Text
 import printing.Formatting.hl

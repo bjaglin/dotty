@@ -4,18 +4,18 @@ package jvm
 
 import dotty.tools.dotc.CompilationUnit
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Constants.*
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Constants._
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Decorators.em
 import dotty.tools.dotc.core.Flags.{Label => LabelFlag, _}
-import dotty.tools.dotc.core.Phases.*
+import dotty.tools.dotc.core.Phases._
 import dotty.tools.dotc.core.StdNames.nme
 import dotty.tools.dotc.core.StdNames.str
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.report
 import dotty.tools.dotc.transform.Erasure
-import dotty.tools.dotc.util.Spans.*
+import dotty.tools.dotc.util.Spans._
 
 import scala.annotation.switch
 import scala.annotation.tailrec

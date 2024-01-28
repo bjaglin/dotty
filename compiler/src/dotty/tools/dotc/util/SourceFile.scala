@@ -2,7 +2,7 @@ package dotty.tools
 package dotc
 package util
 
-import dotty.tools.io.*
+import dotty.tools.io._
 
 import java.io.File.separator
 import java.net.URI
@@ -21,9 +21,9 @@ import scala.io.Codec
 import scala.language.unsafeNulls
 import scala.util.chaining.given
 
-import Spans.*
-import core.Contexts.*
-import Chars.*
+import Spans._
+import core.Contexts._
+import Chars._
 
 object ScriptSourceFile {
   @sharable private val headerPattern = Pattern.compile("""^(::)?!#.*(\r|\n|\r\n)""", Pattern.MULTILINE)

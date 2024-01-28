@@ -1,7 +1,7 @@
 package dotty.tools.dotc
 package plugins
 
-import dotty.tools.io.*
+import dotty.tools.io._
 
 import java.io.InputStream
 import java.util.Properties
@@ -10,9 +10,9 @@ import scala.util.Failure
 import scala.util.Success
 import scala.util.Try
 
-import core.*
-import Contexts.*
-import Phases.*
+import core._
+import Contexts._
+import Phases._
 import transform.MegaPhase.MiniPhase
 
 trait PluginPhase extends MiniPhase {

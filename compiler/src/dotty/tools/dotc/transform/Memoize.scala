@@ -3,20 +3,20 @@ package transform
 
 import scala.compiletime.uninitialized
 
-import core.*
-import DenotTransformers.*
-import Contexts.*
-import Phases.*
+import core._
+import DenotTransformers._
+import Contexts._
+import Phases._
 import SymDenotations.SymDenotation
-import Denotations.*
-import Symbols.*
-import Constants.*
-import MegaPhase.*
-import NameOps.*
-import Flags.*
-import Decorators.*
+import Denotations._
+import Symbols._
+import Constants._
+import MegaPhase._
+import NameOps._
+import Flags._
+import Decorators._
 import StdNames.nme
-import sjs.JSSymUtils.*
+import sjs.JSSymUtils._
 import util.Store
 
 object Memoize {

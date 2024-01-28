@@ -2,22 +2,22 @@ package dotty.tools.dotc
 package transform
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Annotations.*
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.StdNames.*
-import dotty.tools.dotc.quoted.*
+import dotty.tools.dotc.core.Annotations._
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.StdNames._
+import dotty.tools.dotc.quoted._
 
 import scala.annotation.constructorOnly
 import scala.collection.mutable
 
-import core.*
-import Decorators.*
-import Flags.*
-import Types.*
-import Contexts.*
-import Symbols.*
-import NameKinds.*
-import tpd.*
+import core._
+import Decorators._
+import Flags._
+import Types._
+import Contexts._
+import Symbols._
+import NameKinds._
+import tpd._
 
 /** Helper methods to construct trees calling methods in `Quotes.reflect` based on the current `quotes` tree */
 trait ReifiedReflect:

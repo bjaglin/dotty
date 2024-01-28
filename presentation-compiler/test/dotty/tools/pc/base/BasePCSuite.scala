@@ -1,12 +1,12 @@
 package dotty.tools.pc.base
 
 import dotty.tools.pc.ScalaPresentationCompiler
-import dotty.tools.pc.*
+import dotty.tools.pc._
 import dotty.tools.pc.completions.CompletionSource
 import dotty.tools.pc.tests.buildinfo.BuildInfo
 import dotty.tools.pc.utils._
 import org.eclipse.lsp4j.MarkupContent
-import org.eclipse.lsp4j.jsonrpc.messages.Either as JEither
+import org.eclipse.lsp4j.jsonrpc.messages.{Either => JEither}
 import org.junit.runner.RunWith
 
 import java.lang.management.ManagementFactory
@@ -18,7 +18,7 @@ import java.util.concurrent.Executors
 import java.util.concurrent.ScheduledExecutorService
 import scala.collection.immutable
 import scala.language.unsafeNulls
-import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.jdk.CollectionConverters._
 import scala.meta.internal.metals.ClasspathSearch
 import scala.meta.internal.metals.ExcludedPackagesHandler
 import scala.meta.internal.pc.PresentationCompilerConfigImpl

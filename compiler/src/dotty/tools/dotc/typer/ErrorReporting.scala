@@ -2,23 +2,23 @@ package dotty.tools
 package dotc
 package typer
 
-import ast.*
-import core.*
-import Types.*
-import ProtoTypes.*
-import Contexts.*
-import Decorators.*
-import Denotations.*
-import Symbols.*
-import Implicits.*
-import Flags.*
+import ast._
+import core._
+import Types._
+import ProtoTypes._
+import Contexts._
+import Decorators._
+import Denotations._
+import Symbols._
+import Implicits._
+import Flags._
 import Constants.Constant
-import Trees.*
-import NameOps.*
+import Trees._
+import NameOps._
 import util.Spans.NoSpan
 import util.SrcPos
 import config.Feature
-import reporting.*
+import reporting._
 import collection.mutable
 
 

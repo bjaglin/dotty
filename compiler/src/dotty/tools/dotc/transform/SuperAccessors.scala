@@ -8,18 +8,18 @@ import dotty.tools.dotc.ast.tpd
 import scala.collection.mutable
 
 import ValueClasses.isMethodWithExtension
-import core.*
-import Contexts.*
-import Flags.*
-import Symbols.*
-import Names.*
-import StdNames.*
-import NameOps.*
-import Trees.*
+import core._
+import Contexts._
+import Flags._
+import Symbols._
+import Names._
+import StdNames._
+import NameOps._
+import Trees._
 import DenotTransformers.DenotTransformer
-import Symbols.*
-import util.Spans.*
-import Decorators.*
+import Symbols._
+import util.Spans._
+import Decorators._
 import NameKinds.{ SuperAccessorName, ExpandPrefixName }
 
 /** This class adds super accessors for all super calls that either

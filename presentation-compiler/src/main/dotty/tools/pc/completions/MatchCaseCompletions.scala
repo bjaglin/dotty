@@ -1,12 +1,12 @@
 package dotty.tools.pc
 package completions
 
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.core.Constants.Constant
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Definitions
 import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.StdNames
 import dotty.tools.dotc.core.Symbols.NoSymbol
 import dotty.tools.dotc.core.Symbols.Symbol
@@ -19,9 +19,9 @@ import dotty.tools.dotc.core.Types.TypeRef
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.pc.AutoImports.AutoImportsGenerator
 import dotty.tools.pc.AutoImports.SymbolImport
-import dotty.tools.pc.MetalsInteractive.*
-import dotty.tools.pc.utils.MtagsEnrichments.*
-import org.eclipse.lsp4j as l
+import dotty.tools.pc.MetalsInteractive._
+import dotty.tools.pc.utils.MtagsEnrichments._
+import org.eclipse.{lsp4j => l}
 
 import java.net.URI
 import scala.collection.mutable

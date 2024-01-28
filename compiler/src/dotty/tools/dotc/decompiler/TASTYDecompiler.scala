@@ -1,7 +1,7 @@
 package dotty.tools.dotc.decompiler
 
 import dotty.tools.dotc.core.Phases.Phase
-import dotty.tools.dotc.fromtasty.*
+import dotty.tools.dotc.fromtasty._
 
 /** Compiler from tasty to user readable high text representation
  *  of the compiled scala code.

@@ -4,12 +4,12 @@ package cc
 
 import scala.collection.mutable
 
-import core.*
-import Types.*
-import Symbols.*
-import Flags.*
-import Contexts.*
-import Decorators.*
+import core._
+import Types._
+import Symbols._
+import Flags._
+import Contexts._
+import Decorators._
 import config.Printers.{capt, captDebug}
 import Annotations.Annotation
 import annotation.threadUnsafe
@@ -17,7 +17,7 @@ import annotation.constructorOnly
 import annotation.internal.sharable
 import reporting.trace
 import printing.{Showable, Printer}
-import printing.Texts.*
+import printing.Texts._
 import util.{SimpleIdentitySet, Property}
 import typer.ErrorReporting.Addenda
 import util.common.alwaysTrue

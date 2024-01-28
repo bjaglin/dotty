@@ -11,7 +11,7 @@ import scala.annotation.tailrec
 
 import util.{SourceFile, Spans}
 import Spans.Span
-import core.Contexts.*
+import core.Contexts._
 import collection.mutable
 
 /** Handles rewriting of Scala2 files to Dotty */

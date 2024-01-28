@@ -10,14 +10,14 @@ import scala.compiletime.uninitialized
 import ast.tpd
 import core.Annotations.Annotation
 import core.Constants.Constant
-import core.Contexts.*
-import core.Decorators.*
+import core.Contexts._
+import core.Decorators._
 import core.DenotTransformers.IdentityDenotTransformer
-import core.Flags.*
+import core.Flags._
 import core.NameKinds.{ExpandedName, LazyBitMapName, LazyLocalInitName, LazyLocalName}
 import core.StdNames.nme
-import core.Symbols.*
-import core.Types.*
+import core.Symbols._
+import core.Types._
 import core.{Names, StdNames}
 import transform.MegaPhase.MiniPhase
 

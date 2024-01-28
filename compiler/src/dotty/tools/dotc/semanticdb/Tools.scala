@@ -4,8 +4,8 @@ import dotty.tools.dotc.semanticdb.Scala3.given
 import dotty.tools.dotc.util.SourceFile
 
 import java.nio.charset.StandardCharsets
-import java.nio.file.*
-import scala.jdk.CollectionConverters.*
+import java.nio.file._
+import scala.jdk.CollectionConverters._
 
 object Tools:
 

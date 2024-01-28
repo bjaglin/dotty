@@ -1,7 +1,7 @@
 package scala.quoted
 package runtime.impl.printers
 
-import scala.quoted.*
+import scala.quoted._
 
 object Extractors {
 

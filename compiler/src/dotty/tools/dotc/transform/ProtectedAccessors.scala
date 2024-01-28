@@ -3,11 +3,11 @@ package transform
 
 import dotty.tools.dotc.util.Property
 
-import core.Contexts.*
-import core.NameKinds.*
-import core.Symbols.*
-import core.Flags.*
-import core.Decorators.*
+import core.Contexts._
+import core.NameKinds._
+import core.Symbols._
+import core.Flags._
+import core.Decorators._
 import core.Names.TermName
 import MegaPhase.MiniPhase
 import config.Printers.transforms

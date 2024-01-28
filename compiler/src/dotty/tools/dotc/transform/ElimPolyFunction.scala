@@ -2,26 +2,26 @@ package dotty.tools.dotc
 package transform
 
 import ast.{Trees, tpd}
-import core.*
-import core.Decorators.*
-import MegaPhase.*
+import core._
+import core.Decorators._
+import MegaPhase._
 import Phases.Phase
-import Types.*
-import Contexts.*
-import Constants.*
-import Names.*
-import NameOps.*
-import Flags.*
-import DenotTransformers.*
-import SymDenotations.*
-import Symbols.*
-import StdNames.*
-import Annotations.*
-import Trees.*
-import Scopes.*
-import Denotations.*
+import Types._
+import Contexts._
+import Constants._
+import Names._
+import NameOps._
+import Flags._
+import DenotTransformers._
+import SymDenotations._
+import Symbols._
+import StdNames._
+import Annotations._
+import Trees._
+import Scopes._
+import Denotations._
 import TypeErasure.ErasedValueType
-import ValueClasses.*
+import ValueClasses._
 
 /** This phase rewrite PolyFunction subclasses to FunctionN subclasses
  *

@@ -4,7 +4,7 @@ import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Phases
 import dotty.tools.dotc.report
 import dotty.tools.dotc.reporting.Message
-import dotty.tools.dotc.util.*
+import dotty.tools.dotc.util._
 import dotty.tools.io.AbstractFile
 
 import java.util.{Collection => JCollection}

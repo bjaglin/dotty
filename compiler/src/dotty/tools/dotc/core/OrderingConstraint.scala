@@ -4,15 +4,15 @@ package core
 
 import scala.compiletime.uninitialized
 
-import Types.*
-import Contexts.*
-import Symbols.*
-import Decorators.*
-import TypeApplications.*
+import Types._
+import Contexts._
+import Symbols._
+import Decorators._
+import TypeApplications._
 import util.{SimpleIdentitySet, SimpleIdentityMap}
 import collection.mutable
 import printing.Printer
-import printing.Texts.*
+import printing.Texts._
 import config.Config
 import config.Printers.constr
 import reflect.ClassTag

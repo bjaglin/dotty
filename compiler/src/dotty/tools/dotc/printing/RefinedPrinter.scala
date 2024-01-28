@@ -12,25 +12,25 @@ import dotty.tools.dotc.ast.untpd.ValOrDefDef
 import dotty.tools.dotc.parsing.JavaParsers
 import dotty.tools.dotc.util.SourcePosition
 
-import core.*
-import Constants.*
-import Texts.*
-import Types.*
-import Flags.*
-import Names.*
-import Symbols.*
-import NameOps.*
+import core._
+import Constants._
+import Texts._
+import Types._
+import Flags._
+import Names._
+import Symbols._
+import NameOps._
 import TypeErasure.ErasedValueType
-import Contexts.*
+import Contexts._
 import Annotations.Annotation
-import Denotations.*
-import SymDenotations.*
+import Denotations._
+import SymDenotations._
 import StdNames.{nme, tpnme}
 import ast.{Trees, tpd, untpd}
 import typer.{Implicits, Namer, Applications}
-import typer.ProtoTypes.*
-import Trees.*
-import TypeApplications.*
+import typer.ProtoTypes._
+import Trees._
+import TypeApplications._
 import NameKinds.{WildcardParamName, DefaultGetterName}
 import util.Chars.isOperatorPart
 import config.{Config, Feature}

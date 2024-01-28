@@ -1,10 +1,10 @@
 package dotty.tools.dotc.profile
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Phases.Phase
 
 import java.util.concurrent.ThreadPoolExecutor.AbortPolicy
-import java.util.concurrent.*
+import java.util.concurrent._
 import java.util.concurrent.atomic.AtomicInteger
 import scala.language.unsafeNulls
 

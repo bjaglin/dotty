@@ -2,8 +2,8 @@ package dotty.tools
 package dotc
 package core
 
-import Types.*
-import Contexts.*
+import Types._
+import Contexts._
 import printing.Showable
 import util.{SimpleIdentitySet, SimpleIdentityMap}
 

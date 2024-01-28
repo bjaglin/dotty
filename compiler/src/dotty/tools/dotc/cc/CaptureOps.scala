@@ -2,20 +2,20 @@ package dotty.tools
 package dotc
 package cc
 
-import core.*
-import Types.*
-import Symbols.*
-import Contexts.*
-import Annotations.*
-import Flags.*
+import core._
+import Types._
+import Symbols._
+import Contexts._
+import Annotations._
+import Flags._
 import Names.TermName
 import ast.{tpd, untpd}
-import Decorators.*
-import NameOps.*
+import Decorators._
+import NameOps._
 import config.SourceVersion
 import config.Printers.capt
 import util.Property.Key
-import tpd.*
+import tpd._
 import StdNames.nme
 import config.Feature
 import collection.mutable

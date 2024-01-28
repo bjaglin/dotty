@@ -5,7 +5,7 @@ package semanticdb
 import dotty.tools.dotc.{semanticdb => s}
 
 import core.Contexts.Context
-import core.Constants.*
+import core.Constants._
 
 object ConstantOps:
   extension (const: Constant)

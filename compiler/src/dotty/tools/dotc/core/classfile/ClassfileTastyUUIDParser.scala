@@ -1,13 +1,13 @@
 package dotty.tools.dotc
 package core.classfile
 
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.StdNames.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
-import dotty.tools.dotc.util.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.StdNames._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
+import dotty.tools.dotc.util._
 import dotty.tools.io.AbstractFile
 import dotty.tools.tasty.TastyReader
 

@@ -18,10 +18,10 @@ import java.nio.file.Paths
 import scala.compiletime.uninitialized
 
 import TastyBuffer.NameRef
-import Contexts.*
-import Decorators.*
+import Contexts._
+import Decorators._
 import Names.Name
-import TastyUnpickler.*
+import TastyUnpickler._
 import util.Spans.offsetToInt
 
 object TastyPrinter:

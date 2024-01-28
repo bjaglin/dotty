@@ -7,24 +7,24 @@ import scala.annotation.tailrec
 import scala.collection.immutable.ListSet
 import scala.collection.mutable
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Types.*
+import core._
+import Contexts._
+import Symbols._
+import Types._
 import Denotations.Denotation
-import StdNames.*
+import StdNames._
 import Names.TermName
 import NameKinds.OuterSelectName
 import NameKinds.SuperAccessorName
-import ast.tpd.*
+import ast.tpd._
 import util.{ SourcePosition, NoSourcePosition }
-import config.Printers.init as printer
+import config.Printers.{init => printer}
 import reporting.StoreReporter
-import reporting.trace as log
-import typer.Applications.*
-import Errors.*
-import Trace.*
-import Util.*
+import reporting.{trace => log}
+import typer.Applications._
+import Errors._
+import Trace._
+import Util._
 
 /** Check initialization safety of static objects
  *

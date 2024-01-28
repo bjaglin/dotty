@@ -4,10 +4,10 @@ package staging
 import dotty.tools.dotc.ast.TreeMapWithImplicits
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.config.Printers.staging
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.staging.StagingLevel.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.staging.StagingLevel._
 
 import scala.collection.mutable
 

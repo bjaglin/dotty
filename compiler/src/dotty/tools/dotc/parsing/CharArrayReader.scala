@@ -4,7 +4,7 @@ package parsing
 
 import scala.compiletime.uninitialized
 
-import util.Chars.*
+import util.Chars._
 
 abstract class CharArrayReader { self =>
 

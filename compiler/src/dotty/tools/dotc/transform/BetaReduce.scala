@@ -4,13 +4,13 @@ package transform
 
 import scala.collection.mutable.ListBuffer
 
-import core.*
-import Flags.*
-import MegaPhase.*
-import Symbols.*
-import Contexts.*
-import Types.*
-import Decorators.*
+import core._
+import Flags._
+import MegaPhase._
+import Symbols._
+import Contexts._
+import Types._
+import Decorators._
 import StdNames.nme
 import ast.TreeTypeMap
 

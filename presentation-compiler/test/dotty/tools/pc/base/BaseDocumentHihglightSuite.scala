@@ -5,7 +5,7 @@ import org.eclipse.lsp4j.DocumentHighlight
 
 import java.net.URI
 import scala.language.unsafeNulls
-import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.jdk.CollectionConverters._
 import scala.meta.internal.metals.CompilerOffsetParams
 import scala.meta.internal.metals.EmptyCancelToken
 

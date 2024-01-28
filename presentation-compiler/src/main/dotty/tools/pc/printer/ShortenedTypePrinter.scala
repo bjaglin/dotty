@@ -2,9 +2,9 @@ package dotty.tools.pc.printer
 
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.NameKinds.ContextBoundParamName
-import dotty.tools.dotc.core.NameOps.*
+import dotty.tools.dotc.core.NameOps._
 import dotty.tools.dotc.core.Names
 import dotty.tools.dotc.core.Names.Name
 import dotty.tools.dotc.core.Names.NameOrdering
@@ -12,7 +12,7 @@ import dotty.tools.dotc.core.StdNames
 import dotty.tools.dotc.core.Symbols.NoSymbol
 import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.core.Types.Type
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.printing.RefinedPrinter
 import dotty.tools.dotc.printing.Texts.Text
 import dotty.tools.pc.AutoImports.AutoImportsGenerator
@@ -22,11 +22,11 @@ import dotty.tools.pc.AutoImports.ImportSel.Rename
 import dotty.tools.pc.IndexedContext
 import dotty.tools.pc.IndexedContext.Result
 import dotty.tools.pc.Params
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 import org.eclipse.lsp4j.TextEdit
 
 import scala.collection.mutable
-import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.jdk.CollectionConverters._
 import scala.meta.internal.metals.ReportContext
 import scala.meta.pc.SymbolDocumentation
 import scala.meta.pc.SymbolSearch

@@ -2,7 +2,7 @@
 package scala
 package annotation
 
-import scala.quoted.*
+import scala.quoted._
 
 /** Base trait for macro annotation implementation.
  *  Macro annotations can transform definitions and add new definitions.

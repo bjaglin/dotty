@@ -3,15 +3,15 @@ package dotc
 package transform
 
 import ast.tpd
-import core.*
-import Contexts.*
-import Decorators.*
-import Symbols.*
-import Flags.*
-import StdNames.*
+import core._
+import Contexts._
+import Decorators._
+import Symbols._
+import Flags._
+import StdNames._
 import reporting.trace
 import util.Property
-import MegaPhase.*
+import MegaPhase._
 
 /** This phase rewrites calls to `Array.apply` to a direct instantiation of the array in the bytecode.
  *

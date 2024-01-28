@@ -1,15 +1,15 @@
 package dotty.tools.backend.sjs
 
 import dotty.tools.backend.jvm.DottyPrimitives
-import dotty.tools.dotc.ast.tpd.*
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.ast.tpd._
+import dotty.tools.dotc.core._
 import dotty.tools.dotc.report
 import dotty.tools.dotc.util.ReadOnlyMap
 
 import Names.TermName
-import Types.*
-import Contexts.*
-import Symbols.*
+import Types._
+import Contexts._
+import Symbols._
 import Decorators.em
 
 object JSPrimitives {

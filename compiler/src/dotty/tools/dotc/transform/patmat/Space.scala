@@ -6,28 +6,28 @@ package patmat
 import scala.annotation.internal.sharable
 import scala.collection.mutable
 
-import core.*
-import Constants.*
-import Contexts.*
-import Decorators.*
-import Flags.*
-import Names.*
-import NameOps.*
-import StdNames.*
-import Symbols.*
-import Types.*
-import ast.*
-import tpd.*
-import config.Printers.*
-import printing.{ Printer, * }
-import Texts.*
-import reporting.*
-import typer.*
-import Applications.*
-import Inferencing.*
-import ProtoTypes.*
-import util.*
-import SpaceEngine.*
+import core._
+import Constants._
+import Contexts._
+import Decorators._
+import Flags._
+import Names._
+import NameOps._
+import StdNames._
+import Symbols._
+import Types._
+import ast._
+import tpd._
+import config.Printers._
+import printing.{ Printer, _ }
+import Texts._
+import reporting._
+import typer._
+import Applications._
+import Inferencing._
+import ProtoTypes._
+import util._
+import SpaceEngine._
 
 /* Space logic for checking exhaustivity and unreachability of pattern matching
  *

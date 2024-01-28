@@ -2,9 +2,9 @@ package dotty.tools.dotc.util
 
 import dotty.tools.dotc.core.Comments.Comment
 import dotty.tools.dotc.core.Comments.docCtx
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Names.TermName
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.printing.SyntaxHighlighting
 
 import scala.Console.BOLD

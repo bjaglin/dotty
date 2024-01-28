@@ -7,16 +7,16 @@ import dotty.tools.dotc.transform.Splicer
 
 import scala.annotation.constructorOnly
 
-import ast.*
-import core.*
-import Flags.*
-import Symbols.*
-import Types.*
-import Decorators.*
-import Constants.*
-import Contexts.*
+import ast._
+import core._
+import Flags._
+import Symbols._
+import Types._
+import Decorators._
+import Constants._
+import Contexts._
 import StdNames.nme
-import typer.*
+import typer._
 import Names.Name
 import NameKinds.InlineBinderName
 import ProtoTypes.shallowSelectionProto

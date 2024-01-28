@@ -4,7 +4,7 @@
 package dotty.tools.dotc
 package classpath
 
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.io.AbstractFile
 import dotty.tools.io.ClassPath
 import dotty.tools.io.ClassRepresentation
@@ -19,7 +19,7 @@ import java.nio.file.attribute.FileTime
 import scala.annotation.tailrec
 import scala.language.unsafeNulls
 
-import FileUtils.*
+import FileUtils._
 
 /**
  * A trait providing an optional cache for classpath entries obtained from zip and jar files.

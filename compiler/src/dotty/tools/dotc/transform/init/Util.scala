@@ -2,15 +2,15 @@ package dotty.tools.dotc
 package transform
 package init
 
-import core.*
-import Contexts.*
-import Types.*
-import Symbols.*
-import StdNames.*
-import ast.tpd.*
-import reporting.trace as log
-import config.Printers.init as printer
-import Trace.*
+import core._
+import Contexts._
+import Types._
+import Symbols._
+import StdNames._
+import ast.tpd._
+import reporting.{trace => log}
+import config.Printers.{init => printer}
+import Trace._
 
 object Util:
   /** Utility definition used for better error-reporting of argument errors */

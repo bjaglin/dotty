@@ -1,7 +1,7 @@
 package dotty.tools.dotc.decompiler
 
 import dotty.tools.dotc
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.io.AbstractFile
 
 import java.nio.file.Files

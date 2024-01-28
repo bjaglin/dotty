@@ -6,12 +6,12 @@ import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 
 import scala.compiletime.uninitialized
 
-import core.*
-import Symbols.*
-import Contexts.*
-import Types.*
-import Flags.*
-import Decorators.*
+import core._
+import Symbols._
+import Contexts._
+import Types._
+import Flags._
+import Decorators._
 import collection.mutable.{LinkedHashMap, LinkedHashSet}
 import annotation.constructorOnly
 

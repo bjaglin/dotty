@@ -1,16 +1,16 @@
 package dotty.tools.pc.completions
 
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.core.Contexts.Context
 import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.Symbols.Symbol
 import dotty.tools.dotc.core.Types.Type
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.pc.CompilerSearchVisitor
 import dotty.tools.pc.IndexedContext
-import dotty.tools.pc.utils.MtagsEnrichments.*
-import org.eclipse.lsp4j as l
+import dotty.tools.pc.utils.MtagsEnrichments._
+import org.eclipse.{lsp4j => l}
 
 import scala.collection.mutable.ListBuffer
 import scala.meta.internal.metals.ReportContext

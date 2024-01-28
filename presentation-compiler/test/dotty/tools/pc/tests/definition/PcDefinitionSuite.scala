@@ -7,7 +7,7 @@ import org.junit.Ignore
 import org.junit.Test
 
 import scala.language.unsafeNulls
-import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.jdk.CollectionConverters._
 import scala.meta.pc.OffsetParams
 
 class PcDefinitionSuite extends BasePcDefinitionSuite:

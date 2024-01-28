@@ -15,7 +15,7 @@ import java.util.jar.Manifest
 import java.util.zip.ZipEntry
 import java.util.zip.ZipFile
 import scala.collection.mutable
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 
 /** An abstraction for zip files and streams.  Everything is written the way

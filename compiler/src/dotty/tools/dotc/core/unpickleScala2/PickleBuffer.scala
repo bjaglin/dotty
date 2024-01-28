@@ -3,7 +3,7 @@ package dotc
 package core
 package unpickleScala2
 
-import Flags.*
+import Flags._
 
 /** Variable length byte arrays, with methods for basic pickling and unpickling.
  *

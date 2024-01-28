@@ -6,15 +6,15 @@ import java.lang.ref.WeakReference
 import scala.annotation.internal.sharable
 import scala.compiletime.uninitialized
 
-import Types.*
-import Contexts.*
+import Types._
+import Contexts._
 import util.SimpleIdentitySet
-import reporting.*
+import reporting._
 import config.Config
 import config.Printers.constr
 import collection.mutable
 import util.{Stats, SimpleIdentityMap}
-import Decorators.*
+import Decorators._
 
 object TyperState {
   @sharable private var nextId: Int = 0

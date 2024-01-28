@@ -2,14 +2,14 @@ package dotty.tools
 package dotc
 package config
 
-import io.*
+import io._
 import classpath.AggregateClassPath
-import core.*
-import Symbols.*
-import Types.*
-import Contexts.*
-import StdNames.*
-import Flags.*
+import core._
+import Symbols._
+import Types._
+import Contexts._
+import StdNames._
+import Flags._
 import transform.ExplicitOuter
 
 class JavaPlatform extends Platform {

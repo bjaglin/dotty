@@ -1,23 +1,23 @@
 package dotty.tools.dotc
 package transform
 
-import dotty.tools.dotc.transform.MegaPhase.*
+import dotty.tools.dotc.transform.MegaPhase._
 
 import scala.collection.mutable
 
-import core.*
-import Names.*
+import core._
+import Names._
 import ast.untpd
-import Flags.*
-import Types.*
+import Flags._
+import Types._
 import Constants.Constant
-import Contexts.*
-import Symbols.*
-import Decorators.*
-import DenotTransformers.*
-import NameOps.*
+import Contexts._
+import Symbols._
+import Decorators._
+import DenotTransformers._
+import NameOps._
 import NameKinds.OuterSelectName
-import StdNames.*
+import StdNames._
 import config.Feature
 import inlines.Inlines.inInlineMethod
 

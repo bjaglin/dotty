@@ -4,16 +4,16 @@ import dotty.tools.dotc.config.MigrationVersion
 
 import java.lang.System.currentTimeMillis
 
-import reporting.*
-import Diagnostic.*
+import reporting._
+import Diagnostic._
 import util.{SourcePosition, NoSourcePosition, SrcPos}
-import core.*
-import Contexts.*
-import Flags.*
-import Symbols.*
-import Decorators.*
+import core._
+import Contexts._
+import Flags._
+import Symbols._
+import Decorators._
 import config.SourceVersion
-import ast.*
+import ast._
 import config.Feature.sourceVersion
 
 object report:

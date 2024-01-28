@@ -2,18 +2,18 @@ package dotty.tools
 package dotc
 package transform
 
-import dotty.tools.dotc.transform.MegaPhase.*
+import dotty.tools.dotc.transform.MegaPhase._
 
-import core.*
-import Names.*
+import core._
+import Names._
 import StdNames.nme
-import Types.*
-import Flags.*
-import Contexts.*
-import Symbols.*
-import Constants.*
-import Decorators.*
-import DenotTransformers.*
+import Types._
+import Flags._
+import Contexts._
+import Symbols._
+import Constants._
+import Decorators._
+import DenotTransformers._
 
 
 

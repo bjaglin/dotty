@@ -4,21 +4,21 @@ package transform
 
 import dotty.tools.dotc.util.SrcPos
 
-import scala.language.unsafeNulls as _
+import scala.language.{unsafeNulls => _}
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Types.*
-import Constants.*
-import StdNames.*
-import Decorators.*
+import core._
+import Contexts._
+import Symbols._
+import Types._
+import Constants._
+import StdNames._
+import Decorators._
 import ast.untpd
-import Erasure.Boxing.*
-import TypeErasure.*
-import core.Flags.*
-import util.Spans.*
-import reporting.*
+import Erasure.Boxing._
+import TypeErasure._
+import core.Flags._
+import util.Spans._
+import reporting._
 import config.Printers.{ transforms => debug }
 import patmat.Typ
 

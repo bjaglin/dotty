@@ -2,12 +2,12 @@ package dotty.tools.dotc
 package transform
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.DenotTransformers.IdentityDenotTransformer
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.*
-import dotty.tools.dotc.transform.MegaPhase.*
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core._
+import dotty.tools.dotc.transform.MegaPhase._
 
 
 /** Removes `Select`s that would be compiled into `GetStatic`.

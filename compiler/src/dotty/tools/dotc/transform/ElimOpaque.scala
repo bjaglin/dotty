@@ -2,17 +2,17 @@ package dotty.tools
 package dotc
 package transform
 
-import dotty.tools.dotc.transform.MegaPhase.*
+import dotty.tools.dotc.transform.MegaPhase._
 
-import core.*
-import Flags.*
-import Types.*
-import Contexts.*
-import Symbols.*
+import core._
+import Flags._
+import Types._
+import Contexts._
+import Symbols._
 import Denotations.{SingleDenotation, NonSymSingleDenotation}
 import SymDenotations.SymDenotation
-import DenotTransformers.*
-import Names.*
+import DenotTransformers._
+import Names._
 
 object ElimOpaque {
   val name: String = "elimOpaque"

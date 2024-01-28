@@ -9,27 +9,27 @@ import scala.annotation.internal.sharable
 import scala.compiletime.uninitialized
 import scala.util.control.NonFatal
 
-import Periods.*
-import Contexts.*
-import Symbols.*
-import Denotations.*
-import Names.*
-import NameOps.*
-import Annotations.*
-import Types.*
-import Flags.*
-import Decorators.*
-import DenotTransformers.*
-import StdNames.*
-import Scopes.*
-import NameOps.*
-import NameKinds.*
+import Periods._
+import Contexts._
+import Symbols._
+import Denotations._
+import Names._
+import NameOps._
+import Annotations._
+import Types._
+import Flags._
+import Decorators._
+import DenotTransformers._
+import StdNames._
+import Scopes._
+import NameOps._
+import NameKinds._
 import Phases.{Phase, typerPhase, unfusedPhases}
 import Constants.Constant
 import TypeApplications.TypeParamInfo
 import Scopes.Scope
-import Decorators.*
-import ast.*
+import Decorators._
+import ast._
 import ast.Trees.{LambdaTypeTree, TypeBoundsTree}
 import Trees.Literal
 import Variances.Variance
@@ -37,7 +37,7 @@ import annotation.tailrec
 import util.SimpleIdentityMap
 import util.Stats
 import config.Config
-import reporting.*
+import reporting._
 import collection.mutable
 import cc.{CapturingType, derivedCapturingType}
 

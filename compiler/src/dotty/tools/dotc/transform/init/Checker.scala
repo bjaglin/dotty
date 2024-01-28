@@ -2,21 +2,21 @@ package dotty.tools.dotc
 package transform
 package init
 
-import dotty.tools.dotc.*
-import dotty.tools.dotc.core.*
-import dotty.tools.dotc.transform.*
+import dotty.tools.dotc._
+import dotty.tools.dotc.core._
+import dotty.tools.dotc.transform._
 import dotty.tools.unsupported
 
 import scala.collection.mutable
 
 import ast.tpd
-import tpd.*
-import Contexts.*
-import Types.*
-import Symbols.*
-import StdNames.*
-import Phases.*
-import Semantic.*
+import tpd._
+import Contexts._
+import Types._
+import Symbols._
+import StdNames._
+import Phases._
+import Semantic._
 
 class Checker extends Phase:
 

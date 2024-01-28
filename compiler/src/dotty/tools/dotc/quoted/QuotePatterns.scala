@@ -2,21 +2,21 @@ package dotty.tools.dotc
 package quoted
 
 import dotty.tools.dotc.ast.TreeTypeMap
-import dotty.tools.dotc.ast.Trees.*
+import dotty.tools.dotc.ast.Trees._
 import dotty.tools.dotc.ast.tpd
 import dotty.tools.dotc.ast.untpd
-import dotty.tools.dotc.core.Annotations.*
-import dotty.tools.dotc.core.Constants.*
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Decorators.*
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Annotations._
+import dotty.tools.dotc.core.Constants._
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Decorators._
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.NameKinds.PatMatGivenVarName
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.StdNames.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.TypeOps.*
-import dotty.tools.dotc.core.Types.*
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.StdNames._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.TypeOps._
+import dotty.tools.dotc.core.Types._
+import dotty.tools.dotc.core._
 import dotty.tools.dotc.reporting.IllegalVariableInPatternAlternative
 
 import scala.collection.mutable

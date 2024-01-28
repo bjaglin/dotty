@@ -4,22 +4,22 @@ package sjs
 
 import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core._
 import org.scalajs.ir.Names.DefaultModuleID
 import org.scalajs.ir.Trees.TopLevelExportDef.isValidTopLevelExportName
 
-import Contexts.*
-import Decorators.*
-import Denotations.*
-import Flags.*
+import Contexts._
+import Decorators._
+import Denotations._
+import Flags._
 import NameKinds.DefaultGetterName
-import StdNames.*
-import Symbols.*
-import Types.*
+import StdNames._
+import Symbols._
+import Types._
 import util.Spans.Span
 import util.SrcPos
-import JSExportUtils.*
-import JSSymUtils.*
+import JSExportUtils._
+import JSSymUtils._
 
 object PrepJSExports {
   import tpd.*

@@ -5,12 +5,12 @@ package parsing
 import scala.annotation.switch
 import scala.annotation.tailrec
 
-import core.Contexts.*
+import core.Contexts._
 import core.Names.SimpleName
-import Scanners.*
+import Scanners._
 import util.SourceFile
-import JavaTokens.*
-import util.Chars.*
+import JavaTokens._
+import util.Chars._
 import PartialFunction.cond
 import core.Decorators.em
 

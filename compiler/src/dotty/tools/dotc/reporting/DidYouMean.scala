@@ -2,13 +2,13 @@ package dotty.tools
 package dotc
 package reporting
 
-import core.*
-import Contexts.*
-import Decorators.*
-import Symbols.*
-import Names.*
-import Types.*
-import Flags.*
+import core._
+import Contexts._
+import Decorators._
+import Symbols._
+import Names._
+import Types._
+import Flags._
 import typer.ProtoTypes.{FunProto, SelectionProto}
 
 /** A utility object to support "did you mean" hinting */

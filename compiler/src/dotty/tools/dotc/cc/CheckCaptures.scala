@@ -4,29 +4,29 @@ package cc
 
 import scala.collection.mutable
 
-import core.*
-import Phases.*
-import DenotTransformers.*
-import SymDenotations.*
-import Contexts.*
-import Names.*
-import Flags.*
-import Symbols.*
-import Decorators.*
-import Types.*
-import StdNames.*
-import Denotations.*
+import core._
+import Phases._
+import DenotTransformers._
+import SymDenotations._
+import Contexts._
+import Names._
+import Flags._
+import Symbols._
+import Decorators._
+import Types._
+import StdNames._
+import Denotations._
 import config.Printers.{capt, recheckr, noPrinter}
 import config.{Config, Feature}
 import ast.{tpd, untpd, Trees}
-import Trees.*
+import Trees._
 import typer.RefChecks.{checkAllOverrides, checkSelfAgainstParents, OverridingPairsChecker}
 import typer.Checking.{checkBounds, checkAppliedTypesIn}
 import typer.ErrorReporting.{Addenda, err}
 import typer.ProtoTypes.{AnySelectionProto, LhsProto}
 import util.{SimpleIdentitySet, EqHashMap, EqHashSet, SrcPos, Property}
 import transform.{Recheck, PreRecheck, CapturedVars}
-import Recheck.*
+import Recheck._
 import CaptureSet.{withCaptureSetsExplained, IdempotentCaptRefMap, CompareResult}
 import StdNames.nme
 import NameKinds.{DefaultGetterName, WildcardParamName}

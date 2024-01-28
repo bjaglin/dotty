@@ -1,13 +1,13 @@
 package dotty.tools.pc.base
 
 import dotty.tools.pc.utils.TestExtensions._
-import org.eclipse.lsp4j as l
+import org.eclipse.{lsp4j => l}
 
 import java.nio.file.Paths
-import java.util as ju
+import java.{util => ju}
 import scala.collection.immutable
 import scala.language.unsafeNulls
-import scala.meta.internal.jdk.CollectionConverters.*
+import scala.meta.internal.jdk.CollectionConverters._
 import scala.meta.internal.metals.CompilerOffsetParams
 import scala.meta.internal.metals.EmptyCancelToken
 import scala.meta.pc.OffsetParams

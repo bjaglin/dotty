@@ -1,7 +1,7 @@
 package dotty.tools.pc.base
 
 import dotty.tools.pc.completions.CompletionSource
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 import dotty.tools.pc.utils.TestCompletions
 import dotty.tools.pc.utils.TextEdits
 import org.eclipse.lsp4j.CompletionItem
@@ -9,7 +9,7 @@ import org.eclipse.lsp4j.CompletionList
 
 import java.nio.file.Paths
 import java.util.Collections
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 import scala.meta.internal.metals.CompilerOffsetParams
 import scala.meta.internal.metals.EmptyCancelToken

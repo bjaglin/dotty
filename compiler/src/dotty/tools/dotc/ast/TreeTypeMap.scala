@@ -2,16 +2,16 @@ package dotty.tools
 package dotc
 package ast
 
-import core.*
-import Types.*
-import Contexts.*
-import Flags.*
-import Symbols.*
-import Annotations.*
-import Trees.*
-import Symbols.*
+import core._
+import Types._
+import Contexts._
+import Flags._
+import Symbols._
+import Annotations._
+import Trees._
+import Symbols._
 import Constants.Constant
-import Decorators.*
+import Decorators._
 
 
 /** A map that applies three functions and a substitution together to a tree and

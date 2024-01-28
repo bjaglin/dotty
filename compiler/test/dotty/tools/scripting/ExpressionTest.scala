@@ -12,7 +12,7 @@ import java.nio.file.Paths
 import scala.language.unsafeNulls
 
 import vulpix.TestConfiguration
-import ScriptTestEnv.*
+import ScriptTestEnv._
 
 /**
  *   +. test scala -e <expression>

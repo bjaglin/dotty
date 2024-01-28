@@ -7,15 +7,15 @@ import scala.compiletime.uninitialized
 
 import ast.{TreeTypeMap, tpd}
 import config.Printers.tailrec
-import core.*
-import Contexts.*
-import Flags.*
-import Symbols.*
+import core._
+import Contexts._
+import Flags._
+import Symbols._
 import Decorators.em
 import Constants.Constant
 import NameKinds.{TailLabelName, TailLocalName, TailTempName}
 import StdNames.nme
-import reporting.*
+import reporting._
 import transform.MegaPhase.MiniPhase
 import util.LinearSet
 

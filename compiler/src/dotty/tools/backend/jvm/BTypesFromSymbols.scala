@@ -2,13 +2,13 @@ package dotty.tools
 package backend
 package jvm
 
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.Flags.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.Flags._
 import dotty.tools.dotc.core.Phases
 import dotty.tools.dotc.core.Phases.Phase
-import dotty.tools.dotc.core.Phases.*
+import dotty.tools.dotc.core.Phases._
 import dotty.tools.dotc.core.StdNames
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 
 import scala.annotation.threadUnsafe
 import scala.collection.mutable

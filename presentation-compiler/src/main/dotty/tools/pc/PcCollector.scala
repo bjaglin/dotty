@@ -3,29 +3,29 @@ package dotty.tools.pc
 import dotty.tools.dotc.ast.NavigateAST
 import dotty.tools.dotc.ast.Positioned
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.ast.untpd
 import dotty.tools.dotc.ast.untpd.ExtMethods
 import dotty.tools.dotc.ast.untpd.ImportSelector
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.NameOps.*
-import dotty.tools.dotc.core.Names.*
-import dotty.tools.dotc.core.StdNames.*
-import dotty.tools.dotc.core.Symbols.*
-import dotty.tools.dotc.core.Types.*
+import dotty.tools.dotc.core.NameOps._
+import dotty.tools.dotc.core.Names._
+import dotty.tools.dotc.core.StdNames._
+import dotty.tools.dotc.core.Symbols._
+import dotty.tools.dotc.core.Types._
 import dotty.tools.dotc.interactive.Interactive
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans.Span
-import dotty.tools.pc.utils.MtagsEnrichments.*
+import dotty.tools.pc.utils.MtagsEnrichments._
 
 import java.nio.file.Paths
 import scala.meta.internal.metals.CompilerOffsetParams
 import scala.meta.pc.OffsetParams
 import scala.meta.pc.VirtualFileParams
-import scala.meta as m
+import scala.{meta => m}
 
 abstract class PcCollector[T](
     driver: InteractiveDriver,

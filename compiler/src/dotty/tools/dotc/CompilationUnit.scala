@@ -4,10 +4,10 @@ package dotc
 import scala.annotation.internal.sharable
 import scala.util.control.NoStackTrace
 
-import core.*
-import Contexts.*
+import core._
+import Contexts._
 import SymDenotations.ClassDenotation
-import Symbols.*
+import Symbols._
 import Comments.Comment
 import util.{FreshNameCreator, SourceFile, NoSource}
 import util.Spans.Span
@@ -15,7 +15,7 @@ import ast.{tpd, untpd}
 import tpd.{Tree, TreeTraverser}
 import ast.Trees.{Import, Ident}
 import typer.Nullables
-import core.Decorators.*
+import core.Decorators._
 import config.{SourceVersion, Feature}
 import StdNames.nme
 import transform.MacroAnnotations

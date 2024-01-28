@@ -3,18 +3,18 @@ package transform
 
 import dotty.tools.uncheckedNN
 
-import MegaPhase.*
-import core.DenotTransformers.*
-import core.Symbols.*
-import core.Contexts.*
-import core.Flags.*
-import core.Decorators.*
+import MegaPhase._
+import core.DenotTransformers._
+import core.Symbols._
+import core.Contexts._
+import core.Flags._
+import core.Decorators._
 import core.StdNames.nme
-import core.Names.*
+import core.Names._
 import core.NameKinds.TempResultName
-import core.Constants.*
+import core.Constants._
 import util.Store
-import ast.tpd.*
+import ast.tpd._
 import compiletime.uninitialized
 
 /** This phase translates variables that are captured in closures to

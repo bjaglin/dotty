@@ -3,13 +3,13 @@ package core
 
 import scala.annotation.tailrec
 
-import Names.*
-import Types.*
-import Contexts.*
-import StdNames.*
-import Decorators.*
+import Names._
+import Types._
+import Contexts._
+import StdNames._
+import Decorators._
 import TypeErasure.sigName
-import Signature.*
+import Signature._
 
 /** The signature of a denotation.
  *

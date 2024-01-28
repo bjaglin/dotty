@@ -1,16 +1,16 @@
 package dotty.tools.dotc
 package plugins
 
-import dotty.tools.io.*
+import dotty.tools.io._
 
 import scala.compiletime.uninitialized
 import scala.language.unsafeNulls
 
-import core.*
-import Contexts.*
+import core._
+import Contexts._
 import Decorators.em
 import config.{ PathResolver, Feature }
-import Phases.*
+import Phases._
 import config.Printers.plugins.{ println => debug }
 import config.Properties
 

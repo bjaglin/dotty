@@ -9,14 +9,14 @@ package core
 
 import scala.compiletime.uninitialized
 
-import Symbols.*
+import Symbols._
 import Types.{TermRef, NoPrefix}
-import Flags.*
-import Names.*
-import Contexts.*
-import Phases.*
-import Denotations.*
-import printing.Texts.*
+import Flags._
+import Names._
+import Contexts._
+import Phases._
+import Denotations._
+import printing.Texts._
 import printing.Printer
 import SymDenotations.NoDenotation
 import collection.mutable

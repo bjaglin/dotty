@@ -1,12 +1,12 @@
 package dotty.tools.dotc
 package transform
 
-import MegaPhase.*
-import core.DenotTransformers.{IdentityDenotTransformer}
-import core.Symbols.*
-import core.Contexts.*
-import core.Types.*
-import core.Flags.*
+import MegaPhase._
+import core.DenotTransformers.IdentityDenotTransformer
+import core.Symbols._
+import core.Contexts._
+import core.Types._
+import core.Flags._
 import ast.tpd
 
 object UncacheGivenAliases:

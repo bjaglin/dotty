@@ -2,11 +2,11 @@ package dotty.tools.dotc
 package printing
 
 import dotty.tools.dotc.ast.untpd
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.StdNames.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.StdNames._
 import dotty.tools.dotc.parsing.Parsers.Parser
 import dotty.tools.dotc.parsing.Scanners.Scanner
-import dotty.tools.dotc.parsing.Tokens.*
+import dotty.tools.dotc.parsing.Tokens._
 import dotty.tools.dotc.reporting.Reporter
 import dotty.tools.dotc.util.SourceFile
 import dotty.tools.dotc.util.Spans.Span

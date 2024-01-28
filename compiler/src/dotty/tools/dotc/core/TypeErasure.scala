@@ -4,22 +4,22 @@ package core
 
 import scala.annotation.tailrec
 
-import Symbols.*
-import Types.*
-import Contexts.*
-import Flags.*
-import Names.*
-import StdNames.*
-import Phases.*
+import Symbols._
+import Types._
+import Contexts._
+import Flags._
+import Names._
+import StdNames._
+import Phases._
 import Flags.JavaDefined
 import Uniques.unique
 import TypeOps.makePackageObjPrefixExplicit
 import backend.sjs.JSDefinitions
-import transform.ExplicitOuter.*
-import transform.ValueClasses.*
-import transform.ContextFunctionResults.*
+import transform.ExplicitOuter._
+import transform.ValueClasses._
+import transform.ContextFunctionResults._
 import unpickleScala2.Scala2Erasure
-import Decorators.*
+import Decorators._
 import Definitions.MaxImplementedFunctionArity
 
 /** The language in which the definition being erased was written. */

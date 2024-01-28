@@ -2,15 +2,15 @@ package dotty.tools
 package dotc
 package core
 
-import org.junit.Assert.*
+import org.junit.Assert._
 import org.junit.Test
 
-import Contexts.*
-import Decorators.*
-import Denotations.*
-import SymDenotations.*
-import Symbols.*
-import Types.*
+import Contexts._
+import Decorators._
+import Denotations._
+import SymDenotations._
+import Symbols._
+import Types._
 import printing.Formatting.Show
 
 class TypeComparerTest extends DottyTest:

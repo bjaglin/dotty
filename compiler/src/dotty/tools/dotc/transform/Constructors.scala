@@ -1,21 +1,21 @@
 package dotty.tools.dotc
 package transform
 
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.StdNames.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.StdNames._
 
-import core.*
-import MegaPhase.*
-import ast.*
-import Flags.*
+import core._
+import MegaPhase._
+import ast._
+import Flags._
 import Names.Name
-import NameOps.*
+import NameOps._
 import NameKinds.{FieldName, ExplicitFieldName}
-import Symbols.*
-import Decorators.*
-import DenotTransformers.*
+import Symbols._
+import Decorators._
+import DenotTransformers._
 import collection.mutable
-import Types.*
+import Types._
 
 object Constructors {
   val name: String = "constructors"

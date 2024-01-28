@@ -8,7 +8,7 @@ import java.lang.Long.toHexString
 import java.nio.charset.StandardCharsets
 
 import core.unpickleScala2.PickleBuffer
-import core.Names.*
+import core.Names._
 
 object ShowPickled {
   import core.unpickleScala2.PickleFormat.*

@@ -1,10 +1,10 @@
 package dotty.tools.pc.completions
 
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.core.Contexts.Context
-import dotty.tools.dotc.core.Flags.*
-import dotty.tools.dotc.core.NameKinds.*
+import dotty.tools.dotc.core.Flags._
+import dotty.tools.dotc.core.NameKinds._
 import dotty.tools.dotc.core.Symbols.NoSymbol
 import dotty.tools.dotc.core.Types.ExprType
 import dotty.tools.dotc.core.Types.MethodOrPoly

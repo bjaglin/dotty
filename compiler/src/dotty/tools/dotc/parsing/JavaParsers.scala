@@ -10,20 +10,20 @@ import dotty.tools.dotc.util.SourceFile
 import scala.collection.mutable.LinkedHashMap
 import scala.collection.mutable.ListBuffer
 
-import JavaTokens.*
-import JavaScanners.*
+import JavaTokens._
+import JavaScanners._
 import Scanners.Offset
-import Parsers.*
-import core.*
-import Contexts.*
+import Parsers._
+import core._
+import Contexts._
 import Symbols.defn
-import Names.*
-import Types.*
-import ast.Trees.*
-import Decorators.*
-import StdNames.*
-import reporting.*
-import util.Spans.*
+import Names._
+import Types._
+import ast.Trees._
+import Decorators._
+import StdNames._
+import reporting._
+import util.Spans._
 
 object JavaParsers {
 

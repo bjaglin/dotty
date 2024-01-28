@@ -3,11 +3,11 @@ package dotty.tools.backend.sjs
 import dotty.tools.FatalError
 import dotty.tools.dotc.CompilationUnit
 import dotty.tools.dotc.ast.tpd
-import dotty.tools.dotc.core.*
+import dotty.tools.dotc.core._
 import dotty.tools.dotc.report
 import dotty.tools.dotc.transform.Erasure
 import dotty.tools.dotc.transform.ValueClasses
-import dotty.tools.dotc.transform.sjs.JSSymUtils.*
+import dotty.tools.dotc.transform.sjs.JSSymUtils._
 import dotty.tools.dotc.util.SourcePosition
 import org.scalajs.ir
 import org.scalajs.ir.ClassKind
@@ -27,17 +27,17 @@ import scala.collection.mutable
 import scala.language.unsafeNulls
 import scala.reflect.NameTransformer
 
-import Contexts.*
-import Decorators.*
-import Flags.*
-import Names.*
+import Contexts._
+import Decorators._
+import Flags._
+import Names._
 import NameKinds.DefaultGetterName
-import Types.*
-import Symbols.*
-import Phases.*
-import StdNames.*
+import Types._
+import Symbols._
+import Phases._
+import StdNames._
 import TypeErasure.ErasedValueType
-import JSEncoding.*
+import JSEncoding._
 import ScopedVar.withScopedVars
 
 /** Main codegen for Scala.js IR.

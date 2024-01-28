@@ -1,15 +1,15 @@
 package dotty.tools.pc
 package completions
 
-import dotty.tools.dotc.ast.tpd.*
+import dotty.tools.dotc.ast.tpd._
 import dotty.tools.dotc.ast.untpd.ImportSelector
-import dotty.tools.dotc.core.Contexts.*
-import dotty.tools.dotc.core.StdNames.*
+import dotty.tools.dotc.core.Contexts._
+import dotty.tools.dotc.core.StdNames._
 import dotty.tools.dotc.util.Chars
 import dotty.tools.dotc.util.SourcePosition
 import dotty.tools.dotc.util.Spans
-import dotty.tools.pc.utils.MtagsEnrichments.*
-import org.eclipse.lsp4j as l
+import dotty.tools.pc.utils.MtagsEnrichments._
+import org.eclipse.{lsp4j => l}
 
 import java.net.URI
 import scala.annotation.tailrec

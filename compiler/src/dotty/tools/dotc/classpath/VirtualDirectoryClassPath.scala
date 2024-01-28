@@ -9,7 +9,7 @@ import java.net.URI
 import java.net.URL
 import scala.language.unsafeNulls
 
-import FileUtils.*
+import FileUtils._
 
 case class VirtualDirectoryClassPath(dir: VirtualDirectory) extends ClassPath with DirectoryLookup[ClassFileEntryImpl] with NoSourcePaths {
   type F = AbstractFile

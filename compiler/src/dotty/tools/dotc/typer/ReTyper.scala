@@ -3,17 +3,17 @@ package typer
 
 import scala.util.control.NonFatal
 
-import core.*
-import Contexts.*
-import Types.*
-import Symbols.*
-import StdNames.*
-import Decorators.*
-import typer.ProtoTypes.*
+import core._
+import Contexts._
+import Types._
+import Symbols._
+import StdNames._
+import Decorators._
+import typer.ProtoTypes._
 import ast.{tpd, untpd}
 import util.Spans.Span
-import Nullables.*
-import staging.StagingLevel.*
+import Nullables._
+import staging.StagingLevel._
 
 /** A version of Typer that keeps all symbols defined and referenced in a
  *  previously typed tree.

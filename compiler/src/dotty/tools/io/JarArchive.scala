@@ -2,7 +2,7 @@ package dotty.tools.io
 
 import java.nio.file.FileSystemAlreadyExistsException
 import java.nio.file.FileSystems
-import scala.jdk.CollectionConverters.*
+import scala.jdk.CollectionConverters._
 import scala.language.unsafeNulls
 
 /**

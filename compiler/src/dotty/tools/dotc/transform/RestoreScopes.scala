@@ -1,11 +1,11 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
+import core._
 import DenotTransformers.IdentityDenotTransformer
-import Contexts.*
-import Symbols.*
-import Scopes.*
+import Contexts._
+import Symbols._
+import Scopes._
 import MegaPhase.MiniPhase
 
 /** The preceding lambda lift and flatten phases move symbols to different scopes

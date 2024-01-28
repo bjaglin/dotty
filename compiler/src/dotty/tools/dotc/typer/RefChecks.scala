@@ -4,32 +4,32 @@ package typer
 
 import scala.collection.mutable
 
-import transform.*
-import core.*
-import Symbols.*
-import Types.*
-import Contexts.*
-import Flags.*
-import Names.*
-import NameOps.*
-import NameKinds.*
-import StdNames.*
-import Denotations.*
-import Phases.*
-import SymDenotations.*
+import transform._
+import core._
+import Symbols._
+import Types._
+import Contexts._
+import Flags._
+import Names._
+import NameOps._
+import NameKinds._
+import StdNames._
+import Denotations._
+import Phases._
+import SymDenotations._
 import NameKinds.DefaultGetterName
-import util.Spans.*
-import ast.*
-import MegaPhase.*
+import util.Spans._
+import ast._
+import MegaPhase._
 import config.Printers.{checks, noPrinter, capt}
-import Decorators.*
+import Decorators._
 import OverridingPairs.isOverridingPair
-import typer.ErrorReporting.*
+import typer.ErrorReporting._
 import config.Feature.{warnOnMigration, migrateTo3, sourceVersion}
 import config.SourceVersion.`3.0`
 import config.MigrationVersion
 import config.Printers.refcheck
-import reporting.*
+import reporting._
 import Constants.Constant
 
 object RefChecks {

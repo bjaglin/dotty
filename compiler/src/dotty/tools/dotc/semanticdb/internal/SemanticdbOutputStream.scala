@@ -6,7 +6,7 @@ import java.nio.ByteBuffer
 import java.nio.charset.StandardCharsets
 import scala.language.unsafeNulls
 
-import SemanticdbOutputStream.*
+import SemanticdbOutputStream._
 
 object SemanticdbOutputStream {
 

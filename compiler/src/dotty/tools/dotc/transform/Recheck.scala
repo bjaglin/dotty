@@ -2,24 +2,24 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
-import Symbols.*
-import Contexts.*
-import Types.*
-import ContextOps.*
-import Decorators.*
-import SymDenotations.*
-import Flags.*
-import NameKinds.*
+import core._
+import Symbols._
+import Contexts._
+import Types._
+import ContextOps._
+import Decorators._
+import SymDenotations._
+import Flags._
+import NameKinds._
 import Denotations.{Denotation, SingleDenotation}
-import ast.*
+import ast._
 import Names.Name
 import Phases.Phase
 import DenotTransformers.{DenotTransformer, IdentityDenotTransformer, SymTransformer}
 import NamerOps.{methodType, linkConstructorParams}
 import NullOpsDecorator.stripNull
 import typer.ErrorReporting.err
-import typer.ProtoTypes.*
+import typer.ProtoTypes._
 import typer.TypeAssigner.seqLitType
 import typer.ConstFold
 import typer.ErrorReporting.{Addenda, NothingToAdd}

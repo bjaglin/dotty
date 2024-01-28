@@ -1,8 +1,8 @@
 package dotty.tools.backend.sjs
 
 import dotty.tools.backend.jvm.DottyBackendInterface.symExtensions
-import dotty.tools.dotc.core.*
-import dotty.tools.dotc.transform.sjs.JSSymUtils.*
+import dotty.tools.dotc.core._
+import dotty.tools.dotc.transform.sjs.JSSymUtils._
 import org.scalajs.ir
 import org.scalajs.ir.Names.ClassName
 import org.scalajs.ir.Names.FieldName
@@ -19,13 +19,13 @@ import org.scalajs.ir.{Types => jstpe}
 import scala.collection.mutable
 import scala.language.unsafeNulls
 
-import Contexts.*
-import Flags.*
-import Types.*
-import Symbols.*
-import NameOps.*
-import Names.*
-import StdNames.*
+import Contexts._
+import Flags._
+import Types._
+import Symbols._
+import NameOps._
+import Names._
+import StdNames._
 import JSDefinitions.jsdefn
 
 /** Encoding of symbol names for JavaScript

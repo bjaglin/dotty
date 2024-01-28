@@ -3,7 +3,7 @@ package transform
 
 import scala.compiletime.uninitialized
 
-import core.Contexts.*
+import core.Contexts._
 
 /** Utility class for lazy values whose evaluation depends on a context.
  *  This should be used whenever the evaluation of a lazy expression

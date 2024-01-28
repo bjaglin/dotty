@@ -1,16 +1,16 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
+import core._
 import MegaPhase.MiniPhase
-import Contexts.*
-import Types.*
-import Symbols.*
-import SymDenotations.*
-import Flags.*
-import ast.*
-import Decorators.*
-import StdNames.*
+import Contexts._
+import Types._
+import Symbols._
+import SymDenotations._
+import Flags._
+import ast._
+import Decorators._
+import StdNames._
 
 object CheckLoopingImplicits:
   val name: String = "checkLoopingImplicits"

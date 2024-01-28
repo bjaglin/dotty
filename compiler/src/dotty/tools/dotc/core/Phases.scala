@@ -3,21 +3,21 @@ package dotc
 package core
 
 import dotty.tools.backend.jvm.GenBCode
-import dotty.tools.dotc.transform.MegaPhase.*
-import dotty.tools.dotc.transform.*
+import dotty.tools.dotc.transform.MegaPhase._
+import dotty.tools.dotc.transform._
 
 import scala.annotation.internal.sharable
 import scala.collection.mutable.ListBuffer
 import scala.compiletime.uninitialized
 import scala.util.control.NonFatal
 
-import Periods.*
-import Contexts.*
-import DenotTransformers.*
-import Denotations.*
-import Decorators.*
+import Periods._
+import Contexts._
+import DenotTransformers._
+import Denotations._
+import Decorators._
 import config.Printers.config
-import Periods.*
+import Periods._
 import parsing.Parser
 import printing.XprintMode
 import typer.{TyperPhase, RefChecks}

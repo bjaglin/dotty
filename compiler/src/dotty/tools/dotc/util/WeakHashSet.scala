@@ -2,7 +2,7 @@
  */
 package dotty.tools.dotc.util
 
-import dotty.tools.*
+import dotty.tools._
 
 import java.lang.ref.ReferenceQueue
 import java.lang.ref.WeakReference

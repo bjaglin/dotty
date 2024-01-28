@@ -18,17 +18,17 @@ import java.io.IOException
 import java.nio.channels.ClosedByInterruptException
 import scala.util.control.NonFatal
 
-import Contexts.*
-import Symbols.*
-import Flags.*
-import SymDenotations.*
-import Types.*
-import Scopes.*
-import Names.*
-import NameOps.*
-import StdNames.*
+import Contexts._
+import Symbols._
+import Flags._
+import SymDenotations._
+import Types._
+import Scopes._
+import Names._
+import NameOps._
+import StdNames._
 import classfile.{ClassfileParser, ClassfileTastyUUIDParser}
-import Decorators.*
+import Decorators._
 import util.Stats
 import reporting.trace
 import ast.desugar

@@ -4,7 +4,7 @@ package printing
 
 import scala.collection.mutable
 
-import core.Contexts.*
+import core.Contexts._
 
 object Highlighting {
 

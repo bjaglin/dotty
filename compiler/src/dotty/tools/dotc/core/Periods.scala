@@ -1,6 +1,6 @@
 package dotty.tools.dotc.core
 
-import Contexts.*
+import Contexts._
 import Phases.unfusedPhases
 
 object Periods {

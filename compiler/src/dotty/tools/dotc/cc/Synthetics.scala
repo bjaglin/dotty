@@ -2,13 +2,13 @@ package dotty.tools
 package dotc
 package cc
 
-import core.*
-import Symbols.*
-import SymDenotations.*
-import Contexts.*
-import Flags.*
-import Types.*
-import Decorators.*
+import core._
+import Symbols._
+import SymDenotations._
+import Contexts._
+import Flags._
+import Types._
+import Decorators._
 import StdNames.nme
 import Names.Name
 import NameKinds.DefaultGetterName

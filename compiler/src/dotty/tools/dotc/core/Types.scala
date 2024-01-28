@@ -7,33 +7,33 @@ import scala.annotation.internal.sharable
 import scala.annotation.threadUnsafe
 import scala.util.hashing.{ MurmurHash3 => hashing }
 
-import Symbols.*
-import Flags.*
-import Names.*
-import StdNames.*
-import NameOps.*
-import NullOpsDecorator.*
+import Symbols._
+import Flags._
+import Names._
+import StdNames._
+import NameOps._
+import NullOpsDecorator._
 import NameKinds.{SkolemName, WildcardParamName}
-import Scopes.*
-import Constants.*
-import Contexts.*
-import Phases.*
-import Annotations.*
-import SymDenotations.*
-import Decorators.*
-import Denotations.*
-import Periods.*
-import CheckRealizable.*
+import Scopes._
+import Constants._
+import Contexts._
+import Phases._
+import Annotations._
+import SymDenotations._
+import Decorators._
+import Denotations._
+import Periods._
+import CheckRealizable._
 import Variances.{Variance, setStructuralVariances, Invariant}
 import typer.Nullables
-import util.Stats.*
+import util.Stats._
 import util.{SimpleIdentityMap, SimpleIdentitySet}
-import ast.tpd.*
+import ast.tpd._
 import ast.TreeTypeMap
-import printing.Texts.*
+import printing.Texts._
 import printing.Printer
-import Hashable.*
-import Uniques.*
+import Hashable._
+import Uniques._
 import collection.mutable
 import config.Config
 import config.Feature.sourceVersion

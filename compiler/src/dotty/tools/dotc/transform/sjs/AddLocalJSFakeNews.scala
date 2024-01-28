@@ -5,12 +5,12 @@ package sjs
 
 import dotty.tools.backend.sjs.JSDefinitions.jsdefn
 
-import MegaPhase.*
+import MegaPhase._
 import core.Constants
-import core.Contexts.*
-import core.Decorators.*
+import core.Contexts._
+import core.Decorators._
 import core.StdNames.nme
-import core.Symbols.*
+import core.Symbols._
 
 /** Adds fake calls to the constructors of local JS classes in calls to
  *  `createLocalJSClass`.

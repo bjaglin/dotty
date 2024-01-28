@@ -7,9 +7,9 @@ import dotty.tools.dotc.{semanticdb => s}
 
 import scala.util.chaining.scalaUtilChainingOps
 
-import core.Symbols.*
+import core.Symbols._
 import core.Contexts.Context
-import core.Types.*
+import core.Types._
 import core.Annotations.Annotation
 import core.Flags
 import core.Names.Name

@@ -5,7 +5,7 @@
 // Protofile syntax: PROTO3
 
 package dotty.tools.dotc.semanticdb
-import dotty.tools.dotc.semanticdb.internal.*
+import dotty.tools.dotc.semanticdb.internal._
 
 import scala.annotation.internal.sharable
 

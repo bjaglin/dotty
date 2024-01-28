@@ -2,8 +2,8 @@ package dotty.tools.dotc
 package transform
 package init
 
-import core.*
-import Contexts.*
+import core._
+import Contexts._
 import ast.tpd
 import tpd.Tree
 

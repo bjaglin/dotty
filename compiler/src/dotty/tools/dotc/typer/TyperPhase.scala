@@ -5,16 +5,16 @@ package typer
 import dotty.tools.dotc.config.Feature
 import dotty.tools.dotc.config.SourceVersion
 
-import core.*
+import core._
 import Run.SubPhase
-import Phases.*
-import Contexts.*
-import Symbols.*
+import Phases._
+import Contexts._
+import Symbols._
 import ImportInfo.withRootImports
 import parsing.{Parser => ParserPhase}
 import config.Printers.typr
 import inlines.PrepareInlineable
-import util.Stats.*
+import util.Stats._
 
 /**
  *

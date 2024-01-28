@@ -2,21 +2,21 @@ package dotty.tools
 package dotc
 package typer
 
-import core.*
-import ast.*
-import Contexts.*
-import Types.*
-import Flags.*
-import Names.*
-import StdNames.*
-import Symbols.*
-import Trees.*
-import ProtoTypes.*
-import Decorators.*
-import config.MigrationVersion as mv
+import core._
+import ast._
+import Contexts._
+import Types._
+import Flags._
+import Names._
+import StdNames._
+import Symbols._
+import Trees._
+import ProtoTypes._
+import Decorators._
+import config.{MigrationVersion => mv}
 import config.Feature.{sourceVersion, migrateTo3}
-import config.SourceVersion.*
-import reporting.*
+import config.SourceVersion._
+import reporting._
 import NameKinds.ContextBoundParamName
 import rewrites.Rewrites.patch
 import util.Spans.Span

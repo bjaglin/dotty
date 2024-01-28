@@ -1,9 +1,9 @@
 package dotty.tools.pc
 
-import dotty.tools.dotc.ast.tpd.*
-import dotty.tools.dotc.core.Contexts.*
+import dotty.tools.dotc.ast.tpd._
+import dotty.tools.dotc.core.Contexts._
 import dotty.tools.dotc.core.Flags
-import dotty.tools.dotc.core.Symbols.*
+import dotty.tools.dotc.core.Symbols._
 import dotty.tools.dotc.interactive.Interactive
 import dotty.tools.dotc.interactive.InteractiveDriver
 import dotty.tools.dotc.parsing.Tokens.closingRegionTokens
@@ -15,11 +15,11 @@ import dotty.tools.dotc.util.Spans
 import dotty.tools.dotc.util.Spans.Span
 import dotty.tools.pc.printer.ShortenedTypePrinter
 import dotty.tools.pc.printer.ShortenedTypePrinter.IncludeDefaultParam
-import dotty.tools.pc.utils.MtagsEnrichments.*
-import org.eclipse.lsp4j as l
+import dotty.tools.pc.utils.MtagsEnrichments._
+import org.eclipse.{lsp4j => l}
 
-import scala.jdk.CollectionConverters.*
-import scala.jdk.OptionConverters.*
+import scala.jdk.CollectionConverters._
+import scala.jdk.OptionConverters._
 import scala.meta.internal.metals.ReportContext
 import scala.meta.pc.OffsetParams
 import scala.meta.pc.SymbolDocumentation

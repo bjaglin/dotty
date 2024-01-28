@@ -1,11 +1,11 @@
 package dotty.tools.dotc
 package ast
 
-import Trees.*
-import core.Contexts.*
+import Trees._
+import core.Contexts._
 import core.ContextOps.enter
-import core.Flags.*
-import core.Symbols.*
+import core.Flags._
+import core.Symbols._
 import core.TypeError
 
 /** A TreeMap that maintains the necessary infrastructure to support

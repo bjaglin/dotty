@@ -13,7 +13,7 @@ import java.nio.file.Paths
 import scala.language.unsafeNulls
 
 import Contexts.{ Context, ctx }
-import Util.*
+import Util._
 
 class ScriptingDriver(compilerArgs: Array[String], scriptFile: File, scriptArgs: Array[String]) extends Driver:
   def compileAndRun(pack:(Path, Seq[Path], String) => Boolean = null): Option[Throwable] =

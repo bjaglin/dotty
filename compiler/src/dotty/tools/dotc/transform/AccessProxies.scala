@@ -2,14 +2,14 @@ package dotty.tools
 package dotc
 package transform
 
-import core.*
-import Contexts.*
-import Symbols.*
-import Flags.*
-import Names.*
-import NameOps.*
-import Decorators.*
-import Types.*
+import core._
+import Contexts._
+import Symbols._
+import Flags._
+import Names._
+import NameOps._
+import Decorators._
+import Types._
 import util.Spans.Span
 import config.Printers.transforms
 

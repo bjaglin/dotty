@@ -4,12 +4,12 @@ package transform
 import dotty.tools.backend.jvm.GenBCode
 import dotty.tools.io.JarArchive
 
-import core.*
+import core._
 import ast.tpd
-import MegaPhase.*
-import Contexts.*
-import Symbols.*
-import Phases.*
+import MegaPhase._
+import Contexts._
+import Symbols._
+import Phases._
 
 /**
  * Small phase to be run to collect main classes and store them in the context.

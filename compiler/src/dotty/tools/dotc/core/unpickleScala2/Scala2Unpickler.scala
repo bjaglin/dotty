@@ -14,38 +14,38 @@ import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.language.unsafeNulls
 
-import Contexts.*
-import Symbols.*
-import Types.*
-import Scopes.*
-import SymDenotations.*
-import Names.*
-import NameOps.*
-import StdNames.*
-import Denotations.*
-import NameOps.*
-import Flags.*
-import Constants.*
-import Annotations.*
-import Phases.*
+import Contexts._
+import Symbols._
+import Types._
+import Scopes._
+import SymDenotations._
+import Names._
+import NameOps._
+import StdNames._
+import Denotations._
+import NameOps._
+import Flags._
+import Constants._
+import Annotations._
+import Phases._
 import NameKinds.{Scala2MethodNameKinds, SuperAccessorName, ExpandedName}
-import util.Spans.*
-import ast.tpd.*
+import util.Spans._
+import ast.tpd._
 import ast.untpd.Modifiers
 import backend.sjs.JSDefinitions
-import printing.Texts.*
+import printing.Texts._
 import printing.Printer
 import io.AbstractFile
-import util.common.*
+import util.common._
 import util.NoSourcePosition
 import typer.Checking.checkNonCyclic
-import typer.Nullables.*
-import PickleBuffer.*
-import PickleFormat.*
-import Decorators.*
-import TypeApplications.*
+import typer.Nullables._
+import PickleBuffer._
+import PickleFormat._
+import Decorators._
+import TypeApplications._
 import classfile.ClassfileParser
-import reporting.*
+import reporting._
 
 object Scala2Unpickler {
 

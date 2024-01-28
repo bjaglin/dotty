@@ -1,16 +1,16 @@
 package dotty.tools.dotc
 package transform
 
-import core.*
+import core._
 import Constants.Constant
-import Contexts.*
-import Flags.*
-import Definitions.*
-import DenotTransformers.*
-import StdNames.*
-import Symbols.*
-import MegaPhase.*
-import Types.*
+import Contexts._
+import Flags._
+import Definitions._
+import DenotTransformers._
+import StdNames._
+import Symbols._
+import MegaPhase._
+import Types._
 
 
 /** This phase adds forwarder for XXL functions `apply` methods that are implemented with a method

@@ -5,20 +5,20 @@ import dotty.tools.dotc.transform.sjs.JSSymUtils.sjsNeedsField
 
 import scala.annotation.tailrec
 
-import core.*
-import Types.*
-import Contexts.*
-import Symbols.*
-import SymDenotations.*
-import Names.*
-import NameOps.*
-import StdNames.*
-import NameKinds.*
-import Flags.*
-import Decorators.*
+import core._
+import Types._
+import Contexts._
+import Symbols._
+import SymDenotations._
+import Names._
+import NameOps._
+import StdNames._
+import NameKinds._
+import Flags._
+import Decorators._
 import Constants.Constant
 import Annotations.Annotation
-import Phases.*
+import Phases._
 import ast.tpd.Literal
 import transform.Mixin
 

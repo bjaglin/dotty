@@ -3,13 +3,13 @@ package core
 
 import scala.annotation.tailrec
 
-import Types.*
-import Contexts.*
-import util.Stats.*
-import Hashable.*
-import Names.*
+import Types._
+import Contexts._
+import util.Stats._
+import Hashable._
+import Names._
 import config.Config
-import Decorators.*
+import Decorators._
 import util.{WeakHashSet, Stats}
 import WeakHashSet.Entry
 

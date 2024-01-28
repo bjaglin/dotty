@@ -5,25 +5,25 @@ package transform
 import scala.annotation.tailrec
 import scala.collection.mutable
 
-import core.*
-import MegaPhase.*
-import Symbols.*
-import Contexts.*
-import Types.*
-import StdNames.*
-import NameOps.*
+import core._
+import MegaPhase._
+import Symbols._
+import Contexts._
+import Types._
+import StdNames._
+import NameOps._
 import patmat.SpaceEngine
-import util.Spans.*
-import typer.Applications.*
-import Annotations.*
-import Flags.*
-import Constants.*
-import Decorators.*
+import util.Spans._
+import typer.Applications._
+import Annotations._
+import Flags._
+import Constants._
+import Decorators._
 import NameKinds.{PatMatStdBinderName, PatMatAltsName, PatMatResultName}
 import config.Printers.patmatch
-import reporting.*
-import ast.*
-import util.Property.*
+import reporting._
+import ast._
+import util.Property._
 
 /** The pattern matching transform.
  *  After this phase, the only Match nodes remaining in the code are simple switches

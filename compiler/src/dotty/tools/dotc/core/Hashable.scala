@@ -3,7 +3,7 @@ package core
 
 import scala.util.hashing.{ MurmurHash3 => hashing }
 
-import Types.*
+import Types._
 import annotation.tailrec
 
 object Hashable {
