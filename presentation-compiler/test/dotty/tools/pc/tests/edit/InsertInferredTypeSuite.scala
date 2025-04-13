@@ -883,6 +883,30 @@ class InsertInferredTypeSuite extends BaseCodeActionSuite:
         |""".stripMargin
     )
 
+  @Test def `trailing-underscore-val` =
+    checkEdit(
+      """|object A {
+         |  val <<foo_>> = 1
+         |}
+         |""".stripMargin,
+      """|object A {
+         |  val foo_ : Int = 1
+         |}
+         |""".stripMargin
+    )
+
+  @Test def `trailing-underscore-def` =
+    checkEdit(
+      """|object A {
+         |  def <<foo_>> = 1
+         |}
+         |""".stripMargin,
+      """|object A {
+         |  def foo_ : Int = 1
+         |}
+         |""".stripMargin
+    )
+
   @Test def `operator-val` =
     checkEdit(
       """|object A {
